@@ -183,6 +183,8 @@ const urlMappingBoxCulvert = {
     "https://www.betonjayareadymix.com/2021/11/harga-box-culvert-50x50.html": "Harga Box Culvert 50x50",
  "https://www.betonjayareadymix.com/2021/11/harga-box-culvert-150x150.html": "Harga Box Culvert 150x150",
   "https://www.betonjayareadymix.com/2021/11/harga-box-culvert-200x200.html": "Harga Box Culvert 200x200",
+   "https://www.betonjayareadymix.com/2022/02/harga-box-culvert-300x300.html": "Harga Box Culvert 300x300",
+
 
  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-murah.html": "Jual Box Culvert Murah",
     "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-jakarta.html": "Jual Box Culvert Jakarta",
@@ -338,21 +340,16 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",
 
 };
-const urlMappingBongkarKeramik = {
-    "https://www.betonjayareadymix.com/2019/06/biaya-bongkar-lantai-keramik.html": "Biaya Bongkar Lantai Keramik",
-    "https://www.betonjayareadymix.com/2019/06/harga-bongkar-lantai-keramik.html": "Harga Bongkar Lantai Keramik"
-
-};
 
 // Menyimpan elemen yang dihapus dalam variabel
-let removedElementsJasaPerbaikanKons = {};
+let removedElementsProdukSaluranKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
 function removeCondition(conditionId) {
     const conditionElement = document.getElementById(conditionId);
 
     if (conditionElement) {
         // Menyimpan elemen yang dihapus dalam objek untuk bisa dikembalikan
-        removedElementsJasaPerbaikanKons[conditionId] = conditionElement;
+        removedElementsProdukSaluranKons[conditionId] = conditionElement;
         conditionElement.remove(); // Menghapus elemen tersebut
     }
 }
@@ -360,11 +357,11 @@ function removeCondition(conditionId) {
 // Fungsi untuk mengembalikan elemen yang telah dihapus
 function restoreCondition(conditionId) {
     const breadcrumb = document.querySelector('.breadcrumb');
-    const elementToRestore = removedElementsJasaPerbaikanKons[conditionId]; // Mendapatkan elemen yang disimpan
+    const elementToRestore = removedElementsProdukSaluranKons[conditionId]; // Mendapatkan elemen yang disimpan
 
     if (elementToRestore) {
         breadcrumb.appendChild(elementToRestore); // Menambahkan elemen kembali ke dalam breadcrumb
-        delete removedElementsJasaPerbaikanKons[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
+        delete removedElementsProdukSaluranKons[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
     } else {
         console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElements.`);
     }
@@ -373,12 +370,12 @@ function restoreCondition(conditionId) {
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
-    const cleanUrlJasaPerbaikanKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
+    const cleanUrlProdukSaluranKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
 
      // Menemukan elemen menggunakan Id
     // var materialKons = document.getElementById("materialKons");
     // var JasaKons = document.getElementById("JasaKons");
-      var JasaKonstruksiPerbaikanLink = document.getElementById("JasaKonstruksiPerbaikan");
+     var JasaKonstruksiPerbaikanLink = document.getElementById("JasaKonstruksiPerbaikan");
      var JasaRenovasiPerbaikanLink = document.getElementById("JasaRenovasiPerbaikan");
      var JasaChippingBetonLink = document.getElementById("JasaChippingBeton");
      var JasaBobokTembokLink = document.getElementById("JasaBobokTembok");
@@ -399,7 +396,7 @@ document.addEventListener("DOMContentLoaded", function() {
      JasaBongkarKeramikLink.style.visibility = 'hidden';
      pageNameKonstruksiPerbaikan.textContent = "";
 
-    if (urlMappingChippingBeton[cleanUrlJasaPerbaikanKons]) {
+    if (urlMappingChippingBeton[cleanUrlProdukSaluranKons]) {
         restoreCondition('JasaKonsPerbaikan');
         restoreCondition('JasaChippingBeton');
      
@@ -413,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function() {
         JasaChippingBetonLink.style.visibility = 'visible';
         pageNameKonstruksi.textContent = urlMappingChippingBeton[cleanUrlJasaPerbaikanKons];
     }
-    if (urlMappingBobokTembok[cleanUrlJasaPerbaikanKons]) {
+    if (urlMappingBobokTembok[cleanUrlProdukSaluranKons]) {
         removeCondition('materialKonsReadymix');
         restoreCondition('JasaKonsPerbaikan');
      
@@ -426,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function() {
         JasaBobokTembokLink.style.visibility = 'visible';
         pageNameKonstruksi.textContent = urlMappingBobokTembok[cleanUrlJasaPerbaikanKons];
     }
-   if (urlMappingBobokBeton[cleanUrlJasaPerbaikanKons]) {
+   if (urlMappingBobokBeton[cleanUrlProdukSaluranKons]) {
        removeCondition('materialKonsReadymix');
        restoreCondition('JasaKonsPerbaikan');
     
@@ -439,18 +436,5 @@ document.addEventListener("DOMContentLoaded", function() {
         JasaBobokBetonLink.style.visibility = 'visible';
         pageNameKonstruksi.textContent = urlMappingBobokBeton[cleanUrlJasaPerbaikanKons];
     }
-   if (urlMappingBongkarKeramik[cleanUrlJasaPerbaikanKons]) {
-        removeCondition('materialKonsReadymix');
-        restoreCondition('JasaKonsPerbaikan');
-    
-        removeCondition('JasaChippingBeton');
-        removeCondition('JasaBobokTembok');
-         removeCondition('JasaBobokBeton');
-        restoreCondition('JasaBongkarKeramik');
-        JasaKonstruksiPerbaikanLink.style.visibility = 'visible';
-        JasaRenovasiPerbaikanLink.style.visibility = 'visible';
-        JasaBongkarKeramikLink.style.visibility = 'visible';
-        pageNameKonstruksi.textContent = urlMappingBongkarKeramik[cleanUrlJasaPerbaikanKons];
-    }
-
+   
    });
