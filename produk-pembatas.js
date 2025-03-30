@@ -156,18 +156,18 @@ document.addEventListener("DOMContentLoaded", function() {
      pageNameProdukPembatas.textContent = "";
 
     if (urlMappingProdukPagarPanelBeton[cleanUrlProdukPembatasKons]) {
-        restoreCondition('JasaKonsPembatas');
-        restoreCondition('JasaPasangPagarPanelBeton');
+        restoreCondition('ProdukKonsPembatas');
+        restoreCondition('ProdukPagarPanelBeton');
      
         //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
      
         //hapus elemen jasa pembatas lain
-        removeCondition('JasaPasangPagarBeton');
-        removeCondition('JasaPasangPagarRumah');
+        removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarRumah');
        
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
@@ -175,18 +175,18 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukPembatas.textContent = urlMappingProdukPagarPanelBeton[cleanUrlProdukPembatasKons];
     }
     if (urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons]) {
-        restoreCondition('JasaKonsPembatas');
-        restoreCondition('JasaPasangPagarBeton');
+        restoreCondition('ProdukKonsPembatas');
+        restoreCondition('ProdukPagarBeton');
 
        //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
 
         //hapus elemen jasa pembatas lain
-        removeCondition('JasaPasangPagarPanelBeton');
-        removeCondition('JasaPasangPagarRumah');
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarRumah');
         
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
@@ -194,18 +194,18 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukPembatas.textContent = urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons];
     }
    if (urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons]) {
-        restoreCondition('JasaKonsPembatas');
-        restoreCondition('JasaPasangPagarRumah');
+        restoreCondition('ProdukKonsPembatas');
+        restoreCondition('ProdukPagarRumah');
 
        //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
 
         //hapus elemen jasa pembatas lain
-        removeCondition('JasaPasangPagarPanelBeton');
-        removeCondition('JasaPasangPagarBeton');
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarBeton');
     
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
