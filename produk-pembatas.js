@@ -1,6 +1,48 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingProdukPagarPanelBeton = {
-  
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton",
+  "https://www.betonjayareadymix.com/2018/09/pagar-panel-beton-murah.html": "Pagar Panel Beton Murah",
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-panel-beton-murah.html": "Harga Pagar Panel Beton Murah",
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-panel-beton-pracetak.html": "Harga Pagar Panel Beton Pracetak",
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-panel-beton-per-meter.html": "Harga Pagar Panel Beton Per Meter",
+  "https://www.betonjayareadymix.com/2018/09/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2018/09/ukuran-pagar-panel-beton.html": "Ukuran Pagar Panel Beton",
+  "https://www.betonjayareadymix.com/2018/09/pagar-panel-beton-motif.html": "Pagar Panel Beton Motif",
+  "https://www.betonjayareadymix.com/2018/09/jual-pagar-panel-beton-precast.html": "Jual Pagar Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2018/09/harga-tiang-pagar-panel-beton.html": "Harga Tiang Pagar Panel Beton",
+
+ "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-jakarta.html": "Pagar Panel Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-bogor.html": "Pagar Panel Beton Bogor",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-depok.html": "Pagar Panel Beton Depok",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-tangerang.html": "Pagar Panel Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-bekasi.html": "Pagar Panel Beton Bekasi",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-bandung.html": "Pagar Panel Beton Bandung",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-cianjur.html": "Pagar Panel Beton Cianjur",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-purwakarta.html": "Pagar Panel Beton Purwakarta",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-tasikmalaya.html": "Pagar Panel Beton Tasikmalaya",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-cirebon.html": "Pagar Panel Beton Cirebon",
+ "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-indramayu.html": "Pagar Panel Beton Indramayu",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-sukabumi.html": "Pagar Panel Beton Sukabumi",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-subang.html": "Pagar Panel Beton Subang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-karawang.html": "Pagar Panel Beton Karawang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-majalengka.html": "Pagar Panel Beton Majalengka",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-jakarta.html": "Harga Pagar Panel Beton Jakarta",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-bogor.html": "Harga Pagar Panel Beton Bogor",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-karawang.html": "Harga Pagar Panel Beton Karawang",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-depok.html": "Harga Pagar Panel Beton Depok",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-bekasi.html": "Harga Pagar Panel Beton Bekasi",
+ "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-tangerang.html": "Harga Pagar Panel Beton Tangerang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-garut.html": "Pagar Panel Beton Garut",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-ciamis.html": "Pagar Panel Beton Ciamis",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-kuningan.html": "Pagar Panel Beton Kuningan",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-semarang.html": "Pagar Panel Beton Semarang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-panel-beton-polos.html": "Pagar Panel Beton Polos",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-motif.html": "Harga Pagar Panel Beton Motif",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-polos.html": "Harga Pagar Panel Beton Polos",
+  "https://www.betonjayareadymix.com/2018/11/harga-pagar-panel-beton-per-lembar.html": "Harga Pagar Panel Beton Per Lembar",
+  "https://www.betonjayareadymix.com/2018/11/biaya-pagar-panel-beton-per-meter.html": "Biaya Pagar Panel Beton Per Meter"
+
+
 };
 const urlMappingProdukPagarBeton = {
 
