@@ -96,7 +96,7 @@ const urlMappingProdukPagarBeton = {
 
 };
 const urlMappingProdukPagarRumah = {
- 
+ "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
 };
 
 
