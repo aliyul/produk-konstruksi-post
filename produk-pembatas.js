@@ -71,7 +71,7 @@ const urlMappingProdukPagarBeton = {
   "https://www.betonjayareadymix.com/2018/09/pagar-beton-lantai-2.html": "Pagar Beton Lantai 2",
   "https://www.betonjayareadymix.com/2018/09/pagar-beton-depan-rumah.html": "Pagar Beton Depan Rumah",
   "https://www.betonjayareadymix.com/2018/09/pagar-beton-cantik.html": "Pagar Beton Cantik",
-  "https://www.betonjayareadymix.com/2018/11/pagar-beton-terbaik.html": "Pagar Beton Terbaik",
+  "https://www.betonjayareadymix.com/2018/09/pagar-beton-terbaik.html": "Pagar Beton Terbaik",
   "https://www.betonjayareadymix.com/2018/11/pagar-beton-bogor.html": "Pagar Beton Bogor",
   "https://www.betonjayareadymix.com/2018/11/pagar-beton-depok.html": "Pagar Beton Depok",
   "https://www.betonjayareadymix.com/2018/11/pagar-beton-bekasi.html": "Pagar Beton Bekasi",
