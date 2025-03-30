@@ -374,7 +374,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrlProdukSaluranKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-
+    if (!ProdukKonsSaluran) {
+        console.error("elemen Id ProdukKonsSaluran kondisi terhapus");
+        return;
+    }
      // Menemukan elemen menggunakan Id
      var ProdukKonstruksiSaluranLink = document.getElementById("ProdukKonstruksiSaluran");
      var ProdukSaluranLink = document.getElementById("ProdukSaluran");
