@@ -405,7 +405,11 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('materialKonsReadymix');
         removeCondition('ProdukKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatas');
+         removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
         removeCondition('ProdukBoxCulvert');
@@ -421,9 +425,13 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+     
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
         removeCondition('ProdukBuis');
@@ -439,9 +447,13 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukUditch');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatas');
+         removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
      //hapus elemen saluran lain
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
@@ -457,9 +469,13 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukGorongBeton');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
         removeCondition('JasaKonsPembatas');
+         removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
      //hapus elemen saluran lain
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
