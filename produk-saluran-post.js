@@ -374,9 +374,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
     const cleanUrlProdukSaluranKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-    var ProdukKonsSaluran = document.getElementById("ProdukKonsSaluran");
-    if (!ProdukKonsSaluran) {
-        console.error("elemen Id ProdukKonsSaluran kondisi terhapus");
+    var ProdukKonsSaluranPost = document.getElementById("ProdukKonsSaluranPost");
+    if (!ProdukKonsSaluranPost) {
+        console.error("elemen Id ProdukKonsSaluranPost kondisi terhapus");
         return;
     }
      // Menemukan elemen menggunakan Id
@@ -399,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function() {
      pageNameProdukSaluran.textContent = "";
 
     if (urlMappingBuis[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluran');
+        restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukSaluran.textContent = urlMappingBuis[cleanUrlProdukSaluranKons];
     }
     if (urlMappingBoxCulvert[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluran');
+        restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
@@ -443,7 +443,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukSaluran.textContent = urlMappingBoxCulvert[cleanUrlProdukSaluranKons];
     }
    if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluran');
+        restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukUditch');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
@@ -465,7 +465,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pageNameProdukSaluran.textContent = urlMappingUditch[cleanUrlProdukSaluranKons];
     }
     if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluran');
+        restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukGorongBeton');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
