@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
      
         //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
         removeCondition('JasaKonsPembatasPost');
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
         removeCondition('JasaKonsPembatasPost');
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPembatas');
         removeCondition('JasaKonsPerbaikan');
         removeCondition('JasaKonsPembatasPost');
