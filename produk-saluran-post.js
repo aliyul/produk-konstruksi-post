@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
         removeCondition('materialKonsReadymix');
-        removeCondition('ProdukKonsPembatas');
+        removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPembatasPost');
