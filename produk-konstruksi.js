@@ -16,13 +16,25 @@ const urlMappingProdukKonstruksi = {
   "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
 };
 const urlMappingProdukPembatas = {
-  
+ "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
+  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",
+  "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",
+  "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",
+  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
+  "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",
+  "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",
+  "https://www.betonjayareadymix.com/p/kanstin-beton-precast.html": "Kanstin Beton Precast"
+
 };
 const urlMappingProdukSaluran = {
-  
+  "https://www.betonjayareadymix.com/p/buis-beton-precast.html": "Buis Beton Precast",
+  "https://www.betonjayareadymix.com/p/box-culvert-beton-precast.html": "Box Culvert Beton Precast",
+  "https://www.betonjayareadymix.com/p/u-ditch-tutup-beton-precast.html": "U Ditch Tutup Beton Precast",
+  "https://www.betonjayareadymix.com/p/gorong-gorong-saluran-beton-precast.html": "Gorong Gorong Saluran Beton Precast"
 };
 const urlMappingProdukJalanLantai = {
-  
+ "https://www.betonjayareadymix.com/p/paving-block.html": "Paving Block",
+  "https://www.betonjayareadymix.com/p/grass-block.html": "Grass Block"
 };
 const urlMappingProdukPondasi = {
   
