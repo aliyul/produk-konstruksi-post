@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKons');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatasPost');
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKons');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatas');
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukUditch');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKons');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
          removeCondition('JasaKonsPembatas');
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukGorongBeton');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKons');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikan');
         removeCondition('JasaKonsPembatas');
