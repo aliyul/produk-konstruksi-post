@@ -147,93 +147,286 @@ if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukKonstruksi[cleanUrlProdukKons];
     }
+//SUB PRODUK KONSTRUSI
+if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukPembatas');
+ 
+     //hapus elemen div id lain
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
 
-    if (urlMappingBuis[cleanUrlProdukKons]) {
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukPembatas[cleanUrlProdukKons];
+    }
+ if (urlMappingProdukSaluran[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
-        restoreCondition('ProdukBuis');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukSaluranDrainase');
+ 
      //hapus elemen div id lain
-        removeCondition('MaterialKons');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
 
-     //hapus elemen saluran lain
-        removeCondition('ProdukUditch');
-        removeCondition('ProdukBoxCulvert');
-        removeCondition('ProdukGorongBeton');
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
-        ProdukSaluranLink.style.visibility = 'visible';
-        ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingBuis[cleanUrlProdukKons];
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukSaluranDrainaseLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukSaluran[cleanUrlProdukKons];
     }
-    if (urlMappingBoxCulvert[cleanUrlProdukKons]) {
+if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
-        restoreCondition('ProdukBoxCulvert');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukJalanLantai');
+ 
      //hapus elemen div id lain
-        removeCondition('MaterialKons');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-     
-     //hapus elemen saluran lain
-        removeCondition('ProdukUditch');
-        removeCondition('ProdukBuis');
-        removeCondition('ProdukGorongBeton');
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
-        ProdukSaluranLink.style.visibility = 'visible';
-        ProdukBoxCulvertLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingBoxCulvert[cleanUrlProdukKons];
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukJalanLantaiLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukJalanLantai[cleanUrlProdukKons];
     }
-   if (urlMappingUditch[cleanUrlProdukKons]) {
+if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
-        restoreCondition('ProdukUditch');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukPondasiStruktur');
+ 
      //hapus elemen div id lain
-        removeCondition('MaterialKons');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatas');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-     //hapus elemen saluran lain
-        removeCondition('ProdukBoxCulvert');
-        removeCondition('ProdukBuis');
-        removeCondition('ProdukGorongBeton');
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
-        ProdukSaluranLink.style.visibility = 'visible';
-        ProdukUditchLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingUditch[cleanUrlProdukKons];
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukPondasiStrukturLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukPondasi[cleanUrlProdukKons];
     }
-    if (urlMappingGorongBeton[cleanUrlProdukKons]) {
+if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
-        restoreCondition('ProdukGorongBeton');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukJembatanFlyover');
+ 
      //hapus elemen div id lain
-        removeCondition('MaterialKons');
-        removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-        removeCondition('JasaKonsPembatas');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
-        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-     //hapus elemen saluran lain
-        removeCondition('ProdukBoxCulvert');
-        removeCondition('ProdukBuis');
-        removeCondition('ProdukUditch');
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
-        ProdukSaluranLink.style.visibility = 'visible';
-        ProdukGorongBetonLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingGorongBeton[cleanUrlProdukKons];
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukJembatanFlyoverLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukJembatan[cleanUrlProdukKons];
     }
+if (urlMappingProdukDinding[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukDindingBangunanModular');
+ 
+     //hapus elemen div id lain
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukDinding[cleanUrlProdukKons];
+    }
+if (urlMappingProdukPelabuhan[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukPelabuhanPesisir');
+ 
+     //hapus elemen div id lain
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukPelabuhanPesisirLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukPelabuhan[cleanUrlProdukKons];
+    }
+if (urlMappingProdukCustom[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukCustomKhusus');
+ 
+     //hapus elemen div id lain
+        removeCondition1('MaterialKons');
+        removeCondition1('ProdukKonsSaluran');
+        removeCondition1('ProdukKonsPembatas');
+        removeCondition1('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition1('JasaKons');
+       	removeCondition1('JasaKonsSub');
+       	removeCondition1('MenuKons');
+       	removeCondition1('JasaKonsFinishing');
+        removeCondition1('JasaKonsStruktur');
+        removeCondition1('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukPembatas');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukCustomKhususLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukCustom[cleanUrlProdukKons];
+    }
+
    });
