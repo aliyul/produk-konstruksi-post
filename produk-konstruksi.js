@@ -53,14 +53,14 @@ const urlMappingProdukCustom = {
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
-let removedElementsProdukSaluranKons = {};
+let removedElementsProdukKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
 function removeCondition(conditionId) {
     const conditionElement = document.getElementById(conditionId);
 
     if (conditionElement) {
         // Menyimpan elemen yang dihapus dalam objek untuk bisa dikembalikan
-        removedElementsProdukSaluranKons[conditionId] = conditionElement;
+        removedElementsProdukKons[conditionId] = conditionElement;
         conditionElement.remove(); // Menghapus elemen tersebut
     }
 }
@@ -68,33 +68,37 @@ function removeCondition(conditionId) {
 // Fungsi untuk mengembalikan elemen yang telah dihapus
 function restoreCondition(conditionId) {
     const breadcrumb = document.querySelector('.breadcrumb');
-    const elementToRestore = removedElementsProdukSaluranKons[conditionId]; // Mendapatkan elemen yang disimpan
+    const elementToRestore = removedElementsProdukKons[conditionId]; // Mendapatkan elemen yang disimpan
 
     if (elementToRestore) {
         breadcrumb.appendChild(elementToRestore); // Menambahkan elemen kembali ke dalam breadcrumb
-        delete removedElementsProdukSaluranKons[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
+        delete removedElementsProdukKons[conditionId]; // Menghapus elemen dari objek setelah dikembalikan
     } else {
-        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElementsProdukSaluranKons.`);
+        console.log(`Elemen dengan ID ${conditionId} tidak ditemukan di removedElementsProdukKons.`);
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     // var currentUrl = window.location.href;
      //const cleanUrl = currentUrl.split('?')[0]; // Menghapus parameter seperti ?m=1
-    const cleanUrlProdukSaluranKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
-    var ProdukKonsSaluranPost = document.getElementById("ProdukKonsSaluranPost");
-    if (!ProdukKonsSaluranPost) {
-        console.error("elemen Id ProdukKonsSaluranPost kondisi terhapus");
+    const cleanUrlProdukKons = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
+    var ProdukKons = document.getElementById("ProdukKons");
+    if (!ProdukKons) {
+        console.error("elemen Id ProdukKons kondisi terhapus");
         return;
     }
      // Menemukan elemen menggunakan Id
-     var ProdukKonstruksiSaluranLink = document.getElementById("ProdukKonstruksiSaluran");
-     var ProdukSaluranLink = document.getElementById("ProdukSaluran");
-     var ProdukBuisLink = document.getElementById("ProdukBuis");
-     var ProdukBoxCulvertLink = document.getElementById("ProdukBoxCulvert");
-     var ProdukUditchLink = document.getElementById("ProdukUditch");
-     var ProdukGorongBetonLink = document.getElementById("ProdukGorongBeton");
-     var pageNameProdukSaluran = document.getElementById("pageNameProdukSaluran");
+     var ProdukKonstruksiLink = document.getElementById("ProdukKonstruksi");
+     var ProdukPembatasLink = document.getElementById("ProdukPembatas");
+     var ProdukSaluranDrainaseLink = document.getElementById("ProdukSaluranDrainase");
+     var ProdukJalanLantaiLink = document.getElementById("ProdukJalanLantai");
+     var ProdukPondasiStrukturLink = document.getElementById("ProdukPondasiStruktur");
+     var ProdukJembatanFlyoverLink = document.getElementById("ProdukJembatanFlyover");
+     var ProdukDindingBangunanModularLink = document.getElementById("ProdukDindingBangunanModular");
+     var ProdukPelabuhanPesisirLink = document.getElementById("ProdukPelabuhanPesisir");
+     var ProdukCustomKhususLink = document.getElementById("ProdukCustomKhusus");
+
+     var pageNameProdukKons = document.getElementById("pageNameProdukKons");
     
 
      // Default untuk menyembunyikan elemen
@@ -105,9 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukUditchLink.style.visibility = 'hidden';
      ProdukGorongBetonLink.style.visibility = 'hidden';
      pageNameProdukSaluran.textContent = "";
-
-    if (urlMappingBuis[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluranPost');
+if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
         removeCondition('MaterialKons');
@@ -126,10 +129,33 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
         ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingBuis[cleanUrlProdukSaluranKons];
+        pageNameProdukSaluran.textContent = urlMappingProdukKonstruksi[cleanUrlProdukKons];
     }
-    if (urlMappingBoxCulvert[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluranPost');
+
+    if (urlMappingBuis[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukBuis');
+     //hapus elemen div id lain
+        removeCondition('MaterialKons');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikan');
+         removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+
+     //hapus elemen saluran lain
+        removeCondition('ProdukUditch');
+        removeCondition('ProdukBoxCulvert');
+        removeCondition('ProdukGorongBeton');
+       
+        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukSaluranLink.style.visibility = 'visible';
+        ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukSaluran.textContent = urlMappingBuis[cleanUrlProdukKons];
+    }
+    if (urlMappingBoxCulvert[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
         removeCondition('MaterialKons');
@@ -148,10 +174,10 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
         ProdukBoxCulvertLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingBoxCulvert[cleanUrlProdukSaluranKons];
+        pageNameProdukSaluran.textContent = urlMappingBoxCulvert[cleanUrlProdukKons];
     }
-   if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluranPost');
+   if (urlMappingUditch[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
         restoreCondition('ProdukUditch');
      //hapus elemen div id lain
         removeCondition('MaterialKons');
@@ -170,10 +196,10 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
         ProdukUditchLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingUditch[cleanUrlProdukSaluranKons];
+        pageNameProdukSaluran.textContent = urlMappingUditch[cleanUrlProdukKons];
     }
-    if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
-        restoreCondition('ProdukKonsSaluranPost');
+    if (urlMappingGorongBeton[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
         restoreCondition('ProdukGorongBeton');
      //hapus elemen div id lain
         removeCondition('MaterialKons');
@@ -192,6 +218,6 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
         ProdukGorongBetonLink.style.visibility = 'visible';
-        pageNameProdukSaluran.textContent = urlMappingGorongBeton[cleanUrlProdukSaluranKons];
+        pageNameProdukSaluran.textContent = urlMappingGorongBeton[cleanUrlProdukKons];
     }
    });
