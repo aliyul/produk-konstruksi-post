@@ -402,14 +402,16 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        
         removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	       removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost');
+	
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
         removeCondition('ProdukBoxCulvert');
@@ -424,14 +426,16 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        
         removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-     
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	       removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost');
+	
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
         removeCondition('ProdukBuis');
@@ -446,14 +450,16 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukUditch');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        
         removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-         removeCondition('JasaKonsPembatas');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	       removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost');
+	
      //hapus elemen saluran lain
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
@@ -468,14 +474,17 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukGorongBeton');
      //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        
         removeCondition('ProdukKonsPembatasPost');
-        removeCondition('JasaKonsPerbaikan');
-        removeCondition('JasaKonsPembatas');
-         removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPembatasPost');
-        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	       removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost');
+	
+     
      //hapus elemen saluran lain
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
