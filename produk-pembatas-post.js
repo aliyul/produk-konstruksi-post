@@ -161,15 +161,15 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarPanelBeton');
      
         //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
-        removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-	       removeCondition('JasaKonsBongkarBangunanPost');
-        removeCondition('JasaKonsPengeboranPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
      
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarBeton');
@@ -185,14 +185,16 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarBeton');
 
        //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
-        removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+     
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
         removeCondition('ProdukPagarRumah');
@@ -207,16 +209,16 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarRumah');
 
        //hapus elemen div id lain
-        removeCondition('materialKonsReadymix');
+        removeCondition('MaterialKonsStukturPost');
         removeCondition('ProdukKonsSaluranPost');
-        removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsPerbaikan');
+        removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
-	       removeCondition('JasaKonsBongkarBangunanPost');
-        removeCondition('JasaKonsPengeboranPost');
-
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+     
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
         removeCondition('ProdukPagarBeton');
