@@ -412,6 +412,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsBongkarBangunanPost');
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
 	
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
@@ -437,6 +438,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsBongkarBangunanPost');
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
 	
      //hapus elemen saluran lain
         removeCondition('ProdukUditch');
@@ -462,6 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsBongkarBangunanPost');
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
 	
      //hapus elemen saluran lain
         removeCondition('ProdukBoxCulvert');
@@ -487,6 +490,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsBongkarBangunanPost');
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
 	
      
      //hapus elemen saluran lain
