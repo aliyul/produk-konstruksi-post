@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
      
         //hapus elemen div id lain
         removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
@@ -187,6 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        //hapus elemen div id lain
         removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
@@ -212,6 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
        //hapus elemen div id lain
         removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
