@@ -48,38 +48,40 @@ document.addEventListener("DOMContentLoaded", function() {
     const cleanUrlProdukKonsPost = window.location.href.split(/[?#]/)[0]; // Menghilangkan parameter seperti ?m=1
 
      // Menemukan elemen menggunakan Id
-    var ProdukKonsPembatasPost = document.getElementById("ProdukKonsPembatasPost");
-    if (!ProdukKonsPembatasPost) {
-        console.error("elemen Id ProdukKonsPembatasPost kondisi terhapus");
+    var ProdukKonsPost = document.getElementById("ProdukKonsPost");
+    if (!ProdukKonsPost) {
+        console.error("elemen Id ProdukKonsPost kondisi terhapus");
         return;
     }
-     var ProdukKonstruksiPembatasLink = document.getElementById("ProdukKonstruksiPembatas");
-     var ProdukPembatasLink = document.getElementById("ProdukPembatas");
-     var ProdukPagarPanelBetonLink = document.getElementById("ProdukPagarPanelBeton");
-     var ProdukPagarBetonLink = document.getElementById("ProdukPagarBeton");
-     var ProdukPagarRumahLink = document.getElementById("ProdukPagarRumah");
-     //var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
-     var pageNameProdukPembatas = document.getElementById("pageNameProdukPembatas");
+
+     var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
+     var ProdukBetonPrecastLink = document.getElementById("ProdukBetonPrecast");
+     var ProdukPanelBetonPrecastLink = document.getElementById("ProdukPanelBetonPrecast");
+     var ProdukBetonRinganPrecastLink = document.getElementById("ProdukBetonRinganPrecast");
+     var ProdukAlatKonstruksiLink = document.getElementById("ProdukAlatKonstruksi");
+     
+     var pageNameProdukKonsPost = document.getElementById("pageNameProdukKonsPost");
     
 
      // Default untuk menyembunyikan elemen
-     ProdukKonstruksiPembatasLink.style.visibility = 'hidden';
-     ProdukPembatasLink.style.visibility = 'hidden';
-     ProdukPagarPanelBetonLink.style.visibility = 'hidden';
-     ProdukPagarBetonLink.style.visibility = 'hidden';
-     ProdukPagarRumahLink.style.visibility = 'hidden';
-     //JasaBongkarKeramikLink.style.visibility = 'hidden';
-     pageNameProdukPembatas.textContent = "";
+     ProdukKonstruksiPostLink.style.visibility = 'hidden';
+     ProdukBetonPrecastLink.style.visibility = 'hidden';
+     ProdukPanelBetonPrecastLink.style.visibility = 'hidden';
+     ProdukBetonRinganPrecastLink.style.visibility = 'hidden';
+     ProdukAlatKonstruksiLink.style.visibility = 'hidden';
+	
+     pageNameProdukKonsPost.textContent = "";
 
     if (urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost]) {
-        restoreCondition('ProdukKonsPembatasPost');
-        restoreCondition('ProdukPagarPanelBeton');
+        restoreCondition('ProdukKonsPost');
+        restoreCondition('ProdukPanelBetonPrecast');
      
         //hapus elemen div id lain
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
         removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -88,15 +90,16 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
-     
-        //hapus elemen jasa pembatas lain
-        removeCondition('ProdukPagarBeton');
-        removeCondition('ProdukPagarRumah');
+
+        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
+       // removeCondition('');
+        removeCondition('ProdukPanelBetonPrecast');
+        removeCondition('ProdukBetonRinganPrecast');
+        removeCondition('ProdukAlatKonstruksi');
        
-        ProdukKonstruksiPembatasLink.style.visibility = 'visible';
-        ProdukPembatasLink.style.visibility = 'visible';
-        ProdukPagarPanelBetonLink.style.visibility = 'visible';
-        pageNameProdukPembatas.textContent = urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost];
+        ProdukKonstruksiPostLink.style.visibility = 'visible';
+        ProdukBetonPrecastLink.style.visibility = 'visible';
+        pageNameProdukKonsPost.textContent = urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost];
     }
     
    });
