@@ -26,6 +26,9 @@ const urlMappingProdukBetonPrecast = {
 const urlMappingProdukPanelBetonPrecast = {
 };
 const urlMappingProdukBetonRinganPrecast = {
+  "https://www.betonjayareadymix.com/2021/07/berapa-ukuran-beton-ringan.html": "Berapa Ukuran Beton Ringan",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-struktural.html": "Beton Ringan Struktural",
+	
 "https://www.betonjayareadymix.com/2021/07/beton-ringan-tangerang.html": "Beton Ringan Tangerang",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-depok.html": "Beton Ringan Depok",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-jakarta.html": "Beton Ringan Jakarta",
