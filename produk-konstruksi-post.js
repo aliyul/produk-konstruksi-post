@@ -26,6 +26,21 @@ const urlMappingProdukBetonPrecast = {
 const urlMappingProdukPanelBetonPrecast = {
 };
 const urlMappingProdukBetonRinganPrecast = {
+"https://www.betonjayareadymix.com/2021/07/beton-ringan-tangerang.html": "Beton Ringan Tangerang",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-depok.html": "Beton Ringan Depok",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-jakarta.html": "Beton Ringan Jakarta",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-bekasi.html": "Beton Ringan Bekasi",
+  "https://www.betonjayareadymix.com/2021/07/dak-beton-ringan-hebel.html": "Dak Beton Ringan Hebel",
+  "https://www.betonjayareadymix.com/2021/07/panel-beton-ringan.html": "Panel Beton Ringan",
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-bandung.html": "Jual Beton Ringan Bandung",
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan.html": "Jual Beton Ringan",
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-bogor.html": "Jual Beton Ringan Bogor",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-dak.html": "Beton Ringan Untuk Dak",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-blesscon.html": "Beton Ringan Blesscon",
+  "https://www.betonjayareadymix.com/2021/07/papan-beton-ringan.html": "Papan Beton Ringan",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-hebel.html": "Beton Ringan Hebel",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-bogor.html": "Beton Ringan Bogor",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-lantai.html": "Beton Ringan Untuk Lantai"
 
 };
 const urlMappingProdukAlatKonstruksi = {
