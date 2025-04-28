@@ -165,6 +165,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
         removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -192,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
         removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
@@ -219,6 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
         removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPerbaikanPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
