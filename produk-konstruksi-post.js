@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost]) {
         restoreCondition('ProdukKonsPost');
-        restoreCondition('ProdukPanelBetonPrecast');
+        restoreCondition('ProdukBetonPrecast');
      
         //hapus elemen div id lain
         removeCondition('MaterialKonsStukturPost');
