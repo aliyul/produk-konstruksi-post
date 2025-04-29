@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
 
         //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
        // removeCondition('');
@@ -170,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
 
         //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
        // removeCondition('');
@@ -199,6 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
 
         //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
        // removeCondition('');
@@ -228,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsPengeboranPost'); 
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
 
         //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
        // removeCondition('');
