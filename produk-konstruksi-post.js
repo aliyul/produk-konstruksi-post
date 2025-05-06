@@ -101,7 +101,28 @@ const urlMappingProdukAlatKonstruksi = {
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-100.html": "Harga Alat Berat PC 100",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sheep-foot-tamping.html": "Harga Alat Berat Sheep Foot Tamping",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-three-wheel-macadam.html": "Harga Alat Berat Three Wheel Macadam",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-200.html": "Harga Alat Berat PC 200"
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-200.html": "Harga Alat Berat PC 200",
+    "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-dump-truck.html": "Harga Alat Berat Dump Truck",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-boom-lift.html": "Harga Alat Berat Boom Lift",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer-baru.html": "Harga Alat Berat Bulldozer Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-caterpillar.html": "Harga Alat Berat Caterpillar",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sumitomo.html": "Harga Alat Berat Sumitomo",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wheel-loader.html": "Harga Alat Berat Wheel Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-backhoe-loader.html": "Harga Alat Berat Backhoe Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-hitachi.html": "Harga Alat Berat Excavator Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-komatsu.html": "Harga Alat Berat Excavator Komatsu",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-sany.html": "Harga Alat Berat Excavator Sany",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-hitachi.html": "Harga Alat Berat Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-komatsu.html": "Harga Alat Berat Komatsu",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-kobelco-baru.html": "Harga Alat Berat Kobelco Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-motor-grader.html": "Harga Alat Berat Motor Grader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sany.html": "Harga Alat Berat Sany",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-loader.html": "Harga Alat Berat Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-distributor.html": "Harga Alat Berat Asphalt Distributor",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-paver-finisher.html": "Harga Alat Berat Asphalt Paver Finisher",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-sprayer.html": "Harga Alat Berat Asphalt Sprayer"
+
 
 };
 
