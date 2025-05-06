@@ -166,7 +166,6 @@ const urlMappingProdukAlatKonstruksi = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bogor.html": "Alat Berat Bogor",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-lebak.html": "Alat Berat Lebak",
   "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
-};
 
 
 };
