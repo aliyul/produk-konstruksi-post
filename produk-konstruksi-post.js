@@ -165,7 +165,23 @@ const urlMappingProdukAlatKonstruksi = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bekasi.html": "Alat Berat Bekasi",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bogor.html": "Alat Berat Bogor",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-lebak.html": "Alat Berat Lebak",
-  "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
+  "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik",
+
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-jakarta.html": "Jual Alat Berat Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-tangerang.html": "Jual Alat Berat Tangerang",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-baru.html": "Jual Alat Berat Baru",
+  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat-terdekat.html": "Jual Beli Alat Berat Terdekat",
+  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat.html": "Jual Beli Alat Berat",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-kobelco.html": "Jual Alat Berat Excavator Kobelco",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-hitachi.html": "Jual Alat Berat Excavator Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-bekas.html": "Jual Alat Berat Excavator Bekas",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator.html": "Jual Alat Berat Excavator",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-jakarta.html": "Jual Alat Berat Bekas Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-murah.html": "Jual Alat Berat Bekas Murah",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bandung.html": "Jual Alat Berat Bandung",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas.html": "Jual Alat Berat Bekas",
+  "https://www.betonjayareadymix.com/2019/02/jual-beko.html": "Jual Beko"
+
 
 };
 
