@@ -176,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
      
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarBeton');
@@ -205,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
      
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
@@ -234,6 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	removeCondition('JasaKonsFinishingPost');
         removeCondition('JasaKonsStrukturPost');
         removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
      
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
