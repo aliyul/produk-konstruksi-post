@@ -64,6 +64,8 @@ const urlMappingProdukBetonRinganPrecast = {
 
 };
 const urlMappingProdukAlatKonstruksi = {
+"https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
+	
 "https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terbaru.html": "Harga Alat Berat Terbaru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-drum-handler.html": "Harga Alat Berat Drum Handler",
