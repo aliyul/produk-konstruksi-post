@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukKonsPost');
 
         removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
@@ -198,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
@@ -228,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukKonsSaluranPost');
         removeCondition('ProdukKonsPost');
         removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
         removeCondition('JasaKonsPembatasPost');
         removeCondition('JasaKonsPondasiTanahPost');
         removeCondition('JasaKonsPerkuatanTanahLongsorPost');
