@@ -49,6 +49,7 @@ const urlMappingProdukPagarBeton = {
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-murah.html": "Pagar Beton Murah",
   "https://www.betonjayareadymix.com/2019/04/jenis-pagar-beton.html": "Jenis Pagar Beton",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-motif.html": "Pagar Beton Motif",
+    "https://www.betonjayareadymix.com/2019/04/harga-pagar-beton-motif.html": "Harga Pagar Beton Motif",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-pracetak.html": "Pagar Beton Pracetak",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-per-meter.html": "Pagar Beton Per Meter",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-pembatas-tanah.html": "Pagar Beton Pembatas Tanah",
@@ -72,6 +73,7 @@ const urlMappingProdukPagarBeton = {
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-depan-rumah.html": "Pagar Beton Depan Rumah",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-cantik.html": "Pagar Beton Cantik",
   "https://www.betonjayareadymix.com/2019/04/pagar-beton-terbaik.html": "Pagar Beton Terbaik",
+    "https://www.betonjayareadymix.com/2019/04/ukuran-pagar-beton.html": "Ukuran Pagar Beton",
   "https://www.betonjayareadymix.com/2019/05/pagar-beton-bogor.html": "Pagar Beton Bogor",
   "https://www.betonjayareadymix.com/2019/05/pagar-beton-depok.html": "Pagar Beton Depok",
   "https://www.betonjayareadymix.com/2019/05/pagar-beton-bekasi.html": "Pagar Beton Bekasi",
@@ -88,11 +90,9 @@ const urlMappingProdukPagarBeton = {
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-jakarta.html": "Harga Pagar Beton Jakarta",
  "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-bogor.html": "Harga Pagar Beton Bogor",
     "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-depok.html": "Harga Pagar Beton Depok",
-    "https://www.betonjayareadymix.com/2019/05/ukuran-pagar-beton.html": "Ukuran Pagar Beton",
     "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-bekasi.html": "Harga Pagar Beton Bekasi",
     "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-tangerang.html": "Harga Pagar Beton Tangerang",
-    "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-karawang.html": "Harga Pagar Beton Karawang",
-    "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-motif.html": "Harga Pagar Beton Motif"
+    "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-karawang.html": "Harga Pagar Beton Karawang"
  
 
 };
