@@ -97,7 +97,19 @@ const urlMappingProdukPagarBeton = {
 
 };
 const urlMappingProdukPagarRumah = {
- "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+  "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+};
+const urlMappingProdukPagarGrc = {
+// "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+};
+const urlMappingProdukPagarBrc = {
+// "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+};
+const urlMappingProdukPagarBesi = {
+ //"https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+};
+const urlMappingProdukPagarBatuAlam = {
+// "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
 };
 
 
@@ -141,8 +153,12 @@ document.addEventListener("DOMContentLoaded", function() {
      var ProdukKonstruksiPembatasLink = document.getElementById("ProdukKonstruksiPembatas");
      var ProdukPembatasLink = document.getElementById("ProdukPembatas");
      var ProdukPagarPanelBetonLink = document.getElementById("ProdukPagarPanelBeton");
-     var ProdukPagarBetonLink = document.getElementById("ProdukPagarBeton");
-     var ProdukPagarRumahLink = document.getElementById("ProdukPagarRumah");
+     var ProdukPagarBetonLink = document.getElementById("ProdukPagarBeton");  
+     var ProdukPagarRumahLink = document.getElementById("ProdukPagarRumah");  
+     var ProdukPagarGrcLink = document.getElementById("ProdukPagarGrc");  
+     var ProdukPagarBrcLink = document.getElementById("ProdukPagarBrc");  
+     var ProdukPagarBesiLink = document.getElementById("ProdukPagarBesi");  
+     var ProdukPagarBatuAlamLink = document.getElementById("ProdukPagarBatuAlam");
      //var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
      var pageNameProdukPembatas = document.getElementById("pageNameProdukPembatas");
     
@@ -153,6 +169,10 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukPagarPanelBetonLink.style.visibility = 'hidden';
      ProdukPagarBetonLink.style.visibility = 'hidden';
      ProdukPagarRumahLink.style.visibility = 'hidden';
+     ProdukPagarGrcLink.style.visibility = 'hidden';
+     ProdukPagarBrcLink.style.visibility = 'hidden';
+     ProdukPagarBesiLink.style.visibility = 'hidden';
+     ProdukPagarBatuAlamLink.style.visibility = 'hidden';
      //JasaBongkarKeramikLink.style.visibility = 'hidden';
      pageNameProdukPembatas.textContent = "";
 
@@ -182,6 +202,10 @@ document.addEventListener("DOMContentLoaded", function() {
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarBeton');
         removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarBesi');
+        removeCondition('ProdukPagarBatuAlam');
        
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
@@ -213,6 +237,10 @@ document.addEventListener("DOMContentLoaded", function() {
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
         removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarBesi');
+        removeCondition('ProdukPagarBatuAlam');
         
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
@@ -244,11 +272,120 @@ document.addEventListener("DOMContentLoaded", function() {
         //hapus elemen jasa pembatas lain
         removeCondition('ProdukPagarPanelBeton');
         removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarBesi');
+        removeCondition('ProdukPagarBatuAlam');
     
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarRumahLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons];
+    }
+if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
+        restoreCondition('ProdukKonsPembatasPost');
+        restoreCondition('ProdukPagarGrc');
+
+       //hapus elemen div id lain
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+        //hapus elemen jasa pembatas lain
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarBesi');
+        removeCondition('ProdukPagarBatuAlam');
+    
+        ProdukKonstruksiPembatasLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukPagarGrcLink.style.visibility = 'visible';
+        pageNameProdukPembatas.textContent = urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons];
+    }
+if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
+        restoreCondition('ProdukKonsPembatasPost');
+        restoreCondition('ProdukPagarBrc');
+
+       //hapus elemen div id lain
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+        //hapus elemen jasa pembatas lain
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarBesi');
+        removeCondition('ProdukPagarBatuAlam');
+    
+        ProdukKonstruksiPembatasLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukPagarBrcLink.style.visibility = 'visible';
+        pageNameProdukPembatas.textContent = urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons];
+    }
+if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
+        restoreCondition('ProdukKonsPembatasPost');
+        restoreCondition('ProdukPagarBesi');
+
+       //hapus elemen div id lain
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+        //hapus elemen jasa pembatas lain
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarBatuAlam');
+    
+        ProdukKonstruksiPembatasLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukPagarBesiLink.style.visibility = 'visible';
+        pageNameProdukPembatas.textContent = urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons];
     }
  
    });
