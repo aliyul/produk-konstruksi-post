@@ -165,7 +165,28 @@ const urlMappingProdukPagarBrc = {
 
 };
 const urlMappingProdukPagarBesi = {
- //"https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-besi-per-meter.html": "Harga Pagar Besi Per Meter",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-minimalis.html": "Pagar Besi Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-besi.html": "Harga Pagar Besi",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-murah.html": "Pagar Besi Murah",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-minimalis-per-meter.html": "Harga Pagar Minimalis Per Meter",
+  "https://www.betonjayareadymix.com/2019/04/besi-pagar.html": "Besi Pagar",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-rumah.html": "Pagar Besi Rumah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-minimalis-terbaru.html": "Pagar Besi Minimalis Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-besi-permeter.html": "Harga Pagar Besi Permeter",
+  "https://www.betonjayareadymix.com/2019/04/tralis-pagar.html": "Tralis Pagar",
+  "https://www.betonjayareadymix.com/2019/04/pagar-plat-cutting.html": "Pagar Plat Cutting",
+  "https://www.betonjayareadymix.com/2019/04/pagar-lipat.html": "Pagar Lipat",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-tempa.html": "Pagar Besi Tempa",
+  "https://www.betonjayareadymix.com/2019/04/pagar-hollow-minimalis.html": "Pagar Hollow Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-holo-minimalis.html": "Pagar Holo Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-lipat-dorong-minimalis.html": "Pagar Lipat Dorong Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-terali-minimalis.html": "Pagar Terali Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-tralis.html": "Pagar Tralis",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-minimalis.html": "Harga Pagar Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pintu-pagar-besi.html": "Pintu Pagar Besi",
+  "https://www.betonjayareadymix.com/2019/04/pagar-besi-hollow-galvanis.html": "Pagar Besi Hollow Galvanis"
+
 };
 const urlMappingProdukPagarBatuAlam = {
 // "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
