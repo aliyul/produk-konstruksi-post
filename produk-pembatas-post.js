@@ -94,10 +94,48 @@ const urlMappingProdukPagarBeton = {
     "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-tangerang.html": "Harga Pagar Beton Tangerang",
     "https://www.betonjayareadymix.com/2019/05/harga-pagar-beton-karawang.html": "Harga Pagar Beton Karawang"
  
-
 };
 const urlMappingProdukPagarRumah = {
-  "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+  "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern",
+    "https://www.betonjayareadymix.com/2019/04/pagar-rumah-minimalis.html": "Pagar Rumah Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-minimalis-modern.html": "Pagar Rumah Minimalis Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-sederhana-tapi-cantik.html": "Pagar Rumah Sederhana Tapi Cantik",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah.html": "Pagar Rumah Mewah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-cantik.html": "Pagar Rumah Cantik",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah-minimalis-modern.html": "Pagar Rumah Mewah Minimalis Modern",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-rumah-per-meter.html": "Harga Pagar Rumah Per Meter",
+  "https://www.betonjayareadymix.com/2019/04/pagar-teras-rumah-minimalis-modern.html": "Pagar Teras Rumah Minimalis Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-teras-rumah-minimalis.html": "Pagar Teras Rumah Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-minimalis-terbaru.html": "Pagar Rumah Minimalis Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-rumah.html": "Harga Pagar Rumah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-depan-rumah-minimalis.html": "Pagar Depan Rumah Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-modern.html": "Pagar Rumah Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-simple.html": "Pagar Rumah Simple",
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-rumah-minimalis.html": "Harga Pagar Rumah Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/gerbang-rumah.html": "Gerbang Rumah",
+  "https://www.betonjayareadymix.com/2019/04/harga-gerbang-rumah.html": "Harga Gerbang Rumah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-sederhana.html": "Pagar Rumah Sederhana",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-minimalis-modern-terbaru.html": "Pagar Rumah Minimalis Modern Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-subsidi-minimalis.html": "Pagar Rumah Subsidi Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah-minimalis.html": "Pagar Rumah Mewah Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-teras-rumah.html": "Pagar Teras Rumah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-estetik.html": "Pagar Rumah Estetik",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-industrial.html": "Pagar Rumah Industrial",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah-klasik-modern.html": "Pagar Rumah Mewah Klasik Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah-modern.html": "Pagar Rumah Mewah Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-samping-rumah.html": "Pagar Samping Rumah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-type-36.html": "Pagar Rumah Type 36",
+  "https://www.betonjayareadymix.com/2019/04/rumah-pagar-minimalis.html": "Rumah Pagar Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-murah.html": "Pagar Rumah Murah",
+  "https://www.betonjayareadymix.com/2019/04/gerbang-rumah-mewah.html": "Gerbang Rumah Mewah",
+  "https://www.betonjayareadymix.com/2019/04/pagar-perumahan.html": "Pagar Perumahan",
+  "https://www.betonjayareadymix.com/2019/04/gerbang-rumah-modern.html": "Gerbang Rumah Modern",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-minimalis-type-36-72.html": "Pagar Rumah Minimalis Type 36 72",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-terbaru.html": "Pagar Rumah Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-tinggi-tertutup-minimalis.html": "Pagar Rumah Tinggi Tertutup Minimalis",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-klasik-terbaru.html": "Pagar Rumah Klasik Terbaru",
+  "https://www.betonjayareadymix.com/2019/04/pagar-rumah-mewah-klasik.html": "Pagar Rumah Mewah Klasik"
+	
 };
 const urlMappingProdukPagarGrc = {
 // "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
