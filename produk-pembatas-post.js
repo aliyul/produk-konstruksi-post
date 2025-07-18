@@ -299,6 +299,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarPanelBeton');
      
         //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -335,6 +336,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarBeton');
 
        //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -370,6 +372,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarRumah');
 
        //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -405,6 +408,7 @@ if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarGrc');
 
        //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -440,6 +444,7 @@ if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarBrc');
 
        //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
@@ -475,6 +480,7 @@ if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarBesi');
 
        //hapus elemen div id lain
+        removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
         removeCondition('MaterialKonsAtapPenutupPost');
