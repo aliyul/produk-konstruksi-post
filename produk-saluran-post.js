@@ -402,7 +402,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
-        
+        removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
         removeCondition('MaterialKonsStukturPost');
@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
-        
+        removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
         removeCondition('MaterialKonsStukturPost');
@@ -465,8 +465,9 @@ document.addEventListener("DOMContentLoaded", function() {
    if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukUditch');
+	   
      //hapus elemen div id lain
-        
+        removeCondition('ProdukInFurPost');        
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
         removeCondition('MaterialKonsStukturPost');
@@ -497,8 +498,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukGorongBeton');
+	    
      //hapus elemen div id lain
-        
+        removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
         removeCondition('MaterialKonsStukturPost');
