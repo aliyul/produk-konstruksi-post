@@ -119,6 +119,7 @@ if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
         //restoreCondition('ProdukKonstruksi');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -155,6 +156,7 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
         restoreCondition('ProdukPembatas');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -190,6 +192,7 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
         restoreCondition('ProdukSaluranDrainase');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -225,6 +228,7 @@ if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
         restoreCondition('ProdukJalanLantai');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -260,6 +264,7 @@ if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
         restoreCondition('ProdukPondasiStruktur');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -295,6 +300,7 @@ if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
         restoreCondition('ProdukJembatanFlyover');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -330,6 +336,7 @@ if (urlMappingProdukDinding[cleanUrlProdukKons]) {
         restoreCondition('ProdukDindingBangunanModular');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -365,6 +372,7 @@ if (urlMappingProdukPelabuhan[cleanUrlProdukKons]) {
         restoreCondition('ProdukPelabuhanPesisir');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
@@ -400,6 +408,7 @@ if (urlMappingProdukCustom[cleanUrlProdukKons]) {
         restoreCondition('ProdukCustomKhusus');
  
      //hapus elemen div id lain
+        removeCondition1('ProdukInFur');
         removeCondition1('MaterialKons');
         removeCondition1('ProdukKonsSaluran');
         removeCondition1('ProdukKonsPembatas');
