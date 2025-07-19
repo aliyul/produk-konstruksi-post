@@ -253,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukBetonPrecast');
      
         //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -286,6 +287,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPanelBetonPrecast');
      
         //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -319,6 +321,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukBetonRinganPrecast');
      
         //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -352,6 +355,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukAlatKonstruksi');
      
         //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
