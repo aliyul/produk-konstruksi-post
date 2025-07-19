@@ -299,6 +299,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarPanelBeton');
      
         //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -336,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarBeton');
 
        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -372,6 +374,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukPagarRumah');
 
        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -408,6 +411,7 @@ if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarGrc');
 
        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -444,6 +448,7 @@ if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarBrc');
 
        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
@@ -480,6 +485,7 @@ if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukPagarBesi');
 
        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('MaterialKonsStukturPost');
         removeCondition('MaterialKonsFasadPelapisEksteriorPost');
