@@ -402,6 +402,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
@@ -434,6 +435,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
@@ -467,6 +469,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukUditch');
 	   
      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');        
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
@@ -500,6 +503,7 @@ document.addEventListener("DOMContentLoaded", function() {
         restoreCondition('ProdukGorongBeton');
 	    
      //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
         removeCondition('ProdukKonsPembatasPost');
         removeCondition('ProdukKonsPost');
