@@ -16,7 +16,8 @@ const urlMappingProdukKonstruksi = {
   "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
 };
 const urlMappingProdukAlatKonstruksi = {	
-"https://www.betonjayareadymix.com/p/jual-alat-konstruksi.html": "Jual Alat Konstruksi"
+"https://www.betonjayareadymix.com/p/jual-alat-konstruksi.html": "Jual Alat Konstruksi",
+"https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat"
 }
 
 const urlMappingProdukPembatas = {
