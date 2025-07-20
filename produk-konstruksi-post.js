@@ -63,7 +63,16 @@ const urlMappingProdukBetonRinganPrecast = {
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-lantai.html": "Beton Ringan Untuk Lantai"
 
 };
-const urlMappingProdukJualAlatBerat = {
+const urlMappingProdukJualAlatBeratTambang = {
+"https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
+"https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
+"https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
+"https://www.betonjayareadymix.com/2019/03/jual-alat-bor-tambang.html": "Jual Alat Bor Tambang",
+"https://www.betonjayareadymix.com/2019/03/core-drill-bor-tambang.html": "Core Drill Bor Tambang",
+"https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-hidrolik-tambang.html": "Harga Mesin Bor Hidrolik Tambang"
+};
+
+const urlMappingProdukJualExcavator = {
 "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
@@ -192,6 +201,7 @@ const urlMappingProdukJualAlatBerat = {
 
 };
 
+
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukKonsPost = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
@@ -231,21 +241,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
      var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
+     var ProdukAlatKonstruksiPostLink = document.getElementById("ProdukAlatKonstruksiPost");
+     var JualAlatKonstruksiRinganPostLink = document.getElementById("JualAlatKonstruksiRinganPost");
+     var JualAlatBeratTambangPostLink = document.getElementById("JualAlatBeratTambangPost");
+     var JualAlatBeratPostLink = document.getElementById("JualAlatBeratPost");
+	    
+	 	
+     //var ProdukAlatKonstruksiPostLink = document.getElementById("JualAlatKonstruksiPost");
+	
      var ProdukBetonPrecastLink = document.getElementById("ProdukBetonPrecast");
      var ProdukPanelBetonPrecastLink = document.getElementById("ProdukPanelBetonPrecast");
      var ProdukBetonRinganPrecastLink = document.getElementById("ProdukBetonRinganPrecast");
-     var ProdukAlatKonstruksiLink = document.getElementById("ProdukAlatKonstruksi");
      
      var pageNameProdukKonsPost = document.getElementById("pageNameProdukKonsPost");
     
 
      // Default untuk menyembunyikan elemen
      ProdukKonstruksiPostLink.style.visibility = 'hidden';
+     ProdukAlatKonstruksiPostLink.style.visibility = 'hidden';
+     JualAlatKonstruksiRinganPostLink.style.visibility = 'hidden';
+     JualAlatBeratTambangPostLink.style.visibility = 'hidden';
+     JualAlatBeratPostLink.style.visibility = 'hidden';
+	
      ProdukBetonPrecastLink.style.visibility = 'hidden';
      ProdukPanelBetonPrecastLink.style.visibility = 'hidden';
      ProdukBetonRinganPrecastLink.style.visibility = 'hidden';
-     ProdukAlatKonstruksiLink.style.visibility = 'hidden';
-	
+    	
      pageNameProdukKonsPost.textContent = "";
 
     if (urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost]) {
@@ -272,12 +293,19 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsAlatKonstruksiPost');
         removeCondition('JasaKonsJalanPerkerasanPost');
 
+	
         //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
        // removeCondition('');
         removeCondition('ProdukPanelBetonPrecast');
         removeCondition('ProdukBetonRinganPrecast');
-        removeCondition('ProdukAlatKonstruksi');
-       
+        removeCondition('ProdukAlatKonstruksiPost');
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
+       removeCondition('');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatBeratTambangPost');
+	    
         ProdukKonstruksiPostLink.style.visibility = 'visible';
         ProdukBetonPrecastLink.style.visibility = 'visible';
         pageNameProdukKonsPost.textContent = urlMappingProdukBetonPrecast[cleanUrlProdukKonsPost];
@@ -310,8 +338,14 @@ document.addEventListener("DOMContentLoaded", function() {
        // removeCondition('');
         removeCondition('ProdukBetonPrecast');
         removeCondition('ProdukBetonRinganPrecast');
-        removeCondition('ProdukAlatKonstruksi');
-       
+        removeCondition('ProdukAlatKonstruksiPost');
+	    
+        //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
+       removeCondition('');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatBeratTambangPost');
+        	
         ProdukKonstruksiPostLink.style.visibility = 'visible';
         ProdukPanelBetonPrecastLink.style.visibility = 'visible';
         pageNameProdukKonsPost.textContent = urlMappingProdukPanelBetonPrecast[cleanUrlProdukKonsPost];
@@ -344,16 +378,25 @@ document.addEventListener("DOMContentLoaded", function() {
        // removeCondition('');
         removeCondition('ProdukPanelBetonPrecast');
         removeCondition('ProdukBetonPrecast');
-        removeCondition('ProdukAlatKonstruksi');
+        removeCondition('ProdukAlatKonstruksiPost');
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
+       removeCondition('');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatBeratTambangPost');	
        
         ProdukKonstruksiPostLink.style.visibility = 'visible';
         ProdukBetonRinganPrecastLink.style.visibility = 'visible';
         pageNameProdukKonsPost.textContent = urlMappingProdukBetonRinganPrecast[cleanUrlProdukKonsPost];
     }
-   if (urlMappingProdukJualAlatBerat[cleanUrlProdukKonsPost]) {
+   if (urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost]) {
         restoreCondition('ProdukKonsPost');
-        restoreCondition('ProdukAlatKonstruksi');
-     
+        restoreCondition('ProdukAlatKonstruksiPost');
+
+	//restoreCondition('');
+	restoreCondition('JualAlatBeratTambangPost');
+	   
         //hapus elemen div id lain
 	removeCondition('JasaDesInPost');
         removeCondition('ProdukInFurPost');
@@ -374,14 +417,22 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('JasaKonsAlatKonstruksiPost');
         removeCondition('JasaKonsJalanPerkerasanPost');
 
-        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukBetonPrecast
+        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukAlatKonstruksiPost
        // removeCondition('');
         removeCondition('ProdukPanelBetonPrecast');
         removeCondition('ProdukBetonRinganPrecast');
         removeCondition('ProdukBetonPrecast');
-       
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA kecuali JualAlatBeratPost
+       //removeCondition('');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       //removeCondition('');
+	         
         ProdukKonstruksiPostLink.style.visibility = 'visible';
-        ProdukAlatKonstruksiLink.style.visibility = 'visible';
-        pageNameProdukKonsPost.textContent = urlMappingProdukAlatKonstruksi[cleanUrlProdukKonsPost];
+        ProdukAlatKonstruksiPostLink.style.visibility = 'visible';
+	JualAlatBeratTambangPostLink.style.visibility = 'visible';
+
+        pageNameProdukKonsPost.textContent = urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost];
     }
    });
