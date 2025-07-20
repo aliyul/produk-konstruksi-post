@@ -17,7 +17,20 @@ const urlMappingProdukKonstruksi = {
 };
 const urlMappingProdukAlatKonstruksi = {	
 "https://www.betonjayareadymix.com/p/jual-alat-konstruksi.html": "Jual Alat Konstruksi",
+}
+const urlMappingJualAlatKonstruksi = {	
+"https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
 "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat"
+}
+const urlMappingJualAlatKonstruksiBerat = {
+"https://www.betonjayareadymix.com/p/jual-excavator.html": "Jual Excavator",
+"https://www.betonjayareadymix.com/p/jual-bulldozer.html": "Jual Bulldozer"
+}
+const urlMappingJualAlatKonstruksiRingan = {	
+"https://www.betonjayareadymix.com/p/jual-peralatan-tukang.html": "Jual Peralatan Tukang",
+"https://www.betonjayareadymix.com/p/jual-perancah-scaffolding.html": "Jual Perancah Scaffolding",
+"https://www.betonjayareadymix.com/p/jual-genset-konstruksi": "Jual Genset Konstruksi",
+"https://www.betonjayareadymix.com/p/jual-genset-konstruksi": "Jual Mesin Pemotong Besi"
 }
 
 const urlMappingProdukPembatas = {
@@ -193,6 +206,115 @@ if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
         ProdukAlatKonstruksiLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukAlatKonstruksi[cleanUrlProdukKons];
+    }
+if (urlMappingJualAlatKonstruksi[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukAlatKonstruksi');
+ 
+     //hapus elemen div id lain
+        removeCondition('ProdukInFur');
+        removeCondition('MaterialKons');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition('JasaKons');
+       	removeCondition('JasaKonsSub');
+       	removeCondition('MenuKons');
+       	removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsStruktur');
+        removeCondition('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingJualAlatKonstruksi[cleanUrlProdukKons];
+    }
+if (urlMappingJualAlatKonstruksiRingan[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukAlatKonstruksi');
+ 
+     //hapus elemen div id lain
+        removeCondition('ProdukInFur');
+        removeCondition('MaterialKons');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition('JasaKons');
+       	removeCondition('JasaKonsSub');
+       	removeCondition('MenuKons');
+       	removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsStruktur');
+        removeCondition('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingJualAlatKonstruksiRingan[cleanUrlProdukKons];
+    }
+ 
+if (urlMappingJualAlatKonstruksiBerat[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+ 
+        restoreCondition('ProdukAlatKonstruksi');
+ 
+     //hapus elemen div id lain
+        removeCondition('ProdukInFur');
+        removeCondition('MaterialKons');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition('JasaKons');
+       	removeCondition('JasaKonsSub');
+       	removeCondition('MenuKons');
+       	removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsStruktur');
+        removeCondition('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingJualAlatKonstruksiBerat[cleanUrlProdukKons];
     }
 
 if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
