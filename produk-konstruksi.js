@@ -4,7 +4,7 @@ const urlMappingProdukKonstruksi = {
 "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
   "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
   "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/p/alat-konstruksi.html": "Alat Konstruksi",
+  "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
  
   "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
   "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
