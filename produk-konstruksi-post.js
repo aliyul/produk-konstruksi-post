@@ -64,6 +64,7 @@ const urlMappingProdukBetonRinganPrecast = {
 
 };
 const urlMappingProdukJualAlatBeratTambang = {
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pertambangan.html": "Harga Alat Berat Pertambangan",
 "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
@@ -73,6 +74,11 @@ const urlMappingProdukJualAlatBeratTambang = {
 };
 
 const urlMappingProdukJualAlatBerat = {
+
+"https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
+"https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
+"https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile",
+
  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terbaru.html": "Harga Alat Berat Terbaru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-drum-handler.html": "Harga Alat Berat Drum Handler",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-skid-steer-loader.html": "Harga Alat Berat Skid Steer Loader",
@@ -104,7 +110,6 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terkecil.html": "Harga Alat Berat Terkecil",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-vibro.html": "Harga Alat Berat Vibro",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer.html": "Harga Alat Berat Bulldozer",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pertambangan.html": "Harga Alat Berat Pertambangan",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-mini-bekas.html": "Harga Alat Berat Mini Bekas",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-100.html": "Harga Alat Berat PC 100",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sheep-foot-tamping.html": "Harga Alat Berat Sheep Foot Tamping",
@@ -190,11 +195,7 @@ const urlMappingProdukJualAlatBerat = {
 };
 
 const urlMappingProdukJualAlatKonstruksiRingan = {
-"https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
-"https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik",
-"https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
-"https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile"
-
+"https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
 };
 
 
