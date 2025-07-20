@@ -431,4 +431,96 @@ document.addEventListener("DOMContentLoaded", function() {
 
         pageNameProdukKonsPost.textContent = urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost];
     }
+
+   if (urlMappingProdukJualAlatBerat[cleanUrlProdukKonsPost]) {
+        restoreCondition('ProdukKonsPost');
+        restoreCondition('ProdukAlatKonstruksiPost');
+
+	//restoreCondition('');
+	restoreCondition('JualAlatBeratPost');
+	   
+        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+
+        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukAlatKonstruksiPost
+       // removeCondition('');
+        removeCondition('ProdukPanelBetonPrecast');
+        removeCondition('ProdukBetonRinganPrecast');
+        removeCondition('ProdukBetonPrecast');
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA kecuali JualAlatBeratPost
+       //removeCondition('');
+       removeCondition('JualAlatBeratTambangPost');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       //removeCondition('');
+	         
+        ProdukKonstruksiPostLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiPostLink.style.visibility = 'visible';
+	JualAlatBeratPostLink.style.visibility = 'visible';
+
+        pageNameProdukKonsPost.textContent = urlMappingProdukJualAlatBerat[cleanUrlProdukKonsPost];
+    }
+
+if (urlMappingProdukJualAlatKonstruksiRinganPost[cleanUrlProdukKonsPost]) {
+        restoreCondition('ProdukKonsPost');
+        restoreCondition('ProdukAlatKonstruksiPost');
+
+	//restoreCondition('');
+	restoreCondition('JualAlatKonstruksiRinganPost');
+	   
+        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+
+        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukAlatKonstruksiPost
+       // removeCondition('');
+        removeCondition('ProdukPanelBetonPrecast');
+        removeCondition('ProdukBetonRinganPrecast');
+        removeCondition('ProdukBetonPrecast');
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA kecuali JualAlatBeratPost
+       //removeCondition('');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatBeratTambangPost');
+       //removeCondition('');
+	         
+        ProdukKonstruksiPostLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiPostLink.style.visibility = 'visible';
+	JualAlatKonstruksiRinganPostLink.style.visibility = 'visible';
+
+        pageNameProdukKonsPost.textContent = urlMappingProdukJualAlatKonstruksiRinganPost[cleanUrlProdukKonsPost];
+    }
    });
