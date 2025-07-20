@@ -63,7 +63,7 @@ const urlMappingProdukBetonRinganPrecast = {
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-lantai.html": "Beton Ringan Untuk Lantai"
 
 };
-const urlMappingProdukAlatKonstruksi = {
+const urlMappingProdukJualAlatBerat = {
 "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukBetonRinganPrecastLink.style.visibility = 'visible';
         pageNameProdukKonsPost.textContent = urlMappingProdukBetonRinganPrecast[cleanUrlProdukKonsPost];
     }
-   if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKonsPost]) {
+   if (urlMappingProdukJualAlatBerat[cleanUrlProdukKonsPost]) {
         restoreCondition('ProdukKonsPost');
         restoreCondition('ProdukAlatKonstruksi');
      
