@@ -21,12 +21,6 @@ const urlMappingProdukAlatKonstruksi = {
 "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang"
 
 }
-const urlMappingJualAlatKonstruksiRingan = {	
-"https://www.betonjayareadymix.com/p/jual-peralatan-tukang.html": "Jual Peralatan Tukang",
-"https://www.betonjayareadymix.com/p/jual-perancah-scaffolding.html": "Jual Perancah Scaffolding",
-"https://www.betonjayareadymix.com/p/jual-genset-konstruksi": "Jual Genset Konstruksi",
-"https://www.betonjayareadymix.com/p/jual-genset-konstruksi": "Jual Mesin Pemotong Besi"
-}
 
 const urlMappingProdukPembatas = {
  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
