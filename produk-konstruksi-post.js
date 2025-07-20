@@ -72,20 +72,12 @@ const urlMappingProdukJualAlatBeratTambang = {
 "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-hidrolik-tambang.html": "Harga Mesin Bor Hidrolik Tambang"
 };
 
-const urlMappingProdukJualExcavator = {
-"https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
-"https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
-"https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
-"https://www.betonjayareadymix.com/2019/03/jual-alat-bor-tambang.html": "Jual Alat Bor Tambang",
-"https://www.betonjayareadymix.com/2019/03/core-drill-bor-tambang.html": "Core Drill Bor Tambang",
-"https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-hidrolik-tambang.html": "Harga Mesin Bor Hidrolik Tambang",
-	
-"https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terbaru.html": "Harga Alat Berat Terbaru",
+const urlMappingProdukJualAlatBerat = {
+ "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terbaru.html": "Harga Alat Berat Terbaru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-drum-handler.html": "Harga Alat Berat Drum Handler",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-skid-steer-loader.html": "Harga Alat Berat Skid Steer Loader",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-forklift.html": "Harga Alat Berat Forklift",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
+  
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-track-loader.html": "Harga Alat Berat Track Loader",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wales-baru.html": "Harga Alat Berat Wales Baru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-roller.html": "Harga Alat Berat Roller",
@@ -119,8 +111,7 @@ const urlMappingProdukJualExcavator = {
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-three-wheel-macadam.html": "Harga Alat Berat Three Wheel Macadam",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-200.html": "Harga Alat Berat PC 200",
     "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-dump-truck.html": "Harga Alat Berat Dump Truck",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-boom-lift.html": "Harga Alat Berat Boom Lift",
+    "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-boom-lift.html": "Harga Alat Berat Boom Lift",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer-baru.html": "Harga Alat Berat Bulldozer Baru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-caterpillar.html": "Harga Alat Berat Caterpillar",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sumitomo.html": "Harga Alat Berat Sumitomo",
@@ -181,8 +172,7 @@ const urlMappingProdukJualExcavator = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bekasi.html": "Alat Berat Bekasi",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bogor.html": "Alat Berat Bogor",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-lebak.html": "Alat Berat Lebak",
-  "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik",
-
+  
   "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-jakarta.html": "Jual Alat Berat Jakarta",
   "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-tangerang.html": "Jual Alat Berat Tangerang",
   "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-baru.html": "Jual Alat Berat Baru",
@@ -197,7 +187,13 @@ const urlMappingProdukJualExcavator = {
   "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bandung.html": "Jual Alat Berat Bandung",
   "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas.html": "Jual Alat Berat Bekas",
   "https://www.betonjayareadymix.com/2019/02/jual-beko.html": "Jual Beko"
+};
 
+const urlMappingProdukJualAlatKonstruksiRingan = {
+"https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
+"https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik",
+"https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
+"https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile"
 
 };
 
