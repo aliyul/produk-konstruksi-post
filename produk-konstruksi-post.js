@@ -64,6 +64,9 @@ const urlMappingProdukBetonRinganPrecast = {
 
 };
 const urlMappingProdukJualAlatBeratTambang = {
+
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang-batu-bara.html": "Alat Berat Tambang Batu Bara",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pertambangan.html": "Harga Alat Berat Pertambangan",
 "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
 "https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
@@ -139,7 +142,6 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-grader.html": "Alat Berat Grader",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-caterpillar.html": "Alat Berat Caterpillar",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-crane.html": "Alat Berat Crane",
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-loader.html": "Alat Berat Loader",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-excavator.html": "Alat Berat Excavator",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-meratakan-jalan.html": "Alat Berat Untuk Meratakan Jalan",
@@ -147,7 +149,6 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-pembersihan-lahan.html": "Alat Berat Untuk Pembersihan Lahan",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-pemadatan-tanah.html": "Alat Berat Untuk Pemadatan Tanah",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-meratakan-tanah.html": "Alat Berat Untuk Meratakan Tanah",
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang-batu-bara.html": "Alat Berat Tambang Batu Bara",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tandem-roller.html": "Alat Berat Tandem Roller",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-roller.html": "Alat Berat Roller",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-sumitomo.html": "Alat Berat Sumitomo",
