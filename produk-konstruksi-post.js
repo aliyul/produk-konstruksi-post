@@ -194,7 +194,7 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/jual-beko.html": "Jual Beko"
 };
 
-const urlMappingProdukJualAlatKonstruksiRingan = {
+const urlMappingProdukJualAlatKonstruksiRinganPost = {
 "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
 };
 
