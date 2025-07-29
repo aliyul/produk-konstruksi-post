@@ -509,6 +509,52 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukBoxCulvertLink.style.visibility = 'visible';
         pageNameProdukSaluran.textContent = urlMappingBoxCulvert[cleanUrlProdukSaluranKons];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBoxCulvert[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Box Culvert Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/box-culvert-beton-precast.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBoxCulvert[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
    if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukUditch');
@@ -543,6 +589,52 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukUditchLink.style.visibility = 'visible';
         pageNameProdukSaluran.textContent = urlMappingUditch[cleanUrlProdukSaluranKons];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "U ditch Tutup Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/u-ditch-tutup-beton-precast.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingUditch[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
     if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukGorongBeton');
@@ -578,4 +670,49 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukGorongBetonLink.style.visibility = 'visible';
         pageNameProdukSaluran.textContent = urlMappingGorongBeton[cleanUrlProdukSaluranKons];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Gorong gorong Saluran Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/gorong-gorong-saluran-beton-precast.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingGorongBeton[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    });
