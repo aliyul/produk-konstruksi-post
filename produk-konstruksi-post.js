@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function() {
              {
                    "@type": "ListItem",
                    "position": 3,
-                   "name": "Produk Beton Precast",
+                   "name": "Beton Precast",
                    "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
                },
               
@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
              {
                    "@type": "ListItem",
                    "position": 3,
-                   "name": "Produk Panel Beton Precast",
+                   "name": "Panel Beton Precast",
                    "item": "https://www.betonjayareadymix.com/p/panel-beton-precast.html"
                },
               
@@ -489,7 +489,7 @@ document.addEventListener("DOMContentLoaded", function() {
              {
                    "@type": "ListItem",
                    "position": 3,
-                   "name": "Produk Beton Ringan Precast",
+                   "name": "Beton Ringan Precast",
                    "item": "https://www.betonjayareadymix.com/p/beton-ringan-precast.html"
                },
               
