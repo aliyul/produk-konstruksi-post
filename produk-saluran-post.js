@@ -431,6 +431,51 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukSaluran.textContent = urlMappingBuis[cleanUrlProdukSaluranKons];
     }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingBuis[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Buis Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/buis-beton-precast.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingBuis[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
     if (urlMappingBoxCulvert[cleanUrlProdukSaluranKons]) {
         restoreCondition('ProdukKonsSaluranPost');
         restoreCondition('ProdukBoxCulvert');
