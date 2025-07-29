@@ -332,6 +332,53 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukPagarPanelBetonLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarPanelBeton[cleanUrlProdukPembatasKons];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarPanelBeton[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Panel Beton",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-panel-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarPanelBeton[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
     if (urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarBeton');
@@ -369,6 +416,53 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukPagarBetonLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Beton",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    if (urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarRumah');
@@ -406,6 +500,52 @@ document.addEventListener("DOMContentLoaded", function() {
         ProdukPagarRumahLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Rumah",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-rumah.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarRumah[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarGrc');
@@ -443,6 +583,53 @@ if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
         ProdukPagarGrcLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons];
     }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Grc",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-grc.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarBrc');
@@ -480,6 +667,52 @@ if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
         ProdukPagarBrcLink.style.visibility = 'visible';
         pageNameProdukPembatas.textContent = urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons];
     }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Brc",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-brc.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
 if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarBesi');
@@ -518,6 +751,52 @@ if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
         pageNameProdukPembatas.textContent = urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons];
     }
  
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pagar Besi",
+                   "item": "https://www.betonjayareadymix.com/p/pagar-besi.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
    });
 
 
