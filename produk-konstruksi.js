@@ -34,10 +34,12 @@ const urlMappingProdukPembatas = {
 
 };
 const urlMappingProdukSaluran = {
-  "https://www.betonjayareadymix.com/p/buis-beton-precast.html": "Buis Beton Precast",
-  "https://www.betonjayareadymix.com/p/box-culvert-beton-precast.html": "Box Culvert Beton Precast",
-  "https://www.betonjayareadymix.com/p/u-ditch-tutup-beton-precast.html": "U Ditch Tutup Beton Precast",
-  "https://www.betonjayareadymix.com/p/gorong-gorong-saluran-beton-precast.html": "Gorong Gorong Saluran Beton Precast"
+  "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",
+  "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",
+  "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",
+  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton",
+  "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",
+  "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"
 };
 const urlMappingProdukJalanLantai = {
  "https://www.betonjayareadymix.com/p/paving-block.html": "Paving Block",
