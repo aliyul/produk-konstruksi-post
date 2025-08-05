@@ -725,7 +725,7 @@ if (urlMappingProdukDinding[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
-        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukDindingBangunanModularLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukDinding[cleanUrlProdukKons];
     }
