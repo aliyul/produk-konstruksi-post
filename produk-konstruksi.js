@@ -46,7 +46,7 @@ const urlMappingProdukJalanLantai = {
   "https://www.betonjayareadymix.com/p/grass-block.html": "Grass Block"
 };
 const urlMappingProdukPondasi = {
-  
+  'https://www.betonjayareadymix.com/p/tiang-pancang-beton.html": "Tiang Pancang Beton"
 };
 const urlMappingProdukJembatan = {
   
