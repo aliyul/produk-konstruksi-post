@@ -52,7 +52,7 @@ const urlMappingProdukJembatan = {
   
 };
 const urlMappingProdukDinding = {
-  
+ "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton"
 };
 const urlMappingProdukPelabuhan = {
   
