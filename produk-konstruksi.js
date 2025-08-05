@@ -30,7 +30,7 @@ const urlMappingProdukPembatas = {
   "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
   "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",
   "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",
-  "https://www.betonjayareadymix.com/p/kanstin-beton-precast.html": "Kanstin Beton Precast"
+  "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"
 
 };
 const urlMappingProdukSaluran = {
