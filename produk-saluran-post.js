@@ -305,7 +305,7 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/analisa-harga-satuan-pekerjaan-saluran.html": "Analisa Harga Satuan Pekerjaan Saluran",
     "https://www.betonjayareadymix.com/2021/04/analisa-harga-pemasangan-u-ditch.html": "Analisa Harga Pemasangan U Ditch",
    
-
+"https://www.betonjayareadymix.com/2021/04/harga-cover-tutup-u-ditch.html": "Harga Cover Tutup U Ditch",
  "https://www.betonjayareadymix.com/2021/04/harga-cover-u-ditch-dusaspun.html": "Harga Cover U Ditch Dusaspun",
     "https://www.betonjayareadymix.com/2021/04/harga-tutup-u-ditch-30-x-30.html": "Harga Tutup U Ditch 30 x 30",
     "https://www.betonjayareadymix.com/2021/04/harga-tutup-u-ditch-40x40x120.html": "Harga Tutup U Ditch 40x40x120",
