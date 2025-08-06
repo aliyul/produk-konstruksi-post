@@ -52,7 +52,12 @@ const urlMappingProdukJembatan = {
   
 };
 const urlMappingProdukDinding = {
- "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton"
+ "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
+  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata ringan hebel modular",
+  "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich panel modular",
+  "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding panel beton precast modular",
+  "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan prefab modular",
+  "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular kamar mandi toilet"
 };
 const urlMappingProdukPelabuhan = {
   
