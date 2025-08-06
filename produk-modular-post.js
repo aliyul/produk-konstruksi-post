@@ -7,7 +7,13 @@ https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html
 */
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingModularKamarMandiToilet = {
-"https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah"
+//"https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah"
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-3-pintu.html": "Toilet modular 3 pintu",
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-custom-desain.html": "Toilet modular custom desain",
+  "https://www.betonjayareadymix.com/2019/04/kamar-mandi-modular-portable.html": "Kamar mandi modular portable",
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-site-office.html": "Toilet modular site office",
+  "https://www.betonjayareadymix.com/2019/04/harga-toilet-modular.html": "Harga toilet modular"
+
 };
 const urlMappingBangunanPrefabModular = {
     "https://www.betonjayareadymix.com/2021/04/arti-box-culvert.html": "Arti Box Culvert"
