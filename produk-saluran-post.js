@@ -409,6 +409,8 @@ document.addEventListener("DOMContentLoaded", function() {
      var ProdukUditchLink = document.getElementById("ProdukUditch");
      var ProdukGorongBetonLink = document.getElementById("ProdukGorongBeton");
      var ProdukSaluranBetonLink = document.getElementById("ProdukSaluranBeton");
+     var ProdukPipaBetonLink = document.getElementById("ProdukPipaBeton");
+	
 	
 	  var pageNameProdukSaluran = document.getElementById("pageNameProdukSaluran");
     
@@ -421,6 +423,7 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukUditchLink.style.visibility = 'hidden';
      ProdukGorongBetonLink.style.visibility = 'hidden';
 	 ProdukSaluranBetonLink.style.visibility = 'hidden';
+	 ProdukPipaBetonLink.style.visibility = 'hidden';
      pageNameProdukSaluran.textContent = "";
 
     if (urlMappingBuis[cleanUrlProdukSaluranKons]) {
@@ -451,6 +454,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukGorongBeton');
         removeCondition('ProdukSaluranBeton');
+        removeCondition('ProdukPipaBeton');
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -529,6 +533,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukUditch');
         removeCondition('ProdukBuis');
         removeCondition('ProdukGorongBeton');
+        removeCondition('ProdukSaluranBeton');
+        removeCondition('ProdukPipaBeton');
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -610,6 +616,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBuis');
         removeCondition('ProdukGorongBeton');
         removeCondition('ProdukSaluranBeton');
+        removeCondition('ProdukPipaBeton');
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -692,6 +699,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBuis');
         removeCondition('ProdukUditch');
         removeCondition('ProdukSaluranBeton');
+        removeCondition('ProdukPipaBeton');
 		
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
@@ -775,6 +783,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBuis');
         removeCondition('ProdukUditch');
         removeCondition('ProdukGorongBeton');
+        removeCondition('ProdukPipaBeton');
 		
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
@@ -827,4 +836,89 @@ document.addEventListener("DOMContentLoaded", function() {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
+	
+    if (urlMappingPipaBeton[cleanUrlProdukSaluranKons]) {
+        restoreCondition('ProdukKonsSaluranPost');
+        restoreCondition('ProdukPipaBeton');
+	    
+     //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	
+     
+     //hapus elemen saluran lain
+        removeCondition('ProdukBoxCulvert');
+        removeCondition('ProdukBuis');
+        removeCondition('ProdukUditch');
+        removeCondition('ProdukGorongBeton');
+        removeCondition('ProdukSaluranBeton');
+		
+       
+        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukSaluranLink.style.visibility = 'visible';
+        ProdukPipaBetonLink.style.visibility = 'visible';
+        pageNameProdukSaluran.textContent = urlMappingPipaBeton[cleanUrlProdukSaluranKons];
+    }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingPipaBeton[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Pipa Beton",
+                   "item": "https://www.betonjayareadymix.com/p/pipa-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingPipaBeton[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+	
    });
