@@ -352,10 +352,6 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",
 
 };
-const urlMappingGorongBeton = {
-
-
- };
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukSaluranKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
