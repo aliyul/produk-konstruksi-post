@@ -28,7 +28,23 @@ const urlMappingSaluranBeton = {
 
 };
 const urlMappingPipaBeton = {
-
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-gorong-gorong.html": "Pipa Beton Gorong Gorong",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-saluran-air.html": "Pipa Beton Saluran Air",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-ukuran.html": "Pipa Beton Ukuran",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-murah.html": "Pipa Beton Murah",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-diameter.html": "Pipa Beton Diameter",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-jakarta.html": "Pipa Beton Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-terbaru.html": "Pipa Beton Terbaru",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bogor.html": "Pipa Beton Bogor",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bekasi.html": "Pipa Beton Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-depok.html": "Pipa Beton Depok",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-tangerang.html": "Pipa Beton Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang"
 };
 const urlMappingBuis = {
 "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah",
