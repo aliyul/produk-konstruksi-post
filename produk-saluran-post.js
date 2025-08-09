@@ -26,6 +26,9 @@ const urlMappingSaluranBeton = {
   "https://www.betonjayareadymix.com/2022/02/saluran-beton-karawang.html": "Saluran Beton Karawang"
 
 };
+const urlMappingPipaBeton = {
+
+};
 const urlMappingBuis = {
 "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-precon.html": "Buis Beton Precon",
