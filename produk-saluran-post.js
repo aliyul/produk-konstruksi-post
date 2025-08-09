@@ -1,5 +1,17 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
+const urlMappingGorongBeton = {
+"https://www.betonjayareadymix.com/2022/02/harga-gorong-gorong-beton.html": "Harga Gorong Gorong Beton",
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bogor.html": "Gorong Gorong Beton Bogor",
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bekasi.html": "Gorong Gorong Beton Bekasi",
+  "https://www.betonjayareaadymix.com/2022/02/gorong-gorong-beton-jakarta.html": "Gorong Gorong Beton Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-tangerang.html": "Gorong Gorong Beton Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-depok.html": "Gorong Gorong Beton Depok",
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-karawang.html": "Gorong Gorong Beton Karawang"
+};
+const urlMappingSaluranBeton = {
+
+};
 const urlMappingBuis = {
 "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-precon.html": "Buis Beton Precon",
