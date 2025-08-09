@@ -5,6 +5,7 @@
 */
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingProdukBetonPrecast = {
+"https://www.betonjayareadymix.com/2022/01/standar-pabrik-precast.html": "Standar Pabrik Precast",
 "https://www.betonjayareadymix.com/2021/09/harga-beton-precast.html": "Harga Beton Precast",
   "https://www.betonjayareadymix.com/2021/09/daftar-harga-beton-precast.html": "Daftar Harga Beton Precast",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-jembatan.html": "Harga Beton Precast Jembatan",
