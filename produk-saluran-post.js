@@ -398,7 +398,9 @@ document.addEventListener("DOMContentLoaded", function() {
      var ProdukBoxCulvertLink = document.getElementById("ProdukBoxCulvert");
      var ProdukUditchLink = document.getElementById("ProdukUditch");
      var ProdukGorongBetonLink = document.getElementById("ProdukGorongBeton");
-     var pageNameProdukSaluran = document.getElementById("pageNameProdukSaluran");
+     var ProdukSaluranBetonLink = document.getElementById("ProdukSaluranBeton");
+	
+	  var pageNameProdukSaluran = document.getElementById("pageNameProdukSaluran");
     
 
      // Default untuk menyembunyikan elemen
@@ -408,6 +410,7 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukBoxCulvertLink.style.visibility = 'hidden';
      ProdukUditchLink.style.visibility = 'hidden';
      ProdukGorongBetonLink.style.visibility = 'hidden';
+	 ProdukSaluranBetonLink.style.visibility = 'hidden';
      pageNameProdukSaluran.textContent = "";
 
     if (urlMappingBuis[cleanUrlProdukSaluranKons]) {
@@ -437,6 +440,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukUditch');
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukGorongBeton');
+        removeCondition('ProdukSaluranBeton');
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -595,6 +599,7 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
         removeCondition('ProdukGorongBeton');
+        removeCondition('ProdukSaluranBeton');
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -676,6 +681,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBoxCulvert');
         removeCondition('ProdukBuis');
         removeCondition('ProdukUditch');
+        removeCondition('ProdukSaluranBeton');
+		
        
         ProdukKonstruksiSaluranLink.style.visibility = 'visible';
         ProdukSaluranLink.style.visibility = 'visible';
@@ -710,7 +717,7 @@ document.addEventListener("DOMContentLoaded", function() {
                    "@type": "ListItem",
                    "position": 4,
                    "name": "Gorong gorong Saluran Beton Precast",
-                   "item": "https://www.betonjayareadymix.com/p/gorong-gorong-saluran-beton-precast.html"
+                   "item": "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html"
                },
               
                {
