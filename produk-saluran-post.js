@@ -712,7 +712,7 @@ document.addEventListener("DOMContentLoaded", function() {
              {
                    "@type": "ListItem",
                    "position": 4,
-                   "name": "Gorong gorong Saluran Beton Precast",
+                   "name": "Gorong gorong Beton",
                    "item": "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html"
                },
               
@@ -720,6 +720,89 @@ document.addEventListener("DOMContentLoaded", function() {
                    "@type": "ListItem",
                    "position": 5,
                    "name": urlMappingGorongBeton[cleanUrlProdukSaluranKons],
+                   "item": cleanUrlProdukSaluranKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+ 
+    if (urlMappingSaluranBeton[cleanUrlProdukSaluranKons]) {
+        restoreCondition('ProdukKonsSaluranPost');
+        restoreCondition('ProdukSaluranBeton');
+	    
+     //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	
+     
+     //hapus elemen saluran lain
+        removeCondition('ProdukBoxCulvert');
+        removeCondition('ProdukBuis');
+        removeCondition('ProdukUditch');
+        removeCondition('ProdukGorongBeton');
+		
+       
+        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukSaluranLink.style.visibility = 'visible';
+        ProdukSaluranBetonLink.style.visibility = 'visible';
+        pageNameProdukSaluran.textContent = urlMappingSaluranBeton[cleanUrlProdukSaluranKons];
+    }
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingSaluranBeton[cleanUrlProdukSaluranKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Saluran & Drainase",
+                   "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Saluran Beton",
+                   "item": "https://www.betonjayareadymix.com/p/saluran-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingSaluranBeton[cleanUrlProdukSaluranKons],
                    "item": cleanUrlProdukSaluranKons
                }
            ]
