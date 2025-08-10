@@ -1,9 +1,19 @@
 /*"https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
   "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
   "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/p/alat-konstruksi.html": "Alat Konstruksi",
-*/
+  "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
+ 
+  "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
+  "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
+  "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",
+  "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur",
+  "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
+  "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir",
+  "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"*/
+
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
+//"https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast"
 const urlMappingProdukBetonPrecast = {
 "https://www.betonjayareadymix.com/2022/01/standar-pabrik-precast.html": "Standar Pabrik Precast",
 "https://www.betonjayareadymix.com/2021/09/harga-beton-precast.html": "Harga Beton Precast",
@@ -41,9 +51,12 @@ const urlMappingProdukBetonPrecast = {
   "https://www.betonjayareadymix.com/2021/04/wika-beton-precast.html": "Wika Beton Precast"
 
 };
+//  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast"
 const urlMappingProdukPanelBetonPrecast = {
 	
 };
+
+// "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast"
 const urlMappingProdukBetonRinganPrecast = {
   "https://www.betonjayareadymix.com/2021/07/berapa-ukuran-beton-ringan.html": "Berapa Ukuran Beton Ringan",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-struktural.html": "Beton Ringan Struktural",
@@ -65,6 +78,8 @@ const urlMappingProdukBetonRinganPrecast = {
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-lantai.html": "Beton Ringan Untuk Lantai"
 
 };
+
+//SUB "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
 const urlMappingProdukJualAlatBeratTambang = {
 
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
