@@ -46,7 +46,12 @@ const urlMappingProdukJalanLantai = {
   "https://www.betonjayareadymix.com/p/grass-block.html": "Grass Block"
 };
 const urlMappingProdukPondasi = {
-  "https://www.betonjayareadymix.com/p/tiang-pancang-beton.html": "Tiang Pancang Beton"
+   "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",
+  "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",
+  "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",
+  "https://www.betonjayareadymix.com/p/produk-strauss-pile.html": "Produk Strauss Pile",
+  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting"
+
 };
 const urlMappingProdukJembatan = {
   
