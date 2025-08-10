@@ -50,7 +50,11 @@ const urlMappingProdukPondasi = {
   "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",
   "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",
   "https://www.betonjayareadymix.com/p/produk-strauss-pile.html": "Produk Strauss Pile",
-  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting"
+  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting",
+  "https://www.betonjayareadymix.com/p/produk-pondasi-cakar-ayam.html": "Produk Pondasi Cakar Ayam",
+  "https://www.betonjayareadymix.com/p/produk-pondasi-sumuran.html": "Produk Pondasi Sumuran",
+  "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"
+
 
 };
 const urlMappingProdukJembatan = {
