@@ -268,14 +268,16 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
+	 var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
+
 	//SUB PRODUK ALAT KONSTRUKSI
-     var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
      var ProdukAlatKonstruksiPostLink = document.getElementById("ProdukAlatKonstruksiPost");
      var JualAlatKonstruksiRinganPostLink = document.getElementById("JualAlatKonstruksiRinganPost");
      var JualAlatBeratTambangPostLink = document.getElementById("JualAlatBeratTambangPost");
      var JualAlatBeratPostLink = document.getElementById("JualAlatBeratPost");
 
 	//SUB PRODUK PONDASI & STRUKTUR
+	var ProdukPondasiStrukturPostLink = document.getElementById("ProdukPondasiStrukturPost");
 	var ProdukTiangPancangBetonPostLink = document.getElementById("ProdukTiangPancangBetonPost");
      var ProdukBorePilePostLink = document.getElementById("ProdukBorePilePost");
      var ProdukMiniPilePostLink = document.getElementById("ProdukMiniPilePost");
@@ -346,12 +348,24 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukPanelBetonPrecast');
         removeCondition('ProdukBetonRinganPrecast');
         removeCondition('ProdukAlatKonstruksiPost');
+        removeCondition('ProdukPondasiStrukturPost');
 
-	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
+	 //hapus elemen Sub ProdukPondasiStrukturPost SEMUA
+       removeCondition('ProdukTiangPancangBetonPost');
+       removeCondition('ProdukBorePilePost');
+       removeCondition('ProdukMiniPilePost');
+       removeCondition('ProdukStraussPilePost');
+       removeCondition('ProdukSoilImprovementGroutingPost');
+       removeCondition('ProdukPondasiCakarAyamPost');
+       removeCondition('ProdukPondasiSumuranPost');
+       removeCondition('ProdukPondasiTapakBetonBertulangPost');
+		
+	//hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
        removeCondition('');
        removeCondition('JualAlatKonstruksiRinganPost');
        removeCondition('JualAlatBeratPost');
        removeCondition('JualAlatBeratTambangPost');
+	 
 	    
         ProdukKonstruksiPostLink.style.visibility = 'visible';
         ProdukBetonPrecastLink.style.visibility = 'visible';
@@ -425,6 +439,17 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukBetonPrecast');
         removeCondition('ProdukBetonRinganPrecast');
         removeCondition('ProdukAlatKonstruksiPost');
+		removeCondition('ProdukPondasiStrukturPost');
+
+	 //hapus elemen Sub ProdukPondasiStrukturPost SEMUA
+       removeCondition('ProdukTiangPancangBetonPost');
+       removeCondition('ProdukBorePilePost');
+       removeCondition('ProdukMiniPilePost');
+       removeCondition('ProdukStraussPilePost');
+       removeCondition('ProdukSoilImprovementGroutingPost');
+       removeCondition('ProdukPondasiCakarAyamPost');
+       removeCondition('ProdukPondasiSumuranPost');
+       removeCondition('ProdukPondasiTapakBetonBertulangPost');
 	    
         //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
        removeCondition('');
@@ -504,6 +529,17 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukPanelBetonPrecast');
         removeCondition('ProdukBetonPrecast');
         removeCondition('ProdukAlatKonstruksiPost');
+	   removeCondition('ProdukPondasiStrukturPost');
+
+	 //hapus elemen Sub ProdukPondasiStrukturPost SEMUA
+       removeCondition('ProdukTiangPancangBetonPost');
+       removeCondition('ProdukBorePilePost');
+       removeCondition('ProdukMiniPilePost');
+       removeCondition('ProdukStraussPilePost');
+       removeCondition('ProdukSoilImprovementGroutingPost');
+       removeCondition('ProdukPondasiCakarAyamPost');
+       removeCondition('ProdukPondasiSumuranPost');
+       removeCondition('ProdukPondasiTapakBetonBertulangPost');
 
 	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA
        removeCondition('');
