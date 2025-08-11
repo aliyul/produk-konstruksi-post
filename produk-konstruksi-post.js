@@ -536,6 +536,100 @@ document.addEventListener("DOMContentLoaded", function() {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
+//SUB PRODUK TIANG PANCANG BETON
+if (urlMappingProdukTiangPancangBeton[cleanUrlProdukKonsPost]) {
+        restoreCondition('ProdukKonsPost');
+        restoreCondition('ProdukAlatKonstruksiPost');
+
+	//restoreCondition('');
+	restoreCondition('JualAlatBeratTambangPost');
+	   
+        //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+
+        //hapus elemen ProdukKonstruksiPost lain SELAIN ProdukAlatKonstruksiPost
+       // removeCondition('');
+        removeCondition('ProdukPanelBetonPrecast');
+        removeCondition('ProdukBetonRinganPrecast');
+        removeCondition('ProdukBetonPrecast');
+
+	 //hapus elemen Sub ProdukAlatKonstruksiPost SEMUA kecuali JualAlatBeratPost
+       //removeCondition('');
+       removeCondition('JualAlatBeratPost');
+       removeCondition('JualAlatKonstruksiRinganPost');
+       //removeCondition('');
+	         
+        ProdukKonstruksiPostLink.style.visibility = 'visible';
+        ProdukAlatKonstruksiPostLink.style.visibility = 'visible';
+	JualAlatBeratTambangPostLink.style.visibility = 'visible';
+
+        pageNameProdukKonsPost.textContent = urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost];
+    }
+
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+	     
+               {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Alat Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Jual Alat Berat Tambang",
+                   "item": "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost],
+                   "item": cleanUrlProdukKonsPost
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+  //SUB PRODUK ALAT KONSTRUKSI
    if (urlMappingProdukJualAlatBeratTambang[cleanUrlProdukKonsPost]) {
         restoreCondition('ProdukKonsPost');
         restoreCondition('ProdukAlatKonstruksiPost');
