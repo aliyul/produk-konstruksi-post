@@ -268,12 +268,22 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
+	//SUB PRODUK ALAT KONSTRUKSI
      var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
      var ProdukAlatKonstruksiPostLink = document.getElementById("ProdukAlatKonstruksiPost");
      var JualAlatKonstruksiRinganPostLink = document.getElementById("JualAlatKonstruksiRinganPost");
      var JualAlatBeratTambangPostLink = document.getElementById("JualAlatBeratTambangPost");
      var JualAlatBeratPostLink = document.getElementById("JualAlatBeratPost");
-	    
+
+	//SUB PRODUK PONDASI & STRUKTUR
+	var ProdukTiangPancangBetonPostLink = document.getElementById("ProdukTiangPancangBetonPost");
+     var ProdukBorePilePostLink = document.getElementById("ProdukBorePilePost");
+     var ProdukMiniPilePostLink = document.getElementById("ProdukMiniPilePost");
+     var ProdukStraussPilePostLink = document.getElementById("ProdukStraussPilePost");
+     var ProdukSoilImprovementGroutingPostLink = document.getElementById("ProdukSoilImprovementGroutingPost");
+     var ProdukPondasiCakarAyamPostLink = document.getElementById("ProdukPondasiCakarAyamPost");
+     var ProdukPondasiSumuranPostLink = document.getElementById("ProdukPondasiSumuranPost");
+     var ProdukPondasiTapakBetonBertulangPostLink = document.getElementById("ProdukPondasiTapakBetonBertulangPost");
 	 	
      //var ProdukAlatKonstruksiPostLink = document.getElementById("JualAlatKonstruksiPost");
 	
@@ -290,6 +300,15 @@ document.addEventListener("DOMContentLoaded", function() {
      JualAlatKonstruksiRinganPostLink.style.visibility = 'hidden';
      JualAlatBeratTambangPostLink.style.visibility = 'hidden';
      JualAlatBeratPostLink.style.visibility = 'hidden';
+
+	ProdukTiangPancangBetonPostLink.style.visibility = 'hidden';
+	ProdukBorePilePostLink.style.visibility = 'hidden';
+	ProdukMiniPilePostLink.style.visibility = 'hidden';
+	ProdukStraussPilePostLink.style.visibility = 'hidden';
+	ProdukSoilImprovementGroutingPostLink.style.visibility = 'hidden';
+	ProdukPondasiCakarAyamPostLink.style.visibility = 'hidden';
+	ProdukPondasiSumuranPostLink.style.visibility = 'hidden';
+	ProdukPondasiTapakBetonBertulangPostLink.style.visibility = 'hidden';
 	
      ProdukBetonPrecastLink.style.visibility = 'hidden';
      ProdukPanelBetonPrecastLink.style.visibility = 'hidden';
