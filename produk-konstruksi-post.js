@@ -79,6 +79,19 @@ const urlMappingProdukBetonRinganPrecast = {
 
 };
 
+//SUB "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur"
+const urlMappingProdukTiangPancangBeton = {
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton.html": "Harga Tiang Pancang Beton",
+  "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-ready-mix.html": "Tiang Pancang Beton Ready Mix",
+  "https://www.betonjayareadymix.com/2022/02/jual-tiang-pancang-beton.html": "Jual Tiang Pancang Beton",
+  "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-cor.html": "Tiang Pancang Beton Cor",
+  "https://www.betonjayareadymix.com/2022/02/pabrik-tiang-pancang-beton.html": "Pabrik Tiang Pancang Beton",
+  "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-precast.html": "Tiang Pancang Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-diameter-30-cm.html": "Tiang Pancang Beton Diameter 30 Cm",
+  "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-pondasi-rumah.html": "Tiang Pancang Beton Pondasi Rumah",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton-per-batang.html": "Harga Tiang Pancang Beton Per Batang"
+};
+
 //SUB "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
 const urlMappingProdukJualAlatBeratTambang = {
 
