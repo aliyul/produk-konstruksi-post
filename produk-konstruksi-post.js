@@ -58,25 +58,25 @@ const urlMappingProdukPanelBetonPrecast = {
 
 // "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast"
 const urlMappingProdukBetonRinganPrecast = {
-  "https://www.betonjayareadymix.com/2021/07/berapa-ukuran-beton-ringan.html": "Berapa Ukuran Beton Ringan",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-struktural.html": "Beton Ringan Struktural",
+  //"https://www.betonjayareadymix.com/2021/07/berapa-ukuran-beton-ringan.html": "Berapa Ukuran Beton Ringan",
+ // "https://www.betonjayareadymix.com/2021/07/beton-ringan-struktural.html": "Beton Ringan Struktural",
 	
-"https://www.betonjayareadymix.com/2021/07/beton-ringan-tangerang.html": "Beton Ringan Tangerang",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-depok.html": "Beton Ringan Depok",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-jakarta.html": "Beton Ringan Jakarta",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-bekasi.html": "Beton Ringan Bekasi",
-  "https://www.betonjayareadymix.com/2021/07/dak-beton-ringan-hebel.html": "Dak Beton Ringan Hebel",
-  "https://www.betonjayareadymix.com/2021/07/panel-beton-ringan.html": "Panel Beton Ringan",
-  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-bandung.html": "Jual Beton Ringan Bandung",
-  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan.html": "Jual Beton Ringan",
-  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-bogor.html": "Jual Beton Ringan Bogor",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-dak.html": "Beton Ringan Untuk Dak",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-blesscon.html": "Beton Ringan Blesscon",
-  "https://www.betonjayareadymix.com/2021/07/papan-beton-ringan.html": "Papan Beton Ringan",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-hebel.html": "Beton Ringan Hebel",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-bogor.html": "Beton Ringan Bogor",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-untuk-lantai.html": "Beton Ringan Untuk Lantai"
-
+  "https://www.betonjayareadymix.com/2021/07/harga-beton-ringan-precast.html": "Harga Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-murah.html": "Beton Ringan Precast Murah",
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-precast.html": "Jual Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/spesifikasi-beton-ringan-precast.html": "Spesifikasi Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/kelebihan-beton-ringan-precast.html": "Kelebihan Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-untuk-bangunan.html": "Beton Ringan Precast Untuk Bangunan",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-berkualitas.html": "Beton Ringan Precast Berkualitas",
+  "https://www.betonjayareadymix.com/2021/07/pabrik-beton-ringan-precast.html": "Pabrik Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-siap-pakai.html": "Beton Ringan Precast Siap Pakai",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-jakarta.html": "Beton Ringan Precast Jakarta",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-bogor.html": "Beton Ringan Precast Bogor",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-depok.html": "Beton Ringan Precast Depok",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-tangerang.html": "Beton Ringan Precast Tangerang",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-bekasi.html": "Beton Ringan Precast Bekasi",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-karawang.html": "Beton Ringan Precast Karawang",
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-precast-jakarta.html": "Jual Beton Ringan Precast Jakarta"
 };
 
 //SUB "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur"
