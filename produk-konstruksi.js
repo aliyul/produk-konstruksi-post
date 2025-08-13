@@ -42,8 +42,8 @@ const urlMappingProdukSaluran = {
   "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"
 };
 const urlMappingProdukJalanLantai = {
- "https://www.betonjayareadymix.com/p/paving-block.html": "Paving Block",
-  "https://www.betonjayareadymix.com/p/grass-block.html": "Grass Block"
+ "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",
+  "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput"
 };
 const urlMappingProdukPondasi = {
    "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",
