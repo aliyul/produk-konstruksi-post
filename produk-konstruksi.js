@@ -91,7 +91,10 @@ const urlMappingProdukPelabuhan = {
   "https://www.betonjayareadymix.com/p/sheet-pile-dermaga.html": "Sheet Pile Dermaga"
 };
 const urlMappingProdukCustom = {
-  
+  "https://www.betonjayareadymix.com/p/beton-precast-custom.html": "Beton Precast Custom",
+  "https://www.betonjayareadymix.com/p/struktur-baja-kustom.html": "Struktur Baja Kustom",
+  "https://www.betonjayareadymix.com/p/fitting-drainase-custom.html": "Fitting Drainase Custom",
+  "https://www.betonjayareadymix.com/p/peralatan-konstruksi-custom.html": "Peralatan Konstruksi Custom"
 };
 
 // Menyimpan elemen yang dihapus dalam variabel
