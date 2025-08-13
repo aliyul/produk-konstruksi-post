@@ -82,7 +82,13 @@ const urlMappingProdukDinding = {
   "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular kamar mandi toilet"
 };
 const urlMappingProdukPelabuhan = {
-  
+  "https://www.betonjayareadymix.com/p/sistem-proteksi-dermaga.html": "Sistem Proteksi Dermaga",
+  "https://www.betonjayareadymix.com/p/dermaga-apung-modular.html": "Dermaga Apung Modular",
+  "https://www.betonjayareadymix.com/p/alat-bongkar-muat-pelabuhan.html": "Alat Bongkar Muat Pelabuhan",
+  "https://www.betonjayareadymix.com/p/crane-dermaga.html": "Crane Dermaga",
+  "https://www.betonjayareadymix.com/p/ponton-dermaga.html": "Ponton Dermaga",
+  "https://www.betonjayareadymix.com/p/kerangka-baja-dermaga.html": "Kerangka Baja Dermaga",
+  "https://www.betonjayareadymix.com/p/sheet-pile-dermaga.html": "Sheet Pile Dermaga"
 };
 const urlMappingProdukCustom = {
   
