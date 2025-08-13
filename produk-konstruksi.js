@@ -62,7 +62,16 @@ const urlMappingProdukPondasi = {
 
 };
 const urlMappingProdukJembatan = {
-  
+    "https://www.betonjayareadymix.com/p/tender-proyek-jembatan-flyover.html": "Tender Proyek Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/perawatan-jembatan-flyover.html": "Perawatan Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/flyover-baja.html": "Flyover Baja",
+  "https://www.betonjayareadymix.com/p/flyover-beton-precast.html": "Flyover Beton Precast",
+  "https://www.betonjayareadymix.com/p/standar-konstruksi-flyover.html": "Standar Konstruksi Flyover",
+  "https://www.betonjayareadymix.com/p/kontraktor-jembatan-flyover.html": "Kontraktor Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/konstruksi-flyover-cepat.html": "Konstruksi Flyover Cepat",
+  "https://www.betonjayareadymix.com/p/desain-jembatan-layang.html": "Desain Jembatan Layang",
+  "https://www.betonjayareadymix.com/p/spesifikasi-jembatan-flyover.html": "Spesifikasi Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/harga-jembatan-flyover.html": "Harga Jembatan Flyover"
 };
 const urlMappingProdukDinding = {
  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
