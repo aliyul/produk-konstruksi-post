@@ -16,15 +16,33 @@ const urlMappingModularKamarMandiToilet = {
 
 };
 const urlMappingBangunanPrefabModular = {
-    "https://www.betonjayareadymix.com/2021/04/arti-box-culvert.html": "Arti Box Culvert"
+   // "https://www.betonjayareadymix.com/2021/04/arti-box-culvert.html": "Arti Box Culvert"
   
 };
 const urlMappingDindingPanelBetonPrecastModular = {
-    "https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch"
+    //"https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch"
 };
 const urlMappingSandwichPanelModular = {
-
-
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-eps.html": "Panel Sandwich EPS",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-pu.html": "Panel Sandwich PU",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-xps.html": "Panel Sandwich XPS",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-rockwool.html": "Panel Sandwich Rockwool",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-api.html": "Panel Sandwich Tahan Api",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-air.html": "Panel Sandwich Tahan Air",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-akustik.html": "Panel Sandwich Akustik",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-ringan.html": "Panel Sandwich Ringan",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-isolasi-termal.html": "Panel Sandwich Isolasi Termal",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-untuk-rumah-modular.html": "Panel Sandwich Untuk Rumah Modular",
+  "https://www.betonjayareadymix.com/2019/04/harga-sandwich-panel-modular-per-m2.html": "Harga Sandwich Panel Modular Per M2",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-eps-per-lembar.html": "Harga Panel Sandwich EPS Per Lembar",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-dinding-ringan.html": "Harga Panel Sandwich Dinding Ringan",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-lantai-ringan.html": "Harga Panel Sandwich Lantai Ringan",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-anti-api.html": "Harga Panel Sandwich Anti Api",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-isolasi-termal.html": "Harga Panel Sandwich Isolasi Termal",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-akustik.html": "Harga Panel Sandwich Akustik",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-air.html": "Harga Panel Sandwich Tahan Air",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-gempa.html": "Harga Panel Sandwich Tahan Gempa",
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-untuk-rumah-modular.html": "Harga Panel Sandwich Untuk Rumah Modular"
  };
 
 const urlMappingBataRinganHebelModular = {
