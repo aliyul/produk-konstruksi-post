@@ -53,7 +53,21 @@ const urlMappingProdukBetonPrecast = {
 };
 //  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast"
 const urlMappingProdukPanelBetonPrecast = {
-	
+  "https://www.betonjayareadymix.com/2022/02/harga-panel-beton-precast.html": "harga panel beton precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-murah.html": "panel beton precast murah",
+  "https://www.betonjayareadymix.com/2022/02/jual-panel-beton-precast.html": "jual panel beton precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-ready-stock.html": "panel beton precast ready stock",
+  "https://www.betonjayareadymix.com/2022/02/spesifikasi-panel-beton-precast.html": "spesifikasi panel beton precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-untuk-dinding.html": "panel beton precast untuk dinding",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-berkualitas.html": "panel beton precast berkualitas",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-pabrik.html": "panel beton precast pabrik",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-jakarta.html": "panel beton precast jakarta",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bogor.html": "panel beton precast bogor",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-depok.html": "panel beton precast depok",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-tangerang.html": "panel beton precast tangerang",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bekasi.html": "panel beton precast bekasi",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-karawang.html": "panel beton precast karawang"
+
 };
 
 // "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast"
