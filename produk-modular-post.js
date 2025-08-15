@@ -16,8 +16,13 @@ const urlMappingModularKamarMandiToilet = {
 
 };
 const urlMappingBangunanPrefabModular = {
-   // "https://www.betonjayareadymix.com/2021/04/arti-box-culvert.html": "Arti Box Culvert"
-  
+    "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-indonesia.html": "Rumah Prefab Modular Indonesia",
+  "https://www.betonjayareadymix.com/2019/04/rumah-modular-cepat-bangun.html": "Rumah Modular Cepat Bangun",
+  "https://www.betonjayareadymix.com/2019/04/harga-rumah-prefab-modular.html": "Harga Rumah Prefab Modular",
+  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-hemat-biaya.html": "Rumah Prefab Modular Hemat Biaya",
+  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-ramah-lingkungan.html": "Rumah Prefab Modular Ramah Lingkungan",
+  "https://www.betonjayareadymix.com/2019/04/desain-rumah-prefab-modular.html": "Desain Rumah Prefab Modular"
+
 };
 const urlMappingDindingPanelBetonPrecastModular = {
   "https://www.betonjayareadymix.com/2019/04/panel-modular-beton-precast.html": "Panel Modular Beton Precast",
