@@ -20,7 +20,16 @@ const urlMappingBangunanPrefabModular = {
   
 };
 const urlMappingDindingPanelBetonPrecastModular = {
-    //"https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch"
+  "https://www.betonjayareadymix.com/2019/04/panel-modular-beton-precast.html": "Panel Modular Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/dinding-modular-beton-precast.html": "Dinding Modular Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/sistem-dinding-modular-beton.html": "Sistem Dinding Modular Beton",
+  "https://www.betonjayareadymix.com/2019/04/rumah-modular-panel-beton-precast.html": "Rumah Modular Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/bangunan-modular-panel-beton-precast.html": "Bangunan Modular Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/konstruksi-modular-panel-beton.html": "Konstruksi Modular Panel Beton",
+  "https://www.betonjayareadymix.com/2019/04/teknologi-dinding-panel-modular-beton.html": "Teknologi Dinding Panel Modular Beton",
+  "https://www.betonjayareadymix.com/2019/04/material-modular-dinding-beton-precast.html": "Material Modular Dinding Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/inovasi-panel-modular-beton-precast.html": "Inovasi Panel Modular Beton Precast"
+
 };
 const urlMappingSandwichPanelModular = {
   "https://www.betonjayareadymix.com/2019/04/panel-sandwich-eps.html": "Panel Sandwich EPS",
