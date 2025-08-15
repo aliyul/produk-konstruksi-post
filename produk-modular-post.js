@@ -140,7 +140,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         ModularKamarMandiToiletLink.style.visibility = 'visible';
         pageNameProdukDindingModularPost.textContent = urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons];
@@ -221,7 +221,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         SandwichPanelModularLink.style.visibility = 'visible';
         pageNameProdukDindingModularPost.textContent = urlMappingSandwichPanelModular[cleanUrlProdukModularKons];
@@ -303,7 +303,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('ModularKamarMandiToilet');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         BangunanPrefabModularLink.style.visibility = 'visible';
         pageNameProdukDindingModularPost.textContent = urlMappingBangunanPrefabModular[cleanUrlProdukModularKons];
@@ -385,7 +385,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('ModularKamarMandiToilet');
         removeCondition('BangunanPrefabModular');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         DindingPanelBetonPrecastModularLink.style.visibility = 'visible';
         pageNameProdukDindingModularPost.textContent = urlMappingDindingPanelBetonPrecastModular[cleanUrlProdukModularKons];
@@ -467,7 +467,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
        
-        ProdukKonstruksiSaluranLink.style.visibility = 'visible';
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         BataRinganHebelModularLink.style.visibility = 'visible';
         pageNameProdukDindingModularPost.textContent = urlMappingBataRinganHebelModular[cleanUrlProdukModularKons];
