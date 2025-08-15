@@ -66,7 +66,15 @@ const urlMappingProdukPanelBetonPrecast = {
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-depok.html": "panel beton precast depok",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-tangerang.html": "panel beton precast tangerang",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bekasi.html": "panel beton precast bekasi",
-  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-karawang.html": "panel beton precast karawang"
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-karawang.html": "panel beton precast karawang",
+
+    "https://www.betonjayareadymix.com/2022/02/panel-beton-dinding-precast.html": "Panel Beton Dinding Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-lantai-beton-precast.html": "Panel Lantai Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-bangunan.html": "Panel Beton Pracetak Bangunan",
+  "https://www.betonjayareadymix.com/2022/02/panel-dinding-pracetak-beton.html": "Panel Dinding Pracetak Beton",
+  "https://www.betonjayareadymix.com/2022/02/panel-dinding-beton-pracetak-ringan.html": "Panel Dinding Beton Pracetak Ringan",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-untuk-gedung.html": "Panel Beton Pracetak Untuk Gedung"
+
 
 };
 
