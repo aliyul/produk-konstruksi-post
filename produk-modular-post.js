@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukGorongBetonLink.style.visibility = 'hidden';
      pageNameProdukSaluran.textContent = "";
 
-    if (urlMappingBuis[cleanUrlProdukModularKons]) {
+    if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         restoreCondition('ProdukKonsModularPost');
         restoreCondition('ProdukBuis');
      //hapus elemen div id lain
