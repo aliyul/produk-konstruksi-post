@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // === Tanggal nextUpdate1 global ===
 	const globalNextUpdate1 = "2026-02-21T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected jasa-konstruksi: ${cleanUrlProdukKons}`);
+	console.log(`🌐 [AutoMeta] Detected produk-konstruksi: ${cleanUrlProdukKons}`);
 
     // --- pastikan meta nextUpdate1 ada ---
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
