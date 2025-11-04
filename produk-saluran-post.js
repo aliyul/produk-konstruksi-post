@@ -426,64 +426,71 @@ document.addEventListener("DOMContentLoaded", function() {
    ========================================================== */
 (async function runHybridDateModified() {
   try {
-    // --- helper untuk load eksternal JS secara promise ---
-    function loadExternalJSAsync(src) {
-      return new Promise((resolve, reject) => {
+    // === Load detect-evergreen dari Blogger Page ===
+    async function loadEvergreenFromBlogger() {
+      const page = "/p/detect-evergreen.html";
+      const res = await fetch(page);
+      const html = await res.text();
+      const scriptMatch = html.match(/<script[^>]*>([\s\S]*?)<\/script>/);
+
+      if (scriptMatch && scriptMatch[1]) {
         const s = document.createElement("script");
-        s.src = src;
-        s.async = true;
-        s.onload = () => resolve(src);
-        s.onerror = () => reject(new Error("Gagal load " + src));
+        s.textContent = scriptMatch[1];
         document.head.appendChild(s);
-      });
+        console.log("⚡ detect-evergreen loaded from Blogger");
+      } else {
+        throw new Error("Script not found in detect-evergreen.html");
+      }
     }
 
-    // --- gabungkan semua mapping ---
+    // === Cache agar tidak load berulang (anti 429) ===
+    const evergreenKey = "detectEvergreenLoaded";
+    if (!sessionStorage.getItem(evergreenKey)) {
+      await loadEvergreenFromBlogger();
+      sessionStorage.setItem(evergreenKey, "1");
+    } else {
+      console.log("⚡ detect-evergreen loaded from cache");
+    }
+
+    // === Gabungan Mapping ===
     const urlMappingGabungan = Object.assign(
       {},
-		urlMappingGorongBeton,
-		urlMappingSaluranBeton,
-		urlMappingPipaBeton,
-		urlMappingBuis,
-		urlMappingBoxCulvert,
-                urlMappingUditch
+      urlMappingGorongBeton,
+      urlMappingSaluranBeton,
+      urlMappingPipaBeton,
+      urlMappingBuis,
+      urlMappingBoxCulvert,
+      urlMappingUditch
     );
 
-    // --- validasi URL terdaftar ---
     if (!urlMappingGabungan[cleanUrlProdukSaluranKons]) {
       console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukSaluranKons}`);
       return;
     }
 
-  // === Tanggal nextUpdate1 global ===
-	const globalNextUpdate1 = "2026-02-25T00:00:00.000Z";
-	console.log(`🌐 [AutoMeta] Detected produk-saluran-post: ${cleanUrlProdukSaluranKons}`);
+    const globalNextUpdate1 = "2026-02-25T00:00:00.000Z";
+    console.log(`🌐 [AutoMeta] Detected produk-saluran-post: ${cleanUrlProdukSaluranKons}`);
 
-    // --- pastikan meta nextUpdate1 ada ---
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
     if (!metaNextUpdate1) {
       metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.setAttribute("name", "nextUpdate1");
-      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
+      metaNextUpdate1.name = "nextUpdate1";
+      metaNextUpdate1.content = globalNextUpdate1;
       document.head.appendChild(metaNextUpdate1);
-      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+      console.log(`🆕 Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
     } else {
-      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada, tidak dibuat ulang.");
+      console.log("✅ Meta nextUpdate1 sudah ada");
     }
 
-    // --- pastikan detect-evergreen.js selesai dimuat ---
-    await loadExternalJSAsync("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-    console.log("✅ detect-evergreen.js selesai dimuat.");
-
-    // --- pastikan AEDMetaDates sudah tersedia ---
-    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+    // === Cek AEDMetaDates dari detect-evergreen ===
+    if (!window.AEDMetaDates?.dateModified) {
       console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan, skip update.");
       return;
     }
 
     const { dateModified, nextUpdate, type } = window.AEDMetaDates;
 
-    // 🔒 Stable hash untuk variasi waktu stabil
+    // Stable hash
     function stableHash(str) {
       let hash = 0;
       for (let i = 0; i < str.length; i++) {
@@ -493,12 +500,11 @@ document.addEventListener("DOMContentLoaded", function() {
       return Math.abs(hash);
     }
 
-    const hash = stableHash(cleanUrlProdukSaluranKons);
-    const offsetSeconds = hash % 86400;
+    const offsetSeconds = stableHash(cleanUrlProdukSaluranKons) % 86400;
     const finalDate = new Date(new Date(dateModified).getTime() + offsetSeconds * 1000);
     const isoDate = finalDate.toISOString();
 
-    // 🧱 Update meta dateModified
+    // Update meta tags
     [
       ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
       ['meta[name="dateModified"]', 'name', 'dateModified'],
@@ -510,23 +516,15 @@ document.addEventListener("DOMContentLoaded", function() {
         meta.setAttribute(attr, val);
         document.head.appendChild(meta);
       }
-      meta.setAttribute("content", isoDate);
+      meta.content = isoDate;
     });
 
-	
-				// Pastikan AEDMetaDates sudah ada minimal sebagai objek kosong
-	window.AEDMetaDates = window.AEDMetaDates || {};
-	
-	// Update hanya properti dateModified tanpa menghapus lainnya
-	window.AEDMetaDates = {
-	  ...window.AEDMetaDates,
-	  dateModified: isoDate
-	};
-	
-	console.log("✅ AEDMetaDates updated produk-saluran-post:", window.AEDMetaDates); 
-    console.log(`✅ [HybridDateModified v2.5] ${cleanUrlProdukSaluranKons} → ${isoDate} | type=${type || "-"}`);
+    window.AEDMetaDates = { ...window.AEDMetaDates, dateModified: isoDate };
 
-    // 🧩 Perbarui schema jika ada
+    console.log("✅ AEDMetaDates updated:", window.AEDMetaDates);
+    console.log(`✅ [HybridDateModified] ${cleanUrlProdukSaluranKons} → ${isoDate} | type=${type || "-"}`);
+
+    // Update JSON-LD Schema
     const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
     if (schemaEl) {
       try {
@@ -534,14 +532,14 @@ document.addEventListener("DOMContentLoaded", function() {
         data.dateModified = isoDate;
         if (data.maintenanceSchedule) data.maintenanceSchedule.scheduledTime = nextUpdate;
         schemaEl.textContent = JSON.stringify(data, null, 2);
-        console.log(`🔄 Schema maintenance diperbarui → dateModified: ${isoDate}`);
-      } catch (err) {
-        console.error("❌ Gagal update schema:", err);
+        console.log(`🔄 Schema maintenance updated → ${isoDate}`);
+      } catch (e) {
+        console.error("❌ Gagal update schema:", e);
       }
     }
 
-  } catch (err) {
-    console.error("[HybridDateModified] Fatal error:", err);
+  } catch (e) {
+    console.error("[HybridDateModified] Fatal:", e);
   }
 })();
 	
