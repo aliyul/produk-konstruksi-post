@@ -440,32 +440,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ✅ Anti Spam GitHack (session based)
     async function loadEvergreenScript() {
-      const KEY = "evergreenScriptLoaded";
-      
-      // Sudah di-session cache
-      if (sessionStorage.getItem(KEY) === "true") {
-        console.log("⚡ detect-evergreen.js cached di tab ini – skip download");
-        return;
-      }
+        const KEY = "evergreenScriptLoaded";
 
-      // Sudah ada fungsinya dari page sebelumnya?
-      if (window.AEDMetaDates) {
-        console.log("⚡ detect-evergreen.js sudah aktif di window – skip download");
-        sessionStorage.setItem(KEY, "true");
-        return;
-      }
-
-      console.log("⏳ load detect-evergreen.js dari GitHack…");
-
-      try {
-        await loadExternalJSAsync("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
-        console.log("✅ detect-evergreen.js sukses diload");
-        sessionStorage.setItem(KEY, "true");
-      } catch (err) {
-        console.error("❌ Gagal load detect-evergreen.js", err);
-        sessionStorage.removeItem(KEY);
-      }
-    }
+		  const needReload =
+		    !sessionStorage.getItem(KEY) ||     // belum pernah load di tab
+		    !window.AEDMetaDates ||             // variable hilang
+		    !window.detectEvergreenReady;       // marker tidak ada
+		
+		  if (!needReload) {
+		    console.log("⚡ detect-evergreen.js sudah aktif & variable ready — SKIP load");
+		    return;
+		  }
+		
+		  console.log("⏳ load detect-evergreen.js dari GitHack…");
+		
+		  try {
+		    await loadExternalJSAsync(
+		      "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
+		    );
+		
+		    // ✅ set marker bahwa script sudah running
+		    window.detectEvergreenReady = true;
+		    sessionStorage.setItem(KEY, "true");
+		
+		    console.log("✅ detect-evergreen.js LOADED & READY");
+		  } catch (err) {
+		    console.error("❌ Gagal load detect-evergreen.js", err);
+		    sessionStorage.removeItem(KEY);
+		  }
+		}
 
     // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
