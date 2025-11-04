@@ -426,33 +426,48 @@ document.addEventListener("DOMContentLoaded", function() {
    ========================================================== */
 (async function runHybridDateModified() {
   try {
-    // === Load detect-evergreen dari Blogger Page ===
-    async function loadEvergreenFromBlogger() {
-      const page = "/p/detect-evergreen.html";
-      const res = await fetch(page);
-      const html = await res.text();
-      const scriptMatch = html.match(/<script[^>]*>([\s\S]*?)<\/script>/);
-
-      if (scriptMatch && scriptMatch[1]) {
+    // --- Loader JS eksternal dengan Promise ---
+    function loadExternalJSAsync(src) {
+      return new Promise((resolve, reject) => {
         const s = document.createElement("script");
-        s.textContent = scriptMatch[1];
+        s.src = src;
+        s.async = true;
+        s.onload = () => resolve(src);
+        s.onerror = () => reject(new Error("Gagal load " + src));
         document.head.appendChild(s);
-        console.log("⚡ detect-evergreen loaded from Blogger");
-      } else {
-        throw new Error("Script not found in detect-evergreen.html");
+      });
+    }
+
+    // ✅ Anti Spam GitHack (session based)
+    async function loadEvergreenScript() {
+      const KEY = "evergreenScriptLoaded";
+      
+      // Sudah di-session cache
+      if (sessionStorage.getItem(KEY) === "true") {
+        console.log("⚡ detect-evergreen.js cached di tab ini – skip download");
+        return;
+      }
+
+      // Sudah ada fungsinya dari page sebelumnya?
+      if (window.AEDMetaDates) {
+        console.log("⚡ detect-evergreen.js sudah aktif di window – skip download");
+        sessionStorage.setItem(KEY, "true");
+        return;
+      }
+
+      console.log("⏳ load detect-evergreen.js dari GitHack…");
+
+      try {
+        await loadExternalJSAsync("https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js");
+        console.log("✅ detect-evergreen.js sukses diload");
+        sessionStorage.setItem(KEY, "true");
+      } catch (err) {
+        console.error("❌ Gagal load detect-evergreen.js", err);
+        sessionStorage.removeItem(KEY);
       }
     }
 
-    // === Cache agar tidak load berulang (anti 429) ===
-    const evergreenKey = "detectEvergreenLoaded";
-    if (!sessionStorage.getItem(evergreenKey)) {
-      await loadEvergreenFromBlogger();
-      sessionStorage.setItem(evergreenKey, "1");
-    } else {
-      console.log("⚡ detect-evergreen loaded from cache");
-    }
-
-    // === Gabungan Mapping ===
+    // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
       urlMappingGorongBeton,
@@ -463,34 +478,40 @@ document.addEventListener("DOMContentLoaded", function() {
       urlMappingUditch
     );
 
+    // --- validasi URL terdaftar ---
     if (!urlMappingGabungan[cleanUrlProdukSaluranKons]) {
       console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukSaluranKons}`);
       return;
     }
 
+    // === Tanggal nextUpdate1 global ===
     const globalNextUpdate1 = "2026-02-25T00:00:00.000Z";
     console.log(`🌐 [AutoMeta] Detected produk-saluran-post: ${cleanUrlProdukSaluranKons}`);
 
+    // --- pastikan meta nextUpdate1 ada ---
     let metaNextUpdate1 = document.querySelector('meta[name="nextUpdate1"]');
     if (!metaNextUpdate1) {
       metaNextUpdate1 = document.createElement("meta");
-      metaNextUpdate1.name = "nextUpdate1";
-      metaNextUpdate1.content = globalNextUpdate1;
+      metaNextUpdate1.setAttribute("name", "nextUpdate1");
+      metaNextUpdate1.setAttribute("content", globalNextUpdate1);
       document.head.appendChild(metaNextUpdate1);
-      console.log(`🆕 Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
+      console.log(`🆕 [AutoMeta] Meta nextUpdate1 ditambahkan → ${globalNextUpdate1}`);
     } else {
-      console.log("✅ Meta nextUpdate1 sudah ada");
+      console.log("✅ [AutoMeta] Meta nextUpdate1 sudah ada");
     }
 
-    // === Cek AEDMetaDates dari detect-evergreen ===
-    if (!window.AEDMetaDates?.dateModified) {
+    // ✅ Load evergreen JS (anti 429)
+    await loadEvergreenScript();
+
+    // --- pastikan AEDMetaDates tersedia ---
+    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
       console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan, skip update.");
       return;
     }
 
     const { dateModified, nextUpdate, type } = window.AEDMetaDates;
 
-    // Stable hash
+    // Stable Hash
     function stableHash(str) {
       let hash = 0;
       for (let i = 0; i < str.length; i++) {
@@ -500,11 +521,12 @@ document.addEventListener("DOMContentLoaded", function() {
       return Math.abs(hash);
     }
 
-    const offsetSeconds = stableHash(cleanUrlProdukSaluranKons) % 86400;
+    const hash = stableHash(cleanUrlProdukSaluranKons);
+    const offsetSeconds = hash % 86400;
     const finalDate = new Date(new Date(dateModified).getTime() + offsetSeconds * 1000);
     const isoDate = finalDate.toISOString();
 
-    // Update meta tags
+    // Update meta
     [
       ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
       ['meta[name="dateModified"]', 'name', 'dateModified'],
@@ -516,15 +538,20 @@ document.addEventListener("DOMContentLoaded", function() {
         meta.setAttribute(attr, val);
         document.head.appendChild(meta);
       }
-      meta.content = isoDate;
+      meta.setAttribute("content", isoDate);
     });
 
-    window.AEDMetaDates = { ...window.AEDMetaDates, dateModified: isoDate };
+    // Update global
+    window.AEDMetaDates = window.AEDMetaDates || {};
+    window.AEDMetaDates = {
+      ...window.AEDMetaDates,
+      dateModified: isoDate
+    };
 
     console.log("✅ AEDMetaDates updated:", window.AEDMetaDates);
-    console.log(`✅ [HybridDateModified] ${cleanUrlProdukSaluranKons} → ${isoDate} | type=${type || "-"}`);
+    console.log(`✅ [HybridDateModified v2.6] ${cleanUrlProdukSaluranKons} → ${isoDate} | type=${type}`);
 
-    // Update JSON-LD Schema
+    // Update schema
     const schemaEl = document.querySelector('script[data-schema="evergreen-maintenance"]');
     if (schemaEl) {
       try {
@@ -532,16 +559,17 @@ document.addEventListener("DOMContentLoaded", function() {
         data.dateModified = isoDate;
         if (data.maintenanceSchedule) data.maintenanceSchedule.scheduledTime = nextUpdate;
         schemaEl.textContent = JSON.stringify(data, null, 2);
-        console.log(`🔄 Schema maintenance updated → ${isoDate}`);
-      } catch (e) {
-        console.error("❌ Gagal update schema:", e);
+        console.log(`🔄 Schema maintenance diperbarui → ${isoDate}`);
+      } catch (err) {
+        console.error("❌ Gagal update schema:", err);
       }
     }
 
-  } catch (e) {
-    console.error("[HybridDateModified] Fatal:", e);
+  } catch (err) {
+    console.error("[HybridDateModified] Fatal error:", err);
   }
 })();
+
 	
     var ProdukKonsSaluranPost = document.getElementById("ProdukKonsSaluranPost");
     if (!ProdukKonsSaluranPost) {
