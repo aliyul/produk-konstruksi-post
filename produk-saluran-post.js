@@ -438,38 +438,43 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-    // ✅ Anti Spam GitHack (session based)
-    async function loadEvergreenScript() {
-        const KEY = "evergreenScriptLoaded";
+  // ✅ Anti Spam GitHack (session based)
+  async function loadEvergreenScript() {
+    const KEY = "evergreenScriptLoaded";
 
-		  const needReload =
-		    !sessionStorage.getItem(KEY) ||     // belum pernah load di tab
-		    !window.AEDMetaDates ||             // variable hilang
-		    !window.detectEvergreenReady;       // marker tidak ada
-		
-		  if (!needReload) {
-		    console.log("⚡ detect-evergreen.js sudah aktif & variable ready — SKIP load");
-		    return;
-		  }
-		
-		  console.log("⏳ load detect-evergreen.js dari GitHack…");
-		
-		  try {
-		    await loadExternalJSAsync(
-		      "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
-		    );
-		
-		    // ✅ set marker bahwa script sudah running
-		    window.detectEvergreenReady = true;
-		    sessionStorage.setItem(KEY, "true");
-		
-		    console.log("✅ detect-evergreen.js LOADED & READY");
-		  } catch (err) {
-		    console.error("❌ Gagal load detect-evergreen.js", err);
-		    sessionStorage.removeItem(KEY);
-		  }
-		}
+    const needReload =
+      !sessionStorage.getItem(KEY) ||     // belum pernah load di tab
+      !window.AEDMetaDates ||             // variable hilang
+      !window.detectEvergreenReady;       // marker tidak ada
 
+    if (!needReload) {
+      console.log("⚡ detect-evergreen.js sudah aktif — SKIP download");
+    } else {
+      console.log("⏳ load detect-evergreen.js dari GitHack…");
+
+      try {
+        await loadExternalJSAsync(
+          "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
+        );
+
+        window.detectEvergreenReady = true;
+        sessionStorage.setItem(KEY, "true");
+
+        console.log("✅ detect-evergreen.js LOADED");
+      } catch (err) {
+        console.error("❌ Gagal load detect-evergreen.js", err);
+        sessionStorage.removeItem(KEY);
+      }
+    }
+
+    // ✅ Jalankan ALWAYS: detection tiap page
+    if (typeof window.runEvergreenCheck === "function") {
+      console.log("🔁 Running evergreen check for this page...");
+      window.runEvergreenCheck(); 
+    } else {
+      console.warn("⚠️ runEvergreenCheck tidak ditemukan!");
+    }
+  }
     // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
