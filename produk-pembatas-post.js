@@ -139,6 +139,14 @@ const urlMappingProdukPagarRumah = {
 };
 const urlMappingProdukPagarGrc = {
 // "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-terdekat.html": "Pagar Grc Terdekat",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-jakarta.html": "Pagar Grc Jakarta",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-bogor.html": "Pagar Grc Bogor",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-depok.html": "Pagar Grc Depok",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-tangerang.html": "Pagar Grc Tangerang",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-bekasi.html": "Pagar Grc Bekasi",
+  "https://www.betonjayareadymix.com/2018/11/pagar-grc-cianjur.html": "Pagar Grc Cianjur",
+  "https://www.betonjayareadymix.com/2018/11/pagar-beton-grc.html": "Pagar Beton Grc"
 };
 const urlMappingProdukPagarBrc = {
   "https://www.betonjayareadymix.com/2019/04/pagar-brc-terdekat.html": "Pagar BRC Terdekat",
