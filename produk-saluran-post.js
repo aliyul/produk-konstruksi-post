@@ -89,7 +89,7 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2022/01/buis-beton-bulat.html": "Buis Beton Bulat",
     "https://www.betonjayareadymix.com/2022/01/buis-beton-diameter-100-cm.html": "Buis Beton Diameter 100 CM",
     "https://www.betonjayareadymix.com/2022/01/buis-beton-terdekat.html": "Buis Beton Terdekat",
-    "https://www.betonjayareadymix.com/2022/01/buis-beton-asiacon.html": "Buis Beton Asiacom",
+    "https://www.betonjayareadymix.com/2022/01/buis-beton-asiacon.html": "Buis Beton Asiacon",
     "https://www.betonjayareadymix.com/2022/01/buis-beton-saluran-air.html": "Buis Beton Saluran Air",
     "https://www.betonjayareadymix.com/2022/01/buis-beton-bandung.html": "Buis Beton Bandung",
     "https://www.betonjayareadymix.com/2022/01/buis-beton-belah.html": "Buis Beton Belah",
