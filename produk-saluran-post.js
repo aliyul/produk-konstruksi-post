@@ -130,7 +130,7 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-wc.html": "Harga Buis Beton WC",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-jakarta.html": "Harga Buis Beton Jakarta",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tangerang.html": "Harga Buis Beton Tangerang",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-12-diameter-20-cm.html": "Harga Buis Beton 12 Diameter 20 CM",
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-12-diameter-20-cm.html": "Harga Buis Beton 1/2 Diameter 20 CM",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-12-dia-30-cm.html": "Harga Buis Beton 1/2 Dia 30 CM",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-setengah-lingkaran.html": "Harga Buis Beton Setengah Lingkaran",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-rcp.html": "Harga Buis Beton RCP",
