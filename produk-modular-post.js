@@ -73,8 +73,48 @@ const urlMappingBataRinganHebelModular = {
  };
 
  const urlMappingRosterBeton = {
-  
+  "https://www.betonjayareadymix.com/2020/12/harga-roster-beton.html": "Harga Roster Beton",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bali.html": "Harga Roster Beton di Bali",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bogor.html": "Harga Roster Beton di Bogor",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-bandung.html": "Harga Roster Beton Bandung",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-tangerang.html": "Harga Roster Beton Tangerang",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-murah.html": "Harga Roster Beton Murah",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-20-x-20.html": "Harga Roster Beton 20 x 20",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-m2.html": "Harga Roster Beton per M2",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-masjid.html": "Harga Roster Beton Masjid",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-anti-nyamuk.html": "Harga Roster Beton Anti Nyamuk",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-cisangkan.html": "Harga Roster Beton Cisangkan",
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-buah.html": "Harga Roster Beton per Buah",
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-roster-beton.html": "Harga Pagar Roster Beton",
 
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-minimalis.html": "Harga Roster Beton Minimalis",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-purwakarta.html": "Roster Beton Minimalis Purwakarta",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-bandung.html": "Roster Beton Minimalis Bandung",
+  "https://www.betonjayareadymix.com/2021/03/pagar-roster-beton-minimalis.html": "Pagar Roster Beton Minimalis",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-minimalis.html": "Jual Roster Beton Minimalis",
+
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cianjur.html": "Roster Beton Cianjur",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cirebon.html": "Roster Beton Cirebon",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-banjarbaru.html": "Roster Beton Banjarbaru",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bekasi.html": "Roster Beton Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bogor.html": "Roster Beton Bogor",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bandung.html": "Roster Beton Bandung",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-murah.html": "Roster Beton Murah",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cisangkan.html": "Roster Beton Cisangkan",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-anti-tampias.html": "Roster Beton Anti Tampias",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-kotak.html": "Roster Beton Kotak",
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-lubang-angin.html": "Roster Beton Lubang Angin",
+
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-terdekat.html": "Jual Roster Beton Terdekat",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-di-jakarta.html": "Jual Roster Beton di Jakarta",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cimahi.html": "Jual Roster Beton Cimahi",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cikarang.html": "Jual Roster Beton Cikarang",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bogor.html": "Jual Roster Beton Bogor",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bekasi.html": "Jual Roster Beton Bekasi",
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bandung.html": "Jual Roster Beton Bandung",
+
+  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-kotak.html": "Ukuran Roster Beton Kotak",
+  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-minimalis.html": "Ukuran Roster Beton Minimalis"
  };
 
 
