@@ -238,6 +238,71 @@ const urlMappingProdukPagarBatuAlam = {
 // "https://www.betonjayareadymix.com/2018/11/model-pagar-rumah-minimalis-modern.html": "Model Pagar Rumah Minimalis Modern"
 };
 
+const urlMappingProdukKanstin = {
+"https://www.betonjayareadymix.com/2021/04/jual-kanstin-terdekat.html": "Jual Kanstin Terdekat",
+  "https://www.betonjayareadymix.com/2021/08/harga-kanstin-slip-form.html": "Harga Kanstin Slip Form",
+  "https://www.betonjayareadymix.com/2021/08/daftar-harga-kanstin-beton.html": "Daftar Harga Kanstin Beton",
+  "https://www.betonjayareadymix.com/2021/08/harga-kanstin-beton-paving-block.html": "Harga Kanstin Beton Paving Block",
+  "https://www.betonjayareadymix.com/2021/08/harga-kanstin-beton-bogor.html": "Harga Kanstin Beton Bogor",
+
+  "https://www.betonjayareadymix.com/2021/08/kanstin-conblock.html": "Kanstin Conblock",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-sepatu.html": "Kanstin Sepatu",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-l.html": "Kanstin L",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-slipform.html": "Kanstin Slipform",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-car-stopper.html": "Kanstin Car Stopper",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-dki.html": "Kanstin DKI",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-s.html": "Kanstin S",
+  "https://www.betonjayareadymix.com/2021/04/car-stopper-beton.html": "Car Stopper Beton",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-cisangkan.html": "Kanstin Cisangkan",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-saluran.html": "Kanstin Saluran",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-tali-air.html": "Kanstin Tali Air",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-murah.html": "Kanstin Murah",
+
+  "https://www.betonjayareadymix.com/2021/04/jual-kanstin-di-jawa-barat.html": "Jual Kanstin di Jawa Barat",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-kebumen.html": "Kanstin Kebumen",
+  "https://www.betonjayareadymix.com/2021/04/jual-kanstin-di-surabaya.html": "Jual Kanstin di Surabaya",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-surabaya.html": "Kanstin Surabaya",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-malang.html": "Kanstin Malang",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-bandung.html": "Kanstin Bandung",
+
+  "https://www.betonjayareadymix.com/2021/04/kanstin-bogor.html": "Kanstin Bogor",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-depok.html": "Kanstin Depok",
+  "https://www.betonjayareadymix.com/2021/04/kanstin-bekasi.html": "Kanstin Bekasi",
+
+  "https://www.betonjayareadymix.com/2021/08/jual-kanstin-beton.html": "Jual Kanstin Beton",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-beton-pembatas-jalan.html": "Kanstin Beton Pembatas Jalan",
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-kanstin.html": "Beton Precast Kanstin",
+
+  "https://www.betonjayareadymix.com/2021/08/jual-kanstin-jalan-di-jawa-barat.html": "Jual Kanstin Jalan di Jawa Barat",
+  "https://www.betonjayareadymix.com/2021/08/jual-kanstin-jalan-di-bogor.html": "Jual Kanstin Jalan di Bogor",
+  "https://www.betonjayareadymix.com/2021/08/jual-kanstin-jalan.html": "Jual Kanstin Jalan",
+  "https://www.betonjayareadymix.com/2021/08/spesifikasi-kanstin-jalan.html": "Spesifikasi Kanstin Jalan",
+  "https://www.betonjayareadymix.com/2021/08/dimensi-kanstin-jalan.html": "Dimensi Kanstin Jalan",
+  "https://www.betonjayareadymix.com/2021/08/cat-kanstin-jalan.html": "Cat Kanstin Jalan",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-jalan-raya.html": "Kanstin Jalan Raya",
+
+  "https://www.betonjayareadymix.com/2021/04/kanstin-paving-block.html": "Kanstin Paving Block",
+
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-jakarta.html": "Jual Kanstin Taman di Jakarta",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-tangerang.html": "Jual Kanstin Taman di Tangerang",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-sukabumi.html": "Jual Kanstin Taman di Sukabumi",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-bandung.html": "Jual Kanstin Taman di Bandung",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-depok.html": "Jual Kanstin Taman di Depok",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-bekasi.html": "Jual Kanstin Taman di Bekasi",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman-di-bogor.html": "Jual Kanstin Taman di Bogor",
+  "https://www.betonjayareadymix.com/2021/09/jual-kanstin-taman.html": "Jual Kanstin Taman",
+  "https://www.betonjayareadymix.com/2021/09/kanstin-taman-cor.html": "Kanstin Taman Cor",
+
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-tangerang.html": "Kanstin Trotoar Tangerang",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-sukabumi.html": "Kanstin Trotoar Sukabumi",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-bandung.html": "Kanstin Trotoar Bandung",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-depok.html": "Kanstin Trotoar Depok",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-bekasi.html": "Kanstin Trotoar Bekasi",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-bogor.html": "Kanstin Trotoar Bogor",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-jakarta.html": "Kanstin Trotoar Jakarta",
+  "https://www.betonjayareadymix.com/2021/08/kanstin-trotoar-jalan.html": "Kanstin Trotoar Jalan"
+
+};
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukPembatasKons = {};
@@ -336,7 +401,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukPagarGrc,
 		urlMappingProdukPagarBrc,
                 urlMappingProdukPagarBesi,
-		urlMappingProdukPagarBatuAlam	
+		urlMappingProdukPagarBatuAlam,
+		urlMappingProdukKanstin
     );
 
     // --- validasi URL terdaftar ---
@@ -493,6 +559,8 @@ document.addEventListener("DOMContentLoaded", function() {
      var ProdukPagarBrcLink = document.getElementById("ProdukPagarBrc");  
      var ProdukPagarBesiLink = document.getElementById("ProdukPagarBesi");  
      var ProdukPagarBatuAlamLink = document.getElementById("ProdukPagarBatuAlam");
+	var ProdukKanstinBetonLink = document.getElementById("ProdukKanstinBeton");
+	
      //var JasaBongkarKeramikLink = document.getElementById("JasaBongkarKeramik");
      var pageNameProdukPembatas = document.getElementById("pageNameProdukPembatas");
     
@@ -507,6 +575,8 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukPagarBrcLink.style.visibility = 'hidden';
      ProdukPagarBesiLink.style.visibility = 'hidden';
      ProdukPagarBatuAlamLink.style.visibility = 'hidden';
+     ProdukKanstinBetonLink.style.visibility = 'hidden';
+	
      //JasaBongkarKeramikLink.style.visibility = 'hidden';
      pageNameProdukPembatas.textContent = "";
 
@@ -543,7 +613,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukPagarBrc');
         removeCondition('ProdukPagarBesi');
         removeCondition('ProdukPagarBatuAlam');
-       
+        removeCondition('ProdukKanstinBeton');
+		
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarPanelBetonLink.style.visibility = 'visible';
@@ -628,7 +699,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukPagarBrc');
         removeCondition('ProdukPagarBesi');
         removeCondition('ProdukPagarBatuAlam');
-        
+        removeCondition('ProdukKanstinBeton');
+		
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarBetonLink.style.visibility = 'visible';
@@ -713,7 +785,8 @@ document.addEventListener("DOMContentLoaded", function() {
         removeCondition('ProdukPagarBrc');
         removeCondition('ProdukPagarBesi');
         removeCondition('ProdukPagarBatuAlam');
-    
+        removeCondition('ProdukKanstinBeton');
+	   
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarRumahLink.style.visibility = 'visible';
@@ -797,6 +870,7 @@ if (urlMappingProdukPagarGrc[cleanUrlProdukPembatasKons]) {
         removeCondition('ProdukPagarBrc');
         removeCondition('ProdukPagarBesi');
         removeCondition('ProdukPagarBatuAlam');
+	    removeCondition('ProdukKanstinBeton');
     
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
@@ -882,7 +956,8 @@ if (urlMappingProdukPagarBrc[cleanUrlProdukPembatasKons]) {
         removeCondition('ProdukPagarRumah');
         removeCondition('ProdukPagarBesi');
         removeCondition('ProdukPagarBatuAlam');
-    
+        removeCondition('ProdukKanstinBeton');
+	
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarBrcLink.style.visibility = 'visible';
@@ -966,7 +1041,7 @@ if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
         removeCondition('ProdukPagarBrc');
         removeCondition('ProdukPagarRumah');
         removeCondition('ProdukPagarBatuAlam');
-    
+        removeCondition('ProdukKanstinBeton');
         ProdukKonstruksiPembatasLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         ProdukPagarBesiLink.style.visibility = 'visible';
@@ -1009,6 +1084,93 @@ if (urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons]) {
                    "@type": "ListItem",
                    "position": 5,
                    "name": urlMappingProdukPagarBesi[cleanUrlProdukPembatasKons],
+                   "item": cleanUrlProdukPembatasKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
+	if (urlMappingProdukKanstin[cleanUrlProdukPembatasKons]) {
+        restoreCondition('ProdukKonsPembatasPost');
+        restoreCondition('ProdukKanstinBeton');
+
+       //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsDindingModularPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+     
+        //hapus elemen jasa pembatas lain
+        removeCondition('ProdukPagarPanelBeton');
+        removeCondition('ProdukPagarBeton');
+        removeCondition('ProdukPagarGrc');
+        removeCondition('ProdukPagarBrc');
+        removeCondition('ProdukPagarRumah');
+        removeCondition('ProdukPagarBatuAlam');
+        removeCondition('ProdukPagarBesi');
+    
+        ProdukKonstruksiPembatasLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukKanstinBetonLink.style.visibility = 'visible';
+        pageNameProdukPembatas.textContent = urlMappingProdukKanstin[cleanUrlProdukPembatasKons];
+    }
+ 
+// ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukKanstin[cleanUrlProdukPembatasKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Pembatas",
+                   "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
+               },
+	       
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Kanstin Beton",
+                   "item": "https://www.betonjayareadymix.com/p/kanstin-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingProdukKanstin[cleanUrlProdukPembatasKons],
                    "item": cleanUrlProdukPembatasKons
                }
            ]
