@@ -72,6 +72,11 @@ const urlMappingBataRinganHebelModular = {
 
  };
 
+ const urlMappingRosterBeton = {
+  
+
+ };
+
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukModularKons = {};
@@ -168,7 +173,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingBangunanPrefabModular,
 		urlMappingDindingPanelBetonPrecastModular,
 		urlMappingSandwichPanelModular,
-		urlMappingBataRinganHebelModular	
+		urlMappingBataRinganHebelModular,
+		urlMappingRosterBeton
     );
 
     // --- validasi URL terdaftar ---
@@ -324,7 +330,8 @@ document.addEventListener("DOMContentLoaded", function() {
      var BataRinganHebelModularLink = document.getElementById("BataRinganHebelModular");
      var DindingPanelBetonPrecastModularLink = document.getElementById("DindingPanelBetonPrecastModular");
      var BangunanPrefabModularLink = document.getElementById("BangunanPrefabModular");
-	
+     var RosterBetonLink = document.getElementById("RosterBeton");
+	  
      var pageNameProdukDindingModularPost = document.getElementById("pageNameProdukDindingModularPost");
     
 
@@ -336,6 +343,7 @@ document.addEventListener("DOMContentLoaded", function() {
      BataRinganHebelModularLink.style.visibility = 'hidden';
      DindingPanelBetonPrecastModularLink.style.visibility = 'hidden';
      BangunanPrefabModularLink.style.visibility = 'hidden';
+	 RosterBetonLink.style.visibility = 'hidden';
      pageNameProdukDindingModularPost.textContent = "";
 
 if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
@@ -368,7 +376,9 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('BataRinganHebelModular');
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
-       
+        removeCondition('RosterBeton');
+        
+	
         ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
         ModularKamarMandiToiletLink.style.visibility = 'visible';
@@ -449,6 +459,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('BataRinganHebelModular');
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
+        removeCondition('RosterBeton');
        
         ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
@@ -531,6 +542,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('BataRinganHebelModular');
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('ModularKamarMandiToilet');
+        removeCondition('RosterBeton');
        
         ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
@@ -613,6 +625,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('BataRinganHebelModular');
         removeCondition('ModularKamarMandiToilet');
         removeCondition('BangunanPrefabModular');
+        removeCondition('RosterBeton');
        
         ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
@@ -695,6 +708,7 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
         removeCondition('ModularKamarMandiToilet');
         removeCondition('DindingPanelBetonPrecastModular');
         removeCondition('BangunanPrefabModular');
+        removeCondition('RosterBeton');
        
         ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
         ProdukDindingModularLink.style.visibility = 'visible';
@@ -736,6 +750,89 @@ if (urlMappingModularKamarMandiToilet[cleanUrlProdukModularKons]) {
                    "@type": "ListItem",
                    "position": 5,
                    "name": urlMappingBataRinganHebelModular[cleanUrlProdukModularKons],
+                   "item": cleanUrlProdukModularKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }
+
+  	if (urlMappingRosterBeton[cleanUrlProdukModularKons]) {
+        restoreCondition('ProdukKonsDindingModularPost');
+        restoreCondition('RosterBeton');
+
+     //hapus elemen div id lain
+	removeCondition('JasaDesInPost');
+        removeCondition('ProdukInFurPost');
+        removeCondition('ProdukKonsPembatasPost');
+        removeCondition('ProdukKonsSaluranPost');
+        removeCondition('ProdukKonsPost');
+        removeCondition('MaterialKonsStukturPost');
+        removeCondition('MaterialKonsFasadPelapisEksteriorPost');
+        removeCondition('MaterialKonsAtapPenutupPost');
+        removeCondition('JasaKonsPerkuatanTanahLongsorPost');
+        removeCondition('JasaKonsPondasiTanahPost');
+        removeCondition('JasaKonsPembatasPost');
+        removeCondition('JasaKonsPerbaikanPost');
+	removeCondition('JasaKonsCuttingBetonPost');
+	removeCondition('JasaKonsBongkarBangunanPost');
+        removeCondition('JasaKonsPengeboranPost'); 
+	removeCondition('JasaKonsFinishingPost');
+        removeCondition('JasaKonsStrukturPost');
+        removeCondition('JasaKonsAlatKonstruksiPost');
+        removeCondition('JasaKonsJalanPerkerasanPost');
+	
+     //hapus elemen saluran lain
+        removeCondition('SandwichPanelModular');
+        removeCondition('ModularKamarMandiToilet');
+        removeCondition('DindingPanelBetonPrecastModular');
+        removeCondition('BangunanPrefabModular');
+        removeCondition('BataRinganHebelModular');
+       
+        ProdukKonstruksiDindingModularLink.style.visibility = 'visible';
+        ProdukDindingModularLink.style.visibility = 'visible';
+        RosterBetonLink.style.visibility = 'visible';
+        pageNameProdukDindingModularPost.textContent = urlMappingRosterBeton[cleanUrlProdukModularKons];
+    }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingRosterBeton[cleanUrlProdukModularKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Produk Dinding & Bangunan Modular",
+                   "item": "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": "Roster Beton",
+                   "item": "https://www.betonjayareadymix.com/p/roster-beton.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 5,
+                   "name": urlMappingRosterBeton[cleanUrlProdukModularKons],
                    "item": cleanUrlProdukModularKons
                }
            ]
