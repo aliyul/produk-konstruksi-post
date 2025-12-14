@@ -321,7 +321,6 @@ const urlMappingProdukKanstin = {
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-surabaya.html": "Harga Kanstin Surabaya",
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-cisangkan.html": "Harga Kanstin Cisangkan",
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-paving.html": "Harga Kanstin Paving",
-  "https://www.betonjayareadymix.com/2021/04/harga-pemasangan-kanstin.html": "Harga Pemasangan Kanstin",
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-taman.html": "Harga Kanstin Taman",
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-per-meter.html": "Harga Kanstin Per Meter",
   "https://www.betonjayareadymix.com/2021/04/harga-car-stopper-beton.html": "Harga Car Stopper Beton",
@@ -339,7 +338,6 @@ const urlMappingProdukKanstin = {
   "https://www.betonjayareadymix.com/2021/04/ukuran-kanstin-beton.html": "Ukuran Kanstin Beton",
 
   "https://www.betonjayareadymix.com/2021/09/cara-pasang-kanstin-taman.html": "Cara Pasang Kanstin Taman",
-  "https://www.betonjayareadymix.com/2021/08/pemasangan-kanstin-jalan.html": "Pemasangan Kanstin Jalan",
   "https://www.betonjayareadymix.com/2021/08/mutu-beton-untuk-kanstin.html": "Mutu Beton Untuk Kanstin",
   "https://www.betonjayareadymix.com/2021/08/macam-kanstin.html": "Macam Kanstin",
   "https://www.betonjayareadymix.com/2021/08/cara-pasang-kanstin-trotoar.html": "Cara Pasang Kanstin Trotoar",
