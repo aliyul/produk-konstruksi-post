@@ -111,7 +111,16 @@ const urlMappingProdukTiangPancangBeton = {
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-precast.html": "Tiang Pancang Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-diameter-30-cm.html": "Tiang Pancang Beton Diameter 30 Cm",
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-pondasi-rumah.html": "Tiang Pancang Beton Pondasi Rumah",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton-per-batang.html": "Harga Tiang Pancang Beton Per Batang"
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton-per-batang.html": "Harga Tiang Pancang Beton Per Batang",
+	
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bogor.html": "Harga Tiang Pancang Beton Bogor",
+   "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bekasi.html": "Harga Tiang Pancang Beton Bekasi",
+   "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-tangerang.html": "Harga Tiang Pancang Beton Tangerang",
+    "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-jakarta.html": "Harga Tiang Pancang Beton Jakarta",
+    "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-depok.html": "Harga Tiang Pancang Beton Depok",
+    "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-karawang.html": "Harga Tiang Pancang Beton Karawang",
+    "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-surabaya.html": "Harga Tiang Pancang Beton Surabaya"
+  
 };
 
 //SUB "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
