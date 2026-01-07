@@ -65,6 +65,7 @@ const urlMappingProdukJembatan = {
   "http://betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
   "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
   "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
+	
 	/*
     "https://www.betonjayareadymix.com/p/tender-proyek-jembatan-flyover.html": "Tender Proyek Jembatan Flyover",
   "https://www.betonjayareadymix.com/p/perawatan-jembatan-flyover.html": "Perawatan Jembatan Flyover",
