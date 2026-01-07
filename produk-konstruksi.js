@@ -62,7 +62,7 @@ const urlMappingProdukPondasi = {
 
 };
 const urlMappingProdukJembatan = {
-  "http://betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
+  "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
   "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
   "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
 	
