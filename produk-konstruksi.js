@@ -62,6 +62,10 @@ const urlMappingProdukPondasi = {
 
 };
 const urlMappingProdukJembatan = {
+  "http://betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
+  "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
+  "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
+	/*
     "https://www.betonjayareadymix.com/p/tender-proyek-jembatan-flyover.html": "Tender Proyek Jembatan Flyover",
   "https://www.betonjayareadymix.com/p/perawatan-jembatan-flyover.html": "Perawatan Jembatan Flyover",
   "https://www.betonjayareadymix.com/p/flyover-baja.html": "Flyover Baja",
@@ -72,6 +76,7 @@ const urlMappingProdukJembatan = {
   "https://www.betonjayareadymix.com/p/desain-jembatan-layang.html": "Desain Jembatan Layang",
   "https://www.betonjayareadymix.com/p/spesifikasi-jembatan-flyover.html": "Spesifikasi Jembatan Flyover",
   "https://www.betonjayareadymix.com/p/harga-jembatan-flyover.html": "Harga Jembatan Flyover"
+  */
 };
 const urlMappingProdukDinding = {
  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
