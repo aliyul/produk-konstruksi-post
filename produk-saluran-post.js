@@ -643,7 +643,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // === SET TANGGAL MANUAL (dateModified) ===
     //const manualDate = "2026-02-25"; // bisa diambil dari CMS / data attribute
-    const manualDate = ""; // kosongkan
+    const manualDate = null; // kosongkan
 
     if (!manualDate) {
         console.log("⚠️ manualDate kosong, fallback ke tanggal publish");
