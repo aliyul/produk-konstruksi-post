@@ -602,8 +602,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-    // --- loader evergreen JS dengan sessionStorage (anti 429) ---
-    async function loadEvergreenScript() {
+    // --- Loader evergreen JS dengan sessionStorage (anti 429) ---
+    async function loadEvergreenScript(manualDate) {
       const KEY = "evergreenScriptLoaded";
 
       const needReload =
@@ -614,7 +614,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (!needReload) {
         console.log("⚡ detect-evergreen.js sudah aktif & variable ready — SKIP load");
       } else {
-        console.log("⏳ load detect-evergreen.js dari GitHack…");
+        console.log("⏳ Load detect-evergreen.js dari GitHack…");
         try {
           await loadExternalJSAsync(
             "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
@@ -625,24 +625,32 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (err) {
           console.error("❌ Gagal load detect-evergreen.js", err);
           sessionStorage.removeItem(KEY);
+          return;
         }
       }
 
       // --- ALWAYS run evergreen check tiap halaman ---
       if (typeof window.runEvergreenCheck === "function") {
-        console.log("🔁 Running evergreen check for this page...");
-        window.runEvergreenCheck();
+        console.log("🔁 Running runEvergreenCheck for this page...");
+        window.runEvergreenCheck(manualDate);
       } else if (typeof window.detectEvergreen === "function") {
-        // fallback jika runEvergreenCheck tidak ada
         console.log("🔁 fallback: running detectEvergreen() directly...");
-        window.detectEvergreen();
+        window.detectEvergreen(manualDate);
       } else {
         console.warn("⚠️ runEvergreenCheck / detectEvergreen tidak ditemukan!");
       }
     }
 
+    // === SET TANGGAL MANUAL (dateModified) ===
+    //const manualDate = "2026-02-25"; // bisa diambil dari CMS / data attribute
+    const manualDate = ""; // kosongkan
+
+    if (!manualDate) {
+        console.log("⚠️ manualDate kosong, fallback ke tanggal publish");
+    }
+
     // === PANGGIL LOADER ===
-    await loadEvergreenScript();
+    await loadEvergreenScript(manualDate);
 
   } catch (err) {
     console.error("[HybridDateModified] Fatal error:", err);
