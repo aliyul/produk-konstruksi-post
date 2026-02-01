@@ -592,66 +592,74 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 (async function runHybridDateModified() {
   try {
-    // --- helper untuk load eksternal JS secara promise ---
+
     function loadExternalJSAsync(src) {
       return new Promise((resolve, reject) => {
         const s = document.createElement("script");
         s.src = src;
         s.async = true;
-        s.onload = () => resolve();
+        s.onload = resolve;
         s.onerror = () => reject(new Error("Gagal load " + src));
         document.head.appendChild(s);
       });
     }
 
-    // --- Loader evergreen JS dengan sessionStorage (anti reload / anti 429) ---
+    async function waitForDetectEvergreen(timeout = 3000) {
+      const start = Date.now();
+      return new Promise((resolve, reject) => {
+        (function check() {
+          if (typeof window.detectEvergreen === "function") {
+            resolve(true);
+          } else if (Date.now() - start > timeout) {
+            reject(new Error("detectEvergreen timeout"));
+          } else {
+            setTimeout(check, 50);
+          }
+        })();
+      });
+    }
+
     async function loadEvergreenScript(manualDate = null) {
       const KEY = "evergreenScriptLoaded";
 
-      const needReload =
-        !sessionStorage.getItem(KEY) ||
-        typeof window.detectEvergreen !== "function";
-
-      if (needReload) {
-        console.log("⏳ Loading detect-evergreen.js...");
-        await loadExternalJSAsync(
-          "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
-        );
-        sessionStorage.setItem(KEY, "true");
-        console.log("✅ detect-evergreen.js READY");
+      // ✅ 1. Kalau fungsi sudah ada → STOP (ANTI LIMIT)
+      if (typeof window.detectEvergreen === "function") {
+        console.log("⚡ detectEvergreen already ready");
       } else {
-        console.log("⚡ detect-evergreen.js already loaded");
+
+        // ✅ 2. Kalau BELUM ada & belum pernah load
+        if (!sessionStorage.getItem(KEY)) {
+          console.log("⏳ Loading detect-evergreen.js...");
+          await loadExternalJSAsync(
+            "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
+          );
+          sessionStorage.setItem(KEY, "true");
+        } else {
+          console.log("♻️ Script pernah diload, menunggu siap...");
+        }
+
+        // ✅ 3. Pastikan fungsi benar-benar siap
+        await waitForDetectEvergreen();
+        console.log("✅ detectEvergreen READY");
       }
 
-      // --- CONFIG OBJECT (WAJIB OBJECT, AMAN UNTUK DESTRUCTURING) ---
-      const config =
-        manualDate
-          ? { customDateModified: manualDate }
-          : {}; // kosong = fallback internal
+      // ✅ 4. CONFIG WAJIB OBJECT
+      const config = manualDate
+        ? { customDateModified: manualDate }
+        : {};
 
-      // --- ALWAYS run evergreen check tiap halaman ---
-      if (typeof window.runEvergreenCheck === "function") {
-        console.log("🔁 Running runEvergreenCheck()");
-        window.runEvergreenCheck(config);
-      } else if (typeof window.detectEvergreen === "function") {
-        console.log("🔁 Running detectEvergreen()");
-        window.detectEvergreen(config);
-      } else {
-        console.warn("⚠️ detectEvergreen / runEvergreenCheck tidak ditemukan");
-      }
+      console.log("🧠 detectEvergreen config:", config);
+      window.detectEvergreen(config);
     }
 
-    // =====================================================
-    // 🔧 SETTING MANUAL DATE (OPSIONAL)
-    // =====================================================
+    // =============================
+    // MODE PEMANGGILAN
+    // =============================
 
-    // ✔ AKTIFKAN JIKA MAU dateModified MANUAL
-    // const manualDate = "2026-02-25";
+    // ✔ MANUAL
+    // await loadEvergreenScript("2026-02-25");
 
-    // ✔ PANGGIL DENGAN MANUAL DATE
-    // await loadEvergreenScript(manualDate);
-
-    // ✔ DEFAULT (TANPA MANUAL DATE → AUTO FALLBACK)
+    // ✔ AUTO (EVERGREEN)
     await loadEvergreenScript();
 
   } catch (err) {
