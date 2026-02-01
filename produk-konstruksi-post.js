@@ -20,7 +20,6 @@ const urlMappingProdukBetonPrecast = {
   "https://www.betonjayareadymix.com/2021/09/daftar-harga-beton-precast.html": "Daftar Harga Beton Precast",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-jembatan.html": "Harga Beton Precast Jembatan",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-lantai.html": "Harga Beton Precast Lantai",
-  "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-u-ditch.html": "Harga Beton Precast U Ditch",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-dinding.html": "Harga Beton Precast Dinding",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-murah.html": "Harga Beton Precast Murah",
   "https://www.betonjayareadymix.com/2021/09/berapa-harga-beton-precast.html": "Berapa Harga Beton Precast",
