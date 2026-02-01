@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // --- Loader evergreen JS dengan sessionStorage (anti 429) ---
-    async function loadEvergreenScript(manualDate) {
+    async function loadEvergreenScript(manualDate = null) {
       const KEY = "evergreenScriptLoaded";
 
       const needReload =
@@ -642,15 +642,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // === SET TANGGAL MANUAL (dateModified) ===
-    //const manualDate = "2026-02-25"; // bisa diambil dari CMS / data attribute
-    const manualDate = null; // kosongkan
+    //const manualDate = "2026-02-25"; // bisa diambil dari CMS / data attribut
 
-    if (!manualDate) {
-        console.log("⚠️ manualDate kosong, fallback ke tanggal publish");
-    }
-
-    // === PANGGIL LOADER ===
-    await loadEvergreenScript(manualDate);
+    // === PANGGIL LOADER dengan PARAMETER JIKA ADA TANGGAL MODIFIED ===
+    //await loadEvergreenScript(manualDate);
+       // === PANGGIL LOADER TANPA PARAMETER JIKA TIDAK ADA TANGGAL MODIFIED ===
+    await loadEvergreenScript();
 
   } catch (err) {
     console.error("[HybridDateModified] Fatal error:", err);
