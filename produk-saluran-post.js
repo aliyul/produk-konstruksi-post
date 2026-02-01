@@ -592,7 +592,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 (async function runHybridDateModified() {
   try {
-
+    // --- helper untuk load eksternal JS secara promise ---
     function loadExternalJSAsync(src) {
       return new Promise((resolve, reject) => {
         const s = document.createElement("script");
@@ -604,6 +604,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
+    // --- Loader evergreen JS dengan sessionStorage (anti reload / anti 429) ---
     async function loadEvergreenScript(manualDate = null) {
       const KEY = "evergreenScriptLoaded";
 
@@ -617,33 +618,46 @@ document.addEventListener("DOMContentLoaded", function() {
           "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
         );
         sessionStorage.setItem(KEY, "true");
-        console.log("✅ detect-evergreen.js ready");
+        console.log("✅ detect-evergreen.js READY");
       } else {
         console.log("⚡ detect-evergreen.js already loaded");
       }
 
-      // ALWAYS RUN per page
+      // --- CONFIG OBJECT (WAJIB OBJECT, AMAN UNTUK DESTRUCTURING) ---
+      const config =
+        manualDate
+          ? { customDateModified: manualDate }
+          : {}; // kosong = fallback internal
+
+      // --- ALWAYS run evergreen check tiap halaman ---
       if (typeof window.runEvergreenCheck === "function") {
-        window.runEvergreenCheck(manualDate);
+        console.log("🔁 Running runEvergreenCheck()");
+        window.runEvergreenCheck(config);
       } else if (typeof window.detectEvergreen === "function") {
-        window.detectEvergreen(manualDate);
+        console.log("🔁 Running detectEvergreen()");
+        window.detectEvergreen(config);
       } else {
-        console.warn("⚠️ Evergreen function not found");
+        console.warn("⚠️ detectEvergreen / runEvergreenCheck tidak ditemukan");
       }
     }
 
-    // === OPSI ===
+    // =====================================================
+    // 🔧 SETTING MANUAL DATE (OPSIONAL)
+    // =====================================================
+
+    // ✔ AKTIFKAN JIKA MAU dateModified MANUAL
     // const manualDate = "2026-02-25";
+
+    // ✔ PANGGIL DENGAN MANUAL DATE
     // await loadEvergreenScript(manualDate);
 
-    // === DEFAULT (tanpa dateModified manual) ===
+    // ✔ DEFAULT (TANPA MANUAL DATE → AUTO FALLBACK)
     await loadEvergreenScript();
 
   } catch (err) {
     console.error("[HybridDateModified] Fatal:", err);
   }
 })();
-
 
 
      // Menemukan elemen menggunakan Id
