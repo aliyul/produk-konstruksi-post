@@ -101,8 +101,8 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/buis-beton-depok.html": "Buis Beton Depok",
 
   "https://www.betonjayareadymix.com/2021/03/harga-buis-beton.html": "Harga Buis Beton",
-    "https://www.betonjayareadymix.com/2021/08/harga-buis-beton-tanpa-tulangan.html": "Harga Buis Beton Tanpa Tulangan",
-    "https://www.betonjayareadymix.com/2021/08/harga-buis-beton-bulat.html": "Harga Buis Beton Bulat",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tanpa-tulangan.html": "Harga Buis Beton Tanpa Tulangan",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bulat.html": "Harga Buis Beton Bulat",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-asiacon.html": "Harga Buis Beton Asiacom",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-dusaspun.html": "Harga Buis Beton Dusaspun",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-saluran-air.html": "Harga Buis Beton Saluran Air",
