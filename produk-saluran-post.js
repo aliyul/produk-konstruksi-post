@@ -387,7 +387,7 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/metode-pelaksanaan-pemasangan-cover-u.html": "Metode Pelaksanaan Pemasangan Cover U Ditch",
     "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-tutup-u-ditch.html": "Analisa Pemasangan Tutup U Ditch",
     "https://www.betonjayareadymix.com/2021/04/ukuran-cover-u-ditch.html": "Ukuran Cover U Ditch",
-    "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",
+    "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch"
 
 };
 // Menyimpan elemen yang dihapus dalam variabel
