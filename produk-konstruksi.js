@@ -304,15 +304,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
+
+	 // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingProdukKonstruksi,
+		urlMappingProdukAlatKonstruksi,
+		urlMappingProdukPembatas,
+		urlMappingProdukSaluran,
+		urlMappingProdukJalanLantai,
+		urlMappingProdukPondasi,
+		urlMappingProdukJembatan,
+		urlMappingProdukDinding,
+		urlMappingProdukPelabuhan,
+		urlMappingProdukCustom	
 	
-    var ProdukKons = document.getElementById("ProdukKons");
-    if (!ProdukKons) {
-        console.error("elemen Id ProdukKons kondisi terhapus");
-        return;
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukKons}`);
+      return;
     }
-	
-     	
-	    (async function runHybridDateModified() {
+
+	 (async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -393,6 +408,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+    var ProdukKons = document.getElementById("ProdukKons");
+    if (!ProdukKons) {
+        console.error("elemen Id ProdukKons kondisi terhapus");
+        return;
+    }
 	
      // Menemukan elemen menggunakan Id
      var ProdukKonstruksiLink = document.getElementById("ProdukKonstruksi");
