@@ -457,15 +457,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */	
-     // Menemukan elemen menggunakan Id
-    var ProdukKonsPost = document.getElementById("ProdukKonsPost");
-    if (!ProdukKonsPost) {
-        console.error("elemen Id ProdukKonsPost kondisi terhapus");
-        return;
+
+	    // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingProdukBetonPrecast,
+		urlMappingProdukPanelBetonPrecast,
+		urlMappingProdukBetonRinganPrecast,
+		urlMappingProdukTiangPancangBeton,
+		urlMappingProdukJualAlatBeratTambang,
+		urlMappingProdukJualAlatBerat,
+		urlMappingProdukJualAlatKonstruksiRinganPost
+	
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukKonsPost]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukKonsPost}`);
+      return;
     }
 
-     	         
-           	      	          (async function runHybridDateModified() {
+	 (async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -546,6 +558,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+    
+     // Menemukan elemen menggunakan Id
+    var ProdukKonsPost = document.getElementById("ProdukKonsPost");
+    if (!ProdukKonsPost) {
+        console.error("elemen Id ProdukKonsPost kondisi terhapus");
+        return;
+    }
 	
 	 var ProdukKonstruksiPostLink = document.getElementById("ProdukKonstruksiPost");
 
