@@ -552,15 +552,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */	
-     // Menemukan elemen menggunakan Id
-    var ProdukKonsPembatasPost = document.getElementById("ProdukKonsPembatasPost");
-    if (!ProdukKonsPembatasPost) {
-        console.error("elemen Id ProdukKonsPembatasPost kondisi terhapus");
-        return;
+
+	  // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingProdukPagarPanelBeton,
+		urlMappingProdukPagarBeton,
+		urlMappingProdukPagarRumah,
+		urlMappingProdukPagarGrc,
+		urlMappingProdukPagarBrc,
+                urlMappingProdukPagarBesi,
+		urlMappingProdukPagarBatuAlam,
+		urlMappingProdukKanstin
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukPembatasKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukPembatasKons}`);
+      return;
     }
-	
-		       	         
-           	      	          (async function runHybridDateModified() {
+
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -642,6 +654,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		  }
 		})();
 
+     // Menemukan elemen menggunakan Id
+    var ProdukKonsPembatasPost = document.getElementById("ProdukKonsPembatasPost");
+    if (!ProdukKonsPembatasPost) {
+        console.error("elemen Id ProdukKonsPembatasPost kondisi terhapus");
+        return;
+    }
+	
+		       	         
      var ProdukKonstruksiPembatasLink = document.getElementById("ProdukKonstruksiPembatas");
      var ProdukPembatasLink = document.getElementById("ProdukPembatas");
      var ProdukPagarPanelBetonLink = document.getElementById("ProdukPagarPanelBeton");
