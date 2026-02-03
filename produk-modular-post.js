@@ -315,15 +315,26 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */	
-	
-    var ProdukKonsDindingModularPost = document.getElementById("ProdukKonsDindingModularPost");
-    if (!ProdukKonsDindingModularPost) {
-        console.error("elemen Id ProdukKonsDindingModularPost kondisi terhapus");
-        return;
+
+	// --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+		urlMappingModularKamarMandiToilet,
+		urlMappingBangunanPrefabModular,
+		urlMappingDindingPanelBetonPrecastModular,
+		urlMappingSandwichPanelModular,
+		urlMappingBataRinganHebelModular,
+		urlMappingRosterBeton
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukModularKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukModularKons}`);
+      return;
     }
 
 	       	         
-           	      	          (async function runHybridDateModified() {
+    (async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -405,6 +416,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		  }
 		})();
 
+	
+    var ProdukKonsDindingModularPost = document.getElementById("ProdukKonsDindingModularPost");
+    if (!ProdukKonsDindingModularPost) {
+        console.error("elemen Id ProdukKonsDindingModularPost kondisi terhapus");
+        return;
+    }
 	
      // Menemukan elemen menggunakan Id
      var ProdukKonstruksiDindingModularLink = document.getElementById("ProdukKonstruksiDindingModular");
