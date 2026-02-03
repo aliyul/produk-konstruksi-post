@@ -254,7 +254,7 @@ const urlMappingUditch = {
   "https://www.betonjayareadymix.com/2021/04/u-ditch-precast.html": "U Ditch Precast",
   "https://www.betonjayareadymix.com/2021/04/u-ditch-type-ds-2.html": "U Ditch Type DS 2",
   "https://www.betonjayareadymix.com/2021/04/u-ditch-jakarta.html": "U Ditch Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-karawang.html.html": "U Ditch Karawang",
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-karawang.html": "U Ditch Karawang",
   "https://www.betonjayareadymix.com/2021/04/u-ditch-depok.html": "U Ditch Depok",
   "https://www.betonjayareadymix.com/2021/04/u-ditch-bandung.html": "U Ditch Bandung",
   "https://www.betonjayareadymix.com/2021/04/u-ditch-surabaya.html": "U Ditch Surabaya",
