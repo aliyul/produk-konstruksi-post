@@ -582,13 +582,25 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })();
 */
-	
-    var ProdukKonsSaluranPost = document.getElementById("ProdukKonsSaluranPost");
-    if (!ProdukKonsSaluranPost) {
-        console.error("elemen Id ProdukKonsSaluranPost kondisi terhapus");
-        return;
+
+	 // --- gabungkan semua mapping ---
+    const urlMappingGabungan = Object.assign(
+      {},
+      urlMappingGorongBeton,
+      urlMappingSaluranBeton,
+      urlMappingPipaBeton,
+      urlMappingBuis,
+      urlMappingBoxCulvert,
+      urlMappingUditch
+    );
+
+    // --- validasi URL terdaftar ---
+    if (!urlMappingGabungan[cleanUrlProdukSaluranKons]) {
+      console.log(`[HybridDateModified] URL tidak terdaftar: ${cleanUrlProdukSaluranKons}`);
+      return;
     }
-    	     (async function runHybridDateModified() {
+
+	(async function runHybridDateModified() {
 		  try {
 		
 		    function loadExternalJS(src) {
@@ -669,6 +681,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		    console.error("[HybridDateModified] Fatal:", err);
 		  }
 		})();
+    var ProdukKonsSaluranPost = document.getElementById("ProdukKonsSaluranPost");
+    if (!ProdukKonsSaluranPost) {
+        console.error("elemen Id ProdukKonsSaluranPost kondisi terhapus");
+        return;
+    }
+     
      // Menemukan elemen menggunakan Id
      var ProdukKonstruksiSaluranLink = document.getElementById("ProdukKonstruksiSaluran");
      var ProdukSaluranLink = document.getElementById("ProdukSaluran");
