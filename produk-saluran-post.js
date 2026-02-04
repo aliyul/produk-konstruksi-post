@@ -44,7 +44,7 @@ const urlMappingPipaBeton = {
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-bekasi.html": "Pipa Beton Bekasi",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-depok.html": "Pipa Beton Depok",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-tangerang.html": "Pipa Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang"
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang",
 
   // ===== PIPA BETON DRAINASE (LOKASI & FUNGSI) =====
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-surabaya.html": "Pipa Beton Drainase Surabaya",
