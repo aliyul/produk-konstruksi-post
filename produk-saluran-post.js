@@ -30,10 +30,11 @@ const urlMappingSaluranBeton = {
 const urlMappingPipaBeton = {
  "https://www.betonjayareadymix.com/2022/01/pipa-beton-scg.html": "Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
-   "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-ukuran.html": "Pipa Beton Ukuran",
+  // ===== PIPA BETON COR GA PERLU BUAT ANAK POST =====
+ "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
 
 	
   // ===== PIPA BETON PRECAST =====
