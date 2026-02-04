@@ -28,18 +28,15 @@ const urlMappingSaluranBeton = {
 
 };
 const urlMappingPipaBeton = {
- "https://www.betonjayareadymix.com/2022/01/pipa-scg.html": "Pipa SCG",
  "https://www.betonjayareadymix.com/2022/01/pipa-beton-scg.html": "Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-gorong-gorong.html": "Pipa Beton Gorong Gorong",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-saluran-air.html": "Pipa Beton Saluran Air",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-ukuran.html": "Pipa Beton Ukuran",
+   "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-murah.html": "Pipa Beton Murah",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-diameter.html": "Pipa Beton Diameter",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-ukuran.html": "Pipa Beton Ukuran",
+
+	
+  // ===== PIPA BETON PRECAST =====
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-jakarta.html": "Pipa Beton Jakarta",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-terbaru.html": "Pipa Beton Terbaru",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-bogor.html": "Pipa Beton Bogor",
@@ -47,6 +44,62 @@ const urlMappingPipaBeton = {
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-depok.html": "Pipa Beton Depok",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-tangerang.html": "Pipa Beton Tangerang",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang"
+
+  // ===== PIPA BETON DRAINASE (LOKASI & FUNGSI) =====
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-surabaya.html": "Pipa Beton Drainase Surabaya",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-bandung.html": "Pipa Beton Drainase Bandung",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-bekasi.html": "Pipa Beton Drainase Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-tangerang.html": "Pipa Beton Drainase Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-depok.html": "Pipa Beton Drainase Depok",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-bogor.html": "Pipa Beton Drainase Bogor",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-jakarta.html": "Pipa Beton Drainase Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-bandara.html": "Pipa Beton Drainase Bandara",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-pertanian.html": "Pipa Beton Drainase Pertanian",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-industri.html": "Pipa Beton Drainase Industri",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-perumahan.html": "Pipa Beton Drainase Perumahan",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-jalan-raya.html": "Pipa Beton Drainase Jalan Raya",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-gorong-gorong.html": "Pipa Beton Gorong-Gorong",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-saluran-air.html": "Pipa Beton Saluran Air",
+
+  // ===== UKURAN & SPESIFIKASI PIPA BETON =====
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-400-mm.html": "Ukuran Pipa Beton 400 mm",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-300-mm.html": "Ukuran Pipa Beton 300 mm",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-200-mm.html": "Ukuran Pipa Beton 200 mm",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-150-mm.html": "Ukuran Pipa Beton 150 mm",
+  "https://www.betonjayareadymix.com/2022/02/ketebalan-dinding-pipa-beton.html": "Ketebalan Dinding Pipa Beton",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-vs-kapasitas-aliran.html": "Ukuran Pipa Beton vs Kapasitas Aliran",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-untuk-gorong-gorong.html": "Ukuran Pipa Beton untuk Gorong-Gorong",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-untuk-drainase.html": "Ukuran Pipa Beton untuk Drainase",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-standar-sni.html": "Ukuran Pipa Beton Standar SNI",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-diameter.html": "Diameter Pipa Beton",
+
+  // ===== HARGA PIPA BETON =====
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-surabaya.html": "Harga Pipa Beton Surabaya",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-purwakarta.html": "Harga Pipa Beton Purwakarta",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bandung.html": "Harga Pipa Beton Bandung",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-karawang.html": "Harga Pipa Beton Karawang",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bekasi.html": "Harga Pipa Beton Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-tangerang.html": "Harga Pipa Beton Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-depok.html": "Harga Pipa Beton Depok",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bogor.html": "Harga Pipa Beton Bogor",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-jakarta.html": "Harga Pipa Beton Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-murah.html": "Pipa Beton Murah",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-terbaru.html": "Pipa Beton Terbaru",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast",
+
+  // ===== PIPA BETON SCG =====
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-karawang.html": "Pipa Beton SCG Karawang",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bekasi.html": "Pipa Beton SCG Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-tangerang.html": "Pipa Beton SCG Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-depok.html": "Pipa Beton SCG Depok",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bogor.html": "Pipa Beton SCG Bogor",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-jakarta.html": "Pipa Beton SCG Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/keunggulan-pipa-beton-scg.html": "Keunggulan Pipa Beton SCG",
+  "https://www.betonjayareadymix.com/2022/02/perbandingan-pipa-scg-vs-lokal.html": "Perbandingan Pipa SCG vs Pipa Beton Lokal",
+  "https://www.betonjayareadymix.com/2022/02/spesifikasi-pipa-scg.html": "Spesifikasi Pipa SCG",
+  "https://www.betonjayareadymix.com/2022/02/pipa-scg.html": "Pipa SCG"
+
 };
 const urlMappingBuis = {
 "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah",
