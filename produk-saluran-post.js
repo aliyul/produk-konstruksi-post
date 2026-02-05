@@ -28,7 +28,7 @@ const urlMappingSaluranBeton = {
 
 };
 const urlMappingPipaBeton = {
- "https://www.betonjayareadymix.com/2022/01/pipa-beton-scg.html": "Pipa Beton SCG",
+ "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg.html": "Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
