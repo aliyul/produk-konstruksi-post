@@ -235,6 +235,8 @@ const urlMappingBoxCulvert = {
   "https://www.betonjayareadymix.com/2021/04/box-culvert-jakarta.html": "Box Culvert Jakarta",
   "https://www.betonjayareadymix.com/2021/04/box-culvert-jawatimur.html": "Box Culvert Jawa Timur",
  "https://www.betonjayareadymix.com/2021/04/box-culvert-100-x-100.html": "Box Culvert 100 x 100",
+
+  "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-box-culvert.html": "Analisa Pemasangan Box Culvert",
   "https://www.betonjayareadymix.com/2021/04/box-culvert-jalan-umum.html": "Box Culvert Jalan Umum",
   "https://www.betonjayareadymix.com/2021/04/box-culvert-irigasi.html": "Box Culvert Irigasi",
   "https://www.betonjayareadymix.com/2021/04/box-culvert-jembatan.html": "Box Culvert Jembatan",
