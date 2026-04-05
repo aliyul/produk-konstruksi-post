@@ -2,10 +2,10 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 const urlMappingProdukKonstruksi = {
 "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
-  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
+  "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi"
+/*
+	  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
   "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
- 
   "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
   "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
   "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",
@@ -14,6 +14,7 @@ const urlMappingProdukKonstruksi = {
   "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
   "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir",
   "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
+  */
 };
 const urlMappingProdukAlatKonstruksi = {	
 "https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
@@ -21,7 +22,19 @@ const urlMappingProdukAlatKonstruksi = {
 "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang"
 
 }
+const urlMappingProdukBetonPrecast = {
+  //SUB PILLAR DARI BETON PRECAST
+  "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
+  "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
+  "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",
+  "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur",
+  "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
+  "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
+  "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir"
 
+	//GA PERLU
+  //"https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
+};
 const urlMappingProdukPembatas = {
  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
   "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",
@@ -80,11 +93,17 @@ const urlMappingProdukJembatan = {
   */
 };
 const urlMappingProdukDinding = {
+	//product page Dari Sub pillar Dinding modular
+   "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
+  "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
   "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata ringan hebel modular",
   "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich panel modular",
+	//sub pillar system dan ga punya product page adanya money page
   "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding panel beton precast modular",
   "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan prefab modular",
+
+	//money page dari Bangunan Prefab (SYSTEM)
   "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular kamar mandi toilet"
 };
 const urlMappingProdukPelabuhan = {
