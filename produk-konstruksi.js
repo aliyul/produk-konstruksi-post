@@ -668,7 +668,7 @@ if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
-        ProdukPembatasLink.style.visibility = 'visible';
+        ProdukBetonPrecastLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukPembatas[cleanUrlProdukKons];
     }
@@ -749,6 +749,7 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukPembatasLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukPembatas[cleanUrlProdukKons];
@@ -837,6 +838,7 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukSaluranDrainaseLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukSaluran[cleanUrlProdukKons];
@@ -925,6 +927,7 @@ if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukJalanLantaiLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukJalanLantai[cleanUrlProdukKons];
@@ -1012,6 +1015,7 @@ if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukPondasiStrukturLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukPondasi[cleanUrlProdukKons];
@@ -1100,6 +1104,7 @@ if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	    ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukJembatanFlyoverLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukJembatan[cleanUrlProdukKons];
@@ -1188,6 +1193,7 @@ if (urlMappingProdukDinding[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukDindingBangunanModularLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukDinding[cleanUrlProdukKons];
@@ -1276,6 +1282,7 @@ if (urlMappingProdukPelabuhan[cleanUrlProdukKons]) {
         removeCondition('ProdukCustomKhusus');
        
         ProdukKonstruksiLink.style.visibility = 'visible';
+	     ProdukBetonPrecastLink.style.visibility = 'visible';
         ProdukPelabuhanPesisirLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
         pageNameProdukKons.textContent = urlMappingProdukPelabuhan[cleanUrlProdukKons];
