@@ -329,6 +329,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {},
 		urlMappingProdukKonstruksi,
 		urlMappingProdukAlatKonstruksi,
+		urlMappingProdukBetonPrecast,
 		urlMappingProdukPembatas,
 		urlMappingProdukSaluran,
 		urlMappingProdukJalanLantai,
@@ -435,12 +436,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	
      // Menemukan elemen menggunakan Id
      var ProdukKonstruksiLink = document.getElementById("ProdukKonstruksi");
- 
+
      var ProdukAlatKonstruksiLink = document.getElementById("ProdukAlatKonstruksi");
      var JualAlatBeratTambangLink = document.getElementById("JualAlatBeratTambang");
      var JualAlatKonstruksiRinganLink = document.getElementById("JualAlatKonstruksiRingan");
      var JualAlatBeratLink = document.getElementById("JualAlatBerat");
- 
+
+	 var ProdukBetonPrecastLink = document.getElementById("ProdukBetonPrecast");
      var ProdukPembatasLink = document.getElementById("ProdukPembatas");
      var ProdukSaluranDrainaseLink = document.getElementById("ProdukSaluranDrainase");
      var ProdukJalanLantaiLink = document.getElementById("ProdukJalanLantai");
@@ -459,7 +461,8 @@ document.addEventListener("DOMContentLoaded", function() {
      JualAlatBeratTambangLink.style.visibility = 'hidden';
      JualAlatKonstruksiRinganLink.style.visibility = 'hidden';
      JualAlatBeratLink.style.visibility = 'hidden';
- 
+
+	 ProdukBetonPrecastLink.style.visibility = 'hidden';
      ProdukPembatasLink.style.visibility = 'hidden';
      ProdukSaluranDrainaseLink.style.visibility = 'hidden';
      ProdukJalanLantaiLink.style.visibility = 'hidden';
@@ -495,7 +498,8 @@ if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
         removeCondition('JualAlatBeratTambang');
         removeCondition('JualAlatKonstruksiRingan');
         removeCondition('JualAlatBerat');
- 
+
+	     removeCondition('ProdukBetonPrecast');
         removeCondition('ProdukPembatas');
         removeCondition('ProdukSaluranDrainase');
         removeCondition('ProdukJalanLantai');
@@ -568,7 +572,8 @@ if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
         removeCondition('JualAlatBeratTambang');
         removeCondition('JualAlatKonstruksiRingan');
         removeCondition('JualAlatBerat');
- 
+
+	  removeCondition('ProdukBetonPrecast');
         removeCondition('ProdukPembatas');
         removeCondition('ProdukSaluranDrainase');
         removeCondition('ProdukJalanLantai');
@@ -622,10 +627,95 @@ if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
-if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
+
+if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
  
+        restoreCondition('ProdukBetonPrecast');
+ 
+     //hapus elemen div id lain
+        removeCondition('ProdukInFur');
+        removeCondition('MaterialKons');
+        removeCondition('ProdukKonsSaluran');
+        removeCondition('ProdukKonsPembatas');
+        removeCondition('JasaKonsPembatas');
+        removeCondition('JasaKonsJalanPerkerasan');
+        removeCondition('JasaKonsPondasiTanah');
+       	removeCondition('JasaKons');
+       	removeCondition('JasaKonsSub');
+       	removeCondition('MenuKons');
+       	removeCondition('JasaKonsFinishing');
+        removeCondition('JasaKonsStruktur');
+        removeCondition('JasaKonsPerbaikan');
+
+     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
+       // removeCondition('');
+        removeCondition('ProdukAlatKonstruksi');
+        removeCondition('JualAlatBeratTambang');
+        removeCondition('JualAlatKonstruksiRingan');
+        removeCondition('JualAlatBerat');
+ 
+	    
+        //removeCondition('ProdukBetonPrecast');
+        removeCondition('ProdukPembatas');
+        removeCondition('ProdukSaluranDrainase');
+        removeCondition('ProdukJalanLantai');
+        removeCondition('ProdukPondasiStruktur');
+        removeCondition('ProdukJembatanFlyover');
+        removeCondition('ProdukDindingBangunanModular');
+        removeCondition('ProdukPelabuhanPesisir');
+        removeCondition('ProdukCustomKhusus');
+       
+        ProdukKonstruksiLink.style.visibility = 'visible';
+        ProdukPembatasLink.style.visibility = 'visible';
+        //ProdukBuisLink.style.visibility = 'visible';
+        pageNameProdukKons.textContent = urlMappingProdukPembatas[cleanUrlProdukKons];
+    }
+  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+   if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
+       const jsonLDBreadcrumb = {
+           "@context": "https://schema.org",
+           "@type": "BreadcrumbList",
+           "itemListElement": [
+	    {
+	      "@type": "ListItem",
+	      "position": 1,
+	      "name": "Beton Jaya Readymix",
+	      "item": "https://www.betonjayareadymix.com/"
+	    },
+               {
+                   "@type": "ListItem",
+                   "position": 2,
+                   "name": "Produk Konstruksi",
+                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+              
+               {
+                   "@type": "ListItem",
+                   "position": 4,
+                   "name": urlMappingProdukBetonPrecast[cleanUrlProdukKons],
+                   "item": cleanUrlProdukKons
+               }
+           ]
+       };
+
+       const script = document.createElement('script');
+       script.type = 'application/ld+json';
+       script.text = JSON.stringify(jsonLDBreadcrumb);
+       document.head.appendChild(script);
+   }	
+if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
+        restoreCondition('ProdukKons');
+        restoreCondition('ProdukKonstruksi');
+
+	    restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukPembatas');
  
      //hapus elemen div id lain
@@ -681,16 +771,22 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			 {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Pembatas",
                    "item": "https://www.betonjayareadymix.com/p/produk-pembatas.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukPembatas[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -706,7 +802,8 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
  if (urlMappingProdukSaluran[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+
+	   restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukSaluranDrainase');
  
      //hapus elemen div id lain
@@ -762,16 +859,23 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			  {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Saluran & Drainase",
                    "item": "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukSaluran[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -786,7 +890,8 @@ if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
 if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+
+	    restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukJalanLantai');
  
      //hapus elemen div id lain
@@ -845,13 +950,19 @@ if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
              {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Jalan & Lantai",
                    "item": "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukJalanLantai[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -866,7 +977,8 @@ if (urlMappingProdukJalanLantai[cleanUrlProdukKons]) {
 if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+
+	    restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukPondasiStruktur');
  
      //hapus elemen div id lain
@@ -923,16 +1035,22 @@ if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			   {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Pondasi Struktur",
                    "item": "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukPondasi[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -947,7 +1065,8 @@ if (urlMappingProdukPondasi[cleanUrlProdukKons]) {
 if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+
+	    restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukJembatanFlyover');
  
      //hapus elemen div id lain
@@ -1004,16 +1123,22 @@ if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			 {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Jembatan & Flyover",
                    "item": "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukJembatan[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -1028,7 +1153,8 @@ if (urlMappingProdukJembatan[cleanUrlProdukKons]) {
 if (urlMappingProdukDinding[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+
+	    restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukDindingBangunanModular');
  
      //hapus elemen div id lain
@@ -1084,16 +1210,22 @@ if (urlMappingProdukDinding[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			   {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Dinding Bangunan Modular",
                    "item": "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukDinding[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
@@ -1109,7 +1241,8 @@ if (urlMappingProdukDinding[cleanUrlProdukKons]) {
 if (urlMappingProdukPelabuhan[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
- 
+	
+       restoreCondition('ProdukBetonPrecast');
         restoreCondition('ProdukPelabuhanPesisir');
  
      //hapus elemen div id lain
@@ -1165,16 +1298,22 @@ if (urlMappingProdukPelabuhan[cleanUrlProdukKons]) {
                    "name": "Produk Konstruksi",
                    "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
                },
-             {
+			 {
                    "@type": "ListItem",
                    "position": 3,
+                   "name": "Beton Precast",
+                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
+               },
+             {
+                   "@type": "ListItem",
+                   "position": 4,
                    "name": "Produk Pelabuhan",
                    "item": "https://www.betonjayareadymix.com/p/produk-pelabuhan.html"
                },
               
                {
                    "@type": "ListItem",
-                   "position": 4,
+                   "position": 5,
                    "name": urlMappingProdukPelabuhan[cleanUrlProdukKons],
                    "item": cleanUrlProdukKons
                }
