@@ -21,7 +21,7 @@ const urlMappingProdukAlatKonstruksi = {
 "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat",
 "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang"
 
-}
+};
 const urlMappingProdukBetonPrecast = {
   //SUB PILLAR DARI BETON PRECAST
   "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
