@@ -32,8 +32,8 @@ const urlMappingProdukBetonPrecast = {
   "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
   "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir"
 
-	//GA PERLU
-  //"https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
+	//PERLU JUGA
+  "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
 };
 const urlMappingProdukPembatas = {
  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
