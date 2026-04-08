@@ -370,6 +370,23 @@ CATATAN:
 - Jika ada post "harga alat berat murah" → redirect ke master page /harga-alat-berat-terbaru.html
 - Post dengan pola "alat-berat-[kota].html" (tanpa "jual") sudah benar sebagai [SUB2]
 - Post dengan pola "jual-alat-berat-[kota].html" sudah benar sebagai [MONEY PAGE]
+| No | Catatan | Prioritas |
+|----|---------|-----------|
+| 1 | Cluster alat berat sudah cukup terstruktur dan aman | ✅ |
+| 2 | Perhatikan post "harga alat berat bekas" dan "harga alat berat baru" - pastikan berbeda angle | 🟡 MEDIUM |
+| 3 | Jika ditemukan post "harga alat berat murah" → redirect ke master page | 🔴 HIGH |
+| 4 | Pastikan master page "Harga Alat Berat Terbaru" memiliki link ke semua post spesifik | 🟡 MEDIUM |
+| 5 | Post lokasi sudah spesifik per kota - tidak perlu diubah | ✅ |
+
+// ===== POTENSI REDIRECT JIKA DITEMUKAN =====
+
+Jika ada post berikut, redirect ke master page:
+| From URL (contoh) | Redirect To |
+|-------------------|--------------|
+| /2019/02/harga-alat-berat-murah-sekali.html | /2019/02/harga-alat-berat-terbaru.html |
+| /2019/02/daftar-harga-alat-berat-lengkap.html | /2019/02/harga-alat-berat-terbaru.html |
+| /2019/02/harga-alat-berat-promo.html | /2019/02/harga-alat-berat-terbaru.html |
+
 */
 
 const urlMappingProdukJualAlatBeratTambang = {
@@ -574,23 +591,7 @@ CATATAN PENTING:
    - Fokus pada ketersediaan di wilayah tersebut
    - Informasi pengiriman dan layanan
    - Harga spesifik wilayah
-*/
-| No | Catatan | Prioritas |
-|----|---------|-----------|
-| 1 | Cluster alat berat sudah cukup terstruktur dan aman | ✅ |
-| 2 | Perhatikan post "harga alat berat bekas" dan "harga alat berat baru" - pastikan berbeda angle | 🟡 MEDIUM |
-| 3 | Jika ditemukan post "harga alat berat murah" → redirect ke master page | 🔴 HIGH |
-| 4 | Pastikan master page "Harga Alat Berat Terbaru" memiliki link ke semua post spesifik | 🟡 MEDIUM |
-| 5 | Post lokasi sudah spesifik per kota - tidak perlu diubah | ✅ |
 
-// ===== POTENSI REDIRECT JIKA DITEMUKAN =====
-/*
-Jika ada post berikut, redirect ke master page:
-| From URL (contoh) | Redirect To |
-|-------------------|--------------|
-| /2019/02/harga-alat-berat-murah-sekali.html | /2019/02/harga-alat-berat-terbaru.html |
-| /2019/02/daftar-harga-alat-berat-lengkap.html | /2019/02/harga-alat-berat-terbaru.html |
-| /2019/02/harga-alat-berat-promo.html | /2019/02/harga-alat-berat-terbaru.html |
 */
 
 // "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
