@@ -16,8 +16,9 @@
 
 const urlMappingProdukBetonPrecastPost = {
   // ===== MASTER PAGE (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2021/09/harga-beton-precast.html": "Harga Beton Precast [MASTER]",
-  "https://www.betonjayareadymix.com/2021/09/jual-beton-precast.html": "Jual Beton Precast [HUB PAGE - LOKASI]",
+  "https://www.betonjayareadymix.com/2021/09/harga-beton-precast.html": "Harga Beton Precast",
+	//[HUB PAGE - LOKASI]
+  "https://www.betonjayareadymix.com/2021/09/jual-beton-precast.html": "Jual Beton Precast",
   
   // ===== APLIKASI SPESIFIK (PERTAHANKAN) =====
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-jembatan.html": "Harga Beton Precast Jembatan",
@@ -75,7 +76,7 @@ CATATAN TAMBAHAN:
 //  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast"
 const urlMappingProdukPanelBetonPrecastPost = {
   // ===== MASTER PAGE (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2022/02/harga-panel-beton-precast.html": "Harga Panel Beton Precast [MASTER]",
+  "https://www.betonjayareadymix.com/2022/02/harga-panel-beton-precast.html": "Harga Panel Beton Precast",
   
   // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
   "https://www.betonjayareadymix.com/2022/02/jual-panel-beton-precast.html": "Jual Panel Beton Precast",
@@ -116,7 +117,7 @@ CATATAN TAMBAHAN:
 // "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast"
 const urlMappingProdukBetonRinganPrecastPost = {
   // ===== MASTER PAGE (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2021/07/harga-beton-ringan-precast.html": "Harga Beton Ringan Precast [MASTER]",
+  "https://www.betonjayareadymix.com/2021/07/harga-beton-ringan-precast.html": "Harga Beton Ringan Precast",
   
   // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
   "https://www.betonjayareadymix.com/2021/07/spesifikasi-beton-ringan-precast.html": "Spesifikasi Beton Ringan Precast",
@@ -151,7 +152,7 @@ CATATAN TAMBAHAN:
 //SUB "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur"
 const urlMappingProdukTiangPancangBeton = {
   // ===== MASTER PAGE (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton.html": "Harga Tiang Pancang Beton [MASTER]",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton.html": "Harga Tiang Pancang Beton",
   
   // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-ready-mix.html": "Tiang Pancang Beton Ready Mix",
@@ -312,7 +313,7 @@ const urlMappingProdukJualAlatBerat = {
 };
 const urlMappingProdukJualAlatBeratTambang = {
   // ===== MASTER PAGE =====
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang [MASTER]",
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
 
   // ===== PERTAHANKAN =====
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang-batu-bara.html": "Alat Berat Tambang Batu Bara",
