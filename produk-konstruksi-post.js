@@ -259,6 +259,33 @@ const urlMappingProdukJualAlatKonstruksiRinganPost = {
 "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
 };
 
+// "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
+/*
+SUB PILLAR Produk Jembatan Flyover
+ "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
+  "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
+  "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
+  */
+const urlMappingProdukJembatanFlyoverStandarSpesifikasiFlyoverPost = {
+// Standar Spesifikasi Flyover - Produk Jembatan
+  "https://www.betonjayareadymix.com/2022/02/harga-jembatan-flyover.html": "Harga Jembatan Flyover",
+  "https://www.betonjayareadymix.com/2022/02/spesifikasi-jembatan-flyover.html": "Spesifikasi Jembatan Flyover",
+  "https://www.betonjayareadymix.com/2022/02/standar-konstruksi-flyover.html": "Standar Konstruksi Flyover"
+};
+const urlMappingProdukJembatanFlyoverLayananProyekFlyoverPost = {
+// Layanan Proyek Flyover - Produk Jembatan
+  "https://www.betonjayareadymix.com/2022/02/perawatan-jembatan-flyover.html": "Perawatan Jembatan Flyover",
+  "https://www.betonjayareadymix.com/2022/02/konstruksi-flyover-cepat.html": "Konstruksi Flyover Cepat",
+  "https://www.betonjayareadymix.com/2022/02/kontraktor-jembatan-flyover.html": "Kontraktor Jembatan Flyover",
+  "https://www.betonjayareadymix.com/2022/02/tender-proyek-jembatan-flyover.html": "Tender Proyek Jembatan Flyover",
+
+};
+const urlMappingProdukJembatanFlyoverTipeMaterialFlyoverPost = {
+// Tipe Material Flyover - Produk Jembatan
+  "https://www.betonjayareadymix.com/2022/02/desain-jembatan-layang.html": "Desain Jembatan Layang",
+  "https://www.betonjayareadymix.com/2022/02/flyover-beton-precast.html": "Flyover Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/flyover-baja.html": "Flyover Baja"
+};
 
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukKonsPost = {};
