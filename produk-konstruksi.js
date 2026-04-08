@@ -1,29 +1,30 @@
 
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
+// ============================================================
+// PRODUK KONSTRUKSI - PILLAR & SUB PILLAR
+// ============================================================
+
 const urlMappingProdukKonstruksi = {
-"https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (LANGSUNG DI BAWAH PILLAR PRODUK KONSTRUKSI)
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
   "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi"
-/*
-	  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
-  "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
-  "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
-  "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",
-  "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur",
-  "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
-  "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
-  "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir",
-  "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
-  */
 };
-const urlMappingProdukAlatKonstruksi = {	
-"https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
-"https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat",
-"https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang"
 
+const urlMappingProdukAlatKonstruksi = {
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (PRODUK ALAT KONSTRUKSI)
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
+  "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat",
+  "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang"
 };
+
 const urlMappingProdukBetonPrecast = {
-  //SUB PILLAR DARI BETON PRECAST
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (PRODUK BETON PRECAST)
+  // ============================================================
   "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",
   "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",
   "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",
@@ -31,12 +32,14 @@ const urlMappingProdukBetonPrecast = {
   "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
   "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",
   "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir",
-
-	//PERLU JUGA
   "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"
 };
+
 const urlMappingProdukPembatas = {
- "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
+  // ============================================================
+  // [VARIANT] - PRODUK PEMBATAS
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
   "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",
   "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",
   "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",
@@ -44,9 +47,12 @@ const urlMappingProdukPembatas = {
   "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",
   "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",
   "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"
-
 };
+
 const urlMappingProdukSaluran = {
+  // ============================================================
+  // [VARIANT] - PRODUK SALURAN DRAINASE
+  // ============================================================
   "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",
   "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",
   "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",
@@ -54,16 +60,24 @@ const urlMappingProdukSaluran = {
   "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",
   "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"
 };
+
 const urlMappingProdukJalanLantai = {
- "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",
+  // ============================================================
+  // [VARIANT] - PRODUK JALAN LANTAI
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",
   "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput",
- "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",
- "https://www.betonjayareadymix.com/p/slab-beton-lapangan-parkir.html": "Slab Beton Lapangan Parkir",
- "https://www.betonjayareadymix.com/p/slab-beton-industri-heavy-duty.html": "Slab Beton Industri Heavy Duty",
- "https://www.betonjayareadymix.com/p/material-lantai-beton-lapangan-olahraga.html": "Material Lantai Beton Lapangan Olahraga"
+  "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",
+  "https://www.betonjayareadymix.com/p/slab-beton-lapangan-parkir.html": "Slab Beton Lapangan Parkir",
+  "https://www.betonjayareadymix.com/p/slab-beton-industri-heavy-duty.html": "Slab Beton Industri Heavy Duty",
+  "https://www.betonjayareadymix.com/p/material-lantai-beton-lapangan-olahraga.html": "Material Lantai Beton Lapangan Olahraga"
 };
+
 const urlMappingProdukPondasi = {
-   "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",
+  // ============================================================
+  // [VARIANT] - PRODUK PONDASI STRUKTUR
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",
   "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",
   "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",
   "https://www.betonjayareadymix.com/p/produk-strauss-pile.html": "Produk Strauss Pile",
@@ -71,42 +85,43 @@ const urlMappingProdukPondasi = {
   "https://www.betonjayareadymix.com/p/produk-pondasi-cakar-ayam.html": "Produk Pondasi Cakar Ayam",
   "https://www.betonjayareadymix.com/p/produk-pondasi-sumuran.html": "Produk Pondasi Sumuran",
   "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"
-
-
 };
+
 const urlMappingProdukJembatan = {
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (PRODUK JEMBATAN FLYOVER)
+  // ============================================================
   "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",
   "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
   "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
-	
-	/*
-    "https://www.betonjayareadymix.com/p/tender-proyek-jembatan-flyover.html": "Tender Proyek Jembatan Flyover",
-  "https://www.betonjayareadymix.com/p/perawatan-jembatan-flyover.html": "Perawatan Jembatan Flyover",
-  "https://www.betonjayareadymix.com/p/flyover-baja.html": "Flyover Baja",
-  "https://www.betonjayareadymix.com/p/flyover-beton-precast.html": "Flyover Beton Precast",
-  "https://www.betonjayareadymix.com/p/standar-konstruksi-flyover.html": "Standar Konstruksi Flyover",
-  "https://www.betonjayareadymix.com/p/kontraktor-jembatan-flyover.html": "Kontraktor Jembatan Flyover",
-  "https://www.betonjayareadymix.com/p/konstruksi-flyover-cepat.html": "Konstruksi Flyover Cepat",
-  "https://www.betonjayareadymix.com/p/desain-jembatan-layang.html": "Desain Jembatan Layang",
-  "https://www.betonjayareadymix.com/p/spesifikasi-jembatan-flyover.html": "Spesifikasi Jembatan Flyover",
-  "https://www.betonjayareadymix.com/p/harga-jembatan-flyover.html": "Harga Jembatan Flyover"
-  */
 };
+
 const urlMappingProdukDinding = {
-	//product page Dari Sub pillar Dinding modular
-   "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
+  // ============================================================
+  // [VARIANT] - PRODUK DINDING BANGUNAN MODULAR
+  // ============================================================
+  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",
   "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",
- "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
+  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
   "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata ringan hebel modular",
   "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich panel modular",
-	//sub pillar system dan ga punya product page adanya money page
+  
+  // ============================================================
+  // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
+  // ============================================================
   "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding panel beton precast modular",
   "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan prefab modular",
-
-	//money page dari Bangunan Prefab (SYSTEM)
+  
+  // ============================================================
+  // [MONEY PAGE] - MONEY PAGE DARI BANGUNAN PREFAB (SYSTEM)
+  // ============================================================
   "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular kamar mandi toilet"
 };
+
 const urlMappingProdukPelabuhan = {
+  // ============================================================
+  // [VARIANT] - PRODUK PELABUHAN PESISIR
+  // ============================================================
   "https://www.betonjayareadymix.com/p/sistem-proteksi-dermaga.html": "Sistem Proteksi Dermaga",
   "https://www.betonjayareadymix.com/p/dermaga-apung-modular.html": "Dermaga Apung Modular",
   "https://www.betonjayareadymix.com/p/alat-bongkar-muat-pelabuhan.html": "Alat Bongkar Muat Pelabuhan",
@@ -115,13 +130,16 @@ const urlMappingProdukPelabuhan = {
   "https://www.betonjayareadymix.com/p/kerangka-baja-dermaga.html": "Kerangka Baja Dermaga",
   "https://www.betonjayareadymix.com/p/sheet-pile-dermaga.html": "Sheet Pile Dermaga"
 };
+
 const urlMappingProdukCustom = {
+  // ============================================================
+  // [VARIANT] - PRODUK CUSTOM KHUSUS
+  // ============================================================
   "https://www.betonjayareadymix.com/p/beton-precast-custom.html": "Beton Precast Custom",
   "https://www.betonjayareadymix.com/p/struktur-baja-kustom.html": "Struktur Baja Kustom",
   "https://www.betonjayareadymix.com/p/fitting-drainase-custom.html": "Fitting Drainase Custom",
   "https://www.betonjayareadymix.com/p/peralatan-konstruksi-custom.html": "Peralatan Konstruksi Custom"
 };
-
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
@@ -670,7 +688,7 @@ if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
         ProdukKonstruksiLink.style.visibility = 'visible';
         ProdukBetonPrecastLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukKons.textContent = urlMappingProdukPembatas[cleanUrlProdukKons];
+        pageNameProdukKons.textContent = urlMappingProdukBetonPrecast[cleanUrlProdukKons];
     }
   // ✅ Tambahkan JSON-LD Breadcrumb otomatis
    if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
