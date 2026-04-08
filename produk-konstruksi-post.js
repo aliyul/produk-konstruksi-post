@@ -15,30 +15,26 @@
  // Cek URL saat ini dan sesuaikan dengan kondisi yang diinginkan
 
 const urlMappingProdukBetonPrecastPost = {
-  // ===== MASTER PAGE (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast.html": "Harga Beton Precast",
-	//[HUB PAGE - LOKASI]
-  "https://www.betonjayareadymix.com/2021/09/jual-beton-precast.html": "Jual Beton Precast",
   
-  // ===== APLIKASI SPESIFIK (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - HARGA PER APLIKASI (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-jembatan.html": "Harga Beton Precast Jembatan",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-lantai.html": "Harga Beton Precast Lantai",
   "https://www.betonjayareadymix.com/2021/09/harga-beton-precast-dinding.html": "Harga Beton Precast Dinding",
   
-  // ===== INFORMASI PRODUK (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-jalan.html": "Beton Precast Untuk Jalan",
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-saluran-irigasi.html": "Beton Precast Untuk Saluran Irigasi",
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-lantai.html": "Beton Precast Untuk Lantai",
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-rumah.html": "Beton Precast Untuk Rumah",
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-hcs.html": "Beton Precast HCS",
+  // ============================================================
+  // [MONEY PAGE] - HUB JUAL (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2021/09/jual-beton-precast.html": "Jual Beton Precast [HUB PAGE]",
   
-  // ===== BRAND / MANUFAKTUR (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2022/01/scg-pipe-and-precast.html": "SCG Pipe And Precast",
-  "https://www.betonjayareadymix.com/2021/04/merak-jaya-beton-precast.html": "Merak Jaya Beton Precast",
-  "https://www.betonjayareadymix.com/2021/04/beton-precast-indonesia.html": "Beton Precast Indonesia",
-  "https://www.betonjayareadymix.com/2021/04/wika-beton-precast.html": "Wika Beton Precast",
-  
-  // ===== POST LOKASI (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - JUAL PER LOKASI (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-jakarta.html": "Jual Beton Precast Jakarta",
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-malang.html": "Jual Beton Precast Malang",
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-tangerang.html": "Jual Beton Precast Tangerang",
@@ -46,6 +42,27 @@ const urlMappingProdukBetonPrecastPost = {
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-bandung.html": "Jual Beton Precast Bandung",
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-bogor.html": "Jual Beton Precast Bogor",
   "https://www.betonjayareadymix.com/2021/09/jual-beton-precast-solo.html": "Jual Beton Precast Solo",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
+  
+  // [SUB2] - BRAND / MANUFAKTUR
+  "https://www.betonjayareadymix.com/2022/01/scg-pipe-and-precast.html": "SCG Pipe And Precast",
+  "https://www.betonjayareadymix.com/2021/04/merak-jaya-beton-precast.html": "Merak Jaya Beton Precast",
+  "https://www.betonjayareadymix.com/2021/04/wika-beton-precast.html": "Wika Beton Precast",
+  
+  // [SUB2] - INFORMASI PRODUK UMUM
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-indonesia.html": "Beton Precast Indonesia",
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-hcs.html": "Beton Precast HCS",
+  
+  // [SUB2] - APLIKASI PRODUK
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-jalan.html": "Beton Precast Untuk Jalan",
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-saluran-irigasi.html": "Beton Precast Untuk Saluran Irigasi",
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-lantai.html": "Beton Precast Untuk Lantai",
+  "https://www.betonjayareadymix.com/2021/04/beton-precast-untuk-rumah.html": "Beton Precast Untuk Rumah",
+  
+  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "JUAL")
   "https://www.betonjayareadymix.com/2021/04/beton-precast-jogja.html": "Beton Precast Jogja",
   "https://www.betonjayareadymix.com/2021/04/beton-precast-depok.html": "Beton Precast Depok",
   "https://www.betonjayareadymix.com/2021/04/beton-precast-bogor.html": "Beton Precast Bogor",
@@ -54,38 +71,35 @@ const urlMappingProdukBetonPrecastPost = {
   "https://www.betonjayareadymix.com/2021/04/beton-precast-bandung.html": "Beton Precast Bandung",
   "https://www.betonjayareadymix.com/2021/04/beton-precast-ruspin.html": "Beton Precast Ruspin",
   
-  // ===== STANDAR PABRIK (PERTAHANKAN) =====
+  // ============================================================
+  // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
+  // ============================================================
   "https://www.betonjayareadymix.com/2022/01/standar-pabrik-precast.html": "Standar Pabrik Precast"
-	
 };
-	
-// 🔴 REDIRECT NOTES UNTUK CLUSTER 1:
+
+// ============================================================
+// 🔴 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
 /*
-| No | From URL | Redirect To | Type |
-|----|----------|-------------|------|
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
 | 1 | /2021/09/daftar-harga-beton-precast.html | /2021/09/harga-beton-precast.html | 301 |
 | 2 | /2021/09/harga-beton-precast-murah.html | /2021/09/harga-beton-precast.html | 301 |
 | 3 | /2021/09/berapa-harga-beton-precast.html | /2021/09/harga-beton-precast.html | 301 |
 | 4 | /2021/09/jual-beton-precast-ruspin.html | /2021/09/jual-beton-precast.html | 301 |
-
-CATATAN TAMBAHAN:
-- Pastikan /jual-beton-precast.html berisi daftar link ke semua post lokasi
-- Jangan biarkan post tanpa lokasi ranking untuk keyword "jual beton precast jakarta"
 */
+	
 
 //  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast"
 const urlMappingProdukPanelBetonPrecastPost = {
-  // ===== MASTER PAGE (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2022/02/harga-panel-beton-precast.html": "Harga Panel Beton Precast",
   
-  // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2022/02/jual-panel-beton-precast.html": "Jual Panel Beton Precast",
-  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-ready-stock.html": "Panel Beton Precast Ready Stock",
-  "https://www.betonjayareadymix.com/2022/02/spesifikasi-panel-beton-precast.html": "Spesifikasi Panel Beton Precast",
-  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-untuk-dinding.html": "Panel Beton Precast Untuk Dinding",
-  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-pabrik.html": "Panel Beton Precast Pabrik",
-  
-  // ===== POST LOKASI (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - JUAL PER LOKASI (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-jakarta.html": "Panel Beton Precast Jakarta",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bogor.html": "Panel Beton Precast Bogor",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-depok.html": "Panel Beton Precast Depok",
@@ -93,7 +107,16 @@ const urlMappingProdukPanelBetonPrecastPost = {
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bekasi.html": "Panel Beton Precast Bekasi",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-karawang.html": "Panel Beton Precast Karawang",
   
-  // ===== VARIASI KONTEN (PERTAHANKAN) =====
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2022/02/jual-panel-beton-precast.html": "Jual Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-ready-stock.html": "Panel Beton Precast Ready Stock",
+  "https://www.betonjayareadymix.com/2022/02/spesifikasi-panel-beton-precast.html": "Spesifikasi Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-untuk-dinding.html": "Panel Beton Precast Untuk Dinding",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-pabrik.html": "Panel Beton Precast Pabrik",
+  
+  // [SUB2] - VARIASI KONTEN
   "https://www.betonjayareadymix.com/2022/02/panel-beton-dinding-precast.html": "Panel Beton Dinding Precast",
   "https://www.betonjayareadymix.com/2022/02/panel-lantai-beton-precast.html": "Panel Lantai Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-bangunan.html": "Panel Beton Pracetak Bangunan",
@@ -102,45 +125,51 @@ const urlMappingProdukPanelBetonPrecastPost = {
   "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-untuk-gedung.html": "Panel Beton Pracetak Untuk Gedung"
 };
 
-// 🔴 REDIRECT NOTES UNTUK CLUSTER 2:
+// ============================================================
+// 🔴 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
 /*
-| No | From URL | Redirect To | Type |
-|----|----------|-------------|------|
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
 | 1 | /2022/02/panel-beton-precast-murah.html | /2022/02/harga-panel-beton-precast.html | 301 |
 | 2 | /2022/02/panel-beton-precast-berkualitas.html | /2022/02/harga-panel-beton-precast.html | 301 |
-
-CATATAN TAMBAHAN:
-- Post "murah" dan "berkualitas" sebaiknya dijadikan section di master page
-- Jangan buat post terpisah untuk kata sifat yang sama
 */
 
 // "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast"
 const urlMappingProdukBetonRinganPrecastPost = {
-  // ===== MASTER PAGE (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2021/07/harga-beton-ringan-precast.html": "Harga Beton Ringan Precast",
   
-  // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2021/07/spesifikasi-beton-ringan-precast.html": "Spesifikasi Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/2021/07/kelebihan-beton-ringan-precast.html": "Kelebihan Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-untuk-bangunan.html": "Beton Ringan Precast Untuk Bangunan",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-berkualitas.html": "Beton Ringan Precast Berkualitas",
-  "https://www.betonjayareadymix.com/2021/07/pabrik-beton-ringan-precast.html": "Pabrik Beton Ringan Precast",
-  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-siap-pakai.html": "Beton Ringan Precast Siap Pakai",
-  
-  // ===== POST LOKASI (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - JUAL PER LOKASI (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-jakarta.html": "Beton Ringan Precast Jakarta",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-bogor.html": "Beton Ringan Precast Bogor",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-depok.html": "Beton Ringan Precast Depok",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-tangerang.html": "Beton Ringan Precast Tangerang",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-bekasi.html": "Beton Ringan Precast Bekasi",
   "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-karawang.html": "Beton Ringan Precast Karawang",
-  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-precast-jakarta.html": "Jual Beton Ringan Precast Jakarta"
+  "https://www.betonjayareadymix.com/2021/07/jual-beton-ringan-precast-jakarta.html": "Jual Beton Ringan Precast Jakarta",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2021/07/spesifikasi-beton-ringan-precast.html": "Spesifikasi Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/kelebihan-beton-ringan-precast.html": "Kelebihan Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-untuk-bangunan.html": "Beton Ringan Precast Untuk Bangunan",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-berkualitas.html": "Beton Ringan Precast Berkualitas",
+  "https://www.betonjayareadymix.com/2021/07/pabrik-beton-ringan-precast.html": "Pabrik Beton Ringan Precast",
+  "https://www.betonjayareadymix.com/2021/07/beton-ringan-precast-siap-pakai.html": "Beton Ringan Precast Siap Pakai"
 };
 
-// 🔴 REDIRECT NOTES UNTUK CLUSTER 3:
+// ============================================================
+// 🔴 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
 /*
-| No | From URL | Redirect To | Type |
-|----|----------|-------------|------|
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
 | 1 | /2021/07/beton-ringan-precast-murah.html | /2021/07/harga-beton-ringan-precast.html | 301 |
 | 2 | /2021/07/jual-beton-ringan-precast.html | /2021/07/harga-beton-ringan-precast.html | 301 |
 
@@ -151,10 +180,25 @@ CATATAN TAMBAHAN:
 
 //SUB "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur"
 const urlMappingProdukTiangPancangBeton = {
-  // ===== MASTER PAGE (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton.html": "Harga Tiang Pancang Beton",
   
-  // ===== ANGLE SPESIFIK (PERTAHANKAN) =====
+  // ============================================================
+  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bogor.html": "Harga Tiang Pancang Beton Bogor",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bekasi.html": "Harga Tiang Pancang Beton Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-tangerang.html": "Harga Tiang Pancang Beton Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-jakarta.html": "Harga Tiang Pancang Beton Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-depok.html": "Harga Tiang Pancang Beton Depok",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-karawang.html": "Harga Tiang Pancang Beton Karawang",
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-surabaya.html": "Harga Tiang Pancang Beton Surabaya",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-ready-mix.html": "Tiang Pancang Beton Ready Mix",
   "https://www.betonjayareadymix.com/2022/02/jual-tiang-pancang-beton.html": "Jual Tiang Pancang Beton",
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-cor.html": "Tiang Pancang Beton Cor",
@@ -162,22 +206,15 @@ const urlMappingProdukTiangPancangBeton = {
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-precast.html": "Tiang Pancang Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-diameter-30-cm.html": "Tiang Pancang Beton Diameter 30 Cm",
   "https://www.betonjayareadymix.com/2022/02/tiang-pancang-beton-pondasi-rumah.html": "Tiang Pancang Beton Pondasi Rumah",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton-per-batang.html": "Harga Tiang Pancang Beton Per Batang",
-  
-  // ===== POST LOKASI (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bogor.html": "Harga Tiang Pancang Beton Bogor",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-bekasi.html": "Harga Tiang Pancang Beton Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-tangerang.html": "Harga Tiang Pancang Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-jakarta.html": "Harga Tiang Pancang Beton Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-depok.html": "Harga Tiang Pancang Beton Depok",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-karawang.html": "Harga Tiang Pancang Beton Karawang",
-  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-surabaya.html": "Harga Tiang Pancang Beton Surabaya"
+  "https://www.betonjayareadymix.com/2022/02/harga-tiang-pancang-beton-per-batang.html": "Harga Tiang Pancang Beton Per Batang"
 };
 
-// 🟡 REDIRECT NOTES UNTUK CLUSTER 4:
+// ============================================================
+// 🟡 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
 /*
-| No | From URL | Redirect To | Type |
-|----|----------|-------------|------|
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
 | (TIDAK ADA REDIRECT UNTUK CLUSTER INI - SEMUA AMAN)
 
 CATATAN TAMBAHAN:
@@ -189,69 +226,90 @@ CATATAN TAMBAHAN:
 //SUB "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi",
 // ===== PRODUK ALAT KONSTRUKSI =====
 const urlMappingProdukJualAlatBerat = {
-  // ===== MASTER PAGE =====
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terbaru.html": "Harga Alat Berat Terbaru",
-
-  // ===== HARGA PER JENIS ALAT (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-drum-handler.html": "Harga Alat Berat Drum Handler",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-skid-steer-loader.html": "Harga Alat Berat Skid Steer Loader",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-forklift.html": "Harga Alat Berat Forklift",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-track-loader.html": "Harga Alat Berat Track Loader",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wales-baru.html": "Harga Alat Berat Wales Baru",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-roller.html": "Harga Alat Berat Roller",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-beko-hitachi.html": "Harga Alat Berat Beko Hitachi",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bekas.html": "Harga Alat Berat Bekas",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-mini.html": "Harga Alat Berat Mini",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-75.html": "Harga Alat Berat PC 75",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-hitachi-bekas.html": "Harga Alat Berat Hitachi Bekas",
-  "https://www.betonjayareadymix.com/2019/02/harga-1-unit-alat-berat.html": "Harga 1 Unit Alat Berat",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-aspal.html": "Harga Alat Berat Aspal",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-murah.html": "Harga Alat Berat Murah",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-amp.html": "Harga Alat Berat AMP",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-mixing-plant.html": "Harga Alat Berat Asphalt Mixing Plant",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-beko.html": "Harga Alat Berat Beko",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-baru.html": "Harga Alat Berat Baru",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-beko-bekas.html": "Harga Alat Berat Beko Bekas",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-crane.html": "Harga Alat Berat Crane",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-mini.html": "Harga Alat Berat Excavator Mini",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-baru.html": "Harga Alat Berat Excavator Baru",
+  
+  // ============================================================
+  // [MONEY PAGE] - TIPE ALAT SPESIFIK (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator.html": "Harga Alat Berat Excavator",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-kobelco.html": "Harga Alat Berat Kobelco",
-  "https://www.betonjayareadymix.com/2021/10/harga-alat-berat-forklift.html": "Harga Alat Berat Forklift",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-grader.html": "Harga Alat Berat Grader",
-  "https://www.betonjayareadymix.com/2019/02/daftar-harga-alat-berat.html": "Daftar Harga Alat Berat",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terkecil.html": "Harga Alat Berat Terkecil",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-vibro.html": "Harga Alat Berat Vibro",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer.html": "Harga Alat Berat Bulldozer",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-mini-bekas.html": "Harga Alat Berat Mini Bekas",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-100.html": "Harga Alat Berat PC 100",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sheep-foot-tamping.html": "Harga Alat Berat Sheep Foot Tamping",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-three-wheel-macadam.html": "Harga Alat Berat Three Wheel Macadam",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-200.html": "Harga Alat Berat PC 200",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-dump-truck.html": "Harga Alat Berat Dump Truck",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-boom-lift.html": "Harga Alat Berat Boom Lift",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer-baru.html": "Harga Alat Berat Bulldozer Baru",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-caterpillar.html": "Harga Alat Berat Caterpillar",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sumitomo.html": "Harga Alat Berat Sumitomo",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wheel-loader.html": "Harga Alat Berat Wheel Loader",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-backhoe-loader.html": "Harga Alat Berat Backhoe Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-baru.html": "Harga Alat Berat Excavator Baru",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-hitachi.html": "Harga Alat Berat Excavator Hitachi",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-komatsu.html": "Harga Alat Berat Excavator Komatsu",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-sany.html": "Harga Alat Berat Excavator Sany",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-hitachi.html": "Harga Alat Berat Hitachi",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-komatsu.html": "Harga Alat Berat Komatsu",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-kobelco-baru.html": "Harga Alat Berat Kobelco Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-excavator-mini.html": "Harga Alat Berat Excavator Mini",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer.html": "Harga Alat Berat Bulldozer",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bulldozer-baru.html": "Harga Alat Berat Bulldozer Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-crane.html": "Harga Alat Berat Crane",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-forklift.html": "Harga Alat Berat Forklift",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wheel-loader.html": "Harga Alat Berat Wheel Loader",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-motor-grader.html": "Harga Alat Berat Motor Grader",
-  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sany.html": "Harga Alat Berat Sany",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-grader.html": "Harga Alat Berat Grader",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-loader.html": "Harga Alat Berat Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-backhoe-loader.html": "Harga Alat Berat Backhoe Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-beko.html": "Harga Alat Berat Beko",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-dump-truck.html": "Harga Alat Berat Dump Truck",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-boom-lift.html": "Harga Alat Berat Boom Lift",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-vibro.html": "Harga Alat Berat Vibro",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-roller.html": "Harga Alat Berat Roller",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-mixing-plant.html": "Harga Alat Berat Asphalt Mixing Plant",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-distributor.html": "Harga Alat Berat Asphalt Distributor",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-paver-finisher.html": "Harga Alat Berat Asphalt Paver Finisher",
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-asphalt-sprayer.html": "Harga Alat Berat Asphalt Sprayer",
-
-  // ===== ARTIKEL INFORMASI ALAT BERAT (PERTAHANKAN) =====
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-aspal.html": "Harga Alat Berat Aspal",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-amp.html": "Harga Alat Berat AMP",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-75.html": "Harga Alat Berat PC 75",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-100.html": "Harga Alat Berat PC 100",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pc-200.html": "Harga Alat Berat PC 200",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-wales-baru.html": "Harga Alat Berat Wales Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sumitomo.html": "Harga Alat Berat Sumitomo",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-caterpillar.html": "Harga Alat Berat Caterpillar",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-kobelco.html": "Harga Alat Berat Kobelco",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-kobelco-baru.html": "Harga Alat Berat Kobelco Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-komatsu.html": "Harga Alat Berat Komatsu",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-hitachi.html": "Harga Alat Berat Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sany.html": "Harga Alat Berat Sany",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-sheep-foot-tamping.html": "Harga Alat Berat Sheep Foot Tamping",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-three-wheel-macadam.html": "Harga Alat Berat Three Wheel Macadam",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-track-loader.html": "Harga Alat Berat Track Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-drum-handler.html": "Harga Alat Berat Drum Handler",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-skid-steer-loader.html": "Harga Alat Berat Skid Steer Loader",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-beko-hitachi.html": "Harga Alat Berat Beko Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-mini.html": "Harga Alat Berat Mini",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-mini-bekas.html": "Harga Alat Berat Mini Bekas",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-baru.html": "Harga Alat Berat Baru",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-bekas.html": "Harga Alat Berat Bekas",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-murah.html": "Harga Alat Berat Murah",
+  "https://www.betonjayareadymix.com/2019/02/harga-1-unit-alat-berat.html": "Harga 1 Unit Alat Berat",
+  "https://www.betonjayareadymix.com/2019/02/daftar-harga-alat-berat.html": "Daftar Harga Alat Berat",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-terkecil.html": "Harga Alat Berat Terkecil",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-tiang-pancang.html": "Harga Alat Tiang Pancang",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-lift-barang.html": "Harga Alat Lift Barang",
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-hydraulic-jack-in-pile.html": "Harga Alat Hydraulic Jack In Pile",
+  
+  // ============================================================
+  // [MONEY PAGE] - JUAL PER LOKASI (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-jakarta.html": "Jual Alat Berat Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bandung.html": "Jual Alat Berat Bandung",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-tangerang.html": "Jual Alat Berat Tangerang",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-jakarta.html": "Jual Alat Berat Bekas Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-murah.html": "Jual Alat Berat Bekas Murah",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas.html": "Jual Alat Berat Bekas",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-baru.html": "Jual Alat Berat Baru",
+  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat.html": "Jual Beli Alat Berat",
+  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat-terdekat.html": "Jual Beli Alat Berat Terdekat",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator.html": "Jual Alat Berat Excavator",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-bekas.html": "Jual Alat Berat Excavator Bekas",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-hitachi.html": "Jual Alat Berat Excavator Hitachi",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-kobelco.html": "Jual Alat Berat Excavator Kobelco",
+  "https://www.betonjayareadymix.com/2019/02/jual-beko.html": "Jual Beko",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/02/alat-berat-wales.html": "Alat Berat Wales",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-grader.html": "Alat Berat Grader",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-caterpillar.html": "Alat Berat Caterpillar",
@@ -263,16 +321,18 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-pembersihan-lahan.html": "Alat Berat Untuk Pembersihan Lahan",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-pemadatan-tanah.html": "Alat Berat Untuk Pemadatan Tanah",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-meratakan-tanah.html": "Alat Berat Untuk Meratakan Tanah",
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-meratakan-aspal.html": "Alat Berat Untuk Meratakan Aspal",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tandem-roller.html": "Alat Berat Tandem Roller",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-roller.html": "Alat Berat Roller",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-sumitomo.html": "Alat Berat Sumitomo",
   "https://www.betonjayareadymix.com/2019/02/alat-alat-berat-untuk-pembuatan-jalan.html": "Alat Alat Berat Untuk Pembuatan Jalan",
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-terdekat.html": "Alat Berat Terdekat",
   "https://www.betonjayareadymix.com/2019/02/alat-alat-berat-konstruksi.html": "Alat Alat Berat Konstruksi",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-beko.html": "Alat Berat Beko",
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-untuk-meratakan-aspal.html": "Alat Berat Untuk Meratakan Aspal",
-
-  // ===== POST LOKASI (PERTAHANKAN) =====
+  
+  // ============================================================
+  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "JUAL")
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-terdekat.html": "Alat Berat Terdekat",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-pandeglang.html": "Alat Berat Pandeglang",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-di-serang.html": "Alat Berat Di Serang",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-cilegon.html": "Alat Berat Cilegon",
@@ -293,43 +353,228 @@ const urlMappingProdukJualAlatBerat = {
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tangerang.html": "Alat Berat Tangerang",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bekasi.html": "Alat Berat Bekasi",
   "https://www.betonjayareadymix.com/2019/02/alat-berat-bogor.html": "Alat Berat Bogor",
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-lebak.html": "Alat Berat Lebak",
-
-  // ===== JUAL ALAT BERAT (PERTAHANKAN) =====
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-jakarta.html": "Jual Alat Berat Jakarta",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-tangerang.html": "Jual Alat Berat Tangerang",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-baru.html": "Jual Alat Berat Baru",
-  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat-terdekat.html": "Jual Beli Alat Berat Terdekat",
-  "https://www.betonjayareadymix.com/2019/02/jual-beli-alat-berat.html": "Jual Beli Alat Berat",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-kobelco.html": "Jual Alat Berat Excavator Kobelco",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-hitachi.html": "Jual Alat Berat Excavator Hitachi",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator-bekas.html": "Jual Alat Berat Excavator Bekas",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-excavator.html": "Jual Alat Berat Excavator",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-jakarta.html": "Jual Alat Berat Bekas Jakarta",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas-murah.html": "Jual Alat Berat Bekas Murah",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bandung.html": "Jual Alat Berat Bandung",
-  "https://www.betonjayareadymix.com/2019/02/jual-alat-berat-bekas.html": "Jual Alat Berat Bekas",
-  "https://www.betonjayareadymix.com/2019/02/jual-beko.html": "Jual Beko"
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-lebak.html": "Alat Berat Lebak"
 };
-const urlMappingProdukJualAlatBeratTambang = {
-  // ===== MASTER PAGE =====
-  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
 
-  // ===== PERTAHANKAN =====
+// ============================================================
+// 🔴 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
+/*
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
+| (TIDAK ADA REDIRECT HIGH RISK UNTUK CLUSTER INI)
+
+CATATAN:
+- Cluster alat berat sudah cukup terstruktur
+- Perhatikan post "harga alat berat bekas" dan "harga alat berat baru" - pastikan berbeda angle
+- Jika ada post "harga alat berat murah" → redirect ke master page /harga-alat-berat-terbaru.html
+- Post dengan pola "alat-berat-[kota].html" (tanpa "jual") sudah benar sebagai [SUB2]
+- Post dengan pola "jual-alat-berat-[kota].html" sudah benar sebagai [MONEY PAGE]
+*/
+
+const urlMappingProdukJualAlatBeratTambang = {
+  // ============================================================
+  // [MONEY PAGE] - MASTER (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang.html": "Alat Berat Tambang",
+  
+  // ============================================================
+  // [MONEY PAGE] - TIPE SPESIFIK (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/02/alat-berat-tambang-batu-bara.html": "Alat Berat Tambang Batu Bara",
+  
+  // ============================================================
+  // [MONEY PAGE] - HARGA & JUAL (TRANSACTIONAL)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/02/harga-alat-berat-pertambangan.html": "Harga Alat Berat Pertambangan",
   "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-tambang.html": "Harga Mesin Bor Tambang",
   "https://www.betonjayareadymix.com/2019/03/jual-mesin-bor-tambang.html": "Jual Mesin Bor Tambang",
   "https://www.betonjayareadymix.com/2019/03/harga-alat-bor-tambang.html": "Harga Alat Bor Tambang",
   "https://www.betonjayareadymix.com/2019/03/jual-alat-bor-tambang.html": "Jual Alat Bor Tambang",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
   "https://www.betonjayareadymix.com/2019/03/core-drill-bor-tambang.html": "Core Drill Bor Tambang",
   "https://www.betonjayareadymix.com/2019/03/harga-mesin-bor-hidrolik-tambang.html": "Harga Mesin Bor Hidrolik Tambang"
 };
-const urlMappingProdukJualAlatKonstruksiRinganPost = {
-"https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik"
-};
-// 🟡 CATATAN TAMBAHAN:
+
+// ============================================================
+// 🟡 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
 /*
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
+| (TIDAK ADA REDIRECT UNTUK CLUSTER INI - SEMUA AMAN)
+
+CATATAN: Cluster alat berat tambang sudah cukup terstruktur.
+*/
+const urlMappingProdukJualAlatKonstruksiRinganPost = {
+ //semua post belum dibuat baru https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html
+  // ============================================================
+  // [MONEY PAGE] - MASTER HARGA & JUAL (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/harga-alat-konstruksi-ringan.html": "Harga Alat Konstruksi Ringan [MASTER]",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-murah.html": "Jual Alat Konstruksi Ringan Murah",
+  
+  // ============================================================
+  // [MONEY PAGE] - PER JENIS ALAT (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/harga-molen-beton.html": "Harga Molen Beton",
+  "https://www.betonjayareadymix.com/2019/02/jual-molen-beton.html": "Jual Molen Beton",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-vibrator-beton.html": "Harga Vibrator Beton",
+  "https://www.betonjayareadymix.com/2019/02/jual-vibrator-beton.html": "Jual Vibrator Beton",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-bar-bender.html": "Harga Bar Bender",
+  "https://www.betonjayareadymix.com/2019/02/jual-bar-bender.html": "Jual Bar Bender",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-bar-cutter.html": "Harga Bar Cutter",
+  "https://www.betonjayareadymix.com/2019/02/jual-bar-cutter.html": "Jual Bar Cutter",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-concrete-cutter.html": "Harga Concrete Cutter",
+  "https://www.betonjayareadymix.com/2019/02/jual-concrete-cutter.html": "Jual Concrete Cutter",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-concrete-pump.html": "Harga Concrete Pump",
+  "https://www.betonjayareadymix.com/2019/02/jual-concrete-pump.html": "Jual Concrete Pump",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-stamper-kuda.html": "Harga Stamper Kuda",
+  "https://www.betonjayareadymix.com/2019/02/jual-stamper-kuda.html": "Jual Stamper Kuda",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-compactor-roller-ringan.html": "Harga Compactor Roller Ringan",
+  "https://www.betonjayareadymix.com/2019/02/jual-compactor-roller-ringan.html": "Jual Compactor Roller Ringan",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-generator-set.html": "Harga Generator Set",
+  "https://www.betonjayareadymix.com/2019/02/jual-generator-set.html": "Jual Generator Set",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-water-pump.html": "Harga Water Pump",
+  "https://www.betonjayareadymix.com/2019/02/jual-water-pump.html": "Jual Water Pump",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-las-listrik.html": "Harga Las Listrik",
+  "https://www.betonjayareadymix.com/2019/02/jual-las-listrik.html": "Jual Las Listrik",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-gerinda-tangan.html": "Harga Gerinda Tangan",
+  "https://www.betonjayareadymix.com/2019/02/jual-gerinda-tangan.html": "Jual Gerinda Tangan",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-bor-tangan.html": "Harga Bor Tangan",
+  "https://www.betonjayareadymix.com/2019/02/jual-bor-tangan.html": "Jual Bor Tangan",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-dongkrak-hidrolik.html": "Harga Dongkrak Hidrolik",
+  "https://www.betonjayareadymix.com/2019/02/jual-dongkrak-hidrolik.html": "Jual Dongkrak Hidrolik",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-hoist.html": "Harga Hoist",
+  "https://www.betonjayareadymix.com/2019/02/jual-hoist.html": "Jual Hoist",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-roda-kontraktor.html": "Harga Roda Kontraktor",
+  "https://www.betonjayareadymix.com/2019/02/jual-roda-kontraktor.html": "Jual Roda Kontraktor",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-kompresor-angin.html": "Harga Kompresor Angin",
+  "https://www.betonjayareadymix.com/2019/02/jual-kompresor-angin.html": "Jual Kompresor Angin",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-jackhammer.html": "Harga Jackhammer",
+  "https://www.betonjayareadymix.com/2019/02/jual-jackhammer.html": "Jual Jackhammer",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-bobok-beton.html": "Harga Bobok Beton",
+  "https://www.betonjayareadymix.com/2019/02/jual-bobok-beton.html": "Jual Bobok Beton",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-scaffolding.html": "Harga Scaffolding",
+  "https://www.betonjayareadymix.com/2019/02/jual-scaffolding.html": "Jual Scaffolding",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-steger.html": "Harga Steger",
+  "https://www.betonjayareadymix.com/2019/02/jual-steger.html": "Jual Steger",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-concrete-trowel.html": "Harga Concrete Trowel",
+  "https://www.betonjayareadymix.com/2019/02/jual-concrete-trowel.html": "Jual Concrete Trowel",
+  
+  "https://www.betonjayareadymix.com/2019/02/harga-power-trowel.html": "Harga Power Trowel",
+  "https://www.betonjayareadymix.com/2019/02/jual-power-trowel.html": "Jual Power Trowel",
+  
+  // ============================================================
+  // [MONEY PAGE] - JUAL PER LOKASI (TRANSACTIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-jakarta.html": "Jual Alat Konstruksi Ringan Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-bogor.html": "Jual Alat Konstruksi Ringan Bogor",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-depok.html": "Jual Alat Konstruksi Ringan Depok",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-tangerang.html": "Jual Alat Konstruksi Ringan Tangerang",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-bekasi.html": "Jual Alat Konstruksi Ringan Bekasi",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-bandung.html": "Jual Alat Konstruksi Ringan Bandung",
+  "https://www.betonjayareadymix.com/2019/02/jual-alat-konstruksi-ringan-surabaya.html": "Jual Alat Konstruksi Ringan Surabaya",
+  
+  // ============================================================
+  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/alat-dongkrak-hidrolik.html": "Alat Dongkrak Hidrolik",
+  "https://www.betonjayareadymix.com/2019/02/molen-beton.html": "Molen Beton",
+  "https://www.betonjayareadymix.com/2019/02/vibrator-beton.html": "Vibrator Beton",
+  "https://www.betonjayareadymix.com/2019/02/bar-bender-besi.html": "Bar Bender Besi",
+  "https://www.betonjayareadymix.com/2019/02/bar-cutter-besi.html": "Bar Cutter Besi",
+  "https://www.betonjayareadymix.com/2019/02/concrete-cutter.html": "Concrete Cutter",
+  "https://www.betonjayareadymix.com/2019/02/concrete-pump.html": "Concrete Pump",
+  "https://www.betonjayareadymix.com/2019/02/stamper-kuda.html": "Stamper Kuda",
+  "https://www.betonjayareadymix.com/2019/02/compactor-roller.html": "Compactor Roller",
+  "https://www.betonjayareadymix.com/2019/02/genset-konstruksi.html": "Genset Konstruksi",
+  "https://www.betonjayareadymix.com/2019/02/water-pump-konstruksi.html": "Water Pump Konstruksi",
+  "https://www.betonjayareadymix.com/2019/02/mesin-las-konstruksi.html": "Mesin Las Konstruksi",
+  "https://www.betonjayareadymix.com/2019/02/gerinda-tangan.html": "Gerinda Tangan",
+  "https://www.betonjayareadymix.com/2019/02/mesin-bor-tangan.html": "Mesin Bor Tangan",
+  "https://www.betonjayareadymix.com/2019/02/hoist-angkat-barang.html": "Hoist Angkat Barang",
+  "https://www.betonjayareadymix.com/2019/02/kompresor-angin.html": "Kompresor Angin",
+  "https://www.betonjayareadymix.com/2019/02/jackhammer-beton.html": "Jackhammer Beton",
+  "https://www.betonjayareadymix.com/2019/02/mesin-bobok-beton.html": "Mesin Bobok Beton",
+  "https://www.betonjayareadymix.com/2019/02/scaffolding-besi.html": "Scaffolding Besi",
+  "https://www.betonjayareadymix.com/2019/02/steger-bangunan.html": "Steger Bangunan",
+  "https://www.betonjayareadymix.com/2019/02/concrete-trowel.html": "Concrete Trowel",
+  "https://www.betonjayareadymix.com/2019/02/power-trowel.html": "Power Trowel",
+  
+  // ============================================================
+  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "JUAL")
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-jakarta.html": "Alat Konstruksi Ringan Jakarta",
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-bogor.html": "Alat Konstruksi Ringan Bogor",
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-depok.html": "Alat Konstruksi Ringan Depok",
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-tangerang.html": "Alat Konstruksi Ringan Tangerang",
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-bekasi.html": "Alat Konstruksi Ringan Bekasi",
+  "https://www.betonjayareadymix.com/2019/02/alat-konstruksi-ringan-bandung.html": "Alat Konstruksi Ringan Bandung",
+  
+  // ============================================================
+  // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/02/cara-memilih-alat-konstruksi-ringan.html": "Cara Memilih Alat Konstruksi Ringan",
+  "https://www.betonjayareadymix.com/2019/02/standar-keamanan-alat-konstruksi-ringan.html": "Standar Keamanan Alat Konstruksi Ringan",
+  "https://www.betonjayareadymix.com/2019/02/perawatan-alat-konstruksi-ringan.html": "Perawatan Alat Konstruksi Ringan"
+};
+
+// ============================================================
+// 🔴 REDIRECT NOTES (JANGAN MASUKKAN KE CONST)
+// ============================================================
+/*
+| No | From URL | To URL | Type |
+|----|----------|--------|------|
+| (TIDAK ADA REDIRECT UNTUK CLUSTER INI - SEMUA ADALAH ITEM BARU)
+
+CATATAN PENTING:
+1. Item dengan status [MONEY PAGE] harus memiliki konten yang fokus pada:
+   - Harga (dengan tabel harga)
+   - Stok ketersediaan
+   - Form pemesanan
+   - CTA yang kuat
+
+2. Item dengan status [SUB2] harus memiliki konten:
+   - Spesifikasi teknis alat
+   - Kelebihan dan kekurangan
+   - Cara penggunaan dasar
+   - Link ke [MONEY PAGE] terkait
+
+3. Item dengan status [SUB1] harus:
+   - Menjadi jembatan ke [MONEY PAGE]
+   - Konten edukasi + panduan
+   - Soft CTA ke produk terkait
+
+4. Item dengan status [MONEY PAGE] - JUAL PER LOKASI:
+   - Fokus pada ketersediaan di wilayah tersebut
+   - Informasi pengiriman dan layanan
+   - Harga spesifik wilayah
+*/
 | No | Catatan | Prioritas |
 |----|---------|-----------|
 | 1 | Cluster alat berat sudah cukup terstruktur dan aman | ✅ |
@@ -346,7 +591,6 @@ Jika ada post berikut, redirect ke master page:
 | /2019/02/harga-alat-berat-murah-sekali.html | /2019/02/harga-alat-berat-terbaru.html |
 | /2019/02/daftar-harga-alat-berat-lengkap.html | /2019/02/harga-alat-berat-terbaru.html |
 | /2019/02/harga-alat-berat-promo.html | /2019/02/harga-alat-berat-terbaru.html |
-*/
 */
 
 // "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",
