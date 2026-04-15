@@ -7,9 +7,22 @@
 const urlMappingProdukKonstruksi = {
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (LANGSUNG DI BAWAH PILLAR PRODUK KONSTRUKSI)
-  // ============================================================
+// ==================== LEVEL 1: SUB-PILLAR TIPE 2 ====================
+  "https://www.betonjayareadymix.com/p/jenis-produk-konstruksi.html": "Jenis Produk Konstruksi",
+  "https://www.betonjayareadymix.com/p/standar-mutu-produk-konstruksi.html": "Standar Mutu Produk Konstruksi",
+  "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-struktur.html": "Produk Konstruksi untuk Struktur",
+  "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-finishing.html": "Produk Konstruksi untuk Finishing",
   "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",
   "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi"
+};
+const urlMappingProdukKonstruksiJenis = {
+  // ==================== LEVEL 2: SUB-PILLAR TIPE 1 ====================
+  "https://www.betonjayareadymix.com/p/cara-memilih-produk-konstruksi.html": "Cara Memilih Produk Konstruksi"
+};
+const urlMappingProdukKonstruksiCaraMemilih = {
+  // ==================== LEVEL 3: MONEY PAGE ====================
+  "https://www.betonjayareadymix.com/p/harga-produk-konstruksi.html": "Harga Produk Konstruksi",
+  "https://www.betonjayareadymix.com/p/konsultasi-pemilihan-produk-konstruksi.html": "Konsultasi Pemilihan Produk Konstruksi"
 };
 
 const urlMappingProdukAlatKonstruksi = {
