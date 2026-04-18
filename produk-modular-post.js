@@ -11,16 +11,17 @@ PRODUK DINDING BANGUNAN MODULAR (SUB2 - /p/produk-dinding-bangunan-modular.html)
 │
 ├── [VARIANT] Modular Kamar Mandi Toilet (MONEY PAGE)
 │
-├── [VARIANT] Bangunan Prefab Modular
+├── [VARIANT] Bangunan Prefab Modular (MONEY PAGE + SUB1)
 │
-├── [VARIANT] Dinding Panel Beton Precast Modular
+├── [VARIANT] Dinding Panel Beton Precast Modular (SUB1 - edukasi)
 │
-├── [VARIANT] Sandwich Panel Modular
+├── [VARIANT] Sandwich Panel Modular (SUB1 + MONEY PAGE)
 │
-├── [VARIANT] Bata Ringan Hebel Modular
+├── [VARIANT] Bata Ringan Hebel Modular (SUB1 - edukasi)
 │
-└── [VARIANT] Roster Beton
+└── [VARIANT] Roster Beton (MONEY PAGE + SUB1)
 */
+
 // ============================================================
 // MODULAR KAMAR MANDI TOILET
 // Parent: Produk Dinding Bangunan Modular (/p/produk-dinding-bangunan-modular.html)
@@ -28,33 +29,25 @@ PRODUK DINDING BANGUNAN MODULAR (SUB2 - /p/produk-dinding-bangunan-modular.html)
 
 // ============================================================
 // [VARIANT] - MODULAR KAMAR MANDI TOILET
-// 🧠 STATUS: SEMUA URL ADALAH [MONEY PAGE] (kecuali yang di-comment)
-// Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > [Nama Item]
+// 🧠 TYPE: MONEY_PAGE (transaksional)
+// Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > [Nama Item] (5 level)
 // ============================================================
 
 const urlMappingModularKamarMandiToilet = {
-  // [MONEY PAGE] - TOILET MODULAR 3 PINTU
-  // 🧠 STATUS: AKTIF (konten tersedia - berdasarkan breadcrumb)
-  "https://www.betonjayareadymix.com/2019/04/toilet-modular-3-pintu.html": "Toilet modular 3 pintu",
+  // [MONEY_PAGE] - TOILET MODULAR 3 PINTU
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-3-pintu.html": "Toilet modular 3 pintu",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - TOILET MODULAR CUSTOM DESAIN
-  // 🧠 STATUS: AKTIF (konten tersedia - berdasarkan breadcrumb)
-  "https://www.betonjayareadymix.com/2019/04/toilet-modular-custom-desain.html": "Toilet modular custom desain",
+  // [MONEY_PAGE] - TOILET MODULAR CUSTOM DESAIN
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-custom-desain.html": "Toilet modular custom desain",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - KAMAR MANDI MODULAR PORTABLE
-  // 🧠 STATUS: PERLU DICEK KONTEN
-  "https://www.betonjayareadymix.com/2019/04/kamar-mandi-modular-portable.html": "Kamar mandi modular portable",
+  // [MONEY_PAGE] - KAMAR MANDI MODULAR PORTABLE
+  "https://www.betonjayareadymix.com/2019/04/kamar-mandi-modular-portable.html": "Kamar mandi modular portable",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - TOILET MODULAR SITE OFFICE
-  // 🧠 STATUS: PERLU DICEK KONTEN
-  "https://www.betonjayareadymix.com/2019/04/toilet-modular-site-office.html": "Toilet modular site office",
+  // [MONEY_PAGE] - TOILET MODULAR SITE OFFICE
+  "https://www.betonjayareadymix.com/2019/04/toilet-modular-site-office.html": "Toilet modular site office",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - HARGA TOILET MODULAR
-  // 🧠 STATUS: PERLU DICEK KONTEN
-  "https://www.betonjayareadymix.com/2019/04/harga-toilet-modular.html": "Harga toilet modular"
-  
-  // CATATAN: URL buis beton di-comment karena tidak relevan dengan cluster ini
-  // "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah" // [TIDAK RELEVAN - MILIK CLUSTER DRAINASE]
+  // [MONEY_PAGE] - HARGA TOILET MODULAR
+  "https://www.betonjayareadymix.com/2019/04/harga-toilet-modular.html": "Harga toilet modular"  // TYPE: MONEY_PAGE
 };
 
 // ============================================================
@@ -64,28 +57,24 @@ const urlMappingModularKamarMandiToilet = {
 
 // ============================================================
 // [VARIANT] - BANGUNAN PREFAB MODULAR
-// 🧠 STATUS: SEMUA URL ADALAH [MONEY PAGE] + [SUB1] (informasional)
+// 🧠 TYPE: MONEY_PAGE + SUB1 (campuran)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > Bangunan Prefab Modular
 // ============================================================
 
 const urlMappingBangunanPrefabModular = {
-  // [MONEY PAGE] - RUMAH PREFAB MODULAR INDONESIA
-  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-indonesia.html": "Rumah Prefab Modular Indonesia",
+  // ============================================================
+  // [MONEY_PAGE] - TRANSAKSIONAL (harga & jual)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-indonesia.html": "Rumah Prefab Modular Indonesia",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/rumah-modular-cepat-bangun.html": "Rumah Modular Cepat Bangun",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-rumah-prefab-modular.html": "Harga Rumah Prefab Modular",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - RUMAH MODULAR CEPAT BANGUN
-  "https://www.betonjayareadymix.com/2019/04/rumah-modular-cepat-bangun.html": "Rumah Modular Cepat Bangun",
-  
-  // [MONEY PAGE] - HARGA RUMAH PREFAB MODULAR
-  "https://www.betonjayareadymix.com/2019/04/harga-rumah-prefab-modular.html": "Harga Rumah Prefab Modular",
-  
-  // [SUB1] - RUMAH PREFAB MODULAR HEMAT BIAYA (informasional)
-  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-hemat-biaya.html": "Rumah Prefab Modular Hemat Biaya",
-  
-  // [SUB1] - RUMAH PREFAB MODULAR RAMAH LINGKUNGAN (informasional)
-  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-ramah-lingkungan.html": "Rumah Prefab Modular Ramah Lingkungan",
-  
-  // [SUB1] - DESAIN RUMAH PREFAB MODULAR (informasional)
-  "https://www.betonjayareadymix.com/2019/04/desain-rumah-prefab-modular.html": "Desain Rumah Prefab Modular"
+  // ============================================================
+  // [SUB1] - INFORMASIONAL (edukasi, pre-commercial)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-hemat-biaya.html": "Rumah Prefab Modular Hemat Biaya",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/rumah-prefab-modular-ramah-lingkungan.html": "Rumah Prefab Modular Ramah Lingkungan",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/desain-rumah-prefab-modular.html": "Desain Rumah Prefab Modular"  // TYPE: SUB1
 };
 
 // ============================================================
@@ -95,37 +84,21 @@ const urlMappingBangunanPrefabModular = {
 
 // ============================================================
 // [VARIANT] - DINDING PANEL BETON PRECAST MODULAR
-// 🧠 STATUS: SEMUA URL ADALAH [SUB1] (informasional/edukasi)
+// 🧠 TYPE: SUB1 (semua edukasi/informasional)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > Dinding Panel Beton Precast Modular
 // ============================================================
 
 const urlMappingDindingPanelBetonPrecastModular = {
-  // [SUB1] - PANEL MODULAR BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/panel-modular-beton-precast.html": "Panel Modular Beton Precast",
-  
-  // [SUB1] - DINDING MODULAR BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/dinding-modular-beton-precast.html": "Dinding Modular Beton Precast",
-  
-  // [SUB1] - SISTEM DINDING MODULAR BETON
-  "https://www.betonjayareadymix.com/2019/04/sistem-dinding-modular-beton.html": "Sistem Dinding Modular Beton",
-  
-  // [SUB1] - RUMAH MODULAR PANEL BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/rumah-modular-panel-beton-precast.html": "Rumah Modular Panel Beton Precast",
-  
-  // [SUB1] - BANGUNAN MODULAR PANEL BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/bangunan-modular-panel-beton-precast.html": "Bangunan Modular Panel Beton Precast",
-  
-  // [SUB1] - KONSTRUKSI MODULAR PANEL BETON
-  "https://www.betonjayareadymix.com/2019/04/konstruksi-modular-panel-beton.html": "Konstruksi Modular Panel Beton",
-  
-  // [SUB1] - TEKNOLOGI DINDING PANEL MODULAR BETON
-  "https://www.betonjayareadymix.com/2019/04/teknologi-dinding-panel-modular-beton.html": "Teknologi Dinding Panel Modular Beton",
-  
-  // [SUB1] - MATERIAL MODULAR DINDING BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/material-modular-dinding-beton-precast.html": "Material Modular Dinding Beton Precast",
-  
-  // [SUB1] - INOVASI PANEL MODULAR BETON PRECAST
-  "https://www.betonjayareadymix.com/2019/04/inovasi-panel-modular-beton-precast.html": "Inovasi Panel Modular Beton Precast"
+  // [SUB1] - SEMUA ADALAH HALAMAN EDUKASI
+  "https://www.betonjayareadymix.com/2019/04/panel-modular-beton-precast.html": "Panel Modular Beton Precast",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/dinding-modular-beton-precast.html": "Dinding Modular Beton Precast",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/sistem-dinding-modular-beton.html": "Sistem Dinding Modular Beton",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/rumah-modular-panel-beton-precast.html": "Rumah Modular Panel Beton Precast",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/bangunan-modular-panel-beton-precast.html": "Bangunan Modular Panel Beton Precast",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/konstruksi-modular-panel-beton.html": "Konstruksi Modular Panel Beton",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/teknologi-dinding-panel-modular-beton.html": "Teknologi Dinding Panel Modular Beton",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/material-modular-dinding-beton-precast.html": "Material Modular Dinding Beton Precast",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/inovasi-panel-modular-beton-precast.html": "Inovasi Panel Modular Beton Precast"  // TYPE: SUB1
 };
 
 // ============================================================
@@ -135,7 +108,7 @@ const urlMappingDindingPanelBetonPrecastModular = {
 
 // ============================================================
 // [VARIANT] - SANDWICH PANEL MODULAR
-// 🧠 STATUS: CAMPURAN [SUB1] (jenis panel) + [MONEY PAGE] (harga)
+// 🧠 TYPE: SUB1 (jenis panel) + MONEY_PAGE (harga)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > Sandwich Panel Modular
 // ============================================================
 
@@ -143,30 +116,30 @@ const urlMappingSandwichPanelModular = {
   // ============================================================
   // [SUB1] - JENIS SANDWICH PANEL (INFORMASIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-eps.html": "Panel Sandwich EPS",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-pu.html": "Panel Sandwich PU",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-xps.html": "Panel Sandwich XPS",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-rockwool.html": "Panel Sandwich Rockwool",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-api.html": "Panel Sandwich Tahan Api",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-air.html": "Panel Sandwich Tahan Air",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-akustik.html": "Panel Sandwich Akustik",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-ringan.html": "Panel Sandwich Ringan",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-isolasi-termal.html": "Panel Sandwich Isolasi Termal",
-  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-untuk-rumah-modular.html": "Panel Sandwich Untuk Rumah Modular",
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-eps.html": "Panel Sandwich EPS",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-pu.html": "Panel Sandwich PU",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-xps.html": "Panel Sandwich XPS",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-rockwool.html": "Panel Sandwich Rockwool",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-api.html": "Panel Sandwich Tahan Api",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-tahan-air.html": "Panel Sandwich Tahan Air",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-akustik.html": "Panel Sandwich Akustik",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-ringan.html": "Panel Sandwich Ringan",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-isolasi-termal.html": "Panel Sandwich Isolasi Termal",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/panel-sandwich-untuk-rumah-modular.html": "Panel Sandwich Untuk Rumah Modular",  // TYPE: SUB1
   
   // ============================================================
-  // [MONEY PAGE] - HARGA SANDWICH PANEL
+  // [MONEY_PAGE] - HARGA SANDWICH PANEL (TRANSAKSIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2019/04/harga-sandwich-panel-modular-per-m2.html": "Harga Sandwich Panel Modular Per M2",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-eps-per-lembar.html": "Harga Panel Sandwich EPS Per Lembar",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-dinding-ringan.html": "Harga Panel Sandwich Dinding Ringan",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-lantai-ringan.html": "Harga Panel Sandwich Lantai Ringan",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-anti-api.html": "Harga Panel Sandwich Anti Api",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-isolasi-termal.html": "Harga Panel Sandwich Isolasi Termal",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-akustik.html": "Harga Panel Sandwich Akustik",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-air.html": "Harga Panel Sandwich Tahan Air",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-gempa.html": "Harga Panel Sandwich Tahan Gempa",
-  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-untuk-rumah-modular.html": "Harga Panel Sandwich Untuk Rumah Modular"
+  "https://www.betonjayareadymix.com/2019/04/harga-sandwich-panel-modular-per-m2.html": "Harga Sandwich Panel Modular Per M2",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-eps-per-lembar.html": "Harga Panel Sandwich EPS Per Lembar",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-dinding-ringan.html": "Harga Panel Sandwich Dinding Ringan",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-lantai-ringan.html": "Harga Panel Sandwich Lantai Ringan",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-anti-api.html": "Harga Panel Sandwich Anti Api",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-isolasi-termal.html": "Harga Panel Sandwich Isolasi Termal",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-akustik.html": "Harga Panel Sandwich Akustik",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-air.html": "Harga Panel Sandwich Tahan Air",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-tahan-gempa.html": "Harga Panel Sandwich Tahan Gempa",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2019/04/harga-panel-sandwich-untuk-rumah-modular.html": "Harga Panel Sandwich Untuk Rumah Modular"  // TYPE: MONEY_PAGE
 };
 
 // ============================================================
@@ -176,37 +149,21 @@ const urlMappingSandwichPanelModular = {
 
 // ============================================================
 // [VARIANT] - BATA RINGAN HEBEL MODULAR
-// 🧠 STATUS: SEMUA URL ADALAH [SUB1] (informasional/edukasi)
+// 🧠 TYPE: SUB1 (semua edukasi/informasional)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > Bata Ringan Hebel Modular
 // ============================================================
 
 const urlMappingBataRinganHebelModular = {
-  // [SUB1] - KELEBIHAN BATA RINGAN MODULAR
-  "https://www.betonjayareadymix.com/2019/04/kelebihan-bata-ringan-modular.html": "Kelebihan Bata Ringan Modular",
-  
-  // [SUB1] - UKURAN BATA RINGAN HEBEL MODULAR
-  "https://www.betonjayareadymix.com/2019/04/ukuran-bata-ringan-hebel-modular.html": "Ukuran Bata Ringan Hebel Modular",
-  
-  // [SUB1] - KONSTRUKSI DINDING BATA RINGAN MODULAR
-  "https://www.betonjayareadymix.com/2019/04/konstruksi-dinding-bata-ringan-modular.html": "Konstruksi Dinding Bata Ringan Modular",
-  
-  // [SUB1] - TEKNOLOGI BATA RINGAN MODULAR
-  "https://www.betonjayareadymix.com/2019/04/teknologi-bata-ringan-modular.html": "Teknologi Bata Ringan Modular",
-  
-  // [SUB1] - PEMASANGAN BATA RINGAN MODULAR
-  "https://www.betonjayareadymix.com/2019/04/pemasangan-bata-ringan-modular.html": "Pemasangan Bata Ringan Modular",
-  
-  // [SUB1] - KEKUATAN BATA RINGAN MODULAR
-  "https://www.betonjayareadymix.com/2019/04/kekuatan-bata-ringan-modular.html": "Kekuatan Bata Ringan Modular",
-  
-  // [SUB1] - MODULAR HEBEL UNTUK RUMAH
-  "https://www.betonjayareadymix.com/2019/04/modular-hebel-untuk-rumah.html": "Modular Hebel Untuk Rumah",
-  
-  // [SUB1] - BATA RINGAN MODULAR PREFAB
-  "https://www.betonjayareadymix.com/2019/04/bata-ringan-modular-prefab.html": "Bata Ringan Modular Prefab",
-  
-  // [SUB1] - BATA RINGAN MODULAR VS KONVENSIONAL
-  "https://www.betonjayareadymix.com/2019/04/bata-ringan-modular-vs-konvensional.html": "Bata Ringan Modular vs Konvensional"
+  // [SUB1] - SEMUA HALAMAN EDUKASI
+  "https://www.betonjayareadymix.com/2019/04/kelebihan-bata-ringan-modular.html": "Kelebihan Bata Ringan Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/ukuran-bata-ringan-hebel-modular.html": "Ukuran Bata Ringan Hebel Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/konstruksi-dinding-bata-ringan-modular.html": "Konstruksi Dinding Bata Ringan Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/teknologi-bata-ringan-modular.html": "Teknologi Bata Ringan Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/pemasangan-bata-ringan-modular.html": "Pemasangan Bata Ringan Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/kekuatan-bata-ringan-modular.html": "Kekuatan Bata Ringan Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/modular-hebel-untuk-rumah.html": "Modular Hebel Untuk Rumah",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/bata-ringan-modular-prefab.html": "Bata Ringan Modular Prefab",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2019/04/bata-ringan-modular-vs-konvensional.html": "Bata Ringan Modular vs Konvensional"  // TYPE: SUB1
 };
 
 // ============================================================
@@ -216,62 +173,65 @@ const urlMappingBataRinganHebelModular = {
 
 // ============================================================
 // [VARIANT] - ROSTER BETON
-// 🧠 STATUS: CAMPURAN [MONEY PAGE] (harga & jual) + [SUB1] (ukuran)
+// 🧠 TYPE: MONEY_PAGE (harga & jual) + SUB1 (ukuran)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > Roster Beton
 // ============================================================
 
 const urlMappingRosterBeton = {
   // ============================================================
-  // [MONEY PAGE] - HARGA ROSTER BETON
+  // [MONEY_PAGE] - HARGA ROSTER BETON (TRANSAKSIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2020/12/harga-roster-beton.html": "Harga Roster Beton",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bali.html": "Harga Roster Beton di Bali",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bogor.html": "Harga Roster Beton di Bogor",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-bandung.html": "Harga Roster Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-tangerang.html": "Harga Roster Beton Tangerang",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-murah.html": "Harga Roster Beton Murah",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-20-x-20.html": "Harga Roster Beton 20 x 20",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-m2.html": "Harga Roster Beton per M2",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-masjid.html": "Harga Roster Beton Masjid",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-anti-nyamuk.html": "Harga Roster Beton Anti Nyamuk",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-cisangkan.html": "Harga Roster Beton Cisangkan",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-buah.html": "Harga Roster Beton per Buah",
-  "https://www.betonjayareadymix.com/2018/09/harga-pagar-roster-beton.html": "Harga Pagar Roster Beton",
-  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-minimalis.html": "Harga Roster Beton Minimalis",
+  "https://www.betonjayareadymix.com/2020/12/harga-roster-beton.html": "Harga Roster Beton",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bali.html": "Harga Roster Beton di Bali",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-di-bogor.html": "Harga Roster Beton di Bogor",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-bandung.html": "Harga Roster Beton Bandung",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-tangerang.html": "Harga Roster Beton Tangerang",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-murah.html": "Harga Roster Beton Murah",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-20-x-20.html": "Harga Roster Beton 20 x 20",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-m2.html": "Harga Roster Beton per M2",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-masjid.html": "Harga Roster Beton Masjid",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-anti-nyamuk.html": "Harga Roster Beton Anti Nyamuk",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-cisangkan.html": "Harga Roster Beton Cisangkan",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-per-buah.html": "Harga Roster Beton per Buah",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2018/09/harga-pagar-roster-beton.html": "Harga Pagar Roster Beton",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/harga-roster-beton-minimalis.html": "Harga Roster Beton Minimalis",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - ROSTER BETON LOKASI
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-purwakarta.html": "Roster Beton Minimalis Purwakarta",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-bandung.html": "Roster Beton Minimalis Bandung",
-  "https://www.betonjayareadymix.com/2021/03/pagar-roster-beton-minimalis.html": "Pagar Roster Beton Minimalis",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-minimalis.html": "Jual Roster Beton Minimalis",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-cianjur.html": "Roster Beton Cianjur",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-cirebon.html": "Roster Beton Cirebon",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-banjarbaru.html": "Roster Beton Banjarbaru",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-bekasi.html": "Roster Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-bogor.html": "Roster Beton Bogor",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-bandung.html": "Roster Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-murah.html": "Roster Beton Murah",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-cisangkan.html": "Roster Beton Cisangkan",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-anti-tampias.html": "Roster Beton Anti Tampias",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-kotak.html": "Roster Beton Kotak",
-  "https://www.betonjayareadymix.com/2021/03/roster-beton-lubang-angin.html": "Roster Beton Lubang Angin",
+  // ============================================================
+  // [MONEY_PAGE] - ROSTER BETON PER LOKASI (MONEY_CHILD)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-purwakarta.html": "Roster Beton Minimalis Purwakarta",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-minimalis-bandung.html": "Roster Beton Minimalis Bandung",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/pagar-roster-beton-minimalis.html": "Pagar Roster Beton Minimalis",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-minimalis.html": "Jual Roster Beton Minimalis",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cianjur.html": "Roster Beton Cianjur",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cirebon.html": "Roster Beton Cirebon",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-banjarbaru.html": "Roster Beton Banjarbaru",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bekasi.html": "Roster Beton Bekasi",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bogor.html": "Roster Beton Bogor",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-bandung.html": "Roster Beton Bandung",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-murah.html": "Roster Beton Murah",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-cisangkan.html": "Roster Beton Cisangkan",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-anti-tampias.html": "Roster Beton Anti Tampias",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-kotak.html": "Roster Beton Kotak",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/roster-beton-lubang-angin.html": "Roster Beton Lubang Angin",  // TYPE: MONEY_PAGE
   
-  // [MONEY PAGE] - JUAL ROSTER BETON
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-terdekat.html": "Jual Roster Beton Terdekat",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-di-jakarta.html": "Jual Roster Beton di Jakarta",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cimahi.html": "Jual Roster Beton Cimahi",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cikarang.html": "Jual Roster Beton Cikarang",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bogor.html": "Jual Roster Beton Bogor",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bekasi.html": "Jual Roster Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bandung.html": "Jual Roster Beton Bandung",
+  // ============================================================
+  // [MONEY_PAGE] - JUAL ROSTER BETON (TRANSAKSIONAL)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-terdekat.html": "Jual Roster Beton Terdekat",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-di-jakarta.html": "Jual Roster Beton di Jakarta",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cimahi.html": "Jual Roster Beton Cimahi",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-cikarang.html": "Jual Roster Beton Cikarang",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bogor.html": "Jual Roster Beton Bogor",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bekasi.html": "Jual Roster Beton Bekasi",  // TYPE: MONEY_PAGE
+  "https://www.betonjayareadymix.com/2021/03/jual-roster-beton-bandung.html": "Jual Roster Beton Bandung",  // TYPE: MONEY_PAGE
   
   // ============================================================
   // [SUB1] - UKURAN ROSTER BETON (INFORMASIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-kotak.html": "Ukuran Roster Beton Kotak",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-minimalis.html": "Ukuran Roster Beton Minimalis"
+  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-kotak.html": "Ukuran Roster Beton Kotak",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/03/ukuran-roster-beton-minimalis.html": "Ukuran Roster Beton Minimalis"  // TYPE: SUB1
 };
-
 /*
 Jenis TYPE yang digunakan:
 
