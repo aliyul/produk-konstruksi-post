@@ -12,646 +12,314 @@
 
 const urlMappingGorongBeton = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/harga-gorong-gorong-beton.html": "Harga Gorong Gorong Beton [MASTER]",
+  "https://www.betonjayareadymix.com/2022/02/harga-gorong-gorong-beton.html": "Harga Gorong Gorong Beton [MASTER]",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - JUAL (TRANSACTIONAL) - PERLU DIBUAT
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/jual-gorong-gorong-beton.html": "Jual Gorong Gorong Beton [HUB PAGE]", // [PERLU DIBUAT]
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-jakarta.html": "Gorong Gorong Beton Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bogor.html": "Gorong Gorong Beton Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-depok.html": "Gorong Gorong Beton Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-tangerang.html": "Gorong Gorong Beton Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bekasi.html": "Gorong Gorong Beton Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-karawang.html": "Gorong Gorong Beton Karawang",  // TYPE: MONEY_CHILD
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // [SUB2] - SARAN ITEM (PERLU DIBUAT KONTEN)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-jakarta.html": "Gorong Gorong Beton Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bogor.html": "Gorong Gorong Beton Bogor",
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-depok.html": "Gorong Gorong Beton Depok",
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-tangerang.html": "Gorong Gorong Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bekasi.html": "Gorong Gorong Beton Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-karawang.html": "Gorong Gorong Beton Karawang",
-  
-  // ============================================================
-  // [MONEY PAGE] - TAMBAHAN LOKASI (PERLU DIBUAT KONTEN)
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bandung.html": "Gorong Gorong Beton Bandung", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-surabaya.html": "Gorong Gorong Beton Surabaya", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-medan.html": "Gorong Gorong Beton Medan", // [PERLU DIBUAT]
-  
-  // ============================================================
-  // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION) - PERLU DIBUAT
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/arti-gorong-gorong-beton.html": "Arti Gorong Gorong Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/fungsi-gorong-gorong-beton.html": "Fungsi Gorong Gorong Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/kelebihan-gorong-gorong-beton.html": "Kelebihan Gorong Gorong Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/perbedaan-gorong-gorong-dan-box-culvert.html": "Perbedaan Gorong Gorong dan Box Culvert", // [PERLU DIBUAT]
-  
-  // [SUB2] - UKURAN & SPESIFIKASI (PERLU DIBUAT)
-  // "https://www.betonjayareadymix.com/2022/02/ukuran-gorong-gorong-beton.html": "Ukuran Gorong Gorong Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-diameter-40-cm.html": "Gorong Gorong Beton Diameter 40 cm", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-diameter-60-cm.html": "Gorong Gorong Beton Diameter 60 cm", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-diameter-80-cm.html": "Gorong Gorong Beton Diameter 80 cm", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-diameter-100-cm.html": "Gorong Gorong Beton Diameter 100 cm", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-diameter-120-cm.html": "Gorong Gorong Beton Diameter 120 cm", // [PERLU DIBUAT]
-  
-  // ============================================================
-  // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY) - PERLU DIBUAT
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/panduan-memilih-gorong-gorong-beton.html": "Panduan Memilih Gorong Gorong Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/cara-pemasangan-gorong-gorong-beton.html": "Cara Pemasangan Gorong Gorong Beton" // [PERLU DIBUAT]
+  // "https://www.betonjayareadymix.com/2022/02/arti-gorong-gorong-beton.html": "Arti Gorong Gorong Beton",  // TYPE: SUB2
+  // "https://www.betonjayareadymix.com/2022/02/fungsi-gorong-gorong-beton.html": "Fungsi Gorong Gorong Beton",  // TYPE: SUB2
+  // "https://www.betonjayareadymix.com/2022/02/kelebihan-gorong-gorong-beton.html": "Kelebihan Gorong Gorong Beton",  // TYPE: SUB2
+  // "https://www.betonjayareadymix.com/2022/02/ukuran-gorong-gorong-beton.html": "Ukuran Gorong Gorong Beton",  // TYPE: SUB2
+  // "https://www.betonjayareadymix.com/2022/02/panduan-memilih-gorong-gorong-beton.html": "Panduan Memilih Gorong Gorong Beton",  // TYPE: SUB1
 };
 
-// ============================================================
-// 🔴 TYPO CORRECTION - GORONG GORONG BETON (WAJIB)
-// ============================================================
-/*
-URL yang salah (typo):
-https://www.betonjayareaadymix.com/2022/02/gorong-gorong-beton-jakarta.html
-
-URL yang benar:
-https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-jakarta.html
-
-Redirect yang harus dibuat (di .htaccess):
-Redirect 301 /2022/02/gorong-gorong-beton-jakarta.html /2022/02/gorong-gorong-beton-jakarta.html
-
-CATATAN: URL di atas TIDAK DIMASUKKAN KE CONST KARENA TYPO DOMAIN
-Gunakan hanya URL dari domain yang valid: betonjayareadymix.com
-*/
 // ============================================================
 // SALURAN BETON POST - BLOG
 // ============================================================
 // CATATAN REVISI:
 // 1. Cluster ini masih kecil, perlu pengembangan konten
-// 2. Tambahkan URL untuk ukuran, tipe, dan lokasi
-// 3. Bedakan dengan U Ditch (saluran terbuka) dan Box Culvert (persegi tertutup)
-// 4. Saluran Beton lebih ke produk saluran beton pracetak secara umum
+// 2. Bedakan dengan U Ditch (saluran terbuka) dan Box Culvert (persegi tertutup)
+// 3. Saluran Beton lebih ke produk saluran beton pracetak secara umum
 // ============================================================
 
 const urlMappingSaluranBeton = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/harga-saluran-beton.html": "Harga Saluran Beton [MASTER]",
+  "https://www.betonjayareadymix.com/2022/02/harga-saluran-beton.html": "Harga Saluran Beton [MASTER]",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - JUAL (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/jual-saluran-beton.html": "Jual Saluran Beton [HUB PAGE]",
-  
-  // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-jakarta.html": "Saluran Beton Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-bogor.html": "Saluran Beton Bogor",
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-depok.html": "Saluran Beton Depok",
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-tangerang.html": "Saluran Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-bekasi.html": "Saluran Beton Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/saluran-beton-karawang.html": "Saluran Beton Karawang",
-  
-  // ============================================================
-  // [MONEY PAGE] - TAMBAHAN LOKASI (PERLU DIBUAT KONTEN)
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-bandung.html": "Saluran Beton Bandung", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-surabaya.html": "Saluran Beton Surabaya", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-medan.html": "Saluran Beton Medan", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-makassar.html": "Saluran Beton Makassar", // [PERLU DIBUAT]
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-jakarta.html": "Saluran Beton Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-bogor.html": "Saluran Beton Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-depok.html": "Saluran Beton Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-tangerang.html": "Saluran Beton Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-bekasi.html": "Saluran Beton Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/saluran-beton-karawang.html": "Saluran Beton Karawang",  // TYPE: MONEY_CHILD
   
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/arti-saluran-beton.html": "Arti Saluran Beton",
-  "https://www.betonjayareadymix.com/2022/02/kegunaan-saluran-beton.html": "Kegunaan Saluran Beton",
-  "https://www.betonjayareadymix.com/2022/02/kelebihan-saluran-beton.html": "Kelebihan Saluran Beton",
-  "https://www.betonjayareadymix.com/2022/02/kekurangan-saluran-beton.html": "Kekurangan Saluran Beton",
-  "https://www.betonjayareadymix.com/2022/02/kekuatan-saluran-beton.html": "Kekuatan Saluran Beton",
-  
-  // [SUB2] - UKURAN & SPESIFIKASI
-  "https://www.betonjayareadymix.com/2022/02/ukuran-saluran-beton.html": "Ukuran Saluran Beton",
+  "https://www.betonjayareadymix.com/2022/02/arti-saluran-beton.html": "Arti Saluran Beton",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/kegunaan-saluran-beton.html": "Kegunaan Saluran Beton",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/kelebihan-saluran-beton.html": "Kelebihan Saluran Beton",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/kekurangan-saluran-beton.html": "Kekurangan Saluran Beton",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/ukuran-saluran-beton.html": "Ukuran Saluran Beton",  // TYPE: SUB2
   
   // ============================================================
-  // [SUB2] - TAMBAHAN UKURAN (PERLU DIBUAT KONTEN)
+  // [SUB2] - JUAL (TRANSACTIONAL) - SUDAH ADA
   // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-40x40.html": "Saluran Beton 40x40", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-50x50.html": "Saluran Beton 50x50", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-60x60.html": "Saluran Beton 60x60", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-80x80.html": "Saluran Beton 80x80", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-100x100.html": "Saluran Beton 100x100", // [PERLU DIBUAT]
+  "https://www.betonjayareadymix.com/2022/02/jual-saluran-beton.html": "Jual Saluran Beton",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [SUB2] - TAMBAHAN TIPE (PERLU DIBUAT KONTEN)
+  // [SUB2] - SARAN ITEM (PERLU DIBUAT KONTEN)
   // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-terbuka.html": "Saluran Beton Terbuka", // [PERLU DIBUAT] - bedakan dengan U Ditch
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-tertutup.html": "Saluran Beton Tertutup", // [PERLU DIBUAT] - bedakan dengan Box Culvert
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-bertulang.html": "Saluran Beton Bertulang", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-tanpa-tulangan.html": "Saluran Beton Tanpa Tulangan", // [PERLU DIBUAT]
-  
-  // ============================================================
-  // [SUB2] - TAMBAHAN APLIKASI (PERLU DIBUAT KONTEN)
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-untuk-drainase-perkotaan.html": "Saluran Beton Untuk Drainase Perkotaan", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-untuk-industri.html": "Saluran Beton Untuk Industri", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-untuk-pertanian.html": "Saluran Beton Untuk Pertanian", // [PERLU DIBUAT]
-  
-  // ============================================================
-  // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY) - PERLU DIBUAT
-  // ============================================================
-  // "https://www.betonjayareadymix.com/2022/02/panduan-memilih-saluran-beton.html": "Panduan Memilih Saluran Beton", // [PERLU DIBUAT]
-  // "https://www.betonjayareadymix.com/2022/02/cara-pemasangan-saluran-beton.html": "Cara Pemasangan Saluran Beton" // [PERLU DIBUAT]
+  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-40x40.html": "Saluran Beton 40x40",  // TYPE: VARIANT
+  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-50x50.html": "Saluran Beton 50x50",  // TYPE: VARIANT
+  // "https://www.betonjayareadymix.com/2022/02/saluran-beton-terbuka.html": "Saluran Beton Terbuka",  // TYPE: SUB2
+  // "https://www.betonjayareadymix.com/2022/02/panduan-memilih-saluran-beton.html": "Panduan Memilih Saluran Beton",  // TYPE: SUB1
 };
 
-// ============================================================
-// 🔴 REKOMENDASI PERBAIKAN URL (REDIRECT)
-// ============================================================
-/*
-| No | Masalah | Solusi |
-|----|---------|--------|
-| 1 | URL "saluran-beton-jakarta.html" dll sudah menggunakan format dengan kota | ✅ SUDAH BENAR |
-| 2 | Belum ada URL dengan format "jual-saluran-beton-[kota].html" | ⚠️ PERLU DITAMBAHKAN |
-| 3 | Belum ada URL dengan format "harga-saluran-beton-[ukuran].html" | ⚠️ PERLU DITAMBAHKAN |
-
-CATATAN PENTING:
-- Bedakan konten "Saluran Beton" dengan "U Ditch" (saluran terbuka) dan "Box Culvert" (persegi tertutup)
-- Saluran Beton lebih ke produk saluran beton pracetak secara umum
-- Gunakan internal link ke U Ditch dan Box Culvert untuk menghindari cannibal
-*/
-
-// ============================================================
-// 🟡 REDIRECT NOTES UNTUK SALURAN BETON
-// ============================================================
-/*
-| No | From URL | To URL | Type |
-|----|----------|--------|------|
-| (TIDAK ADA REDIRECT HIGH RISK UNTUK CLUSTER INI)
-
-CATATAN:
-- Cluster saluran beton masih kecil, potensi untuk dikembangkan
-- Perhatikan bahwa "saluran beton" bisa tumpang tindih dengan "u ditch"
-- Pastikan konten saluran beton fokus ke produk saluran beton pracetak secara umum
-*/
 // ============================================================
 // PIPA BETON POST - BLOG
 // ============================================================
 
 const urlMappingPipaBeton = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-murah.html": "Pipa Beton Murah",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton [MASTER]",  // TYPE: MONEY_MASTER
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-jakarta.html": "Harga Pipa Beton Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bogor.html": "Harga Pipa Beton Bogor",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-depok.html": "Harga Pipa Beton Depok",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-tangerang.html": "Harga Pipa Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bekasi.html": "Harga Pipa Beton Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-karawang.html": "Harga Pipa Beton Karawang",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bandung.html": "Harga Pipa Beton Bandung",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-purwakarta.html": "Harga Pipa Beton Purwakarta",
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-surabaya.html": "Harga Pipa Beton Surabaya",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-jakarta.html": "Harga Pipa Beton Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bogor.html": "Harga Pipa Beton Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-depok.html": "Harga Pipa Beton Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-tangerang.html": "Harga Pipa Beton Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bekasi.html": "Harga Pipa Beton Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-karawang.html": "Harga Pipa Beton Karawang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-bandung.html": "Harga Pipa Beton Bandung",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-purwakarta.html": "Harga Pipa Beton Purwakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-surabaya.html": "Harga Pipa Beton Surabaya",  // TYPE: MONEY_CHILD
   
   // ============================================================
-  // [MONEY PAGE] - PER BRAND (TRANSACTIONAL)
+  // [MONEY_CHILD] - PER BRAND (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg.html": "Pipa Beton SCG",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-jakarta.html": "Pipa Beton SCG Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bogor.html": "Pipa Beton SCG Bogor",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-depok.html": "Pipa Beton SCG Depok",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-tangerang.html": "Pipa Beton SCG Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bekasi.html": "Pipa Beton SCG Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-karawang.html": "Pipa Beton SCG Karawang",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-jakarta.html": "Pipa Beton SCG Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bogor.html": "Pipa Beton SCG Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-depok.html": "Pipa Beton SCG Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-tangerang.html": "Pipa Beton SCG Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-bekasi.html": "Pipa Beton SCG Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg-karawang.html": "Pipa Beton SCG Karawang",  // TYPE: MONEY_CHILD
   
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
   // ============================================================
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase.html": "Pipa Beton Drainase",  // TYPE: SUB2
   
   // [SUB2] - UKURAN & SPESIFIKASI
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-ukuran.html": "Pipa Beton Ukuran",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-150-mm.html": "Ukuran Pipa Beton 150 mm",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-200-mm.html": "Ukuran Pipa Beton 200 mm",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-300-mm.html": "Ukuran Pipa Beton 300 mm",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-400-mm.html": "Ukuran Pipa Beton 400 mm",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-diameter.html": "Diameter Pipa Beton",
-  "https://www.betonjayareadymix.com/2022/02/ketebalan-dinding-pipa-beton.html": "Ketebalan Dinding Pipa Beton",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-standar-sni.html": "Ukuran Pipa Beton Standar SNI",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-untuk-drainase.html": "Ukuran Pipa Beton untuk Drainase",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-untuk-gorong-gorong.html": "Ukuran Pipa Beton untuk Gorong-Gorong",
-  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-vs-kapasitas-aliran.html": "Ukuran Pipa Beton vs Kapasitas Aliran",
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-150-mm.html": "Ukuran Pipa Beton 150 mm",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-200-mm.html": "Ukuran Pipa Beton 200 mm",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-300-mm.html": "Ukuran Pipa Beton 300 mm",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-400-mm.html": "Ukuran Pipa Beton 400 mm",  // TYPE: VARIANT
   
-  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "HARGA")
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-jakarta.html": "Pipa Beton Jakarta",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bogor.html": "Pipa Beton Bogor",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-depok.html": "Pipa Beton Depok",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-tangerang.html": "Pipa Beton Tangerang",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bekasi.html": "Pipa Beton Bekasi",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-terbaru.html": "Pipa Beton Terbaru",
+  // [SUB2] - LOKASI (INFORMASIONAL)
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-jakarta.html": "Pipa Beton Jakarta",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bogor.html": "Pipa Beton Bogor",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-depok.html": "Pipa Beton Depok",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-tangerang.html": "Pipa Beton Tangerang",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-bekasi.html": "Pipa Beton Bekasi",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-karawang.html": "Pipa Beton Karawang",  // TYPE: SUB2
   
-  // [SUB2] - APLIKASI SPESIFIK
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-bandara.html": "Pipa Beton Drainase Bandara",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-pertanian.html": "Pipa Beton Drainase Pertanian",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-industri.html": "Pipa Beton Drainase Industri",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-perumahan.html": "Pipa Beton Drainase Perumahan",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-drainase-jalan-raya.html": "Pipa Beton Drainase Jalan Raya",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-gorong-gorong.html": "Pipa Beton Gorong-Gorong",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-saluran-air.html": "Pipa Beton Saluran Air",
-  
-  // [SUB2] - KEUNGGULAN & PERBANDINGAN
-  "https://www.betonjayareadymix.com/2022/02/keunggulan-pipa-beton-scg.html": "Keunggulan Pipa Beton SCG",
-  "https://www.betonjayareadymix.com/2022/02/perbandingan-pipa-scg-vs-lokal.html": "Perbandingan Pipa SCG vs Pipa Beton Lokal",
-  "https://www.betonjayareadymix.com/2022/02/spesifikasi-pipa-scg.html": "Spesifikasi Pipa SCG"
+  // ============================================================
+  // [SUB1] - SARAN ITEM (PERLU DIBUAT KONTEN)
+  // ============================================================
+  // "https://www.betonjayareadymix.com/2022/02/cara-memilih-pipa-beton.html": "Cara Memilih Pipa Beton",  // TYPE: SUB1
 };
 
-// ============================================================
-// 🟡 REDIRECT NOTES UNTUK PIPA BETON
-// ============================================================
-/*
-| No | From URL | To URL | Type |
-|----|----------|--------|------|
-| (TIDAK ADA REDIRECT HIGH RISK UNTUK CLUSTER INI)
-
-CATATAN:
-- Hati-hati dengan duplikasi: pipa-beton-scg.html dan harga-pipa-beton-scg.html
-- Pastikan konsistensi antara konten harga dan spesifikasi
-*/
 // ============================================================
 // BUIS BETON POST - BLOG
 // ============================================================
 
 const urlMappingBuis = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton.html": "Harga Buis Beton",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-paling-murah.html": "Harga Buis Beton Paling Murah",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-murah.html": "Harga Buis Beton Murah",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-termurah.html": "Harga Buis Beton Termurah",
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton.html": "Harga Buis Beton [MASTER]",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER UKURAN (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER UKURAN (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-30-cm.html": "Harga Buis Beton Diameter 30 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-40-cm.html": "Harga Buis Beton Diameter 40 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-50-cm.html": "Harga Buis Beton Diameter 50 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-60-cm.html": "Harga Buis Beton Diameter 60 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-80-cm.html": "Harga Buis Beton Diameter 80 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-100-cm.html": "Harga Buis Beton Diameter 100 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-150-cm.html": "Harga Buis Beton Diameter 150 CM",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-80-cm.html": "Harga Buis Beton 80 cm",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-kecil.html": "Harga Buis Beton Kecil",
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-30-cm.html": "Harga Buis Beton Diameter 30 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-40-cm.html": "Harga Buis Beton Diameter 40 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-50-cm.html": "Harga Buis Beton Diameter 50 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-60-cm.html": "Harga Buis Beton Diameter 60 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-80-cm.html": "Harga Buis Beton Diameter 80 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-100-cm.html": "Harga Buis Beton Diameter 100 CM",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-150-cm.html": "Harga Buis Beton Diameter 150 CM",  // TYPE: MONEY_CHILD
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER JENIS (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER JENIS (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bertulang.html": "Harga Buis Beton Bertulang",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tanpa-tulangan.html": "Harga Buis Beton Tanpa Tulangan",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bulat.html": "Harga Buis Beton Bulat",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-kotak.html": "Harga Buis Beton Kotak",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-setengah-lingkaran.html": "Harga Buis Beton Setengah Lingkaran",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-12-lingkaran.html": "Harga Buis Beton 1/2 Lingkaran",
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bertulang.html": "Harga Buis Beton Bertulang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bulat.html": "Harga Buis Beton Bulat",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-kotak.html": "Harga Buis Beton Kotak",  // TYPE: MONEY_CHILD
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-jakarta.html": "Harga Buis Beton Jakarta",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bogor.html": "Harga Buis Beton Bogor",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-depok.html": "Harga Buis Beton Depok",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tangerang.html": "Harga Buis Beton Tangerang",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bekasi.html": "Harga Buis Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bandung.html": "Harga Buis Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-karawang.html": "Harga Buis Beton Karawang",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-cirebon.html": "Harga Buis Beton Cirebon",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-semarang.html": "Harga Buis Beton Semarang",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-surabaya.html": "Harga Buis Beton Surabaya",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-mojokerto.html": "Harga Buis Beton Mojokerto",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-gresik.html": "Harga Buis Beton Gresik",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tasikmalaya.html": "Harga Buis Beton Tasikmalaya",
-  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bali.html": "Harga Buis Beton Bali",
-  
-  // ============================================================
-  // [MONEY PAGE] - JUAL (TRANSACTIONAL)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-murah.html": "Jual Buis Beton Murah",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-terdekat.html": "Jual Buis Beton Terdekat",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-bertulang.html": "Jual Buis Beton Bertulang",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-bekasi.html": "Jual Buis Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-bandung.html": "Jual Buis Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-di-bogor.html": "Jual Buis Beton di Bogor",
-  "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-depok.html": "Jual Buis Beton Depok",
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-jakarta.html": "Harga Buis Beton Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bogor.html": "Harga Buis Beton Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-depok.html": "Harga Buis Beton Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tangerang.html": "Harga Buis Beton Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bekasi.html": "Harga Buis Beton Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bandung.html": "Harga Buis Beton Bandung",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-karawang.html": "Harga Buis Beton Karawang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-surabaya.html": "Harga Buis Beton Surabaya",  // TYPE: MONEY_CHILD
   
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-precon.html": "Buis Beton Precon",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-asiacon.html": "Buis Beton Asiacon",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-dusaspun.html": "Buis Beton Dusaspun",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-scg.html": "Buis Beton SCG",
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-precon.html": "Buis Beton Precon",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-asiacon.html": "Buis Beton Asiacon",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-dusaspun.html": "Buis Beton Dusaspun",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-scg.html": "Buis Beton SCG",  // TYPE: SUB2
   
   // [SUB2] - JENIS & BENTUK
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-bulat.html": "Buis Beton Bulat",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-kotak.html": "Buis Beton Kotak",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-persegi.html": "Buis Beton Persegi",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-u.html": "Buis Beton Bentuk U",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-setengah-lingkaran.html": "Buis Beton Setengah Lingkaran",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-belah.html": "Buis Beton Belah",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-bertulang.html": "Buis Beton Bertulang",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-tanpa-lubang.html": "Buis Beton Tanpa Lubang",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-pori-lubang.html": "Buis Beton Pori Lubang",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-rcp.html": "Buis Beton RCP",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-riol.html": "Buis Beton Riol",
-  
-  // [SUB2] - UKURAN & SPESIFIKASI
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-diameter-80-cm.html": "Ukuran Buis Beton Diameter 80 CM",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-diameter-100-cm.html": "Ukuran Buis Beton Diameter 100 CM",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-u.html": "Ukuran Buis Beton U",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-belah.html": "Ukuran Buis Beton Belah",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-untuk-sumur.html": "Ukuran Buis Beton untuk Sumur",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-untuk-septic-tank.html": "Ukuran Buis Beton untuk Septic Tank",
-  "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-saluran-air.html": "Ukuran Buis Beton Saluran Air",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-80-x-50.html": "Buis Beton 80 x 50",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-100-x-100.html": "Buis Beton 100 x 100",
-  
-  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "HARGA"/"JUAL")
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-jakarta.html": "Buis Beton Jakarta",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-bogor.html": "Buis Beton Bogor",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-depok.html": "Buis Beton Depok",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-tangerang.html": "Buis Beton Tangerang",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-bekasi.html": "Buis Beton Bekasi",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-bandung.html": "Buis Beton Bandung",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-purwakarta.html": "Buis Beton Purwakarta",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-cirebon.html": "Buis Beton Cirebon",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-serang.html": "Buis Beton Serang",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-cisangkan.html": "Buis Beton Cisangkan",
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-bulat.html": "Buis Beton Bulat",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-kotak.html": "Buis Beton Kotak",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-bertulang.html": "Buis Beton Bertulang",  // TYPE: SUB2
   
   // [SUB2] - APLIKASI SPESIFIK
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-proyek.html": "Buis Beton Proyek",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-kolam.html": "Buis Beton Kolam",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-resapan.html": "Buis Beton Resapan",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-sumur-resapan.html": "Buis Beton Sumur Resapan",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-septic-tank.html": "Buis Beton Septic Tank",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-pondasi-cyclop.html": "Buis Beton Pondasi Cyclop",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-biopori.html": "Buis Beton Biopori",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-saluran.html": "Buis Beton Saluran",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-gorong-gorong.html": "Buis Beton Gorong Gorong",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-saluran-air.html": "Buis Beton Saluran Air",
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-septic-tank.html": "Buis Beton Septic Tank",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-sumur-resapan.html": "Buis Beton Sumur Resapan",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-gorong-gorong.html": "Buis Beton Gorong Gorong",  // TYPE: SUB2
   
   // ============================================================
   // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/03/sumur-resapan-buis-beton-scg.html": "Sumur Resapan Buis Beton SCG",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-sumur.html": "Buis Beton Untuk Sumur",
-  "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-septic-tank.html": "Buis Beton Untuk Septic Tank"
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-sumur.html": "Buis Beton Untuk Sumur",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-septic-tank.html": "Buis Beton Untuk Septic Tank",  // TYPE: SUB1
+  
+  // ============================================================
+  // [REDIRECT] - DUPLIKASI (PERLU 301 REDIRECT)
+  // ============================================================
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-murah.html": "Harga Buis Beton Murah",  // TYPE: REDIRECT (ke master)
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-termurah.html": "Harga Buis Beton Termurah",  // TYPE: REDIRECT (ke master)
 };
 
-// ============================================================
-// 🔴 REDIRECT NOTES UNTUK BUIS BETON
-// ============================================================
-/*
-| No | From URL | To URL | Type |
-|----|----------|--------|------|
-| 1 | /2021/03/daftar-harga-buis-beton.html | /2021/03/harga-buis-beton.html | 301 |
-| 2 | /2021/03/harga-buis-beton-untuk-saluran-air.html | /2021/03/harga-buis-beton.html | 301 |
-| 3 | /2021/03/harga-buis-beton-buat-sumur.html | /2021/03/harga-buis-beton-sumur-resapan.html | 301 |
-
-CATATAN:
-- Hati-hati dengan duplikasi konten untuk ukuran yang sama
-- Pastikan konsistensi antara "harga-buis-beton-diameter-X-cm" dan "harga-buis-beton-X-cm"
-*/
 // ============================================================
 // BOX CULVERT POST - BLOG
 // ============================================================
 
 const urlMappingBoxCulvert = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-beton-precast.html": "Harga Box Culvert Beton Precast",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-beton.html": "Harga Box Culvert Beton",
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-beton-precast.html": "Harga Box Culvert Beton Precast [MASTER]",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER UKURAN (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER UKURAN (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-40x40.html": "Harga Box Culvert 40x40",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-50x50.html": "Harga Box Culvert 50x50",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-60x60.html": "Harga Box Culvert 60x60",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-80x80x100.html": "Harga Box Culvert 80x80x100",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-100-x-100.html": "Harga Box Culvert 100 x 100",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-100x100x100.html": "Harga Box Culvert 100x100x100",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-150x150.html": "Harga Box Culvert 150x150",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-200x200.html": "Harga Box Culvert 200x200",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-300x300.html": "Harga Box Culvert 300x300",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-600-x-600.html": "Harga Box Culvert 600 x 600",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-1200-x-1200.html": "Harga Box Culvert 1200 x 1200",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-1500x1500.html": "Harga Box Culvert 1500 x 1500",
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-40x40.html": "Harga Box Culvert 40x40",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-50x50.html": "Harga Box Culvert 50x50",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-60x60.html": "Harga Box Culvert 60x60",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-80x80x100.html": "Harga Box Culvert 80x80x100",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-100x100x100.html": "Harga Box Culvert 100x100x100",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-150x150.html": "Harga Box Culvert 150x150",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-200x200.html": "Harga Box Culvert 200x200",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-300x300.html": "Harga Box Culvert 300x300",  // TYPE: MONEY_CHILD
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-jakarta.html": "Harga Box Culvert Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bogor.html": "Harga Box Culvert Bogor",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-depok.html": "Harga Box Culvert Depok",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-tangerang.html": "Harga Box Culvert Tangerang",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bekasi.html": "Harga Box Culvert Bekasi",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bandung.html": "Harga Box Culvert Bandung",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-purwakarta.html": "Harga Box Culvert Purwakarta",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-majalengka.html": "Harga Box Culvert Majalengka",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bali.html": "Harga Box Culvert Bali",
-  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-surabaya.html": "Harga Box Culvert Surabaya",
-  
-  // ============================================================
-  // [MONEY PAGE] - JUAL (TRANSACTIONAL)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert.html": "Jual Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-jakarta.html": "Jual Box Culvert Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-semarang.html": "Jual Box Culvert Semarang",
-  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-surabaya.html": "Jual Box Culvert Surabaya",
-  "https://www.betonjayareadymix.com/2021/04/jual-box-culvert-balikpapan.html": "Jual Box Culvert Balikpapan",
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-jakarta.html": "Harga Box Culvert Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bogor.html": "Harga Box Culvert Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-depok.html": "Harga Box Culvert Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-tangerang.html": "Harga Box Culvert Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bekasi.html": "Harga Box Culvert Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bandung.html": "Harga Box Culvert Bandung",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-surabaya.html": "Harga Box Culvert Surabaya",  // TYPE: MONEY_CHILD
   
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-adalah.html": "Box Culvert Adalah",
-  "https://www.betonjayareadymix.com/2021/04/arti-box-culvert.html": "Arti Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/kegunaan-box-culvert.html": "Kegunaan Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/kelebihan-box-culvert.html": "Kelebihan Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/kekurangan-box-culvert.html": "Kekurangan Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/kekuatan-box-culvert.html": "Kekuatan Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/aplikasi-box-culvert.html": "Aplikasi Box Culvert",
-  
-  // [SUB2] - UKURAN & SPESIFIKASI
-  "https://www.betonjayareadymix.com/2021/04/ukuran-box-culvert-precast.html": "Ukuran Box Culvert Precast",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-box-culvert-dusaspun.html": "Ukuran Box Culvert Dusaspun",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-box-culvert-calvary.html": "Ukuran Box Culvert Calvary",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-80x80.html": "Box Culvert 80x80",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-100-x-100.html": "Box Culvert 100 x 100",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-200x200.html": "Box Culvert 200x200",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-300x300.html": "Box Culvert 300x300",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-600-x-600.html": "Box Culvert 600 x 600",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-1500x1500.html": "Box Culvert 1500x1500",
+  "https://www.betonjayareadymix.com/2021/04/box-culvert-adalah.html": "Box Culvert Adalah",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/kegunaan-box-culvert.html": "Kegunaan Box Culvert",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/kelebihan-box-culvert.html": "Kelebihan Box Culvert",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/ukuran-box-culvert-precast.html": "Ukuran Box Culvert Precast",  // TYPE: SUB2
   
   // [SUB2] - BRAND & MANUFAKTUR
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-calvary.html": "Box Culvert Calvary",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-dusaspun.html": "Box Culvert Dusaspun",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-wika-beton.html": "Box Culvert Wika Beton",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-indonesia.html": "Box Culvert Indonesia",
-  
-  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "HARGA"/"JUAL")
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-jakarta.html": "Box Culvert Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-bogor.html": "Box Culvert Bogor",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-bekasi.html": "Box Culvert Bekasi",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-tangerang.html": "Box Culvert Tangerang",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-depok.html": "Box Culvert Depok",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-bandung.html": "Box Culvert Bandung",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-malang.html": "Box Culvert Malang",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-jogja.html": "Box Culvert Jogja",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-surabaya.html": "Box Culvert Surabaya",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-majalengka.html": "Box Culvert Majalengka",
-  
-  // [SUB2] - ANALISA & PANDUAN
-  "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-box-culvert.html": "Analisa Pemasangan Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-sni.html": "Box Culvert SNI",
+  "https://www.betonjayareadymix.com/2021/04/box-culvert-dusaspun.html": "Box Culvert Dusaspun",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/box-culvert-wika-beton.html": "Box Culvert Wika Beton",  // TYPE: SUB2
   
   // ============================================================
   // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/saluran-box-culvert.html": "Saluran Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/gorong-gorong-box-culvert.html": "Gorong Gorong Box Culvert",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-jalan-tol.html": "Box Culvert Jalan Tol",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-irigasi.html": "Box Culvert Irigasi",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-jembatan.html": "Box Culvert Jembatan",
-  "https://www.betonjayareadymix.com/2021/04/box-culvert-jalan-umum.html": "Box Culvert Jalan Umum"
+  "https://www.betonjayareadymix.com/2021/04/saluran-box-culvert.html": "Saluran Box Culvert",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/04/box-culvert-jalan-tol.html": "Box Culvert Jalan Tol",  // TYPE: SUB1
 };
 
-// ============================================================
-// 🟡 REDIRECT NOTES UNTUK BOX CULVERT
-// ============================================================
-/*
-| No | From URL | To URL | Type |
-|----|----------|--------|------|
-| (TIDAK ADA REDIRECT HIGH RISK UNTUK CLUSTER INI)
-
-CATATAN:
-- Cluster box culvert sudah cukup terstruktur
-- Hati-hati dengan duplikasi ukuran (contoh: 100-x-100 vs 100x100x100)
-- Pastikan konsistensi format ukuran
-*/
 // ============================================================
 // U DITCH POST - BLOG
 // ============================================================
 
 const urlMappingUditch = {
   // ============================================================
-  // [MONEY PAGE] - MASTER HARGA (TRANSACTIONAL)
+  // [MONEY_MASTER] - MASTER HARGA (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch.html": "Harga U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/harga-beton-precast-u-ditch.html": "Harga Beton Precast U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-murah.html": "Harga U Ditch Murah",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-per-meter.html": "Harga U Ditch Per Meter",
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch.html": "Harga U Ditch [MASTER]",  // TYPE: MONEY_MASTER
   
   // ============================================================
-  // [MONEY PAGE] - HARGA PER LOKASI (TRANSACTIONAL)
+  // [MONEY_CHILD] - HARGA PER LOKASI (TRANSACTIONAL)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-jakarta.html": "Harga U Ditch Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bogor.html": "Harga U Ditch Bogor",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-depok.html": "Harga U Ditch Depok",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-tangerang.html": "Harga U Ditch Tangerang",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bekasi.html": "Harga U Ditch Bekasi",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bandung.html": "Harga U Ditch Bandung",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-karawang.html": "Harga U Ditch Karawang",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-cirebon.html": "Harga U Ditch Cirebon",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-surabaya.html": "Harga U Ditch Surabaya",
-  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-jogja.html": "Harga U Ditch Jogja",
-  
-  // ============================================================
-  // [MONEY PAGE] - JUAL (TRANSACTIONAL)
-  // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/jual-u-ditch-bekasi.html": "Jual U Ditch Bekasi",
-  "https://www.betonjayareadymix.com/2021/04/jual-u-ditch-bandung.html": "Jual U Ditch Bandung",
-  "https://www.betonjayareadymix.com/2021/04/jual-u-ditch-depok.html": "Jual U Ditch Depok",
-  "https://www.betonjayareadymix.com/2021/04/jual-u-ditch-cikarang.html": "Jual U Ditch Cikarang",
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-jakarta.html": "Harga U Ditch Jakarta",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bogor.html": "Harga U Ditch Bogor",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-depok.html": "Harga U Ditch Depok",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-tangerang.html": "Harga U Ditch Tangerang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bekasi.html": "Harga U Ditch Bekasi",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bandung.html": "Harga U Ditch Bandung",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-karawang.html": "Harga U Ditch Karawang",  // TYPE: MONEY_CHILD
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-surabaya.html": "Harga U Ditch Surabaya",  // TYPE: MONEY_CHILD
   
   // ============================================================
   // [SUB2] - SUB-PILLAR TIPE 2 (COMMERCIAL INVESTIGATION)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-precast.html": "U Ditch Precast",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-calvary.html": "U Ditch Calvary",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-dusaspun.html": "U Ditch Dusaspun",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-megacon.html": "U Ditch Megacon",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-precon.html": "U Ditch Precon",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-scg.html": "U Ditch SCG",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-wika-beton.html": "U Ditch Wika Beton",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-varia-usaha-beton.html": "U Ditch Varia Usaha Beton",
+  "https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-precast.html": "U Ditch Precast",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-beton.html": "Ukuran U Ditch Beton",  // TYPE: SUB2
   
-  // [SUB2] - UKURAN & SPESIFIKASI
-  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-beton.html": "Ukuran U Ditch Beton",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-type-ds-1.html": "Ukuran U Ditch Type DS 1",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-type-ds-2.html": "Ukuran U Ditch Type DS 2",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-type-ds-3.html": "Ukuran U Ditch Type DS 3",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-type-ds-4.html": "Ukuran U Ditch Type DS 4",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-30x40x120.html": "U Ditch 30x40x120",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-40x40x120.html": "U Ditch 40x40x120",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-40-x-40.html": "U Ditch 40 x 40",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-40-x-60.html": "U Ditch 40 x 60",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-50-x-60.html": "U Ditch 50 x 60",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-60x60.html": "U Ditch 60x60",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-60-x-60.html": "U Ditch 60 x 60",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-60-x-80.html": "U Ditch 60 x 80",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-70x70.html": "U Ditch 70x70",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-80x80.html": "U Ditch 80x80",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-90x90.html": "U Ditch 90x90",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-100x100x120.html": "U Ditch 100x100x120",
+  // [SUB2] - BRAND & MANUFAKTUR
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-dusaspun.html": "U Ditch Dusaspun",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-scg.html": "U Ditch SCG",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-wika-beton.html": "U Ditch Wika Beton",  // TYPE: SUB2
   
-  // [SUB2] - LOKASI (INFORMASIONAL, TANPA "HARGA"/"JUAL")
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-jakarta.html": "U Ditch Jakarta",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-bogor.html": "U Ditch Bogor",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-depok.html": "U Ditch Depok",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-tangerang.html": "U Ditch Tangerang",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-bekasi.html": "U Ditch Bekasi",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-bandung.html": "U Ditch Bandung",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-karawang.html": "U Ditch Karawang",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-cirebon.html": "U Ditch Cirebon",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-surabaya.html": "U Ditch Surabaya",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-jogja.html": "U Ditch Jogja",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-semarang.html": "U Ditch Semarang",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-sidoarjo.html": "U Ditch Sidoarjo",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-pasuruan.html": "U Ditch Pasuruan",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-mojokerto.html": "U Ditch Mojokerto",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-gresik.html": "U Ditch Gresik",
-  "https://www.betonjayareadymix.com/2021/04/u-ditch-cilegon.html": "U Ditch Cilegon",
-  
-  // [SUB2] - ANALISA & PANDUAN
-  "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-u-ditch.html": "Analisa Pemasangan U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-u-ditch-sni.html": "Analisa Pemasangan U Ditch SNI",
-  "https://www.betonjayareadymix.com/2021/04/biaya-pemasangan-u-ditch.html": "Biaya Pemasangan U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/harga-pasang-u-ditch.html": "Harga Pasang U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/harga-upah-borongan-pasang-u-ditch.html": "Harga Upah Borongan Pasang U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/metode-pelaksanaan-pemasangan-cover-u.html": "Metode Pelaksanaan Pemasangan Cover U Ditch",
+  // [SUB2] - UKURAN SPESIFIK
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-40x40x120.html": "U Ditch 40x40x120",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-60x60.html": "U Ditch 60x60",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/2021/04/u-ditch-80x80.html": "U Ditch 80x80",  // TYPE: VARIANT
   
   // [SUB2] - TUTUP U DITCH (COVER)
-  "https://www.betonjayareadymix.com/2021/04/harga-cover-tutup-u-ditch.html": "Harga Cover Tutup U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/harga-cover-u-ditch-dusaspun.html": "Harga Cover U Ditch Dusaspun",
-  "https://www.betonjayareadymix.com/2021/04/harga-tutup-u-ditch-30-x-30.html": "Harga Tutup U Ditch 30 x 30",
-  "https://www.betonjayareadymix.com/2021/04/harga-tutup-u-ditch-40x40x120.html": "Harga Tutup U Ditch 40x40x120",
-  "https://www.betonjayareadymix.com/2021/04/ukuran-cover-u-ditch.html": "Ukuran Cover U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/berat-cover-u-ditch.html": "Berat Cover U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/cetakan-tutup-u-ditch.html": "Cetakan Tutup U Ditch",
-  "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",
+  "https://www.betonjayareadymix.com/2021/04/harga-cover-tutup-u-ditch.html": "Harga Cover Tutup U Ditch",  // TYPE: MONEY_MASTER
+  "https://www.betonjayareadymix.com/2021/04/ukuran-cover-u-ditch.html": "Ukuran Cover U Ditch",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",  // TYPE: MONEY_MASTER
   
   // ============================================================
   // [SUB1] - SUB-PILLAR TIPE 1 (BRIDGE KE MONEY)
   // ============================================================
-  "https://www.betonjayareadymix.com/2021/04/saluran-u-ditch-jalan.html": "Saluran U Ditch Jalan",
-  "https://www.betonjayareadymix.com/2021/04/gorong-gorong-u-ditch.html": "Gorong Gorong U Ditch"
+  "https://www.betonjayareadymix.com/2021/04/analisa-pemasangan-u-ditch.html": "Analisa Pemasangan U Ditch",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/04/biaya-pemasangan-u-ditch.html": "Biaya Pemasangan U Ditch",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/2021/04/saluran-u-ditch-jalan.html": "Saluran U Ditch Jalan",  // TYPE: SUB1
 };
-
 // ============================================================
 // 🔴 REDIRECT NOTES UNTUK U DITCH
 // ============================================================
@@ -667,6 +335,314 @@ CATATAN:
 - Hati-hati dengan duplikasi harga-u-ditch-60x60.html dan harga-u-ditch-60-x-60.html
 - Pilih satu master untuk ukuran yang sama
 */
+
+// ============================================================
+// FUNGSI GENERATE BREADCRUMB - VERSI FINAL
+// UNTUK SEMUA PILLAR (PRODUK, MATERIAL, JASA, INTERIOR, DLL)
+// MAX_LEVEL = 4 (TERMASUK HOME)
+// SKIP LEVEL BEKERJA UNTUK PILLAR & SUB2
+// ============================================================
+
+function generateBreadcrumbForMapping(mappingObj, currentUrl, breadcrumbItems = [], pillarType = 'JASA_KONSTRUKSI') {
+    
+    const MAX_LEVEL = 4;
+    const DOMAIN = 'https://www.betonjayareadymix.com';
+    
+    // ============================================================
+    // 1. VALIDASI PILLAR TYPE
+    // ============================================================
+    const validPillarTypes = ['PRODUK_KONSTRUKSI', 'MATERIAL_KONSTRUKSI', 'JASA_KONSTRUKSI', 
+                               'PRODUK_INTERIOR', 'JASA_DESAIN_INTERIOR'];
+    if (!validPillarTypes.includes(pillarType)) {
+        console.error(`❌ ERROR: "${pillarType}" BUKAN PILLAR TYPE yang valid!`);
+        console.error(`   Gunakan salah satu dari: ${validPillarTypes.join(', ')}`);
+        return null;
+    }
+    
+    const pageTitle = mappingObj[currentUrl];
+    if (!pageTitle) {
+        console.error(`❌ ERROR: URL "${currentUrl}" tidak ditemukan di mapping`);
+        return null;
+    }
+    
+    // ============================================================
+    // 2. KUMPULKAN SEMUA NAMA HALAMAN DARI MAPPING (UNTUK REFERENSI)
+    // ============================================================
+    const knownPages = [];
+    for (const [url, name] of Object.entries(mappingObj)) {
+        if (name && typeof name === 'string') {
+            knownPages.push(name.toLowerCase());
+        }
+    }
+    
+    // ============================================================
+    // 3. DETEKSI TYPE OTOMATIS
+    // ============================================================
+    function detectPageType(pageName, position, totalLevels) {
+        const lowerName = pageName.toLowerCase();
+        const parts = pageName.split(' ');
+        const lastWord = parts[parts.length - 1].toLowerCase();
+        const firstWord = parts[0].toLowerCase();
+        const wordCount = parts.length;
+        
+        // PILLAR: posisi pertama
+        if (position === 0) return 'PILLAR';
+        
+        // MONEY_LEADGEN
+        if (lowerName.startsWith('konsultasi')) return 'MONEY_LEADGEN';
+        
+        // MONEY_MASTER (deteksi transaksi)
+        const transactionWords = ['harga', 'sewa', 'jual', 'beli', 'pesan', 'booking', 'order', 'rental',
+            'biaya', 'tarif', 'rate', 'cost', 'price', 'fee', 'charge', 'promo', 'diskon', 'obral',
+            'gratis', 'voucher', 'cashback', 'cicilan', 'kredit', 'dp', 'angsuran', 'quote', 'penawaran', 'estimasi'];
+        
+        for (const word of transactionWords) {
+            if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
+                return 'MONEY_MASTER';
+            }
+        }
+        
+        // SUB1 (deteksi panduan)
+        const guideWords = ['panduan', 'cara', 'tips', 'tutorial', 'langkah', 'petunjuk', 'pedoman', 'instruksi',
+            'guide', 'how to', 'step by step', 'strategi', 'metode', 'teknik', 'rahasia', 'kunci sukses',
+            'wajib tahu', 'perlu diketahui', 'edukasi', 'belajar', 'mempelajari', 'pemahaman', 'solusi', 'jawaban'];
+        
+        for (const word of guideWords) {
+            if (lowerName.startsWith(word + ' ') || lowerName.includes(' ' + word + ' ')) {
+                return 'SUB1';
+            }
+        }
+        
+        // VARIANT (deteksi angka atau kata kunci)
+        if (/\d/.test(lowerName)) return 'VARIANT';
+        
+        const variantWords = ['tipe', 'type', 'ukuran', 'model', 'varian', 'warna', 'bentuk', 'seri', 'versi',
+            'grade', 'kelas', 'standar', 'jenis', 'macam', 'ragam', 'kategori', 'spesifikasi', 'detail', 'rinci',
+            'kapasitas', 'volume', 'berat', 'panjang', 'lebar', 'tinggi', 'tebal', 'diameter', 'radius', 'luas',
+            'bahan', 'material', 'komposisi', 'kualitas', 'mutu', 'kode', 'plus', 'minus', 'kelebihan', 'kekurangan',
+            'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'putih', 'hitam', 'merah', 'biru', 'hijau',
+            'kecil', 'besar', 'sedang', 'mini', 'maxi', 'jumbo', 'extra', 'super'];
+        
+        for (const word of variantWords) {
+            if (lowerName.includes(' ' + word + ' ') || lowerName.endsWith(' ' + word)) {
+                return 'VARIANT';
+            }
+        }
+        
+        // MONEY_CHILD (deteksi lokasi)
+        function isLikelyLocation(word) {
+            if (word.length < 3 || word.length > 25) return false;
+            if (!/^[a-zA-Z]+$/.test(word)) return false;
+            if (word === firstWord) return false;
+            
+            const notLocationWords = ['mini', 'maxi', 'super', 'extra', 'plus', 'pro', 'max', 'ultra',
+                'baru', 'lama', 'bekas', 'second', 'original', 'kw', 'grade', 'murah', 'mahal', 'hemat',
+                'premium', 'standar', 'ekonomis', 'kecil', 'besar', 'sedang', 'panjang', 'pendek', 'tebal', 'tipis',
+                'putih', 'hitam', 'merah', 'biru', 'hijau', 'kuning', 'ungu', 'abu', 'coklat'];
+            if (notLocationWords.includes(word)) return false;
+            
+            const isKnownProduct = knownPages.some(known => known === word || (known.includes(word) && word.length > 3));
+            if (isKnownProduct) return false;
+            
+            if (word.length >= 4 && word.length <= 12) return true;
+            if (/[aiueo]$/.test(word) && word.length >= 4) return true;
+            
+            const locationPatterns = ['ang', 'ung', 'eng', 'ong', 'an', 'in', 'un', 'en', 
+                'ap', 'ip', 'op', 'ar', 'ur', 'er', 'or', 'karta', 'jaya', 'pura', 'sari', 'mulya', 'agung', 'asih', 'ayem'];
+            for (const pattern of locationPatterns) {
+                if (word.endsWith(pattern) && word.length >= 4) return true;
+            }
+            
+            if (word.length >= 5 && /[aiueo].*[aiueo]/.test(word)) return true;
+            return false;
+        }
+        
+        if (wordCount >= 2 && isLikelyLocation(lastWord)) return 'MONEY_CHILD';
+        
+        return 'SUB2';
+    }
+    
+    // ============================================================
+    // 4. FUNGSI BANTUAN
+    // ============================================================
+    function generateIdFromName(name) {
+        return name.replace(/[^a-zA-Z0-9]/g, '') + 'Post';
+    }
+    
+    // ============================================================
+    // 5. BANGUN LEVELS DARI ARRAY OBJECT (NAMA + URL)
+    // ============================================================
+    const allLevels = [];
+    for (let i = 0; i < breadcrumbItems.length; i++) {
+        const item = breadcrumbItems[i];
+        const name = typeof item === 'string' ? item : item.name;
+        const url = typeof item === 'string' ? null : item.url;
+        
+        allLevels.push({
+            name: name,
+            url: url,
+            type: detectPageType(name, i, breadcrumbItems.length),
+            id: generateIdFromName(name),
+            position: i
+        });
+    }
+    
+    // ============================================================
+    // 6. VALIDASI & FALLBACK URL
+    // ============================================================
+    for (const level of allLevels) {
+        if (!level.url) {
+            let foundUrl = null;
+            for (const [url, name] of Object.entries(mappingObj)) {
+                if (name === level.name) {
+                    foundUrl = url.startsWith('http') ? url : DOMAIN + url;
+                    break;
+                }
+            }
+            if (!foundUrl) {
+                const slug = level.name.toLowerCase().replace(/ /g, '-');
+                foundUrl = `${DOMAIN}/p/${slug}.html`;
+            }
+            level.url = foundUrl;
+        } else if (!level.url.startsWith('http')) {
+            level.url = DOMAIN + level.url;
+        }
+    }
+    
+    // ============================================================
+    // 7. TENTUKAN LEVEL YANG AKAN DITAMPILKAN (MAX 4 LEVEL)
+    // ============================================================
+    const selectedLevels = [];
+    
+    // Level 1: Home (WAJIB)
+    selectedLevels.push({ name: 'BJR', url: DOMAIN, isHome: true });
+    
+    // Hitung slot tersisa (MAX_LEVEL - 1 untuk home - 1 untuk halaman saat ini)
+    let remainingSlots = MAX_LEVEL - 2;
+    
+    console.log(`📊 ========================================`);
+    console.log(`📊 Breadcrumb Generator - SEO Tercanggih`);
+    console.log(`📊 Max level: ${MAX_LEVEL}, slot untuk parent: ${remainingSlots}`);
+    console.log(`📊 Breadcrumb items: ${allLevels.map(l => l.name).join(' → ')}`);
+    console.log(`📊 ========================================`);
+    
+    // Parent terdekat (level terakhir) - WAJIB tampil
+    let parentTerdekat = null;
+    if (allLevels.length > 0) {
+        parentTerdekat = allLevels[allLevels.length - 1];
+        selectedLevels.push(parentTerdekat);
+        remainingSlots--;
+        console.log(`✅ WAJIB: "${parentTerdekat.name}" (${parentTerdekat.type}) - sisa slot: ${remainingSlots}`);
+    }
+    
+    // Level lainnya (dari awal sampai sebelum parent terdekat)
+    const otherLevels = [...allLevels.slice(0, allLevels.length - 1)].reverse();
+    const canSkipTypes = ['PILLAR', 'SUB2'];
+    
+    for (const level of otherLevels) {
+        if (remainingSlots <= 0) {
+            console.log(`📌 SKIP: "${level.name}" (${level.type}) - tidak ada slot tersisa`);
+            continue;
+        }
+        
+        if (canSkipTypes.includes(level.type)) {
+            console.log(`📌 SKIP: "${level.name}" (${level.type}) - type boleh skip`);
+            continue;
+        }
+        
+        selectedLevels.splice(1, 0, level);
+        remainingSlots--;
+        console.log(`✅ TAMBAH: "${level.name}" (${level.type}) - sisa slot: ${remainingSlots}`);
+    }
+    
+    // Halaman saat ini (WAJIB)
+    const currentFullUrl = currentUrl.startsWith('http') ? currentUrl : DOMAIN + currentUrl;
+    selectedLevels.push({
+        name: pageTitle,
+        url: currentFullUrl,
+        isCurrent: true
+    });
+    
+    // Update position
+    for (let i = 0; i < selectedLevels.length; i++) {
+        selectedLevels[i].position = i + 1;
+    }
+    
+    console.log(`✅ FINAL (${selectedLevels.length} level): ${selectedLevels.map(l => l.name).join(' → ')}`);
+    
+    // ============================================================
+    // 8. GENERATE HTML BREADCRUMB
+    // ============================================================
+    let breadcrumbHtml = `<div class="breadcrumbs">\n<span>\n`;
+    breadcrumbHtml += `<a href="${DOMAIN}/" itemprop="item" title="Beton Jaya Readymix">`;
+    breadcrumbHtml += `<meta content="1" itemprop="position">`;
+    breadcrumbHtml += `<span itemprop="name">BJR</span></a>\n`;
+    breadcrumbHtml += `</span>\n &nbsp;›&nbsp;\n\n`;
+    breadcrumbHtml += `<span>\n<div id="breadcrumbContainer" style="display: inline;">\n`;
+    
+    for (let i = 1; i < selectedLevels.length; i++) {
+        const level = selectedLevels[i];
+        const isLast = (i === selectedLevels.length - 1);
+        
+        if (!isLast) {
+            breadcrumbHtml += `<a href="${level.url}" id="${level.id}" title="${level.name.toUpperCase()}" style="visibility: visible;">`;
+            breadcrumbHtml += `<span id="${level.id}Name">${level.name}</span>&nbsp;›&nbsp;\n`;
+            breadcrumbHtml += `</a>\n`;
+        } else {
+            breadcrumbHtml += `<span id="pageNameBreadcrumb">${level.name}</span>\n`;
+        }
+    }
+    
+    breadcrumbHtml += `</div>\n</span>\n</div>`;
+    
+    // ============================================================
+    // 9. GENERATE JSON-LD SCHEMA
+    // ============================================================
+    const jsonLdItems = [];
+    jsonLdItems.push({ "@type": "ListItem", "position": 1, "name": "Beton Jaya Readymix", "item": DOMAIN });
+    
+    for (let i = 1; i < selectedLevels.length; i++) {
+        jsonLdItems.push({
+            "@type": "ListItem",
+            "position": i + 1,
+            "name": selectedLevels[i].name,
+            "item": selectedLevels[i].url
+        });
+    }
+    
+    // ============================================================
+    // 10. HAPUS BREADCRUMB LAMA & INJECT YANG BARU
+    // ============================================================
+    // Hapus semua breadcrumb lama (manual)
+    const oldBreadcrumbs = document.querySelectorAll('.breadcrumbs, .breadcrumb-nav, [aria-label="Breadcrumb"]');
+    oldBreadcrumbs.forEach(el => el.remove());
+    
+    // Hapus JSON-LD lama
+    const oldJsonLd = document.querySelector('script[data-breadcrumb="true"]');
+    if (oldJsonLd) oldJsonLd.remove();
+    
+    // Inject HTML breadcrumb baru
+    const mainContent = document.querySelector('main, article, .content, #main-content, .post-content');
+    if (mainContent?.firstChild) {
+        mainContent.insertAdjacentHTML('afterbegin', breadcrumbHtml);
+    } else {
+        document.body.insertAdjacentHTML('afterbegin', breadcrumbHtml);
+    }
+    
+    // Inject JSON-LD baru
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-breadcrumb', 'true');
+    script.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": jsonLdItems
+    });
+    document.head.appendChild(script);
+    
+    console.log(`✅ Breadcrumb injected ke DOM`);
+    return breadcrumbHtml;
+}
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukSaluranKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
