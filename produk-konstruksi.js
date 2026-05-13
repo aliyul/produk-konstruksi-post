@@ -42,7 +42,7 @@ const urlMappingProdukKonstruksiFromPillarSub2 = {
 // 🧠 TYPE: SUB1 (WAJIB tampil, bridge ke money page)
 // Breadcrumb: Home > Produk Konstruksi > Jenis Produk Konstruksi > Cara Memilih (4 level)
 // ============================================================
-const urlMappingBetonPrecastFromSub2Sub1 = {
+const urlMappingProdukBetonPrecastFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-beton-precast.html": "Perbandingan Beton Precast"  // TYPE: SUB1
 };
 const urlMappingProdukAlatKonstruksiFromSub2Sub1 = {
@@ -1374,7 +1374,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlMappingGabungan = Object.assign(
       {},
 		urlMappingProdukKonstruksiFromPillarSub2,
-		urlMappingBetonPrecastFromSub2Sub1,
+		urlMappingProdukBetonPrecastFromSub2Sub1,
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukSaluranFromSub2Sub1,
@@ -1946,6 +1946,127 @@ if (urlMappingProdukKonstruksiFromPillarSub2[cleanUrlProdukKons]) {
        document.head.appendChild(script);
    }
    */
+	
+if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukBetonPrecastFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Beton Precast', url: 'https://www.betonjayareadymix.com/p/daftar-beton-precast.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukAlatKonstruksiFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukAlatKonstruksiFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukPembatasFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPembatasFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukSaluranFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukSaluranFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukJalanLantaiFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukJalanLantaiFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Jalan Lantai', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukPondasiStrukturFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPondasiStrukturFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukDindingBangunanModularFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukDindingBangunanModularFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	if (urlMappingProdukJembatanFlyoverFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukJembatanFlyoverFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+		if (urlMappingProdukPelabuhanPesisirFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPelabuhanPesisirFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pelabuhan Pesisir', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+		if (urlMappingProdukCustomFromSub2Sub1[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukCustomFromSub2Sub1,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Custom Khusus', url: 'https://www.betonjayareadymix.com/p/daftar-produk-custom-khusus.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
 //SUB PRODUK KONSTRUSI
 if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
