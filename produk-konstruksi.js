@@ -1374,16 +1374,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlMappingGabungan = Object.assign(
       {},
 		urlMappingProdukKonstruksiFromPillarSub2,
-		urlMappingProdukAlatKonstruksi,
-		urlMappingProdukBetonPrecast,
-		urlMappingProdukPembatas,
-		urlMappingProdukSaluran,
-		urlMappingProdukJalanLantai,
-		urlMappingProdukPondasi,
-		urlMappingProdukJembatan,
-		urlMappingProdukDinding,
-		urlMappingProdukPelabuhan,
-		urlMappingProdukCustom	
+		urlMappingBetonPrecastFromSub2Sub1,
+		urlMappingProdukAlatKonstruksiFromSub2Sub1,
+		urlMappingProdukPembatasFromSub2Sub1,
+		urlMappingProdukSaluranFromSub2Sub1,
+		urlMappingProdukJalanLantaiFromSub2Sub1,
+		urlMappingProdukPondasiStrukturFromSub2Sub1,
+		urlMappingProdukJembatanFlyoverFromSub2Sub1,
+		urlMappingProdukDindingBangunanModularFromSub2Sub1,
+		urlMappingProdukPelabuhanPesisirFromSub2Sub1,
+		urlMappingProdukCustomFromSub2Sub1	
 	
     );
 
