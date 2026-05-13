@@ -728,87 +728,428 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-	 (async function runHybridDateModified() {
-		  try {
+		/* ============================================================
+ 🔥 Hybrid Date Modified v7.3 — UNTUK betonjayareadymix.com
+    ✅ FIX: 'home' TIDAK termasuk EVERGREEN_LEVELS (homepage dinamis)
+    ✅ FIX: Page Level Detector v18.2 (sinkron dengan sistem terbaru)
+    ✅ FIX: Event listener untuk v18
+    ✅ FIX: KATEGORISASI YANG BENAR:
+        - EVERGREEN: pillar, sub-pillar-tipe-2, variant, sub-variant
+        - FLEXIBLE: sub-pillar-tipe-1 (perbandingan)
+        - MONEY: money-master, money-page, money-child, money-leadgen
+        - DINAMIS: home (AUTO mode)
+    ✅ Support MONEY_LEADGEN
+============================================================ */
+
+(async function runHybridDateModified() {
+  try {
+    const CURRENT_DOMAIN = window.location.hostname;
+    
+    // Khusus untuk betonjayareadymix.com
+    if (CURRENT_DOMAIN !== 'www.betonjayareadymix.com' && !CURRENT_DOMAIN.includes('localhost')) {
+      console.log(`⏸️ Domain ${CURRENT_DOMAIN} not targeted. Script skipped.`);
+      return;
+    }
+
+    // ============================================================
+    // 📌 KONSTANTA PAGE LEVELS (KATEGORISASI YANG BENAR)
+    // ============================================================
+    // EVERGREEN: konten abadi, jarang update (manual mode)
+    const EVERGREEN_LEVELS = ['pillar', 'sub-pillar-tipe-2', 'variant', 'sub-variant'];
+    
+    // FLEXIBLE: sub-pillar-tipe-1 (Perbandingan) - semi evergreen
+    const FLEXIBLE_LEVELS = ['sub-pillar-tipe-1'];
+    
+    // MONEY: perlu update berkala (auto mode)
+    const MONEY_LEVELS = ['money-master', 'money-page', 'money-child', 'money-leadgen'];
+    
+    // DINAMIS: 'home' tidak masuk kategori manapun → AUTO mode
+
+    // ============================================================
+    // 📌 FUNGSI LOAD EXTERNAL JS
+    // ============================================================
+    function loadExternalJS(src) {
+      return new Promise((resolve) => {
+        if (document.querySelector(`script[src="${src}"]`)) {
+          resolve();
+          return;
+        }
+        const s = document.createElement("script");
+        s.src = src;
+        s.defer = true;
+        s.onload = resolve;
+        s.onerror = () => {
+          console.warn("[HybridDateModified] Gagal load:", src);
+          resolve();
+        };
+        document.head.appendChild(s);
+      });
+    }
+
+    // ============================================================
+    // 📌 TUNGGU PAGE LEVEL DETECTOR v18 READY
+    // ============================================================
+    function waitForPageLevelDetector() {
+      return new Promise((resolve) => {
+        // Cek v18
+        if (window.__pageLevelDetectorV18Ready && window.pageLevelDetectorV18) {
+          console.log("✅ Page Level Detector v18 already ready");
+          resolve(true);
+          return;
+        }
+        // Cek v17 (fallback)
+        if (window.__pageLevelDetectorV17Ready && window.pageLevelDetectorV17) {
+          console.log("✅ Page Level Detector v17 already ready");
+          resolve(true);
+          return;
+        }
+        // Event listener untuk v18
+        window.addEventListener("pageLevelDetectorV18Ready", () => {
+          console.log("✅ Page Level Detector v18 ready (event)");
+          resolve(true);
+        }, { once: true });
+        // Fallback timeout 5 detik
+        setTimeout(() => {
+          if (window.pageLevelDetectorV18 || window.pageLevelDetectorV17 || window.pageLevelDetector) {
+            console.log("✅ Page Level Detector ready (timeout fallback)");
+            resolve(true);
+          } else {
+            console.warn("⚠️ PageLevelDetector timeout, using defaults");
+            resolve(false);
+          }
+        }, 5000);
+      });
+    }
+
+    // ============================================================
+    // 📌 TUNGGU DETECT EVERGREEN READY
+    // ============================================================
+    function waitForDetectEvergreen() {
+      return new Promise((resolve) => {
+        if (window.__detectEvergreenReady && typeof window.detectEvergreen === "function") {
+          resolve(true);
+          return;
+        }
+        window.addEventListener("detectEvergreenReady", () => resolve(true), { once: true });
+        setTimeout(() => {
+          if (typeof window.detectEvergreen === "function") {
+            resolve(true);
+          } else {
+            console.warn("⚠️ detectEvergreen timeout");
+            resolve(false);
+          }
+        }, 5000);
+      });
+    }
+
+    // ============================================================
+    // 📌 LOAD ALL SCRIPTS
+    // ============================================================
+    async function loadAllScripts() {
+      // Gunakan Page Level Detector v18.2 (terbaru)
+      const PAGE_LEVEL_DETECTOR_URL = "https://raw.githack.com/aliyul/solution-blogger/main/PageLevelDetector.js";
+      const EVERGREEN_DETECTOR_URL = "https://raw.githack.com/aliyul/solution-blogger/main/SmartEvergreenDetector.js";
+      
+      if (typeof window.pageLevelDetectorV18 === "undefined" && 
+          typeof window.pageLevelDetectorV17 === "undefined" &&
+          typeof window.pageLevelDetector === "undefined") {
+        console.log("⏳ Loading Page Level Detector v18.2...");
+        await loadExternalJS(PAGE_LEVEL_DETECTOR_URL);
+        await waitForPageLevelDetector();
+        console.log("✅ Page Level Detector v18.2 READY");
+      }
+      
+      if (typeof window.detectEvergreen !== "function") {
+        console.log("⏳ Loading Smart Evergreen Detector v13.0...");
+        await loadExternalJS(EVERGREEN_DETECTOR_URL);
+        await waitForDetectEvergreen();
+        console.log("✅ Smart Evergreen Detector v13.0 READY");
+      }
+    }
+
+    // ============================================================
+    // 📌 TO ISO WITH TIMEZONE LOCAL
+    // ============================================================
+    function toISOWithTimezoneLocal(date, offset = "+07:00") {
+      if (!date) return null;
+      const d = new Date(date);
+      if (isNaN(d.getTime())) return null;
+      const pad = (n) => n.toString().padStart(2, "0");
+      const yyyy = d.getFullYear();
+      const mm = pad(d.getMonth() + 1);
+      const dd = pad(d.getDate());
+      const hh = pad(d.getHours());
+      const min = pad(d.getMinutes());
+      const ss = pad(d.getSeconds());
+      return `${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}${offset}`;
+    }
+
+    // ============================================================
+    // 📌 STABLE HASH
+    // ============================================================
+    function stableHash(str) {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        hash = (hash << 5) - hash + str.charCodeAt(i);
+        hash |= 0;
+      }
+      return Math.abs(hash);
+    }
+
+    // ============================================================
+    // 📌 UPDATE META DATE MODIFIED
+    // ============================================================
+    function updateMetaDateModified(isoDate) {
+      const selectors = [
+        ['meta[itemprop="dateModified"]', 'itemprop', 'dateModified'],
+        ['meta[name="dateModified"]', 'name', 'dateModified'],
+        ['meta[property="article:modified_time"]', 'property', 'article:modified_time']
+      ];
+      
+      selectors.forEach(([selector, attr, val]) => {
+        let meta = document.querySelector(selector);
+        if (!meta) {
+          meta = document.createElement("meta");
+          meta.setAttribute(attr, val);
+          document.head.appendChild(meta);
+        }
+        meta.setAttribute("content", isoDate);
+      });
+    }
+
+    // ============================================================
+    // 📌 FUNGSI MENENTUKAN CUSTOM DATE BERDASARKAN PAGE LEVEL
+    // ============================================================
+    function getCustomDateByPageLevel(pageLevel, entityType) {
+      // ============================================================
+      // LEVEL 1: EVERGREEN (pillar, sub-pillar-tipe-2, variant, sub-variant)
+      // Konten abadi, jarang update → MANUAL mode dengan tanggal stabil
+      // ============================================================
+      if (EVERGREEN_LEVELS.includes(pageLevel)) {
+        if (pageLevel === 'pillar') {
+          return "2026-04-01T10:30:00+07:00";
+        }
+        // sub-pillar-tipe-2, variant, sub-variant
+       		  // JASA KONSTRUKSI CUTTING BETON POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
 		
-		    function loadExternalJS(src) {
-		      return new Promise((resolve) => {
-		        if (document.querySelector(`script[src="${src}"]`)) {
-		          resolve();
-		          return;
-		        }
+        return "2026-04-16T00:00:00+07:00";
+      }
+              /*
+		        // JASA ALAT KONSTRUKSI POST : Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-03T00:00:00+07:00";
+		          // JASA KONSTRUKSI STRUKTUR: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-04T00:00:00+07:00";
+		          // JASA KONSTRUKSI PERBAIKAN: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-05T00:00:00+07:00";
+		          // JASA KONSTRUKSI PEMBATAS: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-06T00:00:00+07:00";
+		          // JASA KONSTRUKSI FINISHING: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-07T00:00:00+07:00";
+		          // JASA KONSTRUKSI PONDASI PERKUATAN TANAH: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-08T00:00:00+07:00";
+		  // JASA KONSTRUKSI JALAN PERKERASAN: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-09T00:00:00+07:00";
+		  // JASA KONSTRUKSI STRUKTUR POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-10T00:00:00+07:00";
+		  // JASA KONSTRUKSI PONDASI PERKUATAN TANAH POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-11T00:00:00+07:00";
+		  // JASA KONSTRUKSI PERBAIKAN POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-12T00:00:00+07:00";
+		  // JASA KONSTRUKSI PEMBATAS POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-13T00:00:00+07:00";
+		  // JASA KONSTRUKSI JALAN PERKERASAN POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-14T00:00:00+07:00";
+		  // JASA KONSTRUKSI FINISHING POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-15T00:00:00+07:00";
+
+		  // JASA KONSTRUKSI BONGKAR BANGUNAN POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
+        return "2026-04-17T00:00:00+07:00";
+		  */
+      // ============================================================
+      // LEVEL 2: FLEXIBLE (sub-pillar-tipe-1 - Perbandingan)
+      // Semi evergreen, update lebih sering dari pillar
+      // ============================================================
+      if (FLEXIBLE_LEVELS.includes(pageLevel)) {
+           		  // JASA KONSTRUKSI CUTTING BETON POST: Sub-Pillar Tipe 2, Sub-Pillar Tipe 1, Variant, Sub-Variant 
 		
-		        const s = document.createElement("script");
-		        s.src = src;
-		        s.defer = true; // 🔥 PENTING
-		        s.onload = resolve;
-		        s.onerror = () => {
-		          console.warn("[Evergreen] Gagal load:", src);
-		          resolve(); // ❗ jangan reject
-		        };
-		        document.head.appendChild(s);
-		      });
-		    }
-		
-		    function waitForDetectEvergreen() {
-		      return new Promise((resolve) => {
-		        if (
-		          window.__detectEvergreenReady &&
-		          typeof window.detectEvergreen === "function"
-		        ) {
-		          resolve(true);
-		        } else {
-		          window.addEventListener(
-		            "detectEvergreenReady",
-		            () => resolve(true),
-		            { once: true }
-		          );
-		        }
-		      });
-		    }
-		
-		    async function loadEvergreenScript(manualDate = null) {
-		
-		      if (typeof window.detectEvergreen !== "function") {
-		        console.log("⏳ Loading detectEvergreen...");
-		
-		        await loadExternalJS(
-		          "https://raw.githack.com/aliyul/solution-blogger/main/detect-evergreen.js"
-		        );
-		
-		        await waitForDetectEvergreen();
-		        console.log("✅ detectEvergreen READY");
-		      } else {
-		        console.log("⚡ detectEvergreen already available");
-		      }
-		
-		      const config = manualDate
-		        ? { customDateModified: manualDate }
-		        : {};
-		
-		      console.log("🧠 detectEvergreen config:", config);
-		
-		      try {
-		        window.detectEvergreen(config);
-		      } catch (e) {
-		        console.error("[Evergreen] Execution failed:", e);
-		      }
-		    }
-		
-		    // =============================
-		    // MODE PEMANGGILAN
-		    // =============================
-		
-		    // ✔ MANUAL (ONCE UPDATE EVERGREEN)
-		    await loadEvergreenScript("2026-01-10T10:30:00+07:00");
-		
-		    // ✔ AUTO MODE
-		    // await loadEvergreenScript();
-		
-		  } catch (err) {
-		    console.error("[HybridDateModified] Fatal:", err);
-		  }
-		})();
+        return "2026-04-16T00:00:00+07:00";
+      }
+      
+      // ============================================================
+      // LEVEL 3: MONEY PAGES (perlu update berkala)
+      // Kembalikan null agar SmartEvergreenDetector menghitung otomatis
+      // money-master, money-page, money-child, money-leadgen
+      // ============================================================
+      if (MONEY_LEVELS.includes(pageLevel)) {
+        return null; // AUTO mode
+      }
+      
+      // ============================================================
+      // LEVEL 4: HOMEPAGE & LAINNYA
+      // 'home' (Beranda) dinamis, butuh update lebih sering
+      // ============================================================
+      if (pageLevel === 'home') {
+        return null; // AUTO mode (biar dinamis)
+      }
+      
+      // ============================================================
+      // DEFAULT: AUTO mode
+      // ============================================================
+      return null;
+    }
+
+    // ============================================================
+    // 📌 FUNGSI GET CATEGORY LABEL (UNTUK LOGGING)
+    // ============================================================
+    function getCategoryLabel(pageLevel) {
+      if (EVERGREEN_LEVELS.includes(pageLevel)) return 'EVERGREEN';
+      if (FLEXIBLE_LEVELS.includes(pageLevel)) return 'FLEXIBLE';
+      if (MONEY_LEVELS.includes(pageLevel)) return 'MONEY';
+      if (pageLevel === 'home') return 'HOMEPAGE (DYNAMIC)';
+      return 'UNKNOWN';
+    }
+
+    // ============================================================
+    // 📌 EKSEKUSI UTAMA
+    // ============================================================
+    
+    await loadAllScripts();
+    
+    // Tunggu sebentar agar pageLevelDetector selesai deteksi
+    await new Promise(resolve => setTimeout(resolve, 200));
+    
+    // ============================================================
+    // 🔥 DAPATKAN PAGE LEVEL DARI DETECTOR (PRIORITAS v18 > v17 > legacy)
+    // ============================================================
+    let pageLevel = 'pillar';
+    let entityType = 'produk';
+    let detectorVersion = 'unknown';
+    
+    if (window.pageLevelDetectorV18) {
+      pageLevel = window.pageLevelDetectorV18.detect();
+      entityType = window.pageLevelDetectorV18.detectEntityType();
+      detectorVersion = 'v18.2';
+      console.log(`📌 [${detectorVersion}] Detected Page Level: ${pageLevel}, Entity Type: ${entityType}`);
+    } else if (window.pageLevelDetectorV17) {
+      pageLevel = window.pageLevelDetectorV17.detect();
+      entityType = window.pageLevelDetectorV17.detectEntityType();
+      detectorVersion = 'v17.0';
+      console.log(`📌 [${detectorVersion}] Detected Page Level: ${pageLevel}, Entity Type: ${entityType}`);
+    } else if (window.pageLevelDetector) {
+      pageLevel = window.pageLevelDetector.detect();
+      entityType = window.pageLevelDetector.detectEntityType();
+      detectorVersion = 'legacy';
+      console.log(`📌 [${detectorVersion}] Detected Page Level: ${pageLevel}, Entity Type: ${entityType}`);
+    } else {
+      console.warn("⚠️ PageLevelDetector not ready, using defaults (pillar/produk)");
+    }
+    
+    // ============================================================
+    // 🔥 VALIDASI PAGE LEVEL
+    // ============================================================
+    const ALL_KNOWN_LEVELS = [...EVERGREEN_LEVELS, ...FLEXIBLE_LEVELS, ...MONEY_LEVELS, 'home'];
+    if (!ALL_KNOWN_LEVELS.includes(pageLevel)) {
+      console.warn(`⚠️ Unknown page level: ${pageLevel}, defaulting to pillar`);
+      pageLevel = 'pillar';
+    }
+    
+    // ============================================================
+    // 🔥 STEP 2: TENTUKAN CUSTOM DATE BERDASARKAN HASIL DETEKSI
+    // ============================================================
+    let customDate = getCustomDateByPageLevel(pageLevel, entityType);
+    let manualMode = customDate !== null;
+    let categoryLabel = getCategoryLabel(pageLevel);
+    
+    if (manualMode) {
+      console.log(`📌 [CUSTOM DATE] PageLevel=${pageLevel}, EntityType=${entityType}, Category=${categoryLabel}`);
+      console.log(`   → Using custom date: ${customDate}`);
+    } else {
+      console.log(`📌 [AUTO MODE] PageLevel=${pageLevel}, EntityType=${entityType}, Category=${categoryLabel}`);
+      console.log(`   → No custom date, using auto calculation (SmartEvergreenDetector)`);
+    }
+    
+    // ============================================================
+    // 🔥 STEP 3: JALANKAN DETEKTOR DENGAN ATAU TANPA CUSTOM DATE
+    // ============================================================
+    if (manualMode && customDate) {
+      await window.detectEvergreen({ customDateModified: customDate });
+      console.log(`✅ MANUAL mode executed with custom date: ${customDate}`);
+    } else {
+      await window.detectEvergreen();
+      console.log(`✅ AUTO mode executed`);
+    }
+    
+    // ============================================================
+    // 📌 PASTIKAN AEDMetaDates TERSEDIA
+    // ============================================================
+    if (!window.AEDMetaDates || !window.AEDMetaDates.dateModified) {
+      console.warn("[HybridDateModified] AEDMetaDates tidak ditemukan, skip update.");
+      return;
+    }
+
+    const { dateModified, nextUpdate, type, entityType: detectedEntityType, pageLevel: detectedPageLevel } = window.AEDMetaDates;
+
+    console.log(`📊 betonjayareadymix.com Page Info:`);
+    console.log(`   - type: ${type}`);
+    console.log(`   - entityType: ${detectedEntityType}`);
+    console.log(`   - pageLevel: ${detectedPageLevel}`);
+    console.log(`   - dateModified: ${dateModified}`);
+    console.log(`   - nextUpdate: ${nextUpdate}`);
+
+    // ============================================================
+    // 📌 HITUNG VARIASI TANGGAL (UNIQUE PER HALAMAN)
+    // ============================================================
+    const uniquePageIdentifier = window.location.pathname;
+    let hashSource = uniquePageIdentifier;
+    
+    if (EVERGREEN_LEVELS.includes(detectedPageLevel)) {
+      hashSource = 'evergreen-' + hashSource;
+      console.log(`📌 Evergreen content (${detectedPageLevel}) → using evergreen hash prefix`);
+    } else if (FLEXIBLE_LEVELS.includes(detectedPageLevel)) {
+      hashSource = 'flexible-' + hashSource;
+      console.log(`📌 Flexible content (${detectedPageLevel}) → using flexible hash prefix`);
+    } else if (detectedEntityType === 'jasa') {
+      hashSource = 'jasa-' + hashSource;
+      console.log(`📌 Jasa content (${detectedPageLevel}) → using jasa hash prefix`);
+    } else if (MONEY_LEVELS.includes(detectedPageLevel)) {
+      hashSource = 'money-' + hashSource;
+      console.log(`📌 Money page (${detectedPageLevel}) → using money hash prefix`);
+    } else if (detectedPageLevel === 'home') {
+      hashSource = 'home-' + hashSource;
+      console.log(`📌 Homepage (${detectedPageLevel}) → using home hash prefix`);
+    }
+    
+    const hash = stableHash(hashSource);
+    const offsetSeconds = hash % 86400; // maksimal 24 jam
+    const finalDate = new Date(new Date(dateModified).getTime() + offsetSeconds * 1000);
+    const isoDate = toISOWithTimezoneLocal(finalDate);
+
+    // ============================================================
+    // 📌 UPDATE META DATEMODIFIED
+    // ============================================================
+    updateMetaDateModified(isoDate);
+
+    window.AEDMetaDates = {
+      ...window.AEDMetaDates,
+      dateModified: isoDate,
+      hashOffset: offsetSeconds,
+      detectorVersion: detectorVersion,
+      category: categoryLabel,
+      mode: manualMode ? 'MANUAL' : 'AUTO'
+    };
+
+    console.log(`✅ [HybridDateModified] ${uniquePageIdentifier} → ${isoDate}`);
+    console.log(`   - offsetSeconds: ${offsetSeconds} detik (${Math.floor(offsetSeconds / 3600)} jam ${Math.floor((offsetSeconds % 3600) / 60)} menit)`);
+    console.log(`   - Mode: ${manualMode ? 'MANUAL (custom date based on page level)' : 'AUTO (SmartEvergreenDetector)'}`);
+    console.log(`   - Category: ${categoryLabel}`);
+    console.log(`   - Detector: ${detectorVersion}`);
+    console.log(`📋 Custom config for betonjayareadymix.com applied successfully`);
+
+  } catch (err) {
+    console.error("[HybridDateModified] Fatal:", err);
+  }
+})();
+	
     var ProdukKons = document.getElementById("ProdukKons");
     if (!ProdukKons) {
         console.error("elemen Id ProdukKons kondisi terhapus");
