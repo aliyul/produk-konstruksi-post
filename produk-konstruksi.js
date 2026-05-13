@@ -24,7 +24,7 @@ const urlMappingProdukKonstruksiFromPillarSub2 = {
  // "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-struktur.html": "Produk Konstruksi untuk Struktur",  // TYPE: SUB2
   //"https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-finishing.html": "Produk Konstruksi untuk Finishing",  // TYPE: SUB2
   //"https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html": "Daftar Produk Alat Konstruksi"  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html": "Daftar Produk Alat Konstruksi",  // TYPE: SUB2
  "https://www.betonjayareadymix.com/p/daftar-beton-precast.html": "Daftar Beton Precast",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html": "Daftar Produk Pembatas",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
