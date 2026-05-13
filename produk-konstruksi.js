@@ -18,7 +18,7 @@ const urlMappingProdukKonstruksiPillar = {
 // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
 // Breadcrumb: Home > Produk Konstruksi > [Nama Halaman] (3 level)
 // ============================================================
-const urlMappingProdukKonstruksiSub2 = {
+const urlMappingProdukKonstruksiFromPillarSub2 = {
   //"https://www.betonjayareadymix.com/p/jenis-produk-konstruksi.html": "Jenis Produk Konstruksi",  // TYPE: SUB2
  // "https://www.betonjayareadymix.com/p/standar-mutu-produk-konstruksi.html": "Standar Mutu Produk Konstruksi",  // TYPE: SUB2
  // "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-struktur.html": "Produk Konstruksi untuk Struktur",  // TYPE: SUB2
@@ -64,7 +64,7 @@ const urlMappingProdukJembatanFlyoverFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html": "Perbandingan Produk Jembatan Flyover"  // TYPE: SUB1
 };
 const urlMappingProdukDindingBangunanModularFromSub2Sub1 = {
-  "https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-bangunan-modular.html": "Perbandingan Produk Dinding Bangunan Modular"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html": "Perbandingan Produk Dinding Bangunan Modular"  // TYPE: SUB1
 };
 const urlMappingProdukPelabuhanPesisirFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-pelabuhan-pesisir.html": "Perbandingan Produk Pelabuhan Pesisir"  // TYPE: SUB1
@@ -1373,7 +1373,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	 // --- gabungkan semua mapping ---
     const urlMappingGabungan = Object.assign(
       {},
-		urlMappingProdukKonstruksi,
+		urlMappingProdukKonstruksiFromPillarSub2,
 		urlMappingProdukAlatKonstruksi,
 		urlMappingProdukBetonPrecast,
 		urlMappingProdukPembatas,
@@ -1860,7 +1860,7 @@ document.addEventListener("DOMContentLoaded", function() {
      ProdukCustomKhususLink.style.visibility = 'hidden';
  
      pageNameProdukKons.textContent = "";
-if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
+if (urlMappingProdukKonstruksiFromPillarSub2[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
         restoreCondition('ProdukKonstruksi');
         //restoreCondition('ProdukKonstruksi');
@@ -1899,9 +1899,21 @@ if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
         ProdukKonstruksiLink.style.visibility = 'visible';
         //ProdukSaluranLink.style.visibility = 'visible';
         //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukKons.textContent = urlMappingProdukKonstruksi[cleanUrlProdukKons];
+        pageNameProdukKons.textContent = urlMappingProdukKonstruksiFromPillarSub2[cleanUrlProdukKons];
+
+	  generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukKonstruksiFromPillarSub2,
+        cleanUrlProdukKons,
+       [
+           // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' }
+           // { name: 'Daftar Jasa Struktur Konstruksi', url: 'https://www.betonjayareadymix.com/p/daftar-jasa-struktur-konstruksi.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
     }
     // ✅ Tambahkan JSON-LD Breadcrumb otomatis
+	/*
    if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
        const jsonLDBreadcrumb = {
            "@context": "https://schema.org",
@@ -1933,6 +1945,7 @@ if (urlMappingProdukKonstruksi[cleanUrlProdukKons]) {
        script.text = JSON.stringify(jsonLDBreadcrumb);
        document.head.appendChild(script);
    }
+   */
 //SUB PRODUK KONSTRUSI
 if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
