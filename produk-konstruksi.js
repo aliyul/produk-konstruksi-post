@@ -18,13 +18,23 @@ const urlMappingProdukKonstruksiPillar = {
 // 🧠 TYPE: SUB2 (boleh skip di breadcrumb)
 // Breadcrumb: Home > Produk Konstruksi > [Nama Halaman] (3 level)
 // ============================================================
-const urlMappingProdukKonstruksi = {
-  "https://www.betonjayareadymix.com/p/jenis-produk-konstruksi.html": "Jenis Produk Konstruksi",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/standar-mutu-produk-konstruksi.html": "Standar Mutu Produk Konstruksi",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-struktur.html": "Produk Konstruksi untuk Struktur",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-finishing.html": "Produk Konstruksi untuk Finishing",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-alat-konstruksi.html": "Produk Alat Konstruksi"  // TYPE: SUB2
+const urlMappingProdukKonstruksiSub2 = {
+  //"https://www.betonjayareadymix.com/p/jenis-produk-konstruksi.html": "Jenis Produk Konstruksi",  // TYPE: SUB2
+ // "https://www.betonjayareadymix.com/p/standar-mutu-produk-konstruksi.html": "Standar Mutu Produk Konstruksi",  // TYPE: SUB2
+ // "https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-struktur.html": "Produk Konstruksi untuk Struktur",  // TYPE: SUB2
+  //"https://www.betonjayareadymix.com/p/produk-konstruksi-untuk-finishing.html": "Produk Konstruksi untuk Finishing",  // TYPE: SUB2
+  //"https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html": "Daftar Produk Alat Konstruksi"  // TYPE: SUB2
+ "https://www.betonjayareadymix.com/p/daftar-beton-precast.html": "Daftar Beton Precast",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html": "Daftar Produk Pembatas",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html": "Daftar Produk Jalan Lantai",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html": "Daftar Produk Pondasi Struktur",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html": "Daftar Produk Jembatan Flyover",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html": "Daftar Produk Dinding Bangunan Modular",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html": "Daftar Produk Pelabuhan Pesisir",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-custom-khusus.html": "Daftar Produk Custom Khusus"  // TYPE: SUB2
+ 
 };
 
 // ============================================================
@@ -32,19 +42,40 @@ const urlMappingProdukKonstruksi = {
 // 🧠 TYPE: SUB1 (WAJIB tampil, bridge ke money page)
 // Breadcrumb: Home > Produk Konstruksi > Jenis Produk Konstruksi > Cara Memilih (4 level)
 // ============================================================
-const urlMappingProdukKonstruksiJenis = {
-  "https://www.betonjayareadymix.com/p/cara-memilih-produk-konstruksi.html": "Cara Memilih Produk Konstruksi"  // TYPE: SUB1
+const urlMappingBetonPrecastFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-beton-precast.html": "Perbandingan Beton Precast"  // TYPE: SUB1
 };
-
+const urlMappingProdukAlatKonstruksiFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-alat--konstruksi.html": "Perbandingan Produk Alat Konstruksi"  // TYPE: SUB1
+};
+const urlMappingProdukPembatasFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html": "Perbandingan Produk Pembatas"  // TYPE: SUB1
+};
+const urlMappingProdukSaluranDrainaseFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html": "Perbandingan Produk Saluran Drainase"  // TYPE: SUB1
+};
+const urlMappingProdukJalanLantaiFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-jalan-lantai.html": "Perbandingan Produk Jalan Lantai"  // TYPE: SUB1
+};
+const urlMappingProdukPondasiStrukturFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html": "Perbandingan Produk Pondasi Struktur"  // TYPE: SUB1
+};
+const urlMappingProdukJembatanFlyoverFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html": "Perbandingan Produk Jembatan Flyover"  // TYPE: SUB1
+};
+const urlMappingProdukDindingBangunanModularFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-bangunan-modular.html": "Perbandingan Produk Dinding Bangunan Modular"  // TYPE: SUB1
+};
+const urlMappingProdukPelabuhanPesisirFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-pelabuhan-pesisir.html": "Perbandingan Produk Pelabuhan Pesisir"  // TYPE: SUB1
+};
+const urlMappingProdukCustomKhususFromSub2Sub1 = {
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-custom-khusus.html": "Perbandingan Produk Custom Khusus"  // TYPE: SUB1
+};
 // ============================================================
 // [MONEY_MASTER] - MONEY PAGE DARI PRODUK KONSTRUKSI
 // 🧠 TYPE: MONEY_MASTER (WAJIB tampil, intent transaksional)
 // Breadcrumb: Home > Produk Konstruksi > Jenis Produk Konstruksi > Cara Memilih > Harga (5 level)
-// ============================================================
-const urlMappingProdukKonstruksiCaraMemilih = {
-  "https://www.betonjayareadymix.com/p/harga-produk-konstruksi.html": "Harga Produk Konstruksi",  // TYPE: MONEY_MASTER
-  "https://www.betonjayareadymix.com/p/konsultasi-pemilihan-produk-konstruksi.html": "Konsultasi Pemilihan Produk Konstruksi"  // TYPE: MONEY_LEADGEN
-};
 
 // ============================================================
 // [SUB2] - PRODUK ALAT KONSTRUKSI
@@ -63,14 +94,7 @@ const urlMappingProdukAlatKonstruksi = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > [Nama Kategori] (4 level)
 // ============================================================
 const urlMappingProdukBetonPrecast = {
-  "https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html": "Daftar Produk Pembatas",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html": "Daftar Produk Jalan Lantai",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html": "Daftar Produk Pondasi Struktur",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html": "Daftar Produk Jembatan Flyover",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html": "Daftar Produk Dinding Bangunan Modular",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html": "Daftar Produk Pelabuhan Pesisir",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-custom-khusus.html": "Daftar Produk Custom Khusus"  // TYPE: SUB2
+  
 };
 
 // ============================================================
