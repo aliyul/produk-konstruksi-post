@@ -63,14 +63,14 @@ const urlMappingProdukAlatKonstruksi = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > [Nama Kategori] (4 level)
 // ============================================================
 const urlMappingProdukBetonPrecast = {
-  "https://www.betonjayareadymix.com/p/produk-pembatas.html": "Produk Pembatas",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-saluran-drainase.html": "Produk Saluran Drainase",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-jalan-lantai.html": "Produk Jalan Lantai",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-pondasi-struktur.html": "Produk Pondasi Struktur",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-jembatan-flyover.html": "Produk Jembatan Flyover",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-dinding-bangunan-modular.html": "Produk Dinding Bangunan Modular",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-pelabuhan-pesisir.html": "Produk Pelabuhan Pesisir",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/produk-custom-khusus.html": "Produk Custom Khusus"  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html": "Daftar Produk Pembatas",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html": "Daftar Produk Jalan Lantai",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html": "Daftar Produk Pondasi Struktur",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html": "Daftar Produk Jembatan Flyover",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html": "Daftar Produk Dinding Bangunan Modular",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html": "Daftar Produk Pelabuhan Pesisir",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-custom-khusus.html": "Daftar Produk Custom Khusus"  // TYPE: SUB2
 };
 
 // ============================================================
