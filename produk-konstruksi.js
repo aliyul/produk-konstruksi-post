@@ -1377,7 +1377,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukBetonPrecastFromSub2Sub1,
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
 		urlMappingProdukPembatasFromSub2Sub1,
-		urlMappingProdukSaluranFromSub2Sub1,
+		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukJalanLantaiFromSub2Sub1,
 		urlMappingProdukPondasiStrukturFromSub2Sub1,
 		urlMappingProdukJembatanFlyoverFromSub2Sub1,
@@ -1983,9 +1983,9 @@ if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	if (urlMappingProdukSaluranFromSub2Sub1[cleanUrlProdukKons]) {
+	if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
-        urlMappingProdukSaluranFromSub2Sub1,
+        urlMappingProdukSaluranDrainaseFromSub2Sub1,
         cleanUrlProdukKons,
        [
            // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
