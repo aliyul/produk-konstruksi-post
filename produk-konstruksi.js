@@ -122,11 +122,13 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",  
   "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",  
   "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",  
-  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton",  
+  "https://www.betonjayareadymix.com/p/gorong-gorong.html": "Gorong Gorong",  
   "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",  
   "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"  
 };
-
+const urlMappingProdukSaluranFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton"
+};
 // ============================================================
 // [VARIANT] - PRODUK JALAN LANTAI
 // 🧠 TYPE: VARIANT (WAJIB tampil)
