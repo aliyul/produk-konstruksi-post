@@ -146,7 +146,7 @@ const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 // 🧠 TYPE: VARIANT (WAJIB tampil)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pondasi Struktur > [Nama Produk] (5 level)
 // ============================================================
-const urlMappingProdukPondasi = {
+const urlMappingProdukPondasiFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",  
   "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",  
   "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",  
@@ -1965,6 +1965,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukJalanLantaiFromSub1MoneyMaster,
 		
 		urlMappingProdukPondasiStrukturFromSub2Sub1,
+		urlMappingProdukPondasiFromSub1MoneyMaster,
+		
 		urlMappingProdukJembatanFlyoverFromSub2Sub1,
 		urlMappingProdukDindingBangunanModularFromSub2Sub1,
 		urlMappingProdukPelabuhanPesisirFromSub2Sub1,
@@ -2716,7 +2718,7 @@ if (urlMappingProdukJalanLantaiFromSub1MoneyMaster[cleanUrlProdukKons]) {
     );
 }
 	
-	if (urlMappingProdukPondasiStrukturFromSub2Sub1[cleanUrlProdukKons]) {
+if (urlMappingProdukPondasiStrukturFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPondasiStrukturFromSub2Sub1,
         cleanUrlProdukKons,
@@ -2728,7 +2730,20 @@ if (urlMappingProdukJalanLantaiFromSub1MoneyMaster[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	if (urlMappingProdukDindingBangunanModularFromSub2Sub1[cleanUrlProdukKons]) {
+if (urlMappingProdukPondasiFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPondasiFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html' },
+            { name: 'Perbandingan Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+
+if (urlMappingProdukDindingBangunanModularFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukDindingBangunanModularFromSub2Sub1,
         cleanUrlProdukKons,
