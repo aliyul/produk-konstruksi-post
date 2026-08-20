@@ -132,7 +132,7 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
 // 🧠 TYPE: VARIANT (WAJIB tampil)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Jalan Lantai > [Nama Produk] (5 level)
 // ============================================================
-const urlMappingProdukJalanLantai = {
+const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",  
   "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput",  
   "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",  
@@ -1962,6 +1962,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukSaluranFromSub1MoneyMaster,
 		
 		urlMappingProdukJalanLantaiFromSub2Sub1,
+		urlMappingProdukJalanLantaiFromSub1MoneyMaster,
+		
 		urlMappingProdukPondasiStrukturFromSub2Sub1,
 		urlMappingProdukJembatanFlyoverFromSub2Sub1,
 		urlMappingProdukDindingBangunanModularFromSub2Sub1,
@@ -2689,7 +2691,7 @@ if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
     );
 }
 	
-	if (urlMappingProdukJalanLantaiFromSub2Sub1[cleanUrlProdukKons]) {
+if (urlMappingProdukJalanLantaiFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukJalanLantaiFromSub2Sub1,
         cleanUrlProdukKons,
@@ -2701,6 +2703,19 @@ if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingProdukJalanLantaiFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukJalanLantaiFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Jalan Lantai', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html' },
+            { name: 'Perbandingan Produk Jalan Lantai', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jalan-lantai.html' }
+	   ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	
 	if (urlMappingProdukPondasiStrukturFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPondasiStrukturFromSub2Sub1,
