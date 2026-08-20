@@ -133,12 +133,18 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Jalan Lantai > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
+	"https://www.betonjayareadymix.com/p/paving-block.html": "Paving Block",
+	"https://www.betonjayareadymix.com/p/plat-beton.html": "Plat Beton",
+	"https://www.betonjayareadymix.com/p/plat-beton.html": "Grass Block"
+	
+/*
   "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",  
   "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput",  
   "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",  
   "https://www.betonjayareadymix.com/p/slab-beton-lapangan-parkir.html": "Slab Beton Lapangan Parkir",  
   "https://www.betonjayareadymix.com/p/slab-beton-industri-heavy-duty.html": "Slab Beton Industri Heavy Duty",  
   "https://www.betonjayareadymix.com/p/material-lantai-beton-lapangan-olahraga.html": "Material Lantai Beton Lapangan Olahraga"  
+*/
 };
 
 // ============================================================
