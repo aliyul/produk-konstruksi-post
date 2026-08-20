@@ -46,7 +46,7 @@ const urlMappingProdukBetonPrecastFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-beton-precast.html": "Perbandingan Beton Precast"  // TYPE: SUB1
 };
 const urlMappingProdukAlatKonstruksiFromSub2Sub1 = {
-  "https://www.betonjayareadymix.com/p/perbandingan-produk-alat--konstruksi.html": "Perbandingan Produk Alat Konstruksi"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-alat-konstruksi.html": "Perbandingan Produk Alat Konstruksi"  // TYPE: SUB1
 };
 const urlMappingProdukPembatasFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html": "Perbandingan Produk Pembatas"  // TYPE: SUB1
@@ -103,14 +103,14 @@ const urlMappingProdukBetonPrecast = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pembatas > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPembatas = {
-  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",  
+  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",  
+  "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  
+  "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",  
+  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",  
+  "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",  
+  "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",  
+  "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"  
 };
 
 // ============================================================
@@ -119,12 +119,12 @@ const urlMappingProdukPembatas = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Saluran Drainase > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukSaluran = {
-  "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",  
+  "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",  
+  "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",  
+  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton",  
+  "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",  
+  "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"  
 };
 
 // ============================================================
@@ -133,12 +133,12 @@ const urlMappingProdukSaluran = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Jalan Lantai > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukJalanLantai = {
-  "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/slab-beton-lapangan-parkir.html": "Slab Beton Lapangan Parkir",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/slab-beton-industri-heavy-duty.html": "Slab Beton Industri Heavy Duty",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/material-lantai-beton-lapangan-olahraga.html": "Material Lantai Beton Lapangan Olahraga"  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",  
+  "https://www.betonjayareadymix.com/p/grass-block-paving-rumput.html": "Grass Block Paving Rumput",  
+  "https://www.betonjayareadymix.com/p/tactile-paving-ubin-pemandu-tuna-netra.html": "Tactile Paving Ubin Pemandu Tuna Netra",  
+  "https://www.betonjayareadymix.com/p/slab-beton-lapangan-parkir.html": "Slab Beton Lapangan Parkir",  
+  "https://www.betonjayareadymix.com/p/slab-beton-industri-heavy-duty.html": "Slab Beton Industri Heavy Duty",  
+  "https://www.betonjayareadymix.com/p/material-lantai-beton-lapangan-olahraga.html": "Material Lantai Beton Lapangan Olahraga"  
 };
 
 // ============================================================
@@ -147,14 +147,14 @@ const urlMappingProdukJalanLantai = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pondasi Struktur > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPondasi = {
-  "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-strauss-pile.html": "Produk Strauss Pile",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-pondasi-cakar-ayam.html": "Produk Pondasi Cakar Ayam",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-pondasi-sumuran.html": "Produk Pondasi Sumuran",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",  
+  "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",  
+  "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",  
+  "https://www.betonjayareadymix.com/p/produk-strauss-pile.html": "Produk Strauss Pile",  
+  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting",  
+  "https://www.betonjayareadymix.com/p/produk-pondasi-cakar-ayam.html": "Produk Pondasi Cakar Ayam",  
+  "https://www.betonjayareadymix.com/p/produk-pondasi-sumuran.html": "Produk Pondasi Sumuran",  
+  "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"  
 };
 
 // ============================================================
@@ -163,9 +163,9 @@ const urlMappingProdukPondasi = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Jembatan Flyover > [Nama Halaman] (5 level)
 // ============================================================
 const urlMappingProdukJembatan = {
-  "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",  // TYPE: SUB1 (edukasi)
-  "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",  // TYPE: MONEY_MASTER
-  "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"  // TYPE: SUB1 (edukasi)
+  "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",  
+  "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
+  "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
 };
 
 // ============================================================
@@ -174,19 +174,18 @@ const urlMappingProdukJembatan = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukDinding = {
-  // VARIANT (produk spesifik)
-  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata Ringan Hebel Modular",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich Panel Modular",  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",  
+  "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",  
+  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",  
+  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata Ringan Hebel Modular",  
+  "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich Panel Modular",  
   
   // SUB1 (panduan / bridge)
-  "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",  // TYPE: SUB1
-  "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan Prefab Modular",  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",
+  "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan Prefab Modular",  
   
   // MONEY PAGE
-  "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular Kamar Mandi Toilet"  // TYPE: MONEY_MASTER
+  "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular Kamar Mandi Toilet"
 };
 
 // ============================================================
@@ -195,13 +194,13 @@ const urlMappingProdukDinding = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pelabuhan Pesisir > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPelabuhan = {
-  "https://www.betonjayareadymix.com/p/sistem-proteksi-dermaga.html": "Sistem Proteksi Dermaga",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/dermaga-apung-modular.html": "Dermaga Apung Modular",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/alat-bongkar-muat-pelabuhan.html": "Alat Bongkar Muat Pelabuhan",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/crane-dermaga.html": "Crane Dermaga",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/ponton-dermaga.html": "Ponton Dermaga",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/kerangka-baja-dermaga.html": "Kerangka Baja Dermaga",  // TYPE: VARIANT
-  "https://www.betonjayareadymix.com/p/sheet-pile-dermaga.html": "Sheet Pile Dermaga"  // TYPE: VARIANT
+  "https://www.betonjayareadymix.com/p/sistem-proteksi-dermaga.html": "Sistem Proteksi Dermaga",  
+  "https://www.betonjayareadymix.com/p/dermaga-apung-modular.html": "Dermaga Apung Modular",  
+  "https://www.betonjayareadymix.com/p/alat-bongkar-muat-pelabuhan.html": "Alat Bongkar Muat Pelabuhan",  
+  "https://www.betonjayareadymix.com/p/crane-dermaga.html": "Crane Dermaga",  
+  "https://www.betonjayareadymix.com/p/ponton-dermaga.html": "Ponton Dermaga",  
+  "https://www.betonjayareadymix.com/p/kerangka-baja-dermaga.html": "Kerangka Baja Dermaga",  
+  "https://www.betonjayareadymix.com/p/sheet-pile-dermaga.html": "Sheet Pile Dermaga"  
 };
 
 // ============================================================
@@ -213,10 +212,10 @@ const urlMappingProdukPelabuhan = {
 const urlMappingProdukCustom = {
   // ⚠️ PERHATIAN: URL di bawah ini kontennya kosong (hanya menu navigasi)
   // Rekomendasi: Isi konten atau redirect ke halaman yang relevan
-  "https://www.betonjayareadymix.com/p/beton-precast-custom.html": "Beton Precast Custom",  // TYPE: VARIANT (⚠️ KONTEN KOSONG)
-  "https://www.betonjayareadymix.com/p/struktur-baja-kustom.html": "Struktur Baja Kustom",  // TYPE: VARIANT (⚠️ KONTEN KOSONG)
-  "https://www.betonjayareadymix.com/p/fitting-drainase-custom.html": "Fitting Drainase Custom",  // TYPE: VARIANT (⚠️ KONTEN KOSONG)
-  "https://www.betonjayareadymix.com/p/peralatan-konstruksi-custom.html": "Peralatan Konstruksi Custom"  // TYPE: VARIANT (⚠️ KONTEN KOSONG)
+  "https://www.betonjayareadymix.com/p/beton-precast-custom.html": "Beton Precast Custom", 
+  "https://www.betonjayareadymix.com/p/struktur-baja-kustom.html": "Struktur Baja Kustom",
+  "https://www.betonjayareadymix.com/p/fitting-drainase-custom.html": "Fitting Drainase Custom",
+  "https://www.betonjayareadymix.com/p/peralatan-konstruksi-custom.html": "Peralatan Konstruksi Custom"
 };
 
 /**
