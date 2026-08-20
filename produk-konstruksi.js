@@ -93,8 +93,8 @@ const urlMappingProdukAlatKonstruksi = {
 // 🧠 TYPE: SUB2 (boleh skip)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > [Nama Kategori] (4 level)
 // ============================================================
-const urlMappingProdukBetonPrecast = {
-  
+const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
+  "https://www.betonjayareadymix.com/p/beton-precat.html": "Beton Precast"
 };
 
 // ============================================================
@@ -1952,6 +1952,8 @@ document.addEventListener("DOMContentLoaded", function() {
       {},
 		urlMappingProdukKonstruksiFromPillarSub2,
 		urlMappingProdukBetonPrecastFromSub2Sub1,
+        urlMappingProdukBetonPrecastFromSub1MoneyMaster,
+		
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
@@ -2725,88 +2727,17 @@ if (urlMappingProdukAlatKonstruksi[cleanUrlProdukKons]) {
        document.head.appendChild(script);
    }
 
-if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
-        restoreCondition('ProdukKons');
-        restoreCondition('ProdukKonstruksi');
- 
-        restoreCondition('ProdukBetonPrecast');
- 
-     //hapus elemen div id lain
-        removeCondition('ProdukInFur');
-        removeCondition('MaterialKons');
-        removeCondition('ProdukKonsSaluran');
-        removeCondition('ProdukKonsPembatas');
-        removeCondition('JasaKonsPembatas');
-        removeCondition('JasaKonsJalanPerkerasan');
-        removeCondition('JasaKonsPondasiTanah');
-       	removeCondition('JasaKons');
-       	removeCondition('JasaKonsSub');
-       	removeCondition('MenuKons');
-       	removeCondition('JasaKonsFinishing');
-        removeCondition('JasaKonsStruktur');
-        removeCondition('JasaKonsPerbaikan');
-
-     //hapus elemen ID DIV SUB PRODUK KONSTRUKSI SEMUA NYA SELAIN ProdukPembatas
-       // removeCondition('');
-        removeCondition('ProdukAlatKonstruksi');
-        removeCondition('JualAlatBeratTambang');
-        removeCondition('JualAlatKonstruksiRingan');
-        removeCondition('JualAlatBerat');
- 
-	    
-        //removeCondition('ProdukBetonPrecast');
-        removeCondition('ProdukPembatas');
-        removeCondition('ProdukSaluranDrainase');
-        removeCondition('ProdukJalanLantai');
-        removeCondition('ProdukPondasiStruktur');
-        removeCondition('ProdukJembatanFlyover');
-        removeCondition('ProdukDindingBangunanModular');
-        removeCondition('ProdukPelabuhanPesisir');
-        removeCondition('ProdukCustomKhusus');
-       
-        ProdukKonstruksiLink.style.visibility = 'visible';
-        ProdukBetonPrecastLink.style.visibility = 'visible';
-        //ProdukBuisLink.style.visibility = 'visible';
-        pageNameProdukKons.textContent = urlMappingProdukBetonPrecast[cleanUrlProdukKons];
-    }
-  // ✅ Tambahkan JSON-LD Breadcrumb otomatis
-   if (urlMappingProdukBetonPrecast[cleanUrlProdukKons]) {
-       const jsonLDBreadcrumb = {
-           "@context": "https://schema.org",
-           "@type": "BreadcrumbList",
-           "itemListElement": [
-	    {
-	      "@type": "ListItem",
-	      "position": 1,
-	      "name": "Beton Jaya Readymix",
-	      "item": "https://www.betonjayareadymix.com/"
-	    },
-               {
-                   "@type": "ListItem",
-                   "position": 2,
-                   "name": "Produk Konstruksi",
-                   "item": "https://www.betonjayareadymix.com/p/produk-konstruksi.html"
-               },
-             {
-                   "@type": "ListItem",
-                   "position": 3,
-                   "name": "Beton Precast",
-                   "item": "https://www.betonjayareadymix.com/p/beton-precast.html"
-               },
-              
-               {
-                   "@type": "ListItem",
-                   "position": 4,
-                   "name": urlMappingProdukBetonPrecast[cleanUrlProdukKons],
-                   "item": cleanUrlProdukKons
-               }
-           ]
-       };
-
-       const script = document.createElement('script');
-       script.type = 'application/ld+json';
-       script.text = JSON.stringify(jsonLDBreadcrumb);
-       document.head.appendChild(script);
+if (urlMappingProdukBetonPrecastFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukBetonPrecastFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Beton Precast', url: 'https://www.betonjayareadymix.com/p/daftar-beton-precast.html' },
+            { name: 'Perbandingan Beton Precast', url: 'https://www.betonjayareadymix.com/p/perbandingan-beton-precast.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
    }	
 if (urlMappingProdukPembatas[cleanUrlProdukKons]) {
         restoreCondition('ProdukKons');
