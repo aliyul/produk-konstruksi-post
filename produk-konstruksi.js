@@ -102,7 +102,7 @@ const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
 // 🧠 TYPE: VARIANT (WAJIB tampil, spesifik produk)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pembatas > [Nama Produk] (5 level)
 // ============================================================
-const urlMappingProdukPembatas = {
+const urlMappingProdukPembatasFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",  
   "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",  
   "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  
@@ -1840,7 +1840,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {},
 		urlMappingProdukKonstruksi,
 		urlMappingProdukAlatKonstruksi,
-		urlMappingProdukPembatas,
+		,
 		urlMappingProdukSaluran,
 		urlMappingProdukJalanLantai,
 		urlMappingProdukPondasi,
@@ -1956,6 +1956,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
 		urlMappingProdukPembatasFromSub2Sub1,
+		urlMappingProdukPembatasFromSub1MoneyMaster,
+		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukJalanLantaiFromSub2Sub1,
 		urlMappingProdukPondasiStrukturFromSub2Sub1,
@@ -2549,7 +2551,7 @@ if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	if (urlMappingProdukPembatasFromSub2Sub1[cleanUrlProdukKons]) {
+if (urlMappingProdukPembatasFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPembatasFromSub2Sub1,
         cleanUrlProdukKons,
@@ -2561,7 +2563,20 @@ if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
+if (urlMappingProdukPembatasFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPembatasFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	
+if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukSaluranDrainaseFromSub2Sub1,
         cleanUrlProdukKons,
