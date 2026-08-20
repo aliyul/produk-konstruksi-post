@@ -135,7 +135,7 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
 const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 	"https://www.betonjayareadymix.com/p/paving-block.html": "Paving Block",
 	"https://www.betonjayareadymix.com/p/plat-beton.html": "Plat Beton",
-	"https://www.betonjayareadymix.com/p/plat-beton.html": "Grass Block"
+	"https://www.betonjayareadymix.com/p/grass-block.html": "Grass Block"
 	
 /*
   "https://www.betonjayareadymix.com/p/paving-block-conblock.html": "Paving Block Conblock",  
