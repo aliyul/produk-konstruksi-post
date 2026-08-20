@@ -239,26 +239,24 @@ const urlMappingProdukCustom = {
 
 /**
  * ============================================================
- * generateBreadcrumbJasaKonstruksi v11.0
- * FULL PLD SYNC - PAGE LEVEL FROM PLD, NOT FROM BREADCRUMBITEMS
+ * generateBreadcrumbJasaKonstruksi v11.1
+ * FIXED: VALID_LEVELS REFERENCE ERROR
  * ============================================================
+ *
+ * ✅ UPDATE v11.1
+ * ------------------------------------------------------------
+ * - FIX: VALID_LEVELS undefined di getPageLevelFromPLD()
+ * - FIX: Definisi VALID_LEVELS sebelum digunakan
+ * - FIX: getPageLevelFromPLD() menggunakan VALID_LEVELS yang sudah didefinisikan
+ * - FIX: getEntityTypeFromPLD() menggunakan PLD_ENTITY_MAP
  *
  * ✅ UPDATE v11.0
  * ------------------------------------------------------------
- * - FIX: Page level diambil LANGSUNG dari PLD (bukan dari breadcrumbItems)
- * - FIX: Entity type diambil dari PLD (bukan dari parameter)
- * - FIX: Sinkronisasi 100% dengan Page Level Detector
- * - FIX: Grass Block terdeteksi sebagai money-master (level 4)
- * - ENHANCED: PLD fallback jika tidak tersedia
- * - ENHANCED: Logging PLD sync status
- *
- * ✅ UPDATE v10.12
- * ------------------------------------------------------------
- * - FIX: JASA_DESAIN masuk ke VALID_ENTITY_TYPES
- * - FIX: ROOT_ENTITY_PILLARS untuk JASA_DESAIN diperbaiki
+ * - FIX: Page level diambil LANGSUNG dari PLD
+ * - FIX: Entity type diambil dari PLD
  *
  * ============================================================
- * @version 11.0.0
+ * @version 11.1.0
  * @date 2026-08-20
  * ============================================================
  */
@@ -300,7 +298,7 @@ function generateBreadcrumbProdukKonstruksi(
             SKIP: '⏭️',
             PLD: '🔄'
         };
-        console.log(`${icons[type] || '📘'} [Breadcrumb v11.0] ${message}`);
+        console.log(`${icons[type] || '📘'} [Breadcrumb v11.1] ${message}`);
     }
 
     // ============================================================
@@ -308,33 +306,26 @@ function generateBreadcrumbProdukKonstruksi(
     // ============================================================
 
     const ENTITY_TYPE_MAP = {
-        // JASA
         'JASA': 'JASA_KONSTRUKSI',
         'JASA_KONSTRUKSI': 'JASA_KONSTRUKSI',
         'JASA_DESAIN': 'JASA_DESAIN',
         'JASA_INTERIOR': 'JASA_KONSTRUKSI',
         'JASA_DESAIN_INTERIOR': 'JASA_DESAIN',
-        
-        // SEWA
         'SEWA': 'SEWA_ALAT_KONSTRUKSI',
         'RENTAL': 'SEWA_ALAT_KONSTRUKSI',
         'SEWA_ALAT': 'SEWA_ALAT_KONSTRUKSI',
         'RENTAL_ALAT': 'SEWA_ALAT_KONSTRUKSI',
         'SEWA_RENTAL': 'SEWA_ALAT_KONSTRUKSI',
         'SEWA_ALAT_KONSTRUKSI': 'SEWA_ALAT_KONSTRUKSI',
-        
-        // PRODUK
         'PRODUK': 'PRODUK_KONSTRUKSI',
         'PRODUK_KONSTRUKSI': 'PRODUK_KONSTRUKSI',
         'PRODUK_INTERIOR': 'PRODUK_INTERIOR',
-        
-        // MATERIAL
         'MATERIAL': 'MATERIAL_KONSTRUKSI',
         'MATERIAL_KONSTRUKSI': 'MATERIAL_KONSTRUKSI',
-        
-        // ARTIKEL
         'ARTIKEL': 'ARTIKEL'
     };
+
+    entityType = ENTITY_TYPE_MAP[entityType] || entityType;
 
     // ============================================================
     // 4. VALID ENTITY TYPES
@@ -351,7 +342,16 @@ function generateBreadcrumbProdukKonstruksi(
     ];
 
     // ============================================================
-    // 5. PLD ENTITY MAP (untuk sync dengan PLD)
+    // 5. VALID LEVELS (FIXED v11.1 - DEFINISI SEBELUM DIGUNAKAN)
+    // ============================================================
+
+    const VALID_LEVELS = [
+        'home', 'pillar', 'sub-pillar-tipe-2', 'sub-pillar-tipe-1',
+        'money-master', 'money-page', 'money-child', 'variant', 'sub-variant'
+    ];
+
+    // ============================================================
+    // 6. PLD ENTITY MAP (untuk sync dengan PLD)
     // ============================================================
 
     const PLD_ENTITY_MAP = {
@@ -364,7 +364,7 @@ function generateBreadcrumbProdukKonstruksi(
     };
 
     // ============================================================
-    // 6. TYPE LEVEL MAP & PRIORITAS
+    // 7. TYPE LEVEL MAP & PRIORITAS
     // ============================================================
 
     const TYPE_LEVEL_MAP = {
@@ -385,7 +385,7 @@ function generateBreadcrumbProdukKonstruksi(
     ];
 
     // ============================================================
-    // 7. GET PAGE LEVEL FROM PLD (FIXED v11.0)
+    // 8. GET PAGE LEVEL FROM PLD (FIXED v11.1)
     // ============================================================
 
     function getPageLevelFromPLD() {
@@ -403,6 +403,7 @@ function generateBreadcrumbProdukKonstruksi(
             if (window[pldName] && typeof window[pldName].detect === 'function') {
                 try {
                     const level = window[pldName].detect();
+                    // ✅ FIX v11.1: VALID_LEVELS sudah didefinisikan di atas
                     if (level && VALID_LEVELS.includes(level)) {
                         log(`PLD ${pldName}: "${level}" (${TYPE_LEVEL_MAP[level]})`, 'PLD');
                         return level;
@@ -460,7 +461,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 8. ROOT ENTITY PILLARS
+    // 9. ROOT ENTITY PILLARS
     // ============================================================
 
     const ROOT_ENTITY_PILLARS = {
@@ -474,7 +475,7 @@ function generateBreadcrumbProdukKonstruksi(
     };
 
     // ============================================================
-    // 9. HELPERS
+    // 10. HELPERS
     // ============================================================
 
     function isJasaEntity() { return entityType === 'JASA_KONSTRUKSI'; }
@@ -485,7 +486,7 @@ function generateBreadcrumbProdukKonstruksi(
     function isInteriorEntity() { return entityType === 'PRODUK_INTERIOR'; }
 
     // ============================================================
-    // 10. CLEAN TEXT
+    // 11. CLEAN TEXT
     // ============================================================
 
     function cleanText(text) {
@@ -494,7 +495,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 11. CLEAN PAGE NAME FROM URL
+    // 12. CLEAN PAGE NAME FROM URL
     // ============================================================
 
     function getCleanPageNameFromUrl(url) {
@@ -538,7 +539,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 12. SLUGIFY
+    // 13. SLUGIFY
     // ============================================================
 
     function slugify(text) {
@@ -550,7 +551,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 13. KEYWORDS
+    // 14. KEYWORDS
     // ============================================================
 
     const SP1_KEYWORDS = [
@@ -568,7 +569,7 @@ function generateBreadcrumbProdukKonstruksi(
     const METHOD_KEYWORDS = ['metode', 'cara', 'tahapan', 'langkah', 'analisa'];
 
     // ============================================================
-    // 14. VARIANT KEYWORDS PER ENTITY
+    // 15. VARIANT KEYWORDS PER ENTITY
     // ============================================================
     
     const VARIANT_KEYWORDS_PRODUK = [
@@ -601,7 +602,7 @@ function generateBreadcrumbProdukKonstruksi(
     ];
 
     // ============================================================
-    // 15. JASA CLEAN FUNCTION
+    // 16. JASA CLEAN FUNCTION
     // ============================================================
 
     const JASA_ULTRA_COMMON_WORDS = new Set([
@@ -694,7 +695,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 16. DETEKSI JASA LEVEL OTOMATIS
+    // 17. DETEKSI JASA LEVEL OTOMATIS
     // ============================================================
 
     function detectJasaLevelAuto(pageName) {
@@ -722,7 +723,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 17. VARIANT DETECTION PER ENTITY
+    // 18. VARIANT DETECTION PER ENTITY
     // ============================================================
     
     function isVariantPage(pageName, currentEntityType) {
@@ -771,7 +772,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 18. LOCATION DETECTION
+    // 19. LOCATION DETECTION
     // ============================================================
 
     const LOCATION_WHITELIST = new Set([
@@ -817,7 +818,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 19. SPECIFIC PRODUCT
+    // 20. SPECIFIC PRODUCT
     // ============================================================
 
     function isSpecificProduct(text) {
@@ -830,7 +831,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 20. SUB VARIANT
+    // 21. SUB VARIANT
     // ============================================================
 
     function isSubVariant(text) {
@@ -843,7 +844,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 21. ENTITY PILLAR EXACT MATCH
+    // 22. ENTITY PILLAR EXACT MATCH
     // ============================================================
 
     function isEntityPillarExactMatch(pageName) {
@@ -853,14 +854,14 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 22. JASA KEYWORDS
+    // 23. JASA KEYWORDS
     // ============================================================
 
     const JASA_KEYWORDS_PATTERN = 
         /\b(jasa|kontraktor|tukang|borongan|renovasi|pasang|bangun|perbaikan|instalasi|proyek|cor|gali|urug|angkut|desain|interior|eksterior|arsitektur|gedung|rumah|ruko|kantor|apartemen)\b/i;
 
     // ============================================================
-    // 23. PAGE TYPE DETECTION (FALLBACK - KETIKA PLD TIDAK TERSEDIA)
+    // 24. PAGE TYPE DETECTION (FALLBACK - KETIKA PLD TIDAK TERSEDIA)
     // ============================================================
 
     function detectPageTypeFallback(pageName, isHome = false) {
@@ -941,7 +942,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 24. AUTO DETECT PARENT
+    // 25. AUTO DETECT PARENT
     // ============================================================
 
     function findNearestParentFromItems(items, currentPageName) {
@@ -1042,7 +1043,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 25. FORCE PARENT INJECTION
+    // 26. FORCE PARENT INJECTION
     // ============================================================
 
     function forceInjectDirectParent(lineageLevels, allLevels, currentPageTitle, entityType, breadcrumbItems) {
@@ -1152,7 +1153,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 26. HIERARCHY VALIDATOR
+    // 27. HIERARCHY VALIDATOR
     // ============================================================
     
     function validateAndFixHierarchy(lineage) {
@@ -1170,7 +1171,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 27. SIMILARITY CALCULATION
+    // 28. SIMILARITY CALCULATION
     // ============================================================
 
     function calculateSimilarity(text1, text2) {
@@ -1187,7 +1188,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 28. GET CURRENT PAGE INFO
+    // 29. GET CURRENT PAGE INFO
     // ============================================================
 
     const currentFullUrl = currentUrl.startsWith('http')
@@ -1201,7 +1202,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 29. GET PAGE LEVEL & ENTITY FROM PLD (FIXED v11.0)
+    // 30. GET PAGE LEVEL & ENTITY FROM PLD (FIXED v11.1)
     // ============================================================
 
     const pldLevel = getPageLevelFromPLD();
@@ -1227,7 +1228,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 30. INJECT CURRENT PAGE & AUTO PARENT
+    // 31. INJECT CURRENT PAGE & AUTO PARENT
     // ============================================================
 
     const enhancedBreadcrumbItems = injectCurrentPageAndParent(
@@ -1237,7 +1238,7 @@ function generateBreadcrumbProdukKonstruksi(
     );
 
     // ============================================================
-    // 31. BUILD ALL LEVELS
+    // 32. BUILD ALL LEVELS
     // ============================================================
 
     const allLevels = [];
@@ -1266,7 +1267,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 32. URL FALLBACK
+    // 33. URL FALLBACK
     // ============================================================
 
     for (const level of allLevels) {
@@ -1290,14 +1291,14 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 33. CURRENT PAGE TYPE (DARI PLD ATAU FALLBACK)
+    // 34. CURRENT PAGE TYPE (DARI PLD ATAU FALLBACK)
     // ============================================================
 
     const currentPageType = pldLevel || detectPageTypeFallback(currentPageTitle);
     log(`Current page: "${currentPageTitle}" → type: ${currentPageType} (level ${TYPE_LEVEL_MAP[currentPageType]})`, 'INFO');
 
     // ============================================================
-    // 34. SELECT BREADCRUMB LEVELS
+    // 35. SELECT BREADCRUMB LEVELS
     // ============================================================
 
     const selectedLevels = [];
@@ -1327,7 +1328,7 @@ function generateBreadcrumbProdukKonstruksi(
     log('Unique items (' + uniqueItems.length + '): ' + uniqueItems.map(i => i.name + '(' + i.level + ')').join(' → '), 'INFO');
 
     // ============================================================
-    // 35. FIND NEAREST PARENTS
+    // 36. FIND NEAREST PARENTS
     // ============================================================
 
     function findNearestParentsByHierarchy() {
@@ -1469,7 +1470,7 @@ function generateBreadcrumbProdukKonstruksi(
     });
 
     // ========================================================
-    // 36. AMBIL SEMUA PARENT DENGAN LEVEL TERTINGGI
+    // 37. AMBIL SEMUA PARENT DENGAN LEVEL TERTINGGI
     // ========================================================
     
     let finalParents = [];
@@ -1520,12 +1521,12 @@ function generateBreadcrumbProdukKonstruksi(
             type: currentPageType,
             level: pldLevel ? TYPE_LEVEL_MAP[pldLevel] : (TYPE_LEVEL_MAP[currentPageType] || 99),
             isCurrent: true,
-            pldLevel: pldLevel // Simpan PLD level untuk referensi
+            pldLevel: pldLevel
         });
     }
 
     // ============================================================
-    // 37. FINAL UNIQUE LEVELS
+    // 38. FINAL UNIQUE LEVELS
     // ============================================================
 
     const uniqueLevels = [];
@@ -1545,7 +1546,7 @@ function generateBreadcrumbProdukKonstruksi(
     log('Final breadcrumb (' + uniqueLevels.length + ' levels): ' + uniqueLevels.map(i => i.name + '(' + i.level + ')').join(' › '), 'SUCCESS');
 
     // ============================================================
-    // 38. GENERATE HTML
+    // 39. GENERATE HTML
     // ============================================================
 
     let breadcrumbHtml = `<div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">\n`;
@@ -1575,7 +1576,7 @@ function generateBreadcrumbProdukKonstruksi(
     breadcrumbHtml += `</div>\n`;
 
     // ============================================================
-    // 39. JSON LD
+    // 40. JSON LD
     // ============================================================
 
     const jsonLd = {
@@ -1590,7 +1591,7 @@ function generateBreadcrumbProdukKonstruksi(
     };
 
     // ============================================================
-    // 40. REMOVE OLD
+    // 41. REMOVE OLD
     // ============================================================
 
     document.querySelectorAll('.breadcrumbs, .breadcrumb-nav, [aria-label="Breadcrumb"]')
@@ -1599,7 +1600,7 @@ function generateBreadcrumbProdukKonstruksi(
         .forEach(el => el.remove());
 
     // ============================================================
-    // 41. TARGET ELEMENT
+    // 42. TARGET ELEMENT
     // ============================================================
 
     const targetElement = document.querySelector('main, article, .content, #main-content, .post-content');
@@ -1611,7 +1612,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 42. INJECT JSON LD
+    // 43. INJECT JSON LD
     // ============================================================
 
     const script = document.createElement('script');
@@ -1621,10 +1622,10 @@ function generateBreadcrumbProdukKonstruksi(
     document.head.appendChild(script);
 
     // ============================================================
-    // 43. LOG SUMMARY
+    // 44. LOG SUMMARY
     // ============================================================
 
-    console.log('📊 BREADCRUMB GENERATION SUMMARY (v11.0):');
+    console.log('📊 BREADCRUMB GENERATION SUMMARY (v11.1):');
     console.log(`   Page: "${currentPageTitle}"`);
     console.log(`   URL: "${currentFullUrl}"`);
     console.log(`   Type: ${currentPageType} (level ${TYPE_LEVEL_MAP[currentPageType]})`);
@@ -1643,7 +1644,7 @@ function generateBreadcrumbProdukKonstruksi(
     console.log(`   📊 Total breadcrumb levels: ${uniqueLevels.length}`);
 
     // ============================================================
-    // 44. RETURN
+    // 45. RETURN
     // ============================================================
 
     return {
@@ -1652,7 +1653,7 @@ function generateBreadcrumbProdukKonstruksi(
         selectedLevels: uniqueLevels,
         currentPageType,
         entityType,
-        version: '11.0.0',
+        version: '11.1.0',
         parentCount: finalParents.length,
         parents: finalParents,
         isVariant: currentPageType === 'variant',
