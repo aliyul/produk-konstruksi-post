@@ -237,29 +237,27 @@ const urlMappingProdukCustom = {
 
 /**
  * ============================================================
- * generateBreadcrumbJasaKonstruksi v10.11
- * FIXED: PAKSA AMBIL PARENT TERDEKAT (TANPA FILTER LEVEL)
+ * generateBreadcrumbJasaKonstruksi v10.12
+ * FIXED: LEVEL HALAMAN SESUAI PLD + OPTIMASI VARIANT
  * ============================================================
+ *
+ * ✅ UPDATE v10.12
+ * ------------------------------------------------------------
+ * - FIX: Gunakan PLD untuk deteksi page level (konsisten)
+ * - FIX: Gabungkan VARIANT_KEYWORDS_PRODUK & MATERIAL
+ * - FIX: Kurangi keyword duplicate/overlap
+ * - FIX: Parent selection berdasarkan PLD level
+ * - FIX: Priority: Location > Price > Word Count (sesuai PLD)
+ * - ENHANCED: Logging lebih detail untuk debugging
+ * - ENHANCED: Fallback jika PLD tidak tersedia
  *
  * ✅ UPDATE v10.11
  * ------------------------------------------------------------
  * - FIX: JANGAN filter berdasarkan level (ambil SEMUA candidate)
- * - FIX: Parent terdekat tetap muncul apapun levelnya
- * - FIX: Tetap prioritaskan level tertinggi untuk parent
- * - ENHANCED: Logging lebih detail untuk debugging
- * - ENHANCED: Fallback lebih robust
- *
- * ✅ UPDATE v10.10
- * ------------------------------------------------------------
- * - FIX: Hybrid detection (otomatis + manual untuk kasus edge)
- *
- * ✅ UPDATE v10.6
- * ------------------------------------------------------------
- * - FIX: Otomatis tidak skip parent terakhir
  *
  * ============================================================
- * @version 10.11.0
- * @date 2026-07-18
+ * @version 10.12.0
+ * @date 2026-08-20
  * ============================================================
  */
 
@@ -299,7 +297,7 @@ function generateBreadcrumbProdukKonstruksi(
             CLEAN: '🧹',
             SKIP: '⏭️'
         };
-        console.log(`${icons[type] || '📘'} [Breadcrumb v10.11] ${message}`);
+        console.log(`${icons[type] || '📘'} [Breadcrumb v10.12] ${message}`);
     }
 
     // ============================================================
@@ -457,7 +455,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 11. KEYWORDS
+    // 11. KEYWORDS (FIXED v10.12 - GABUNG & OPTIMASI)
     // ============================================================
 
     const SP1_KEYWORDS = [
@@ -475,203 +473,133 @@ function generateBreadcrumbProdukKonstruksi(
     const METHOD_KEYWORDS = ['metode', 'cara', 'tahapan', 'langkah', 'analisa'];
 
     // ============================================================
-    // 11a. VARIANT KEYWORDS PER ENTITY
+    // 11a. VARIANT KEYWORDS PER ENTITY (FIXED v10.12 - GABUNG & OPTIMASI)
     // ============================================================
     
- // ============================================================
-// VARIANT KEYWORDS PER ENTITY (LENGKAP)
-// ============================================================
+    // ✅ GABUNG: PRODUK + MATERIAL (tidak perlu dipisah)
+    const VARIANT_KEYWORDS_PRODUK_MATERIAL = [
+        // Spesifikasi & Detail
+        'spesifikasi', 'spec', 'detail spesifikasi',
+        'mutu', 'kualitas', 'quality',
+        'grade', 'type', 'tipe', 'model',
+        'standar', 'merk', 'brand', 'seri',
+        
+        // Ukuran & Dimensi
+        'ukuran', 'dimensi', 'ukur', 'panjang', 'lebar', 'tinggi', 'kedalaman',
+        'ketebalan', 'tebal', 'diameter', 'radius', 'luas', 'volume',
+        'besar', 'kecil', 'sedang',
+        
+        // Motif & Finishing
+        'motif', 'corak', 'pola', 'variasi',
+        'desain', 'bentuk', 'gaya',
+        'polosan', 'bermotif', 'bercorak', 'berpola',
+        'warna', 'tekstur', 'finishing',
+        'halus', 'kasar', 'matte', 'glossy', 'natural', 'ekspos',
+        
+        // Material & Komposisi
+        'bahan', 'material', 'komposisi',
+        'campuran', 'kandungan',
+        
+        // Metode & Proses
+        'metode', 'cara', 'teknik', 'prosedur',
+        'tahapan', 'langkah', 'proses',
+        'instalasi', 'pemasangan',
+        
+        // Fungsi & Keunggulan
+        'kelebihan', 'kekurangan',
+        'fungsi', 'kegunaan', 'aplikasi',
+        'perawatan', 'pemeliharaan',
+        
+        // Sertifikasi
+        'sertifikat', 'sni', 'iso',
+        'garansi', 'jaminan'
+    ];
 
-const VARIANT_KEYWORDS_PRODUK = [
-    // 1. Spesifikasi & Detail
-    'spesifikasi', 'spec', 'detail spesifikasi',
-    'mutu', 'kualitas', 'quality',
-    'grade', 'type', 'tipe', 'model',
-    'standar', 'merk', 'brand', 'seri',
-    
-    // 2. Ukuran & Dimensi ✅ TAMBAH
-    'ukuran', 'dimensi', 'ukur', 'panjang', 'lebar', 'tinggi', 'kedalaman',
-    'ketebalan', 'tebal', 'diameter', 'radius', 'luas', 'volume',
-    'rendah', 'sedang', 'tinggi', 'extra tinggi',
-    'pendek', 'panjang', 'kecil', 'besar',
-    '1.5m', '2.0m', '2.5m', '3.0m', '3.5m', '4.0m',
-    
-    // 3. Motif & Finishing ✅ TAMBAH
-    'motif', 'corak', 'pola', 'variasi',
-    'desain', 'bentuk', 'gaya',
-    'polosan', 'polos', 'plain', 'kosong', 'tanpa motif',
-    'bermotif', 'bercorak', 'berpola',
-    'serat kayu', 'tekstur kayu', 'grain', 'wood grain',
-    'warna', 'tekstur', 'finishing',
-    'halus', 'kasar', 'matte', 'glossy', 'doff', 'semi-gloss',
-    'cat', 'dicoating', 'natural', 'ekspos',
-    
-    // 4. Material & Komposisi
-    'bahan', 'material', 'komposisi',
-    'campuran', 'kandungan',
-    
-    // 5. Metode & Proses
-    'metode', 'cara', 'teknik', 'prosedur',
-    'tahapan', 'langkah', 'proses',
-    'instalasi', 'pemasangan',
-    
-    // 6. Fungsi & Keunggulan
-    'kelebihan', 'kekurangan',
-    'fungsi', 'kegunaan', 'aplikasi',
-    'perawatan', 'pemeliharaan',
-    
-    // 7. Aplikasi & Penggunaan ✅ TAMBAH
-    'perumahan', 'pabrik', 'gudang', 'sekolah', 'rumah sakit',
-    'kandang ternak', 'pertambangan', 'lahan kosong', 'pembatas lahan',
-    'keamanan', 'kedap suara', 'tahan lama', 'cepat dipasang',
-    'tahan banjir', 'area industri', 'proyek', 'konstruksi',
-    'perkantoran', 'komersial', 'residensial', 'industri',
-    
-    // 8. Sertifikasi
-    'sertifikat', 'sni', 'iso',
-    'garansi', 'jaminan'
-];
+    const VARIANT_KEYWORDS_JASA = [
+        // Standar & Spesifikasi
+        'standar pelayanan', 'sop', 'metode kerja',
+        'prosedur', 'tahapan', 'cara kerja',
+        'durasi', 'waktu pengerjaan', 'garansi',
+        'standar pengerjaan',
+        'spesifikasi', 'spec', 'detail spesifikasi',
+        'grade', 'type', 'tipe', 'model',
+        'standar', 'prosedur',
+        
+        // Metode & Teknik
+        'metode', 'teknik', 'cara',
+        'proses', 'langkah', 'sistem',
+        'instalasi', 'pemasangan',
+        
+        // Tingkat & Skala
+        'rendah', 'sedang', 'tinggi', 'kompleks',
+        'sederhana', 'standar', 'premium',
+        'kecil', 'sedang', 'besar',
+        
+        // Keunggulan & Hasil
+        'keunggulan', 'kelebihan', 'manfaat',
+        'hasil', 'kualitas', 'mutu',
+        
+        // Peralatan & Tenaga
+        'peralatan', 'alat', 'mesin',
+        'tim', 'tenaga', 'ahli', 'profesional',
+        'spesialis', 'berpengalaman',
+        
+        // Sertifikasi & Estimasi
+        'sertifikasi', 'lisensi',
+        'estimasi', 'perhitungan',
+        'rekomendasi', 'testimoni',
+        
+        // Keamanan
+        'keamanan', 'keselamatan',
+        'proteksi', 'perlindungan'
+    ];
 
-const VARIANT_KEYWORDS_MATERIAL = [
-    // 1. Grade & Mutu (KHUSUS MATERIAL)
-    'grade', 'mutu', 'kualitas', 'quality',
-    'k225', 'k250', 'k300', 'k350', 'k400', 'k500',
-    'fc', 'sni', 'standar',
-    'kelas 1', 'kelas 2', 'kelas 3',
-    'mutu 1', 'mutu 2', 'mutu 3',
-    
-    // 2. Ukuran & Dimensi (BISA JUGA UNTUK PRODUK)
-    'ukuran', 'dimensi', 'ukur',
-    'panjang', 'lebar', 'tinggi', 'kedalaman',
-    'ketebalan', 'tebal', 'diameter',
-    'besar', 'kecil', 'sedang',
-    'mm', 'cm', 'm', 'meter',
-    '4mm', '6mm', '8mm', '10mm', '12mm', '16mm', '20mm',
-    
-    // 3. Komposisi & Kandungan (KHUSUS MATERIAL)
-    'komposisi', 'kandungan', 'campuran',
-    'bahan', 'material',
-    'semen', 'pasir', 'kerikil', 'batu split',
-    'besi', 'baja', 'tulangan', 'wiremesh',
-    'zat aditif', 'admixture',
-    
-    // 4. Jenis Material (KHUSUS MATERIAL)
-    'jenis', 'tipe', 'model',
-    'besi beton', 'baja tulangan', 'kawat',
-    'pipa', 'pvc', 'galvanis',
-    'bata ringan', 'bata merah', 'batako',
-    'pasir beton', 'pasir pasang',
-    'split', 'kerikil',
-    
-    // 5. Metode & Proses (BISA JUGA UNTUK PRODUK)
-    'metode', 'cara', 'teknik', 'prosedur',
-    'tahapan', 'langkah', 'proses',
-    'instalasi', 'pemasangan',
-    
-    // 6. Fungsi & Keunggulan
-    'kelebihan', 'kekurangan',
-    'fungsi', 'kegunaan', 'aplikasi',
-    'perawatan', 'pemeliharaan',
-    
-    // 7. Sertifikasi
-    'sertifikat', 'sni', 'iso',
-    'garansi', 'jaminan'
-];
-// ============================================================
-
-const VARIANT_KEYWORDS_JASA = [
-    // 1. Standar & Spesifikasi
-    'standar pelayanan', 'sop', 'metode kerja',
-    'prosedur', 'tahapan', 'cara kerja',
-    'durasi', 'waktu pengerjaan', 'garansi',
-    'standar pengerjaan',
-    'spesifikasi', 'spec', 'detail spesifikasi',
-    'grade', 'type', 'tipe', 'model',
-    'standar', 'sop', 'prosedur',
-    
-    // 2. Metode & Teknik
-    'metode', 'teknik', 'cara',
-    'proses', 'langkah', 'sistem',
-    'instalasi', 'pemasangan',
-    
-    // 3. Tingkat & Skala ✅ TAMBAH
-    'rendah', 'sedang', 'tinggi', 'kompleks',
-    'sederhana', 'standar', 'premium',
-    'kecil', 'sedang', 'besar', 'skala rumah tangga',
-    'skala industri', 'skala komersial',
-    
-    // 4. Lokasi/Aplikasi ✅ TAMBAH
-    'perumahan', 'pabrik', 'gudang', 'kantor', 'sekolah',
-    'rumah sakit', 'hotel', 'restoran', 'cafe',
-    'ruko', 'apartemen', 'villa', 'resort',
-    
-    // 5. Keunggulan & Hasil
-    'keunggulan', 'kelebihan', 'manfaat',
-    'hasil', 'kualitas', 'mutu',
-    
-    // 6. Peralatan & Tenaga
-    'peralatan', 'alat', 'mesin',
-    'tim', 'tenaga', 'ahli', 'profesional',
-    'spesialis', 'berpengalaman',
-    
-    // 7. Sertifikasi & Estimasi
-    'sertifikasi', 'lisensi',
-    'estimasi', 'perhitungan',
-    'rekomendasi', 'testimoni',
-    
-    // 8. Keamanan
-    'keamanan', 'keselamatan',
-    'proteksi', 'perlindungan'
-];
-
-// ============================================================
-
-const VARIANT_KEYWORDS_SEWA = [
-    // 1. Spesifikasi Alat
-    'spesifikasi alat', 'kapasitas alat',
-    'spek alat', 'detail alat', 'spesifikasi',
-    
-    // 2. Ukuran & Dimensi
-    'ukuran alat', 'dimensi alat', 'panjang alat', 'lebar alat', 'tinggi alat',
-    'diameter alat', 'berat alat', 'volume alat',
-    
-    // 3. Tipe & Model
-    'tipe alat', 'model alat', 'jenis alat', 'varian alat', 'seri alat',
-    'type alat', 'grade alat',
-    'merk alat', 'brand alat', 'merek alat', 'produk alat',
-    
-    // 4. Kondisi & Kualitas
-    'kondisi alat', 'kualitas alat', 'mutu alat', 'grade alat',
-    'baru', 'bekas', 'kondisi prima',
-    
-    // 5. Harga & Biaya Sewa
-    'harga sewa', 'biaya sewa', 'tarif sewa', 'ongkos sewa',
-    'estimasi sewa', 'perhitungan sewa',
-    
-    // 6. Durasi & Waktu
-    'durasi sewa', 'waktu sewa', 'jangka waktu sewa', 
-    'per hari', 'per jam', 'per minggu', 'per bulan', 'per tahun',
-    'sewa harian', 'sewa mingguan', 'sewa bulanan',
-    
-    // 7. Paket & Fasilitas ✅ TAMBAH
-    'paket sewa', 'paket harian', 'paket mingguan', 'paket bulanan',
-    'paket proyek', 'paket borongan',
-    'fasilitas alat', 'layanan sewa', 'termasuk',
-    'lengkap', 'aksesoris',
-    'dengan operator', 'tanpa operator', 'termasuk bahan bakar',
-    
-    // 8. Keunggulan
-    'kelebihan alat', 'keunggulan alat', 'manfaat sewa',
-    'kelebihan sewa', 'keunggulan sewa',
-    
-    // 9. Perawatan
-    'perawatan alat', 'pemeliharaan alat', 'servis alat',
-    
-    // 10. Keamanan & Dokumentasi
-    'keamanan alat', 'keselamatan alat', 'proteksi alat',
-    'sertifikat alat', 'garansi alat', 'asuransi alat',
-    'dokumen alat', 'legalitas alat'
-];
+    const VARIANT_KEYWORDS_SEWA = [
+        // Spesifikasi Alat
+        'spesifikasi alat', 'kapasitas alat',
+        'spek alat', 'detail alat', 'spesifikasi',
+        
+        // Ukuran & Dimensi
+        'ukuran alat', 'dimensi alat', 'panjang alat', 'lebar alat', 'tinggi alat',
+        'diameter alat', 'berat alat', 'volume alat',
+        
+        // Tipe & Model
+        'tipe alat', 'model alat', 'jenis alat', 'varian alat', 'seri alat',
+        'type alat', 'grade alat',
+        'merk alat', 'brand alat', 'merek alat',
+        
+        // Kondisi & Kualitas
+        'kondisi alat', 'kualitas alat', 'mutu alat',
+        'baru', 'bekas',
+        
+        // Harga & Biaya Sewa
+        'harga sewa', 'biaya sewa', 'tarif sewa', 'ongkos sewa',
+        'estimasi sewa', 'perhitungan sewa',
+        
+        // Durasi & Waktu
+        'durasi sewa', 'waktu sewa', 'jangka waktu sewa', 
+        'per hari', 'per jam', 'per minggu', 'per bulan', 'per tahun',
+        'sewa harian', 'sewa mingguan', 'sewa bulanan',
+        
+        // Paket & Fasilitas
+        'paket sewa', 'paket harian', 'paket mingguan', 'paket bulanan',
+        'paket proyek', 'paket borongan',
+        'fasilitas alat', 'layanan sewa', 'termasuk',
+        'lengkap', 'aksesoris',
+        'dengan operator', 'tanpa operator', 'termasuk bahan bakar',
+        
+        // Keunggulan
+        'kelebihan alat', 'keunggulan alat', 'manfaat sewa',
+        'kelebihan sewa', 'keunggulan sewa',
+        
+        // Perawatan
+        'perawatan alat', 'pemeliharaan alat', 'servis alat',
+        
+        // Keamanan & Dokumentasi
+        'keamanan alat', 'keselamatan alat', 'proteksi alat',
+        'sertifikat alat', 'garansi alat', 'asuransi alat',
+        'dokumen alat', 'legalitas alat'
+    ];
 
     const TECHNICAL_SPECS = ['k225', 'k250', 'k300', 'k350', 'k400', 'k500', 'k600', 'fc', 'm6', 'm8', 'm10', 'm12'];
     
@@ -708,10 +636,6 @@ const VARIANT_KEYWORDS_SEWA = [
         'modern', 'minimalis', 'mewah', 'klasik', 'tradisional',
         'kontemporer', 'sederhana', 'elegan', 'premium', 'luxury'
     ]);
-
-    // ============================================================
-    // 11c. JASA SPEC WORDS
-    // ============================================================
 
     const JASA_SPEC_WORDS = new Set([
         'cor', 'cat', 'pil', 'bor', 'las', 'dak', 'atap', 'besi',
@@ -789,7 +713,7 @@ const VARIANT_KEYWORDS_SEWA = [
     }
 
     // ============================================================
-    // 11d. DETEKSI JASA LEVEL OTOMATIS
+    // 11c. DETEKSI JASA LEVEL OTOMATIS
     // ============================================================
 
     function detectJasaLevelAuto(pageName) {
@@ -832,7 +756,7 @@ const VARIANT_KEYWORDS_SEWA = [
     }
 
     // ============================================================
-    // 11e. VARIANT DETECTION PER ENTITY
+    // 11d. VARIANT DETECTION PER ENTITY (FIXED v10.12)
     // ============================================================
     
     function isVariantPage(pageName, currentEntityType) {
@@ -845,7 +769,7 @@ const VARIANT_KEYWORDS_SEWA = [
         }
         
         if (currentEntityType === 'PRODUK_KONSTRUKSI' || currentEntityType === 'MATERIAL_KONSTRUKSI') {
-            for (const kw of VARIANT_KEYWORDS_PRODUK) {
+            for (const kw of VARIANT_KEYWORDS_PRODUK_MATERIAL) {
                 if (lowerName.includes(kw)) {
                     log(`Variant detected (PRODUK/MATERIAL): "${pageName}" contains "${kw}"`, 'VARIANT');
                     return true;
@@ -970,16 +894,67 @@ const VARIANT_KEYWORDS_SEWA = [
         /\b(jasa|kontraktor|tukang|borongan|renovasi|pasang|bangun|perbaikan|instalasi|proyek|cor|gali|urug|angkut|desain|interior|eksterior|arsitektur|gedung|rumah|ruko|kantor|apartemen|pengeboran|coring|hvac)\b/i;
 
     // ============================================================
-    // 17. PAGE TYPE DETECTION
+    // 17. GET PAGE LEVEL FROM PLD (FIXED v10.12)
     // ============================================================
 
-    function detectPageType(pageName, isHome = false) {
-        const lowerName = cleanText(pageName.toLowerCase());
+    function getPageLevelFromPLD() {
+        // ✅ PRIORITAS 1: PLD v22.x
+        if (window.pageLevelDetectorv22 && typeof window.pageLevelDetectorv22.detect === 'function') {
+            try {
+                const pageLevel = window.pageLevelDetectorv22.detect();
+                log(`Page Level dari PLD v22.x: ${pageLevel}`, 'SUCCESS');
+                return pageLevel;
+            } catch(e) {
+                log(`Error calling PLD v22.x: ${e.message}`, 'ERROR');
+            }
+        }
+        
+        // ✅ PRIORITAS 2: PLD v20.x
+        if (window.pageLevelDetectorv20 && typeof window.pageLevelDetectorv20.detect === 'function') {
+            try {
+                const pageLevel = window.pageLevelDetectorv20.detect();
+                log(`Page Level dari PLD v20.x: ${pageLevel}`, 'SUCCESS');
+                return pageLevel;
+            } catch(e) {
+                log(`Error calling PLD v20.x: ${e.message}`, 'ERROR');
+            }
+        }
+        
+        // ✅ PRIORITAS 3: PLD v19
+        if (window.pageLevelDetectorv19 && typeof window.pageLevelDetectorv19.detect === 'function') {
+            try {
+                const pageLevel = window.pageLevelDetectorv19.detect();
+                log(`Page Level dari PLD v19: ${pageLevel}`, 'SUCCESS');
+                return pageLevel;
+            } catch(e) {
+                log(`Error calling PLD v19: ${e.message}`, 'ERROR');
+            }
+        }
+        
+        // ✅ CEK DARI BODY ATTRIBUTE
+        const bodyPageLevel = document.body.getAttribute('data-page-level') || 
+                              document.body.getAttribute('data-schema-page-level');
+        if (bodyPageLevel) {
+            log(`Page Level dari body attribute: ${bodyPageLevel}`, 'SUCCESS');
+            return bodyPageLevel;
+        }
+        
+        // ❌ FALLBACK: detect sendiri (pakai logika v10.12)
+        log('PLD tidak tersedia, menggunakan fallback detection', 'WARN');
+        return detectPageTypeFallback(currentPageTitle);
+    }
 
-        if (isHome || lowerName === 'home' || lowerName === 'beranda') return 'home';
+    // ============================================================
+    // 17a. FALLBACK PAGE TYPE DETECTION
+    // ============================================================
+
+    function detectPageTypeFallback(pageName) {
+        const lowerName = pageName.toLowerCase();
+        
+        if (isHomePage()) return 'home';
         if (isEntityPillarExactMatch(lowerName)) return 'pillar';
         if (isSubVariant(lowerName)) return 'sub-variant';
-
+        
         for (const kw of METHOD_KEYWORDS) {
             if (lowerName.includes(kw)) {
                 const HAS_JASA_WORD = JASA_KEYWORDS_PATTERN.test(lowerName);
@@ -992,11 +967,11 @@ const VARIANT_KEYWORDS_SEWA = [
                 return 'sub-pillar-tipe-2';
             }
         }
-
+        
         if (isVariantPage(lowerName, entityType)) {
             return 'variant';
         }
-
+        
         for (const kw of INFORMATIONAL_KEYWORDS) {
             if (lowerName.includes(kw)) return 'pillar';
         }
@@ -1006,21 +981,18 @@ const VARIANT_KEYWORDS_SEWA = [
         for (const kw of SP2_KEYWORDS) {
             if (lowerName.includes(kw)) return 'sub-pillar-tipe-2';
         }
-
+        
         const HAS_PRICE_WORD = /\b(harga|biaya|tarif)\b/i.test(lowerName);
         const HAS_SEWA_WORD = /\b(sewa|rental)\b/i.test(lowerName);
         const HAS_JASA_WORD = JASA_KEYWORDS_PATTERN.test(lowerName);
         const HAS_LOCATION = isLocation(lowerName);
-
-        if (HAS_LOCATION) {
-            log(`MC detected: "${pageName}" contains location`, 'SUCCESS');
-            return 'money-child';
-        }
-
+        
+        if (HAS_LOCATION) return 'money-child';
+        
         if ((isJasaEntity() || isDesainEntity()) && HAS_JASA_WORD && !HAS_PRICE_WORD) {
             return detectJasaLevelAuto(lowerName);
         }
-
+        
         if (isSewaEntity() && HAS_SEWA_WORD && !HAS_PRICE_WORD) {
             const cleaned = lowerName.replace(/\b(sewa|rental)\b/gi, '').trim();
             const words = cleaned.split(/\s+/).filter(Boolean);
@@ -1030,7 +1002,7 @@ const VARIANT_KEYWORDS_SEWA = [
             }
             return 'money-page';
         }
-
+        
         if (HAS_PRICE_WORD) {
             const cleaned = lowerName.replace(/\b(harga|biaya|tarif)\b/gi, '').trim();
             const words = cleaned.split(/\s+/).filter(Boolean);
@@ -1040,13 +1012,13 @@ const VARIANT_KEYWORDS_SEWA = [
             }
             return 'money-page';
         }
-
+        
         if ((isProdukEntity() || isMaterialEntity()) && !HAS_PRICE_WORD) {
             const words = lowerName.split(/\s+/).filter(Boolean);
             if (words.length <= 2) return 'pillar';
             return 'sub-pillar-tipe-2';
         }
-
+        
         return 'pillar';
     }
 
@@ -1185,7 +1157,7 @@ const VARIANT_KEYWORDS_SEWA = [
             }
         }
 
-        const currentLevel = TYPE_LEVEL_MAP[detectPageType(currentPageTitle)] || 99;
+        const currentLevel = TYPE_LEVEL_MAP[getPageLevelFromPLD()] || 99;
         
         const allPotentialParents = allLevels.filter(item => 
             item.level <= currentLevel && 
@@ -1321,7 +1293,7 @@ const VARIANT_KEYWORDS_SEWA = [
     );
 
     // ============================================================
-    // 24. BUILD ALL LEVELS
+    // 24. BUILD ALL LEVELS (PAKAI PLD)
     // ============================================================
 
     const allLevels = [];
@@ -1338,12 +1310,35 @@ const VARIANT_KEYWORDS_SEWA = [
             url = null;
         }
 
-        const type = detectPageType(name);
+        // ✅ Gunakan PLD untuk mendeteksi level
+        let type = 'pillar';
+        let level = 1;
+        
+        try {
+            if (window.pageLevelDetectorv22) {
+                // Simulasikan deteksi dengan nama
+                const detected = window.pageLevelDetectorv22.detect({ userEntityType: entityType.toLowerCase() });
+                // TAPI ini akan mendeteksi dari URL, bukan dari nama item
+                // Jadi kita fallback ke detectPageTypeFallback
+                const fallbackType = detectPageTypeFallback(name);
+                type = fallbackType;
+                level = TYPE_LEVEL_MAP[fallbackType] || 99;
+            } else {
+                const fallbackType = detectPageTypeFallback(name);
+                type = fallbackType;
+                level = TYPE_LEVEL_MAP[fallbackType] || 99;
+            }
+        } catch(e) {
+            const fallbackType = detectPageTypeFallback(name);
+            type = fallbackType;
+            level = TYPE_LEVEL_MAP[fallbackType] || 99;
+        }
+        
         allLevels.push({
             name,
             url,
             type,
-            level: TYPE_LEVEL_MAP[type] || 99,
+            level: level,
             position: i + 1
         });
     }
@@ -1373,14 +1368,14 @@ const VARIANT_KEYWORDS_SEWA = [
     }
 
     // ============================================================
-    // 26. CURRENT PAGE TYPE
+    // 26. CURRENT PAGE TYPE (DARI PLD)
     // ============================================================
 
-    const currentPageType = detectPageType(currentPageTitle);
+    const currentPageType = getPageLevelFromPLD();
     log(`Current page: "${currentPageTitle}" → type: ${currentPageType} (level ${TYPE_LEVEL_MAP[currentPageType]})`, 'INFO');
 
     // ============================================================
-    // 27. SELECT BREADCRUMB LEVELS (FIXED v10.11)
+    // 27. SELECT BREADCRUMB LEVELS
     // ============================================================
 
     const selectedLevels = [];
@@ -1418,7 +1413,6 @@ const VARIANT_KEYWORDS_SEWA = [
         const currentLevel = TYPE_LEVEL_MAP[currentPageType] || 99;
         const currentPageTitleLower = currentPageTitle.toLowerCase();
         
-        // Ambil SEMUA candidate (kecuali current page)
         const candidates = uniqueItems.filter(item => 
             item.name.toLowerCase() !== currentPageTitleLower
         );
@@ -1437,7 +1431,6 @@ const VARIANT_KEYWORDS_SEWA = [
         }
         
         // ✅ FIX v10.11: JANGAN FILTER BERDASARKAN LEVEL!
-        // Ambil SEMUA candidate, tidak peduli levelnya
         const lowerOrEqual = candidates.filter(item => item.level <= currentLevel);
         const higher = candidates.filter(item => item.level > currentLevel);
         const allCandidates = [...lowerOrEqual, ...higher];
@@ -1457,14 +1450,12 @@ const VARIANT_KEYWORDS_SEWA = [
             const itemWords = item.name.toLowerCase().split(/\s+/);
             let relevanceScore = 0;
             
-            // 1. Kata yang sama
             for (const word of currentWords) {
                 if (word.length > 2 && itemWords.includes(word)) {
                     relevanceScore += 10;
                 }
             }
             
-            // 2. Prefix match
             for (let i = 1; i <= currentWords.length; i++) {
                 const prefix = currentWords.slice(0, i).join(' ');
                 if (item.name.toLowerCase() === prefix) {
@@ -1473,23 +1464,19 @@ const VARIANT_KEYWORDS_SEWA = [
                 }
             }
             
-            // 3. Parent adalah bagian dari current page
             if (currentPageTitleLower.includes(item.name.toLowerCase()) && item.name.length > 3) {
                 relevanceScore += 50;
             }
             
-            // 4. Current page adalah bagian dari parent
             if (item.name.toLowerCase().includes(currentPageTitleLower) && currentPageTitleLower.length > 3) {
                 relevanceScore += 40;
             }
             
-            // 5. Panjang kata
             const maxWordLength = Math.max(...itemWords.map(w => w.length));
             if (maxWordLength > 6) {
                 relevanceScore += 5;
             }
             
-            // 6. Jumlah kata yang sama
             const commonWords = currentWords.filter(w => itemWords.includes(w) && w.length > 2);
             relevanceScore += commonWords.length * 5;
             
@@ -1498,7 +1485,6 @@ const VARIANT_KEYWORDS_SEWA = [
             return { ...item, relevanceScore };
         });
         
-        // Urutkan berdasarkan level (descending) lalu relevanceScore
         scoredCandidates.sort((a, b) => {
             if (a.level !== b.level) return b.level - a.level;
             return b.relevanceScore - a.relevanceScore;
@@ -1506,7 +1492,6 @@ const VARIANT_KEYWORDS_SEWA = [
         
         log('Scored candidates (sorted): ' + scoredCandidates.map(i => i.level + ':' + i.name + '(' + i.relevanceScore + ')').join(' → '), 'DEBUG');
         
-        // ✅ FIX v10.11: AMBIL SEMUA PARENT DENGAN LEVEL TERTINGGI
         const selectedParents = [];
         let highestLevel = -1;
         for (const item of scoredCandidates) {
@@ -1526,7 +1511,6 @@ const VARIANT_KEYWORDS_SEWA = [
             }
         }
         
-        // ✅ FIX v10.11: Jika lineage kosong, tambahkan current page sebagai parent
         if (lineage.length === 0) {
             const currentPageItem = uniqueItems.find(item => 
                 item.name.toLowerCase() === currentPageTitleLower
@@ -1730,7 +1714,7 @@ const VARIANT_KEYWORDS_SEWA = [
     // 34. LOG SUMMARY
     // ============================================================
 
-    console.log('📊 BREADCRUMB GENERATION SUMMARY (v10.11):');
+    console.log('📊 BREADCRUMB GENERATION SUMMARY (v10.12):');
     console.log(`   Page: "${currentPageTitle}"`);
     console.log(`   URL: "${currentFullUrl}"`);
     console.log(`   Type: ${currentPageType} (level ${TYPE_LEVEL_MAP[currentPageType]})`);
@@ -1754,7 +1738,7 @@ const VARIANT_KEYWORDS_SEWA = [
         selectedLevels: uniqueLevels,
         currentPageType,
         entityType,
-        version: '10.11.0',
+        version: '10.12.0',
         parentCount: finalParents.length,
         parents: finalParents,
         isVariant: currentPageType === 'variant',
