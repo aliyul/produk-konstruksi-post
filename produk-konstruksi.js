@@ -265,7 +265,7 @@ const urlMappingProdukCustom = {
  * ============================================================
  */
 
-function generateBreadcrumbJasaKonstruksiFinishing(
+function generateBreadcrumbProdukKonstruksi(
     mappingObj,
     currentUrl,
     breadcrumbItems = [],
