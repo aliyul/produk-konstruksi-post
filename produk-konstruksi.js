@@ -94,7 +94,7 @@ const urlMappingProdukAlatKonstruksi = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > [Nama Kategori] (4 level)
 // ============================================================
 const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
-  "https://www.betonjayareadymix.com/p/beton-precat.html": "Beton Precast"
+  "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast"
 };
 
 // ============================================================
