@@ -118,7 +118,7 @@ const urlMappingProdukPembatasFromSub1MoneyMaster = {
 // 🧠 TYPE: VARIANT (WAJIB tampil)
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Saluran Drainase > [Nama Produk] (5 level)
 // ============================================================
-const urlMappingProdukSaluran = {
+const urlMappingProdukSaluranFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",  
   "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",  
   "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",  
@@ -1959,6 +1959,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukPembatasFromSub1MoneyMaster,
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
+		urlMappingProdukSaluranFromSub1MoneyMaster,
+		
 		urlMappingProdukJalanLantaiFromSub2Sub1,
 		urlMappingProdukPondasiStrukturFromSub2Sub1,
 		urlMappingProdukJembatanFlyoverFromSub2Sub1,
@@ -2674,6 +2676,19 @@ if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukSaluranFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+            { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' }
+	   ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	
 	if (urlMappingProdukJalanLantaiFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukJalanLantaiFromSub2Sub1,
