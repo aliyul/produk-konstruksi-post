@@ -153,6 +153,15 @@ const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pondasi Struktur > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPondasiFromSub1MoneyMaster = {
+ "https://www.betonjayareadymix.com/p/tiang-pancang-beton.html": "Tiang Pancang Beton",  
+  "https://www.betonjayareadymix.com/p/bore-pile.html": "Bore Pile",  
+  "https://www.betonjayareadymix.com/p/mini-pile.html": "Mini Pile",  
+  "https://www.betonjayareadymix.com/p/strauss-pile.html": "Strauss Pile",  
+//  "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting",  
+  "https://www.betonjayareadymix.com/p/cakar-ayam.html": "Cakar Ayam",  
+  "https://www.betonjayareadymix.com/p/pondasi-sumuran.html": "Pondasi Sumuran",  
+  "https://www.betonjayareadymix.com/p/pondasi-tapak.html": "Pondasi Tapak" 
+/*
   "https://www.betonjayareadymix.com/p/produk-tiang-pancang-beton.html": "Produk Tiang Pancang Beton",  
   "https://www.betonjayareadymix.com/p/produk-bore-pile.html": "Produk Bore Pile",  
   "https://www.betonjayareadymix.com/p/produk-mini-pile.html": "Produk Mini Pile",  
@@ -160,7 +169,9 @@ const urlMappingProdukPondasiFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/produk-soil-improvement-grouting.html": "Produk Soil Improvement Grouting",  
   "https://www.betonjayareadymix.com/p/produk-pondasi-cakar-ayam.html": "Produk Pondasi Cakar Ayam",  
   "https://www.betonjayareadymix.com/p/produk-pondasi-sumuran.html": "Produk Pondasi Sumuran",  
-  "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"  
+  "https://www.betonjayareadymix.com/p/produk-pondasi-tapak-beton-bertulang.html": "Produk Pondasi Tapak Beton Bertulang"  \
+  */
+	
 };
 
 // ============================================================
