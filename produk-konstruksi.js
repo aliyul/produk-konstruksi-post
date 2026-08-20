@@ -240,18 +240,19 @@ const urlMappingProdukCustom = {
 /**
  * ============================================================
  * generateBreadcrumbJasaKonstruksi v10.12
- * FIXED: PAKSA AMBIL PARENT TERDEKAT + PERBAIKAN VARIANT DETECTION
+ * FIXED: SYNC VARIANT DETECTION DENGAN PLD v22.11
  * ============================================================
  *
  * ✅ UPDATE v10.12
  * ------------------------------------------------------------
- * - FIX: VARIANT_KEYWORDS_PRODUK & MATERIAL dipisahkan untuk akurasi
- * - FIX: VARIANT_KEYWORDS_JASA & SEWA diperluas
- * - FIX: Jangan filter berdasarkan level (ambil SEMUA candidate)
+ * - FIX: Variant detection menggunakan pattern-based (7 layer) sama dengan PLD v22.11
+ * - FIX: Harga Coring Beton Per Titik sekarang terdeteksi sebagai VARIANT
+ * - FIX: Ukuran Mata Bor Coring sekarang terdeteksi sebagai VARIANT
+ * - FIX: Metode Cor Beton sekarang terdeteksi sebagai VARIANT
+ * - FIX: Pagar Tinggi, Panel Motif sekarang terdeteksi sebagai VARIANT
+ * - FIX: JANGAN filter berdasarkan level (ambil SEMUA candidate)
  * - FIX: Parent terdekat tetap muncul apapun levelnya
- * - FIX: Technical specs (K225, K250, K300) tetap MP, bukan variant
- * - ENHANCED: Logging lebih detail untuk debugging
- * - ENHANCED: Fallback lebih robust
+ * - ENHANCED: Logging lebih detail untuk debugging variant detection
  *
  * ✅ UPDATE v10.11
  * ------------------------------------------------------------
@@ -479,201 +480,7 @@ function generateBreadcrumbProdukKonstruksi(
     const METHOD_KEYWORDS = ['metode', 'cara', 'tahapan', 'langkah', 'analisa'];
 
     // ============================================================
-    // 11a. VARIANT KEYWORDS PER ENTITY (FIXED v10.12)
-    // ============================================================
-
-    // ✅ PRODUK: Spesifikasi, ukuran, finishing, material, metode, fungsi
-    const VARIANT_KEYWORDS_PRODUK = [
-        // 1. Spesifikasi & Detail
-        'spesifikasi', 'spec', 'detail spesifikasi',
-        'mutu', 'kualitas', 'quality',
-        'grade', 'type', 'tipe', 'model',
-        'standar', 'merk', 'brand', 'seri',
-        
-        // 2. Ukuran & Dimensi
-        'ukuran', 'dimensi', 'ukur', 'panjang', 'lebar', 'tinggi', 'kedalaman',
-        'ketebalan', 'tebal', 'diameter', 'radius', 'luas', 'volume',
-        'rendah', 'sedang', 'tinggi', 'extra tinggi',
-        'pendek', 'panjang', 'kecil', 'besar',
-        
-        // 3. Motif & Finishing
-        'motif', 'corak', 'pola', 'variasi',
-        'desain', 'bentuk', 'gaya',
-        'polosan', 'polos', 'plain', 'kosong', 'tanpa motif',
-        'bermotif', 'bercorak', 'berpola',
-        'serat kayu', 'tekstur kayu', 'grain', 'wood grain',
-        'warna', 'tekstur', 'finishing',
-        'halus', 'kasar', 'matte', 'glossy', 'doff', 'semi-gloss',
-        'cat', 'dicoating', 'natural', 'ekspos',
-        
-        // 4. Material & Komposisi
-        'bahan', 'material', 'komposisi',
-        'campuran', 'kandungan',
-        
-        // 5. Metode & Proses
-        'metode', 'cara', 'teknik', 'prosedur',
-        'tahapan', 'langkah', 'proses',
-        'instalasi', 'pemasangan',
-        
-        // 6. Fungsi & Keunggulan
-        'kelebihan', 'kekurangan',
-        'fungsi', 'kegunaan', 'aplikasi',
-        'perawatan', 'pemeliharaan',
-        
-        // 7. Aplikasi & Penggunaan
-        'perumahan', 'pabrik', 'gudang', 'sekolah', 'rumah sakit',
-        'kandang ternak', 'pertambangan', 'lahan kosong', 'pembatas lahan',
-        'keamanan', 'kedap suara', 'tahan lama', 'cepat dipasang',
-        'tahan banjir', 'area industri', 'proyek', 'konstruksi',
-        'perkantoran', 'komersial', 'residensial', 'industri',
-        
-        // 8. Sertifikasi
-        'sertifikat', 'sni', 'iso',
-        'garansi', 'jaminan'
-    ];
-
-    // ✅ MATERIAL: Grade, mutu, ukuran, komposisi, jenis material
-    const VARIANT_KEYWORDS_MATERIAL = [
-        // 1. Grade & Mutu
-        'grade', 'mutu', 'kualitas', 'quality',
-        'k225', 'k250', 'k300', 'k350', 'k400', 'k500',
-        'fc', 'sni', 'standar',
-        'kelas 1', 'kelas 2', 'kelas 3',
-        'mutu 1', 'mutu 2', 'mutu 3',
-        
-        // 2. Ukuran & Dimensi
-        'ukuran', 'dimensi', 'ukur',
-        'panjang', 'lebar', 'tinggi', 'kedalaman',
-        'ketebalan', 'tebal', 'diameter',
-        'besar', 'kecil', 'sedang',
-        'mm', 'cm', 'm', 'meter',
-        
-        // 3. Komposisi & Kandungan
-        'komposisi', 'kandungan', 'campuran',
-        'bahan', 'material',
-        'semen', 'pasir', 'kerikil', 'batu split',
-        'besi', 'baja', 'tulangan', 'wiremesh',
-        'zat aditif', 'admixture',
-        
-        // 4. Jenis Material
-        'jenis', 'tipe', 'model',
-        'besi beton', 'baja tulangan', 'kawat',
-        'pipa', 'pvc', 'galvanis',
-        'bata ringan', 'bata merah', 'batako',
-        'pasir beton', 'pasir pasang',
-        'split', 'kerikil',
-        
-        // 5. Metode & Proses
-        'metode', 'cara', 'teknik', 'prosedur',
-        'tahapan', 'langkah', 'proses',
-        'instalasi', 'pemasangan',
-        
-        // 6. Fungsi & Keunggulan
-        'kelebihan', 'kekurangan',
-        'fungsi', 'kegunaan', 'aplikasi',
-        'perawatan', 'pemeliharaan',
-        
-        // 7. Sertifikasi
-        'sertifikat', 'sni', 'iso',
-        'garansi', 'jaminan'
-    ];
-
-    // ✅ JASA: Standar, metode, tingkat, lokasi, keunggulan, peralatan, keamanan
-    const VARIANT_KEYWORDS_JASA = [
-        // 1. Standar & Spesifikasi
-        'standar pelayanan', 'sop', 'metode kerja',
-        'prosedur', 'tahapan', 'cara kerja',
-        'durasi', 'waktu pengerjaan', 'garansi',
-        'standar pengerjaan',
-        'spesifikasi', 'spec', 'detail spesifikasi',
-        'grade', 'type', 'tipe', 'model',
-        'standar', 'sop', 'prosedur',
-        
-        // 2. Metode & Teknik
-        'metode', 'teknik', 'cara',
-        'proses', 'langkah', 'sistem',
-        'instalasi', 'pemasangan',
-        
-        // 3. Tingkat & Skala
-        'rendah', 'sedang', 'tinggi', 'kompleks',
-        'sederhana', 'standar', 'premium',
-        'kecil', 'sedang', 'besar', 'skala rumah tangga',
-        'skala industri', 'skala komersial',
-        
-        // 4. Lokasi/Aplikasi
-        'perumahan', 'pabrik', 'gudang', 'kantor', 'sekolah',
-        'rumah sakit', 'hotel', 'restoran', 'cafe',
-        'ruko', 'apartemen', 'villa', 'resort',
-        
-        // 5. Keunggulan & Hasil
-        'keunggulan', 'kelebihan', 'manfaat',
-        'hasil', 'kualitas', 'mutu',
-        
-        // 6. Peralatan & Tenaga
-        'peralatan', 'alat', 'mesin',
-        'tim', 'tenaga', 'ahli', 'profesional',
-        'spesialis', 'berpengalaman',
-        
-        // 7. Sertifikasi & Estimasi
-        'sertifikasi', 'lisensi',
-        'estimasi', 'perhitungan',
-        'rekomendasi', 'testimoni',
-        
-        // 8. Keamanan
-        'keamanan', 'keselamatan',
-        'proteksi', 'perlindungan'
-    ];
-
-    // ✅ SEWA: Spesifikasi alat, ukuran, tipe, kondisi, harga sewa, durasi, paket
-    const VARIANT_KEYWORDS_SEWA = [
-        // 1. Spesifikasi Alat
-        'spesifikasi alat', 'kapasitas alat',
-        'spek alat', 'detail alat', 'spesifikasi',
-        
-        // 2. Ukuran & Dimensi
-        'ukuran alat', 'dimensi alat', 'panjang alat', 'lebar alat', 'tinggi alat',
-        'diameter alat', 'berat alat', 'volume alat',
-        
-        // 3. Tipe & Model
-        'tipe alat', 'model alat', 'jenis alat', 'varian alat', 'seri alat',
-        'type alat', 'grade alat',
-        'merk alat', 'brand alat', 'merek alat', 'produk alat',
-        
-        // 4. Kondisi & Kualitas
-        'kondisi alat', 'kualitas alat', 'mutu alat', 'grade alat',
-        'baru', 'bekas', 'kondisi prima',
-        
-        // 5. Harga & Biaya Sewa
-        'harga sewa', 'biaya sewa', 'tarif sewa', 'ongkos sewa',
-        'estimasi sewa', 'perhitungan sewa',
-        
-        // 6. Durasi & Waktu
-        'durasi sewa', 'waktu sewa', 'jangka waktu sewa', 
-        'per hari', 'per jam', 'per minggu', 'per bulan', 'per tahun',
-        'sewa harian', 'sewa mingguan', 'sewa bulanan',
-        
-        // 7. Paket & Fasilitas
-        'paket sewa', 'paket harian', 'paket mingguan', 'paket bulanan',
-        'paket proyek', 'paket borongan',
-        'fasilitas alat', 'layanan sewa', 'termasuk',
-        'lengkap', 'aksesoris',
-        'dengan operator', 'tanpa operator', 'termasuk bahan bakar',
-        
-        // 8. Keunggulan
-        'kelebihan alat', 'keunggulan alat', 'manfaat sewa',
-        'kelebihan sewa', 'keunggulan sewa',
-        
-        // 9. Perawatan
-        'perawatan alat', 'pemeliharaan alat', 'servis alat',
-        
-        // 10. Keamanan & Dokumentasi
-        'keamanan alat', 'keselamatan alat', 'proteksi alat',
-        'sertifikat alat', 'garansi alat', 'asuransi alat',
-        'dokumen alat', 'legalitas alat'
-    ];
-
-    // ============================================================
-    // 11b. TECHNICAL SPECS & MODIFIERS
+    // 11a. TECHNICAL SPECS & MODIFIERS
     // ============================================================
 
     const TECHNICAL_SPECS = ['k225', 'k250', 'k300', 'k350', 'k400', 'k500', 'k600', 'fc', 'm6', 'm8', 'm10', 'm12'];
@@ -684,6 +491,180 @@ function generateBreadcrumbProdukKonstruksi(
         'breaker', 'long arm', 'vibrator', 'per jam', 'per hari',
         'per meter', 'per m2', 'terdekat', 'murah', 'kapasitas besar'
     ];
+
+    const PRICE_WORDS = ['harga', 'biaya', 'tarif', 'ongkos'];
+    
+    const LOCATION_WORDS = [
+        'jakarta', 'jakarta pusat', 'jakarta barat', 'jakarta selatan', 'jakarta timur', 'jakarta utara',
+        'bogor', 'kota bogor', 'kabupaten bogor', 'depok', 'kota depok',
+        'tangerang', 'kota tangerang', 'kota tangerang selatan', 'kabupaten tangerang',
+        'bekasi', 'kota bekasi', 'kabupaten bekasi',
+        'bandung', 'kota bandung', 'kabupaten bandung',
+        'karawang', 'kabupaten karawang', 'purwakarta', 'kabupaten purwakarta',
+        'cikarang', 'cikarang barat', 'cikarang pusat', 'cikarang selatan', 'cikarang timur', 'cikarang utara',
+        'subang', 'kabupaten subang', 'cirebon', 'kota cirebon', 'kabupaten cirebon',
+        'semarang', 'kota semarang', 'kabupaten semarang',
+        'solo', 'surakarta', 'kota surakarta',
+        'pekalongan', 'tegal', 'magelang', 'sukoharjo', 'boyolali', 'klaten',
+        'jogja', 'yogyakarta', 'kota yogyakarta', 'kabupaten sleman', 'bantul', 'gunungkidul', 'kulon progo',
+        'surabaya', 'kota surabaya', 'malang', 'kota malang', 'kabupaten malang',
+        'kediri', 'kota kediri', 'kabupaten kediri',
+        'gresik', 'sidoarjo', 'mojokerto', 'pasuruan', 'probolinggo', 'jember', 'banyuwangi', 'madiun',
+        'medan', 'kota medan', 'palembang', 'pekanbaru', 'padang', 'lampung', 'bandar lampung',
+        'batam', 'tanjungpinang', 'aceh', 'banda aceh', 'jambi', 'bengkulu', 'pangkal pinang',
+        'pontianak', 'balikpapan', 'samarinda', 'banjarmasin', 'palangkaraya',
+        'makassar', 'kota makassar', 'manado', 'palu', 'kendari', 'gorontalo',
+        'bali', 'kabupaten badung', 'kota denpasar', 'denpasar',
+        'gianyar', 'tabanan', 'bangli', 'karangasem', 'klungkung', 'buleleng', 'jembrana',
+        'mataram', 'kupang', 'terdekat'
+    ];
+
+    // ============================================================
+    // 11b. VARIANT PATTERN DETECTION (SYNC DENGAN PLD v22.11)
+    // ============================================================
+
+    function detectVariantByPattern(text) {
+        if (!text) return { isVariant: false, score: 0, reasons: [] };
+        
+        let score = 0;
+        let reasons = [];
+        const lower = text.toLowerCase();
+        const words = lower.split(/\s+/).filter(w => w.length > 2);
+        
+        // ============================================================
+        // LAYER 1: STRUKTURAL PATTERN (Pola Kata)
+        // ============================================================
+        
+        // 1a. noun + adjective
+        const nounPattern = /\b(pagar|panel|tiang|pondasi|beton|dinding|atap|lantai|baja|besi|kayu|batu|keramik|plafon|partisi|kusen|pintu|jendela|kanopi|decking|paving|wpc|grc|hpl|pvc|acp|vinyl|granit|marmer|bata|hebel|genteng|parket|vinil|gypsum|plafon|cat|epoxy|coating|mata|bor|coring|molen|vibrator)\s+(tinggi|rendah|besar|kecil|panjang|pendek|lebar|sempit|tebal|tipis|polos|bermotif|custom|standar|premium|ekonomis|modern|klasik|minimalis|tradisional|elegan|mewah|halus|kasar|matte|glossy|natural|ekspos)/i;
+        if (nounPattern.test(lower)) {
+            score += 3;
+            reasons.push("Struct: noun + adjective");
+        }
+        
+        // 1b. per unit pattern
+        const perUnitPattern = /\bper\s+(meter|titik|m|kg|hari|jam|minggu|bulan|unit|buah|item|lembar|bagian|paket|sesi|kali)\b/i;
+        if (perUnitPattern.test(lower)) {
+            score += 3;
+            reasons.push("Struct: per unit pattern");
+        }
+        
+        // 1c. beton + specification
+        const betonPattern = /\bbeton\s+(readymix|ready\s*mix|cor|coring|precast|bertulang|polos|instan)\b/i;
+        if (betonPattern.test(lower)) {
+            score += 3;
+            reasons.push("Struct: beton + specification");
+        }
+        
+        // ============================================================
+        // LAYER 2: SEMANTIC CLUSTER (Makna Kata)
+        // ============================================================
+        
+        // 2a. Dimensi
+        const dimensionWords = ["tinggi", "rendah", "besar", "kecil", "panjang", "pendek", "lebar", "sempit", "tebal", "tipis", "dalam", "dangkal", "diameter", "radius", "ukuran", "dimensi", "luas", "volume", "kedalaman", "ketebalan"];
+        const dimCount = dimensionWords.filter(w => lower.includes(w)).length;
+        if (dimCount >= 1) {
+            score += dimCount * 2;
+            reasons.push(`Semantic: dimension words (${dimCount})`);
+        }
+        
+        // 2b. Material
+        const materialWords = ["beton", "semen", "pasir", "kerikil", "batu", "baja", "besi", "kayu", "bambu", "aluminium", "tembok", "bata", "kaca", "keramik", "granit", "marmer", "vinyl", "pvc", "wpc", "grc", "hpl", "acp", "hebel", "gypsum"];
+        const matCount = materialWords.filter(w => lower.includes(w)).length;
+        if (matCount >= 1) {
+            score += matCount * 1.5;
+            reasons.push(`Semantic: material words (${matCount})`);
+        }
+        
+        // 2c. Finishing
+        const finishWords = ["polos", "motif", "corak", "pola", "tekstur", "serat", "halus", "kasar", "matte", "glossy", "doff", "cat", "coating", "lapisan", "natural", "ekspos", "finishing", "coring", "bor", "potong", "lubang", "titik"];
+        const finishCount = finishWords.filter(w => lower.includes(w)).length;
+        if (finishCount >= 1) {
+            score += finishCount * 2;
+            reasons.push(`Semantic: finishing words (${finishCount})`);
+        }
+        
+        // 2d. Fungsi/Aplikasi
+        const appWords = ["perumahan", "pabrik", "gudang", "sekolah", "rumah sakit", "pertambangan", "kandang", "ternak", "lahan", "kosong", "pembatas", "keamanan", "privasi", "estetika", "dekoratif", "fungsional", "industri", "komersial", "residensial", "bangunan", "rumah", "gedung", "jalan", "jembatan", "terowongan", "proyek", "konstruksi"];
+        const appCount = appWords.filter(w => lower.includes(w)).length;
+        if (appCount >= 1) {
+            score += appCount * 2;
+            reasons.push(`Semantic: application words (${appCount})`);
+        }
+        
+        // ============================================================
+        // LAYER 3: CATEGORY INDICATOR
+        // ============================================================
+        
+        const variantIndicator = ["tipe", "model", "jenis", "varian", "seri", "grade", "kelas", "kategori", "macam", "ragam", "spesifikasi", "detail", "dimensi", "ukuran", "mutu", "kualitas", "standar"];
+        const varCount = variantIndicator.filter(w => lower.includes(w)).length;
+        if (varCount >= 1) {
+            score += varCount * 2;
+            reasons.push(`Category: variation indicator (${varCount})`);
+        }
+        
+        // ============================================================
+        // LAYER 4: NUMERIC + UNIT
+        // ============================================================
+        
+        const numUnitPattern = /\b\d+(?:\.\d+)?\s*(?:m|mm|cm|meter|kg|ton|inch|inci|liter|m³|m2|m²|m3|cm2|cm²|cm3|cm³|km|milimeter|sentimeter|kilogram|satuan|titik)\b/i;
+        if (numUnitPattern.test(lower)) {
+            const matches = lower.match(/\d+(?:\.\d+)?\s*(?:m|mm|cm|meter|kg|ton|inch|inci|liter|m³|m2|m²|m3|cm2|cm²|cm3|cm³|km|milimeter|sentimeter|kilogram|satuan|titik)/gi);
+            const count = matches ? matches.length : 0;
+            score += count * 2;
+            reasons.push(`Numeric: ${count} dimension(s) with unit`);
+        }
+        
+        // ============================================================
+        // LAYER 5: NEGATIVE FILTERS (Pengecualian)
+        // ============================================================
+        
+        // Technical specs → BUKAN variant
+        if (TECHNICAL_SPECS.some(spec => lower.includes(spec))) {
+            log(`"${text}" mengandung technical spec → BUKAN variant`, "VARIANT");
+            return { isVariant: false, score: 0, reasons: ["Technical spec detected"] };
+        }
+        
+        // Non-variant words → SKIP
+        const NON_VARIANT_WORDS = ["pengukuran", "pengujian", "pengecekan", "analisa", "perhitungan", "kalibrasi", "survey", "inspeksi"];
+        if (NON_VARIANT_WORDS.some(word => lower.includes(word))) {
+            log(`SKIP VARIANT: "${text}" mengandung kata non-variant`, "WARN");
+            return { isVariant: false, score: 0, reasons: ["Non-variant word detected"] };
+        }
+        
+        // Price words → BUKAN variant (prioritas lebih tinggi)
+        if (PRICE_WORDS.some(w => lower.includes(w))) {
+            return { isVariant: false, score: 0, reasons: ["Price word detected"] };
+        }
+        
+        // Location words → BUKAN variant (prioritas lebih tinggi)
+        if (LOCATION_WORDS.some(w => lower.includes(w))) {
+            return { isVariant: false, score: 0, reasons: ["Location word detected"] };
+        }
+        
+        // Sub-pillar indicators → BUKAN variant
+        if (/perbandingan|vs|versus|kelebihan|kekurangan|perbedaan/.test(lower)) {
+            return { isVariant: false, score: 0, reasons: ["Sub-pillar indicator (comparison)"] };
+        }
+        if (/daftar|jenis|macam|kategori|tipe/.test(lower) && !/tipe\s+(pagar|panel|beton|dinding|mata|bor|coring)/i.test(lower)) {
+            return { isVariant: false, score: 0, reasons: ["Sub-pillar indicator (list)"] };
+        }
+        
+        // ============================================================
+        // LAYER 6: SCORE EVALUATION
+        // ============================================================
+        
+        const threshold = 3;
+        const isVariant = score >= threshold;
+        
+        if (isVariant) {
+            log(`"${text}" → VARIANT (score: ${score})`, "VARIANT");
+        } else {
+            log(`"${text}" → BUKAN VARIANT (score: ${score}, threshold: ${threshold})`, "VARIANT");
+        }
+        
+        return { isVariant, score, reasons };
+    }
 
     // ============================================================
     // 11c. JASA CLEAN FUNCTION
@@ -831,7 +812,7 @@ function generateBreadcrumbProdukKonstruksi(
     }
 
     // ============================================================
-    // 11e. VARIANT DETECTION PER ENTITY (FIXED v10.12)
+    // 11e. VARIANT DETECTION (FIXED v10.12 - SYNC DENGAN PLD)
     // ============================================================
     
     function isVariantPage(pageName, currentEntityType) {
@@ -845,50 +826,12 @@ function generateBreadcrumbProdukKonstruksi(
             }
         }
         
-        // ✅ PRODUK
-        if (currentEntityType === 'PRODUK_KONSTRUKSI') {
-            for (const kw of VARIANT_KEYWORDS_PRODUK) {
-                if (lowerName.includes(kw)) {
-                    log(`Variant detected (PRODUK): "${pageName}" contains "${kw}"`, 'VARIANT');
-                    return true;
-                }
-            }
-        }
+        // ✅ FIX v10.12: Gunakan pattern detection yang sama dengan PLD v22.11
+        const result = detectVariantByPattern(lowerName);
         
-        // ✅ MATERIAL
-        if (currentEntityType === 'MATERIAL_KONSTRUKSI') {
-            for (const kw of VARIANT_KEYWORDS_MATERIAL) {
-                if (lowerName.includes(kw)) {
-                    log(`Variant detected (MATERIAL): "${pageName}" contains "${kw}"`, 'VARIANT');
-                    return true;
-                }
-            }
-        }
-        
-        // ✅ JASA & DESAIN
-        if (currentEntityType === 'JASA_KONSTRUKSI' || currentEntityType === 'JASA_DESAIN') {
-            for (const kw of VARIANT_KEYWORDS_JASA) {
-                if (lowerName.includes(kw)) {
-                    log(`Variant detected (JASA/DESAIN): "${pageName}" contains "${kw}"`, 'VARIANT');
-                    return true;
-                }
-            }
-            return false;
-        }
-        
-        // ✅ SEWA
-        if (currentEntityType === 'SEWA_ALAT_KONSTRUKSI') {
-            for (const kw of VARIANT_KEYWORDS_SEWA) {
-                if (lowerName.includes(kw)) {
-                    log(`Variant detected (SEWA): "${pageName}" contains "${kw}"`, 'VARIANT');
-                    return true;
-                }
-            }
-            if (lowerName.includes('spesifikasi') && (lowerName.includes('alat') || lowerName.includes('excavator') || lowerName.includes('dump') || lowerName.includes('alat berat'))) {
-                log(`Variant detected (SEWA): "${pageName}" contains spesifikasi + alat`, 'VARIANT');
-                return true;
-            }
-            return false;
+        if (result.isVariant) {
+            log(`Variant detected: "${pageName}" (score: ${result.score})`, 'VARIANT');
+            return true;
         }
         
         return false;
@@ -898,36 +841,7 @@ function generateBreadcrumbProdukKonstruksi(
     // 12. LOCATION DETECTION
     // ============================================================
 
-    const LOCATION_WHITELIST = new Set([
-        'jakarta', 'jakarta pusat', 'jakarta barat', 'jakarta selatan', 'jakarta timur', 'jakarta utara',
-        'bogor', 'kota bogor', 'kabupaten bogor',
-        'depok', 'kota depok',
-        'tangerang', 'kota tangerang', 'kota tangerang selatan', 'kabupaten tangerang',
-        'bekasi', 'kota bekasi', 'kabupaten bekasi',
-        'bandung', 'kota bandung', 'kabupaten bandung',
-        'karawang', 'kabupaten karawang',
-        'purwakarta', 'kabupaten purwakarta',
-        'cikarang', 'cikarang barat', 'cikarang pusat', 'cikarang selatan', 'cikarang timur', 'cikarang utara',
-        'subang', 'kabupaten subang',
-        'cirebon', 'kota cirebon', 'kabupaten cirebon',
-        'semarang', 'kota semarang', 'kabupaten semarang',
-        'solo', 'surakarta', 'kota surakarta',
-        'pekalongan', 'tegal', 'magelang', 'sukoharjo', 'boyolali', 'klaten',
-        'jogja', 'yogyakarta', 'kota yogyakarta', 'kabupaten sleman', 'bantul', 'gunungkidul', 'kulon progo',
-        'surabaya', 'kota surabaya',
-        'malang', 'kota malang', 'kabupaten malang',
-        'kediri', 'kota kediri', 'kabupaten kediri',
-        'gresik', 'sidoarjo', 'mojokerto', 'pasuruan', 'probolinggo', 'jember', 'banyuwangi', 'madiun',
-        'medan', 'kota medan',
-        'palembang', 'pekanbaru', 'padang', 'lampung', 'bandar lampung', 'batam', 'tanjungpinang',
-        'aceh', 'banda aceh', 'jambi', 'bengkulu', 'pangkal pinang',
-        'pontianak', 'balikpapan', 'samarinda', 'banjarmasin', 'palangkaraya',
-        'makassar', 'kota makassar',
-        'manado', 'palu', 'kendari', 'gorontalo',
-        'bali', 'kabupaten badung', 'kota denpasar', 'denpasar', 'gianyar', 'tabanan', 'bangli', 'karangasem', 'klungkung', 'buleleng', 'jembrana',
-        'mataram', 'kupang',
-        'terdekat'
-    ]);
+    const LOCATION_WHITELIST = new Set(LOCATION_WORDS);
 
     function isLocation(text) {
         if (!text) return false;
@@ -1007,7 +921,7 @@ function generateBreadcrumbProdukKonstruksi(
             }
         }
 
-        // ✅ FIX v10.12: Variant detection per entity
+        // ✅ FIX v10.12: Variant detection dengan pattern-based
         if (isVariantPage(lowerName, entityType)) {
             return 'variant';
         }
