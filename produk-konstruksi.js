@@ -155,7 +155,7 @@ const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pondasi Struktur > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPondasiFromSub1MoneyMaster = {
- "https://www.betonjayareadymix.com/p/tiang-pancang-beton.html": "Tiang Pancang Beton",  
+ "https://www.betonjayareadymix.com/p/tiang-pancang.html": "Tiang Pancang",  
   "https://www.betonjayareadymix.com/p/bore-pile.html": "Bore Pile",  
   "https://www.betonjayareadymix.com/p/mini-pile.html": "Mini Pile",  
   "https://www.betonjayareadymix.com/p/strauss-pile.html": "Strauss Pile",  
@@ -175,7 +175,10 @@ const urlMappingProdukPondasiFromSub1MoneyMaster = {
   */
 	
 };
+const urlMappingTiangPancangFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/p/tiang-pancang-beton.html": "Tiang Pancang Beton"
 
+};
 // ============================================================
 // [SUB2] - PRODUK JEMBATAN FLYOVER
 // 🧠 TYPE: SUB2 (boleh skip)
