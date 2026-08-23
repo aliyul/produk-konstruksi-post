@@ -1890,6 +1890,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukPembatasFromSub1MoneyMaster,
+		urlMappingPagarPanelFromMoneyMasterMoneyPage,
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukSaluranFromSub1MoneyMaster,
@@ -2594,6 +2595,7 @@ if (urlMappingProdukPembatasFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+	
 if (urlMappingProdukPembatasFromSub1MoneyMaster[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPembatasFromSub1MoneyMaster,
@@ -2602,6 +2604,19 @@ if (urlMappingProdukPembatasFromSub1MoneyMaster[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingPagarPanelFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
