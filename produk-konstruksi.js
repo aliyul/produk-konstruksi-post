@@ -104,13 +104,20 @@ const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
 // ============================================================
 const urlMappingProdukPembatasFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",  
-  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",  
+  "https://www.betonjayareadymix.com/p/pagar-panel.html": "Pagar Panel",  
   "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  
   "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",  
-  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",  
-  "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam",  
+  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
+   "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu",
   "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",  
   "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"  
+};
+const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
+  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton"
+};
+const urlMappingPagarBatuFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam"
+
 };
 
 // ============================================================
