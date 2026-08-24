@@ -114,7 +114,7 @@ const urlMappingProdukPembatasFromSub1MoneyMaster = {
 };
 const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/p/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton",
-  "https://www.betonjayareadymix.com/p/harga-pagar-panel-per-meter.html": "Harga Pagar Panel Beton Per Meter",
+  "https://www.betonjayareadymix.com/p/harga-pagar-panel-beton-per-meter.html": "Harga Pagar Panel Beton Per Meter",
   "https://www.betonjayareadymix.com/p/jual-pagar-panel-beton.html": "Jual Pagar Panel Beton",
   "https://www.betonjayareadymix.com/p/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
   "https://www.betonjayareadymix.com/p/pagar-panel-beton-k225.html": "Pagar Panel Beton K225"
