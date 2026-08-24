@@ -108,7 +108,7 @@ const urlMappingProdukPembatasFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  
   "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",  
   "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
-   "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu",
+   "https://www.betonjayareadymix.com/p/pagar-batu.html": "Pagar Batu",
   "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",  
   "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"  
 };
@@ -2018,6 +2018,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukPembatasFromSub1MoneyMaster,
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
+		urlMappingPagarBatuFromMoneyMasterMoneyPage,
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukSaluranFromSub1MoneyMaster,
@@ -2760,6 +2761,19 @@ if (urlMappingPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
             { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingPagarBatuFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingPagarBatuFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Batu', url: 'https://www.betonjayareadymix.com/p/pagar-batu.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
