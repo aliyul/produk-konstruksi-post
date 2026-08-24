@@ -82,7 +82,7 @@ const urlMappingProdukCustomKhususFromSub2Sub1 = {
 // 🧠 TYPE: SUB2 (boleh skip)
 // Breadcrumb: Home > Produk Konstruksi > Produk Alat Konstruksi > [Nama Halaman] (4 level)
 // ============================================================
-const urlMappingProdukAlatKonstruksi = {
+const urlMappingProdukAlatKonstruksiFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
   "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat",
   "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang" 
@@ -2013,6 +2013,8 @@ document.addEventListener("DOMContentLoaded", function() {
         urlMappingProdukBetonPrecastFromSub1MoneyMaster,
 		
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
+        urlMappingProdukAlatKonstruksiFromSub1MoneyMaster,
+		
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukPembatasFromSub1MoneyMaster,
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
@@ -2696,7 +2698,8 @@ if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	if (urlMappingProdukAlatKonstruksiFromSub2Sub1[cleanUrlProdukKons]) {
+	
+if (urlMappingProdukAlatKonstruksiFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukAlatKonstruksiFromSub2Sub1,
         cleanUrlProdukKons,
@@ -2708,6 +2711,21 @@ if (urlMappingProdukBetonPrecastFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingProdukAlatKonstruksiFromSub1MoneyMaster[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukAlatKonstruksiFromSub1MoneyMaster,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html' },
+            { name: 'Perbandingan Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-alat-konstruksi.html' }
+ 
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+
+	
 if (urlMappingProdukPembatasFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPembatasFromSub2Sub1,
