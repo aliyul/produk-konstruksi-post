@@ -83,8 +83,11 @@ const urlMappingProdukCustomKhususFromSub2Sub1 = {
 // Breadcrumb: Home > Produk Konstruksi > Produk Alat Konstruksi > [Nama Halaman] (4 level)
 // ============================================================
 const urlMappingProdukAlatKonstruksiFromSub1MoneyMaster = {
-  "https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
-  "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat",
+ //  "https://www.betonjayareadymix.com/p/jual-alat-konstruksi-ringan.html": "Jual Alat Konstruksi Ringan",
+  "https://www.betonjayareadymix.com/p/jual-alat-ringan.html": "Jual Alat Ringan",
+  "https://www.betonjayareadymix.com/p/jual-alat-berat.html": "Jual Alat Berat"
+};
+const urlMappingJualAlatBeratFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/p/jual-alat-berat-tambang.html": "Jual Alat Berat Tambang" 
 };
 
@@ -2014,6 +2017,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukAlatKonstruksiFromSub2Sub1,
         urlMappingProdukAlatKonstruksiFromSub1MoneyMaster,
+		urlMappingJualAlatBeratFromMoneyMasterMoneyPage,
+		
 		
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukPembatasFromSub1MoneyMaster,
@@ -2720,6 +2725,21 @@ if (urlMappingProdukAlatKonstruksiFromSub1MoneyMaster[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html' },
             { name: 'Perbandingan Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-alat-konstruksi.html' }
+ 
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingJualAlatBeratFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingJualAlatBeratFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/daftar-produk-alat-konstruksi.html' },
+            { name: 'Perbandingan Produk Alat Konstruksi', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-alat-konstruksi.html' },
+            { name: 'Jual Alat Berat', url: 'https://www.betonjayareadymix.com/p/jual-alat-berat.html' }
+ 
  
         ],
         'PRODUK_KONSTRUKSI'
