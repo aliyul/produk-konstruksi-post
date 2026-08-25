@@ -272,9 +272,25 @@ const urlMappingProdukCustom = {
  * FIXED: SEMUA CANDIDATES DIBERI SCORE
  * FIXED: LEVEL DI ATAS MAUPUN DI BAWAH TETAP DIPERTIMBANGKAN
  * FIXED: SINKRON DENGAN PLD v22.25
- * FIXED: SyntaxError pada getPageLevelFromPLD()
+ * FIXED: COMMERCIAL INTENT OVERRIDE (jual/beli/sewa/rental)
+ * FIXED: Filter stopwords & location untuk deteksi
+ * FIXED: VARIANT detection lebih akurat
+ * FIXED: PILLAR HANYA NAMA YANG SUDAH DITENTUKAN
+ * FIXED: HIERARCHY WAJIB: PILLAR → SP2 → SP1 → MM → MP → MC → VARIANT
  * ============================================================
- * @version 12.3.1
+ *
+ * ✅ UPDATE v12.3
+ * ------------------------------------------------------------
+ * - FIX: Parent terdekat TIDAK PERNAH di-skip APAPUN LEVELNYA
+ * - FIX: Hapus semua filter level di fungsi parent
+ * - FIX: Semua candidates diberi scoring berdasarkan relevansi
+ * - FIX: Level di atas (lebih tinggi) mendapat bonus
+ * - FIX: Level di bawah (lebih rendah) tetap mendapat score
+ * - FIX: Level sama mendapat bonus
+ * - FIX: Entity pillar tetap sebagai fallback terakhir
+ *
+ * ============================================================
+ * @version 12.3.0
  * @date 2026-08-25
  * ============================================================
  */
@@ -427,7 +443,7 @@ function generateBreadcrumbProdukKonstruksi(
     };
 
     // ============================================================
-    // 9. GET PAGE LEVEL FROM PLD (FIXED)
+    // 9. GET PAGE LEVEL FROM PLD
     // ============================================================
 
     function getPageLevelFromPLD() {
@@ -457,7 +473,6 @@ function generateBreadcrumbProdukKonstruksi(
         const bodyLevel = document.body.getAttribute('data-page-level') || 
                           document.body.getAttribute('data-schema-page-level');
         if (bodyLevel && VALID_LEVELS.includes(bodyLevel)) {
-            // 🔥 FIXED: Ganti ' dengan ,
             log(`PLD from body: "${bodyLevel}" (${TYPE_LEVEL_MAP[bodyLevel]})`, 'PLD');
             return bodyLevel;
         }
@@ -1853,10 +1868,9 @@ function generateBreadcrumbProdukKonstruksi(
         pldEntity: pldEntity,
         hierarchy: uniqueLevels.map(i => i.type),
         commercialIntent: COMMERCIAL_WORDS.some(w => currentPageTitle.startsWith(w)),
-        parentNoSkip: true
+        parentNoSkip: true // 🔥 FIX v12.3: Konfirmasi parent tidak pernah skip
     };
 }
-
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
