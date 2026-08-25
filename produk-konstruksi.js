@@ -199,9 +199,15 @@ const urlMappingTiangPancangFromMoneyMasterMoneyPage = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Jembatan Flyover > [Nama Halaman] (5 level)
 // ============================================================
 const urlMappingProdukJembatanFromSub1MoneyMaster = {
-  "https://www.betonjayareadymix.com/p/standar-spesifikasi-flyover.html": "Standar & Spesifikasi Flyover",  
-  "https://www.betonjayareadymix.com/p/layanan-proyek-flyover.html": "Layanan Proyek Flyover",
-  "https://www.betonjayareadymix.com/p/tipe-material-flyover.html": "Tipe & Material Flyover"
+  "https://www.betonjayareadymix.com/p/jual-jembatan-girder.html": "Jual Jembatan Girder"
+};
+const urlMappingJualJembatanGirderFromMoneyMasterMoneyPage = {
+  "https://www.betonjayareadymix.com/p/harga-jembatan-girder-per-unit.html": "Harga Jembatan Girder Per Unit",
+  "https://www.betonjayareadymix.com/p/harga-jembatan-beton-prategang.html": "Harga Jembatan Beton Prategang",
+  "https://www.betonjayareadymix.com/p/harga-jembatan-girder-baja.html": "Harga Jembatan Girder Baja",
+  "https://www.betonjayareadymix.com/p/harga-jembatan-girder-beton.html": "Harga Jembatan Girder Beton",
+  "https://www.betonjayareadymix.com/p/harga-jembatan-box-girder.html": "Harga Jembatan Box Girder"
+	
 };
 
 // ============================================================
@@ -2042,6 +2048,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukJembatanFlyoverFromSub2Sub1,
 		urlMappingProdukJembatanFromSub1MoneyMaster,
+		urlMappingJualJembatanGirderFromMoneyMasterMoneyPage,
 		
 		urlMappingProdukDindingBangunanModularFromSub2Sub1,
         urlMappingProdukDindingFromSub1MoneyMaster,
@@ -2991,7 +2998,21 @@ if (urlMappingProdukJembatanFromSub1MoneyMaster[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-
+if (urlMappingJualJembatanGirderFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingJualJembatanGirderFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html' },
+            { name: 'Perbandingan Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html' },
+            { name: 'Jual Jembatan Girder', url: 'https://www.betonjayareadymix.com/p/jual-jembatan-girder.html' }
+        
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	
 if (urlMappingProdukPelabuhanPesisirFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukPelabuhanPesisirFromSub2Sub1,
