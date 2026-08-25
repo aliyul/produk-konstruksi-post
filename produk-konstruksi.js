@@ -30,7 +30,7 @@ const urlMappingProdukKonstruksiFromPillarSub2 = {
   "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html": "Daftar Produk Jalan Lantai",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html": "Daftar Produk Pondasi Struktur",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html": "Daftar Produk Jembatan Flyover",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-jembatan.html": "Daftar Produk Jembatan",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html": "Daftar Produk Dinding Bangunan Modular",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html": "Daftar Produk Pelabuhan Pesisir",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-custom-khusus.html": "Daftar Produk Custom Khusus"  // TYPE: SUB2
@@ -61,7 +61,7 @@ const urlMappingProdukPondasiStrukturFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html": "Perbandingan Produk Pondasi Struktur"  // TYPE: SUB1
 };
 const urlMappingProdukJembatanFlyoverFromSub2Sub1 = {
-  "https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html": "Perbandingan Produk Jembatan Flyover"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan.html": "Perbandingan Produk Jembatan"  // TYPE: SUB1
 };
 const urlMappingProdukDindingBangunanModularFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html": "Perbandingan Produk Dinding Bangunan Modular"  // TYPE: SUB1
@@ -2981,7 +2981,7 @@ if (urlMappingProdukJembatanFlyoverFromSub2Sub1[cleanUrlProdukKons]) {
        [
            // { name: 'Beton Jaya Readymix', url: 'https://www.betonjayareadymix.com/' },
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-            { name: 'Daftar Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html' }
+            { name: 'Daftar Produk Jembatan', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
@@ -2992,8 +2992,8 @@ if (urlMappingProdukJembatanFromSub1MoneyMaster[cleanUrlProdukKons]) {
         cleanUrlProdukKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-            { name: 'Daftar Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html' },
-            { name: 'Perbandingan Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html' }
+            { name: 'Daftar Produk Jembatan', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan.html' },
+            { name: 'Perbandingan Produk Jembatan', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
@@ -3004,8 +3004,8 @@ if (urlMappingJualJembatanGirderFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
         cleanUrlProdukKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-            { name: 'Daftar Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan-flyover.html' },
-            { name: 'Perbandingan Produk Jembatan Flyover', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan-flyover.html' },
+            { name: 'Daftar Produk Jembatan', url: 'https://www.betonjayareadymix.com/p/daftar-produk-jembatan.html' },
+            { name: 'Perbandingan Produk Jembatan', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan.html' },
             { name: 'Jual Jembatan Girder', url: 'https://www.betonjayareadymix.com/p/jual-jembatan-girder.html' }
         
         ],
