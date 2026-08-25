@@ -140,7 +140,7 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",  
   "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"  
 };
-const urlMappingProdukSaluranFromMoneyMasterMoneyPage = {
+const urlMappingGorongGorongFromMoneyMasterMoneyPage = {
  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton"
 };
 // ============================================================
@@ -2027,6 +2027,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukSaluranFromSub1MoneyMaster,
+		urlMappingGorongGorongFromMoneyMasterMoneyPage,
 		
 		urlMappingProdukJalanLantaiFromSub2Sub1,
 		urlMappingProdukJalanLantaiFromSub1MoneyMaster,
@@ -2811,6 +2812,7 @@ if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+	
 if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukSaluranFromSub1MoneyMaster,
@@ -2819,6 +2821,20 @@ if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
             { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' }
+	   ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingGorongGorongFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingGorongGorongFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+            { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+		    { name: 'Gorong Gorong', url: 'https://www.betonjayareadymix.com/p/gorong-gorong.html' }
+	   
 	   ],
         'PRODUK_KONSTRUKSI'
     );
