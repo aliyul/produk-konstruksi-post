@@ -210,18 +210,22 @@ const urlMappingProdukJembatanFromSub1MoneyMaster = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Dinding Bangunan Modular > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukDindingFromSub1MoneyMaster = {
-  "https://www.betonjayareadymix.com/p/panel-beton-precast.html": "Panel Beton Precast",  
-  "https://www.betonjayareadymix.com/p/beton-ringan-precast.html": "Beton Ringan Precast",  
+  "https://www.betonjayareadymix.com/p/panel-beton.html": "Panel Beton",  
+  "https://www.betonjayareadymix.com/p/beton-ringan.html": "Beton Ringan",  
   "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",  
-  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata Ringan Hebel Modular",  
-  "https://www.betonjayareadymix.com/p/sandwich-panel-modular.html": "Sandwich Panel Modular",  
-  
-  // SUB1 (panduan / bridge)
-  "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",
-  "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan Prefab Modular",  
-  
-  // MONEY PAGE
-  "https://www.betonjayareadymix.com/p/modular-kamar-mandi-toilet.html": "Modular Kamar Mandi Toilet"
+  "https://www.betonjayareadymix.com/p/bata-ringan-hebel.html": "Bata Ringan Hebel",  
+  "https://www.betonjayareadymix.com/p/sandwich-panel.html": "Sandwich Panel"
+
+};
+
+const urlMappingPanelBetonFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",
+  "https://www.betonjayareadymix.com/p/bangunan-ruspin-modular.html": "Bangunan Ruspin Modular"
+};
+
+const urlMappingSandwichPanelFromMoneyMasterMoneyPage = {
+ "https://www.betonjayareadymix.com/p/dinding-panel-sandwich-modular.html": "Dinding Panel Sandwich Modular",
+  "https://www.betonjayareadymix.com/p/bangunan-panel-sandwich-modular.html": "Bangunan Panel Sandwich Modular"
 };
 
 // ============================================================
@@ -2040,7 +2044,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukDindingBangunanModularFromSub2Sub1,
         urlMappingProdukDindingFromSub1MoneyMaster,
-		
+		urlMappingPanelBetonFromMoneyMasterMoneyPage,
+		urlMappingSandwichPanelFromMoneyMasterMoneyPage,
+
+	
 		urlMappingProdukPelabuhanPesisirFromSub2Sub1,
 		urlMappingProdukPelabuhanFromSub1MoneyMaster,
 		
@@ -2914,6 +2921,35 @@ if (urlMappingProdukDindingFromSub1MoneyMaster[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingPanelBetonFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingPanelBetonFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
+            { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
+            { name: 'Panel Beton', url: 'https://www.betonjayareadymix.com/p/panel-beton.html' }
+        
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingSandwichPanelFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingSandwichPanelFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
+            { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
+            { name: 'Sandwich Panel', url: 'https://www.betonjayareadymix.com/p/sandwich-panel.html' }
+        
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+	
 
 if (urlMappingProdukJembatanFlyoverFromSub2Sub1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
