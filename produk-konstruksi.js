@@ -277,6 +277,7 @@ const urlMappingProdukCustom = {
  * FIXED: VARIANT detection lebih akurat
  * FIXED: PILLAR HANYA NAMA YANG SUDAH DITENTUKAN
  * FIXED: HIERARCHY WAJIB: PILLAR → SP2 → SP1 → MM → MP → MC → VARIANT
+ * FIXED: SyntaxError pada template literal (v12.3.1)
  * ============================================================
  *
  * ✅ UPDATE v12.3
@@ -288,6 +289,7 @@ const urlMappingProdukCustom = {
  * - FIX: Level di bawah (lebih rendah) tetap mendapat score
  * - FIX: Level sama mendapat bonus
  * - FIX: Entity pillar tetap sebagai fallback terakhir
+ * - FIX: SyntaxError pada template literal (kutip ganda)
  *
  * ============================================================
  * @version 12.3.0
@@ -443,7 +445,7 @@ function generateBreadcrumbProdukKonstruksi(
     };
 
     // ============================================================
-    // 9. GET PAGE LEVEL FROM PLD
+    // 9. GET PAGE LEVEL FROM PLD (FIX: perbaiki kutip)
     // ============================================================
 
     function getPageLevelFromPLD() {
@@ -1431,7 +1433,9 @@ function generateBreadcrumbProdukKonstruksi(
     entityType = finalEntityType;
     
     const isPLDSynced = !!pldLevel;
-    log(`PLD Sync Status: ${isPLDSynced ? '✅ SINKRON' : '❌ FALLBACK'}', 'PLD');
+    // 🔥 FIX: Gunakan variabel untuk menghindari error template literal
+    const syncStatusText = isPLDSynced ? '✅ SINKRON' : '❌ FALLBACK';
+    log(`PLD Sync Status: ${syncStatusText}`, 'PLD');
     if (pldLevel) {
         log(`PLD Level: "${pldLevel}" (${TYPE_LEVEL_MAP[pldLevel]})`, 'PLD');
     }
@@ -1822,15 +1826,18 @@ function generateBreadcrumbProdukKonstruksi(
     document.head.appendChild(script);
 
     // ============================================================
-    // 44. LOG SUMMARY
+    // 44. LOG SUMMARY (FIX: perbaiki semua kutip)
     // ============================================================
+
+    const syncStatus = isPLDSynced ? '✅ SINKRON' : '❌ FALLBACK';
+    const commercialDetected = COMMERCIAL_WORDS.some(w => currentPageTitle.startsWith(w));
 
     console.log('📊 BREADCRUMB GENERATION SUMMARY (v12.3):');
     console.log(`   Page: "${currentPageTitle}"`);
     console.log(`   URL: "${currentFullUrl}"`);
     console.log(`   Type: ${currentPageType} (level ${TYPE_LEVEL_MAP[currentPageType]})`);
     console.log(`   Entity: ${entityType}`);
-    console.log(`   🔄 PLD Sync: ${isPLDSynced ? '✅ SINKRON' : '❌ FALLBACK'}`);
+    console.log(`   🔄 PLD Sync: ${syncStatus}`);
     if (pldLevel) {
         console.log(`   📌 PLD Level: ${pldLevel} (${TYPE_LEVEL_MAP[pldLevel]})`);
     }
@@ -1840,7 +1847,7 @@ function generateBreadcrumbProdukKonstruksi(
     if (currentPageType === 'money-child') {
         console.log(`   📍 Money Child with location detected`);
     }
-    if (COMMERCIAL_WORDS.some(w => currentPageTitle.startsWith(w))) {
+    if (commercialDetected) {
         console.log(`   🛒 Commercial Intent detected`);
     }
     console.log(`   🔧 FIX v12.3: Parent tidak pernah di-skip apapun levelnya`);
@@ -1867,10 +1874,11 @@ function generateBreadcrumbProdukKonstruksi(
         pldLevel: pldLevel,
         pldEntity: pldEntity,
         hierarchy: uniqueLevels.map(i => i.type),
-        commercialIntent: COMMERCIAL_WORDS.some(w => currentPageTitle.startsWith(w)),
+        commercialIntent: commercialDetected,
         parentNoSkip: true // 🔥 FIX v12.3: Konfirmasi parent tidak pernah skip
     };
 }
+
 // Menyimpan elemen yang dihapus dalam variabel
 let removedElementsProdukKons = {};
 // Fungsi untuk menghapus elemen berdasarkan ID
