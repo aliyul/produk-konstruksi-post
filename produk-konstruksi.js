@@ -181,8 +181,7 @@ const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 const urlMappingProdukPondasiFromSub1MoneyMaster = {
  "https://www.betonjayareadymix.com/p/produk-pondasi.html": "Produk Pondasi"
 };
-const urlMappingProdukPondasiFromMoneyMasterMoneyMaster1 = {
-	https://www.betonjayareadymix.com/p/produk-pondasi.html
+const urlMappingProdukPondasiFromMoneyMasterMoneyMaster1 = 
  "https://www.betonjayareadymix.com/p/tiang-pancang.html": "Tiang Pancang",  
   "https://www.betonjayareadymix.com/p/bore-pile.html": "Bore Pile",  
   "https://www.betonjayareadymix.com/p/mini-pile.html": "Mini Pile",  
