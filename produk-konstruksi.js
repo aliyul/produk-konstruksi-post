@@ -179,7 +179,7 @@ const urlMappingProdukJalanLantaiFromSub1MoneyMaster = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pondasi Struktur > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPondasiFromSub1MoneyMaster = {
- "https://www.betonjayareadymix.com/p/produk-pondasi.html": "Produk Pondasi"
+ "https://www.betonjayareadymix.com/p/jual-pondasi-struktur.html": "Jual Pondasi Struktur"
 };
 const urlMappingProdukPondasiFromMoneyMasterMoneyMaster1 = {
  "https://www.betonjayareadymix.com/p/tiang-pancang.html": "Tiang Pancang",  
