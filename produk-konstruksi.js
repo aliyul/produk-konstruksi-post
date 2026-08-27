@@ -240,6 +240,9 @@ const urlMappingSandwichPanelFromMoneyMasterMoneyPage = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Pelabuhan Pesisir > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukPelabuhanFromSub1MoneyMaster = {
+  "https://www.betonjayareadymix.com/p/produk-pelabuhan.html": "Produk Pelabuhan"
+};
+const urlMappingProdukPelabuhanFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/p/sistem-proteksi-dermaga.html": "Sistem Proteksi Dermaga",  
   "https://www.betonjayareadymix.com/p/dermaga-apung-modular.html": "Dermaga Apung Modular",  
   "https://www.betonjayareadymix.com/p/alat-bongkar-muat-pelabuhan.html": "Alat Bongkar Muat Pelabuhan",  
@@ -2005,6 +2008,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 		urlMappingProdukPelabuhanPesisirFromSub2Sub1,
 		urlMappingProdukPelabuhanFromSub1MoneyMaster,
+		urlMappingProdukPelabuhanFromMoneyMasterMoneyPage,
+		
 		
 		urlMappingProdukCustomKhususFromSub2Sub1	
 	
@@ -2980,6 +2985,21 @@ if (urlMappingProdukPelabuhanFromSub1MoneyMaster[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pelabuhan Pesisir', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html' },
             { name: 'Perbandingan Produk Pelabuhan Pesisir', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pelabuhan-pesisir.html' }
+
+	   ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingProdukPelabuhanFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingProdukPelabuhanFromMoneyMasterMoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pelabuhan Pesisir', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html' },
+            { name: 'Perbandingan Produk Pelabuhan Pesisir', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pelabuhan-pesisir.html' },
+            { name: 'Produk Pelabuhan', url: 'https://www.betonjayareadymix.com/p/produk-pelabuhan.html' }
+
 
 	   ],
         'PRODUK_KONSTRUKSI'
