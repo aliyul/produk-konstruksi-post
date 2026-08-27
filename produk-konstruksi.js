@@ -2911,7 +2911,7 @@ if (urlMappingProdukPondasiFromMoneyMasterMoneyMaster1[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html' },
             { name: 'Perbandingan Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html' },
-            { name: 'Produk Pondasi', url: 'https://www.betonjayareadymix.com/p/produk-pondasi.html' }
+            { name: 'Jual Pondasi Struktur', url: '"https://www.betonjayareadymix.com/p/jual-pondasi-struktur.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
@@ -2924,7 +2924,7 @@ if (urlMappingTiangPancangFromMoneyMaster1MoneyPage[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html' },
             { name: 'Perbandingan Produk Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html' },
-            { name: 'Produk Pondasi', url: 'https://www.betonjayareadymix.com/p/produk-pondasi.html' },
+            { name: 'Jual Pondasi Struktur', url: 'https://www.betonjayareadymix.com/p/jual-pondasi-struktur.html' },
             { name: 'Tiang Pancang', url: 'https://www.betonjayareadymix.com/p/tiang-pancang.html' }
         
         ],
