@@ -29,7 +29,7 @@ const urlMappingProdukKonstruksiFromPillarSub2 = {
   "https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html": "Daftar Produk Pembatas",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html": "Daftar Produk Saluran Drainase",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-jalan-lantai.html": "Daftar Produk Jalan Lantai",  // TYPE: SUB2
-  "https://www.betonjayareadymix.com/p/daftar-produk-pondasi-struktur.html": "Daftar Produk Pondasi Struktur",  // TYPE: SUB2
+  "https://www.betonjayareadymix.com/p/daftar-produk-pondasi.html": "Daftar Produk Pondasi",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-jembatan.html": "Daftar Produk Jembatan",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html": "Daftar Produk Dinding Bangunan Modular",  // TYPE: SUB2
   "https://www.betonjayareadymix.com/p/daftar-produk-pelabuhan-pesisir.html": "Daftar Produk Pelabuhan Pesisir",  // TYPE: SUB2
@@ -58,7 +58,7 @@ const urlMappingProdukJalanLantaiFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-jalan-lantai.html": "Perbandingan Produk Jalan Lantai"  // TYPE: SUB1
 };
 const urlMappingProdukPondasiStrukturFromSub2Sub1 = {
-  "https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi-struktur.html": "Perbandingan Produk Pondasi Struktur"  // TYPE: SUB1
+  "https://www.betonjayareadymix.com/p/perbandingan-produk-pondasi.html": "Perbandingan Produk Pondasi"  // TYPE: SUB1
 };
 const urlMappingProdukJembatanFlyoverFromSub2Sub1 = {
   "https://www.betonjayareadymix.com/p/perbandingan-produk-jembatan.html": "Perbandingan Produk Jembatan"  // TYPE: SUB1
