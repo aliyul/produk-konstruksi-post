@@ -232,7 +232,7 @@ const urlMappingProdukDindingFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/panel-beton.html": "Panel Beton",  
   "https://www.betonjayareadymix.com/p/beton-ringan.html": "Beton Ringan",  
   "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",  
-  "https://www.betonjayareadymix.com/p/bata-ringan-hebel.html": "Bata Ringan Hebel",  
+  "https://www.betonjayareadymix.com/p/bata-ringan.html": "Bata Ringan",  
   "https://www.betonjayareadymix.com/p/sandwich-panel.html": "Sandwich Panel"
 
 };
