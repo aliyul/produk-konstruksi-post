@@ -133,6 +133,10 @@ const urlMappingPagarBatuFromMoneyMasterMoneyPage = {
 // Breadcrumb: Home > Produk Konstruksi > Beton Precast > Produk Saluran Drainase > [Nama Produk] (5 level)
 // ============================================================
 const urlMappingProdukSaluranFromSub1MoneyMaster = {
+  "https://www.betonjayareadymix.com/p/produk-saluran.html": "Produk Saluran"
+};
+
+const urlMappingProdukSaluranFromMoneyMasterMoneyMaster1 = {
   "https://www.betonjayareadymix.com/p/buis-beton.html": "Buis Beton",  
   "https://www.betonjayareadymix.com/p/box-culvert.html": "Box Culvert",  
   "https://www.betonjayareadymix.com/p/u-ditch.html": "U Ditch",  
@@ -140,7 +144,7 @@ const urlMappingProdukSaluranFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/saluran-beton.html": "Saluran Beton",  
   "https://www.betonjayareadymix.com/p/pipa-beton.html": "Pipa Beton"  
 };
-const urlMappingGorongGorongFromMoneyMasterMoneyPage = {
+const urlMappingGorongGorongFromMoneyMaster1MoneyPage = {
  "https://www.betonjayareadymix.com/p/gorong-gorong-beton.html": "Gorong Gorong Beton"
 };
 // ============================================================
@@ -1987,7 +1991,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
 		urlMappingProdukSaluranFromSub1MoneyMaster,
-		urlMappingGorongGorongFromMoneyMasterMoneyPage,
+		urlMappingProdukSaluranFromMoneyMasterMoneyMaster1,
+		urlMappingGorongGorongFromMoneyMaster1MoneyPage,
 		
 		urlMappingProdukJalanLantaiFromSub2Sub1,
 		urlMappingProdukJalanLantaiFromSub1MoneyMaster,
@@ -2779,7 +2784,6 @@ if (urlMappingProdukSaluranDrainaseFromSub2Sub1[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-	
 if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
         urlMappingProdukSaluranFromSub1MoneyMaster,
@@ -2792,14 +2796,29 @@ if (urlMappingProdukSaluranFromSub1MoneyMaster[cleanUrlProdukKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
-if (urlMappingGorongGorongFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+if (urlMappingProdukSaluranFromMoneyMasterMoneyMaster1[cleanUrlProdukKons]) {
         generateBreadcrumbProdukKonstruksi(
-        urlMappingGorongGorongFromMoneyMasterMoneyPage,
+        urlMappingProdukSaluranFromMoneyMasterMoneyMaster1,
         cleanUrlProdukKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
             { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+            { name: 'Produk Saluran', url: 'https://www.betonjayareadymix.com/p/produk-saluran.html' }
+	   
+	   ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingGorongGorongFromMoneyMaster1MoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbProdukKonstruksi(
+        urlMappingGorongGorongFromMoneyMaster1MoneyPage,
+        cleanUrlProdukKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+            { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+            { name: 'Produk Saluran', url: 'https://www.betonjayareadymix.com/p/produk-saluran.html' },
 		    { name: 'Gorong Gorong', url: 'https://www.betonjayareadymix.com/p/gorong-gorong.html' }
 	   
 	   ],
