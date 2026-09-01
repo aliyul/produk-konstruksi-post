@@ -387,8 +387,8 @@ const urlMappingProdukKanstin = {
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-taman.html": "Harga Kanstin Taman",  
   "https://www.betonjayareadymix.com/2021/04/harga-kanstin-per-meter.html": "Harga Kanstin Per Meter",  
   "https://www.betonjayareadymix.com/2021/04/harga-car-stopper-beton.html": "Harga Car Stopper Beton",  
-  "https://betonjayareadymix.com/2021/08/harga-kanstin-k-250.html": "Harga Kanstin K 250",   
-  "https://betonjayareadymix.com/2021/08/harga-kanstin-garut.html": "Harga Kanstin Garut",   
+  "https://www.betonjayareadymix.com/2021/08/harga-kanstin-k-250.html": "Harga Kanstin K 250",   
+  "https://www.betonjayareadymix.com/2021/08/harga-kanstin-garut.html": "Harga Kanstin Garut",   
   
   // ============================================================
   // [MONEY_CHILD] - HARGA KANSTIN PER LOKASI
