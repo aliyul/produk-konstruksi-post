@@ -20,6 +20,9 @@ const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
 const urlMappingHargaPagarPanelFromMoneyPageMoneyPage1 = {
 "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton",   
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-murah.html": "Harga Pagar Panel Beton Murah", 
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k225.html": "Harga Pagar Panel Beton K225", 
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k250.html": "Harga Pagar Panel Beton K250", 
+  "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k300.html": "Harga Pagar Panel Beton K300", 
   
   // ============================================================
   // [MONEY_PAGE] - HARGA PER JENIS
@@ -40,7 +43,10 @@ const urlMappingHargaPagarPanelFromMoneyPageMoneyPage1 = {
 };
 const urlMappingPagarPanelBetonFromMoneyPageMoneyPage1 = {
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-murah.html": "Pagar Panel Beton Murah",
-   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast"
+   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k225.html": "Pagar Panel Beton K225", 
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k250.html": "Pagar Panel Beton K250", 
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k300.html": "Pagar Panel Beton K300"
 	
 };
 const urlMappingPagarPanelBetonFromMoneyPageVariant = {
@@ -83,9 +89,6 @@ const urlMappingHargaPagarPanelFromMoneyPageMoneyChild = {
 	
 };
 
-const urlMappingProdukPagarPanelBeton = {
-
-};
 
 // ============================================================
 // PRODUK PAGAR BETON - [MONEY PAGE]
