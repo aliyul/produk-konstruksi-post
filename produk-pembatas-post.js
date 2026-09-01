@@ -2209,6 +2209,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlMappingGabungan = Object.assign(
       {},
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
+		urlMappingHargaPagarPanelFromMoneyPageMoneyPage1,
+		
 		urlMappingProdukPagarBeton,
 		urlMappingProdukPagarRumah,
 		urlMappingProdukPagarGrc,
@@ -2347,12 +2349,26 @@ document.addEventListener("DOMContentLoaded", function() {
     if (urlMappingPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukPembatasKons]) { 
      generateBreadcrumbProdukPembatasPost(
         urlMappingPagarPanelFromMoneyMasterMoneyPage,
-        cleanUrlProdukKons,
+        cleanUrlProdukPembatasKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
             { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingHargaPagarPanelFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingHargaPagarPanelFromMoneyPageMoneyPage1,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+            { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
