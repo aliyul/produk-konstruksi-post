@@ -30,7 +30,7 @@ const urlMappingHargaPagarPanelFromMoneyPageMoneyPage1 = {
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-motif.html": "Harga Pagar Panel Beton Motif",  
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-polos.html": "Harga Pagar Panel Beton Polos",  
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-per-lembar.html": "Harga Pagar Panel Beton Per Lembar",  
-  "https://www.betonjayareadymix.com/2019/04/biaya-pagar-panel-beton-per-meter.html": "Biaya Pagar Panel Beton Per Meter" 
+  "https://www.betonjayareadymix.com/2019/04/biaya-pagar-panel-beton-per-meter.html": "Biaya Pagar Panel Beton Per Meter",
   
   // ============================================================
   // [MONEY_PAGE] - JUAL
