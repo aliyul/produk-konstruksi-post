@@ -73,7 +73,7 @@ const urlMappingPagarPanelBetonFromMoneyPageMoneyChild = {
 	
 };
 
-const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild = {
+const urlMappingHargaPagarPanelFromMoneyPageMoneyChild = {
  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-jakarta.html": "Harga Pagar Panel Beton Jakarta",  
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-bogor.html": "Harga Pagar Panel Beton Bogor",  
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-karawang.html": "Harga Pagar Panel Beton Karawang",  
@@ -2211,6 +2211,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
 		urlMappingHargaPagarPanelFromMoneyPageMoneyPage1,
 		urlMappingPagarPanelBetonFromMoneyPageMoneyPage1,
+		urlMappingPagarPanelBetonFromMoneyPageVariant,
+		urlMappingPagarPanelBetonFromMoneyPageMoneyChild,
+		urlMappingHargaPagarPanelFromMoneyPageMoneyChild,
+		
 		
 		urlMappingProdukPagarBeton,
 		urlMappingProdukPagarRumah,
@@ -2384,6 +2388,49 @@ if (urlMappingPagarPanelBetonFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
             { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
             { name: 'Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/pagar-panel-beton.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingPagarPanelBetonFromMoneyPageVariant[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingPagarPanelBetonFromMoneyPageVariant,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+            { name: 'Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/pagar-panel-beton.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+if (urlMappingPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingPagarPanelBetonFromMoneyPageMoneyChild,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+            { name: 'Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/pagar-panel-beton.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
+
+if (urlMappingHargaPagarPanelFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingHargaPagarPanelFromMoneyPageMoneyChild,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+            { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
