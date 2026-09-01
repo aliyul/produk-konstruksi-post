@@ -121,9 +121,7 @@ const urlMappingProdukPembatasFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",  
   "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"  
 };
-const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
-  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton"
-};
+
 const urlMappingPagarBatuFromMoneyMasterMoneyPage = {
  "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam"
 
@@ -1993,7 +1991,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		urlMappingProdukPembatasFromSub2Sub1,
 		urlMappingProdukPembatasFromSub1MoneyMaster,
-		urlMappingPagarPanelFromMoneyMasterMoneyPage,
+		//urlMappingPagarPanelFromMoneyMasterMoneyPage,
 		urlMappingPagarBatuFromMoneyMasterMoneyPage,
 		
 		urlMappingProdukSaluranDrainaseFromSub2Sub1,
@@ -2780,19 +2778,6 @@ if (urlMappingProdukPembatasFromSub1MoneyMaster[cleanUrlProdukKons]) {
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' }
-        ],
-        'PRODUK_KONSTRUKSI'
-    );
-}
-if (urlMappingPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
-        generateBreadcrumbProdukKonstruksi(
-        urlMappingPagarPanelFromMoneyMasterMoneyPage,
-        cleanUrlProdukKons,
-       [
-            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
-            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
