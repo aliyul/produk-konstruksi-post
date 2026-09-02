@@ -85,7 +85,22 @@ const urlMappingHargaPagarPanelFromMoneyPageMoneyChild = {
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-karawang.html": "Harga Pagar Panel Beton Karawang",  
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-depok.html": "Harga Pagar Panel Beton Depok",  
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-bekasi.html": "Harga Pagar Panel Beton Bekasi",  
-  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-tangerang.html": "Harga Pagar Panel Beton Tangerang"  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-tangerang.html": "Harga Pagar Panel Beton Tangerang",
+
+
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-bandung.html": "Harga Pagar Panel Beton Bandung",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-cianjur.html": "Harga Pagar Panel Beton Cianjur",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-purwakarta.html": "Harga Pagar Panel Beton Purwakarta",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-tasikmalaya.html": "Harga Pagar Panel Beton Tasikmalaya",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-cirebon.html": "Harga Pagar Panel Beton Cirebon",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-indramayu.html": "Harga Pagar Panel Beton Indramayu",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-sukabumi.html": "Harga Pagar Panel Beton Sukabumi",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-subang.html": "Harga Pagar Panel Beton Subang",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-majalengka.html": "Harga Pagar Panel Beton Majalengka",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-garut.html": "Harga Pagar Panel Beton Garut",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-ciamis.html": "Harga Pagar Panel Beton Ciamis",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-kuningan.html": "Harga Pagar Panel Beton Kuningan",  
+  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-semarang.html": "Harga Pagar Panel Beton Semarang"
 	
 };
 
