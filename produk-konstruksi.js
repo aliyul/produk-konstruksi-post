@@ -113,7 +113,8 @@ const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
 // ============================================================
 const urlMappingProdukPembatasFromSub1MoneyMaster = {
   "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",  
-  "https://www.betonjayareadymix.com/p/pagar-panel.html": "Pagar Panel",  
+  "https://www.betonjayareadymix.com/p/pagar-panel.html": "Pagar Panel", 
+  "https://www.betonjayareadymix.com/p/harga-pagar-panel.html": "Harga Pagar Panel",  
   "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",  
   "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",  
   "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
