@@ -12,16 +12,16 @@ const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/p/pagar-panel-beton-k225.html": "Pagar Panel Beton K225"
 */
 
-"https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html": "Harga Pagar Panel",  
+//"https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html": "Harga Pagar Panel",  
 "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton.html": "Pagar Panel Beton"
 
 };
 
-const urlMappingHargaPagarPanelFromMoneyPageMoneyPage1 = {
+const urlMappingHargaPagarPanelFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton"
 };
 
-const urlMappingHargaPagarPanelBetonFromMoneyPage1MoneyPage2 = {
+const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1 = {
  // [MONEY_PAGE] 
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-murah.html": "Harga Pagar Panel Beton Murah", 
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k225.html": "Harga Pagar Panel Beton K225", 
@@ -65,7 +65,8 @@ const urlMappingPagarPanelBetonFromMoneyPageMoneyChild = {
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-bogor.html": "Pagar Panel Beton Bogor",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-depok.html": "Pagar Panel Beton Depok",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-tangerang.html": "Pagar Panel Beton Tangerang",  
-  "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-bekasi.html": "Pagar Panel Beton Bekasi",  
+  "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-bekasi.html": "Pagar Panel Beton Bekasi",    
+	"https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-karawang.html": "Pagar Panel Beton Karawang",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-bandung.html": "Pagar Panel Beton Bandung",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-cianjur.html": "Pagar Panel Beton Cianjur",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-purwakarta.html": "Pagar Panel Beton Purwakarta",  
@@ -74,7 +75,6 @@ const urlMappingPagarPanelBetonFromMoneyPageMoneyChild = {
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-indramayu.html": "Pagar Panel Beton Indramayu",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-sukabumi.html": "Pagar Panel Beton Sukabumi",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-subang.html": "Pagar Panel Beton Subang",  
-  "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-karawang.html": "Pagar Panel Beton Karawang",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-majalengka.html": "Pagar Panel Beton Majalengka",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-garut.html": "Pagar Panel Beton Garut",  
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-ciamis.html": "Pagar Panel Beton Ciamis",  
@@ -2064,8 +2064,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlMappingGabungan = Object.assign(
       {},
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
-		urlMappingHargaPagarPanelFromMoneyPageMoneyPage1,
-		urlMappingHargaPagarPanelBetonFromMoneyPage1MoneyPage2,
+		urlMappingHargaPagarPanelFromMoneyMasterMoneyPage,
+		urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1,
 		urlMappingPagarPanelBetonFromMoneyPageMoneyPage1,
 		urlMappingPagarPanelBetonFromMoneyPageVariant,
 		urlMappingPagarPanelBetonFromMoneyPageMoneyChild,
@@ -2722,29 +2722,27 @@ document.addEventListener("DOMContentLoaded", function() {
         'PRODUK_KONSTRUKSI'
     );
 }
-if (urlMappingHargaPagarPanelFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]) { 
+if (urlMappingHargaPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukPembatasKons]) { 
      generateBreadcrumbProdukPembatasPost(
-        urlMappingHargaPagarPanelFromMoneyPageMoneyPage1,
+        urlMappingHargaPagarPanelFromMoneyMasterMoneyPage,
         cleanUrlProdukPembatasKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
             { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
 }
-if (urlMappingHargaPagarPanelBetonFromMoneyPage1MoneyPage2[cleanUrlProdukPembatasKons]) { 
+if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]) { 
      generateBreadcrumbProdukPembatasPost(
-        urlMappingHargaPagarPanelBetonFromMoneyPage1MoneyPage2,
+        urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1,
         cleanUrlProdukPembatasKons,
        [
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
             { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' },
             { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html' }
         ],
@@ -2802,7 +2800,6 @@ if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatas
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
             { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' },
             { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html' }
 
