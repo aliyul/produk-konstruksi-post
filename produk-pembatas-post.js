@@ -2730,7 +2730,7 @@ if (urlMappingHargaPagarPanelFromMoneyMasterMoneyPage[cleanUrlProdukPembatasKons
             { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-            { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' }
+            { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
@@ -2744,7 +2744,7 @@ if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1[cleanUrlProdukPembatas
             { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
             { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
             { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel.html' },
-            { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html' }
+            { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel-beton.html' }
         ],
         'PRODUK_KONSTRUKSI'
     );
