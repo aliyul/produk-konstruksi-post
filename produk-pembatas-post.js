@@ -47,13 +47,14 @@ const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1 = {
 };
 const urlMappingPagarPanelBetonFromMoneyPageMoneyPage1 = {
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-murah.html": "Pagar Panel Beton Murah",
-   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
-  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k225.html": "Pagar Panel Beton K225", 
-  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k250.html": "Pagar Panel Beton K250", 
-  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k300.html": "Pagar Panel Beton K300"
+   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast"
 	
 };
 const urlMappingPagarPanelBetonFromMoneyPageVariant = {
+  
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k225.html": "Pagar Panel Beton K225", 
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k250.html": "Pagar Panel Beton K250", 
+  "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k300.html": "Pagar Panel Beton K300",
   "https://www.betonjayareadymix.com/2019/04/ukuran-pagar-panel-beton.html": "Ukuran Pagar Panel Beton",  
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-motif.html": "Pagar Panel Beton Motif",  
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-polos.html": "Pagar Panel Beton Polos"
