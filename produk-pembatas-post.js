@@ -20,12 +20,13 @@ const urlMappingPagarPanelFromMoneyMasterMoneyPage = {
 const urlMappingHargaPagarPanelFromMoneyMasterMoneyPage = {
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton"
 };
-
-
-const urlMappingPagarPanelBetonFromMoneyPageVariant = {
-    "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-murah.html": "Pagar Panel Beton Murah",
-   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
+const urlMappingPagarPanelBetonFromMoneyPageMoneyPage1 = {
+     "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-murah.html": "Pagar Panel Beton Murah"
 	
+};
+  
+const urlMappingPagarPanelBetonFromMoneyPageVariant = {
+   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-precast.html": "Pagar Panel Beton Precast",
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k225.html": "Pagar Panel Beton K225", 
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k250.html": "Pagar Panel Beton K250", 
   "https://www.betonjayareadymix.com/2019/04/pagar-panel-beton-k300.html": "Pagar Panel Beton K300",
@@ -58,11 +59,9 @@ const urlMappingPagarPanelBetonFromMoneyPageMoneyChild = {
   "https://www.betonjayareadymix.com/2019/05/pagar-panel-beton-semarang.html": "Pagar Panel Beton Semarang"
 	
 };
-
-const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild = { 
+const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1 = { 
    "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-murah.html": "Harga Pagar Panel Beton Murah",
-	
-  "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k225.html": "Harga Pagar Panel Beton K225", 
+	  "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k225.html": "Harga Pagar Panel Beton K225", 
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k250.html": "Harga Pagar Panel Beton K250", 
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-k300.html": "Harga Pagar Panel Beton K300", 
 
@@ -73,7 +72,10 @@ const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild = {
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-polos.html": "Harga Pagar Panel Beton Polos",  
   "https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton-per-lembar.html": "Harga Pagar Panel Beton Per Lembar",  
   "https://www.betonjayareadymix.com/2019/04/biaya-pagar-panel-beton-per-meter.html": "Biaya Pagar Panel Beton Per Meter",
-  "https://www.betonjayareadymix.com/2019/04/jual-pagar-panel-beton-precast.html": "Jual Pagar Panel Beton Precast",  
+  "https://www.betonjayareadymix.com/2019/04/jual-pagar-panel-beton-precast.html": "Jual Pagar Panel Beton Precast"
+};
+
+const urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild = { 	
  
  "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-jakarta.html": "Harga Pagar Panel Beton Jakarta",  
   "https://www.betonjayareadymix.com/2019/05/harga-pagar-panel-beton-bogor.html": "Harga Pagar Panel Beton Bogor",  
@@ -2057,7 +2059,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		urlMappingPagarPanelFromMoneyMasterMoneyPage,
 		urlMappingHargaPagarPanelFromMoneyMasterMoneyPage,
 		urlMappingPagarPanelBetonFromMoneyPageVariant,
+		urlMappingPagarPanelBetonFromMoneyPageMoneyPage1,
 		urlMappingPagarPanelBetonFromMoneyPageMoneyChild,
+		urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1,
 		urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild,
 		
 		urlMappingProdukPagarBeton,
@@ -2153,6 +2157,20 @@ if (urlMappingPagarPanelBetonFromMoneyPageVariant[cleanUrlProdukPembatasKons]) {
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingPagarPanelBetonFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingPagarPanelBetonFromMoneyPageMoneyPage1,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+            { name: 'Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/pagar-panel-beton.html' }
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
 if (urlMappingPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]) { 
      generateBreadcrumbProdukPembatasPost(
         urlMappingPagarPanelBetonFromMoneyPageMoneyChild,
@@ -2167,7 +2185,21 @@ if (urlMappingPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]
         'PRODUK_KONSTRUKSI'
     );
 }
+if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1[cleanUrlProdukPembatasKons]) { 
+     generateBreadcrumbProdukPembatasPost(
+        urlMappingHargaPagarPanelBetonFromMoneyPageMoneyPage1,
+        cleanUrlProdukPembatasKons,
+       [
+            { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+            { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+            { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+            { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel.html' },
+            { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/2019/04/harga-pagar-panel-beton.html' }
 
+        ],
+        'PRODUK_KONSTRUKSI'
+    );
+}
 if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]) { 
      generateBreadcrumbProdukPembatasPost(
         urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild,
@@ -2184,7 +2216,7 @@ if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatas
     );
 }
 
-    if (urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons]) {
+if (urlMappingProdukPagarBeton[cleanUrlProdukPembatasKons]) {
         restoreCondition('ProdukKonsPembatasPost');
         restoreCondition('ProdukPagarBeton');
 
