@@ -185,6 +185,9 @@ const urlMappingBoxCulvert = {
     // [MONEY_MASTER]
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-beton-precast.html": "Harga Box Culvert Beton Precast",
     // [MONEY_CHILD] - ukuran
+    "https://www.betonjayareadymix.com/2021/04/box-culvert-80x80.html": "Box Culvert 80x80",
+    "https://www.betonjayareadymix.com/2021/04/box-culvert-600-x-600.html": "Box Culvert 600 x 600",
+    
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-40x40.html": "Harga Box Culvert 40x40",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-50x50.html": "Harga Box Culvert 50x50",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-60x60.html": "Harga Box Culvert 60x60",
@@ -194,6 +197,8 @@ const urlMappingBoxCulvert = {
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-200x200.html": "Harga Box Culvert 200x200",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-300x300.html": "Harga Box Culvert 300x300",
     // [MONEY_CHILD] - lokasi
+    "https://www.betonjayareadymix.com/2021/04/box-culvert-malang.html": "Box Culvert Malang",
+    
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-jakarta.html": "Harga Box Culvert Jakarta",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bogor.html": "Harga Box Culvert Bogor",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-depok.html": "Harga Box Culvert Depok",
@@ -201,6 +206,11 @@ const urlMappingBoxCulvert = {
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bekasi.html": "Harga Box Culvert Bekasi",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bandung.html": "Harga Box Culvert Bandung",
     "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-surabaya.html": "Harga Box Culvert Surabaya",
+
+    "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-majalengka.html": "Harga Box Culvert Majalengka",
+    
+    "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-bali.html": "Harga Box Culvert Bali",
+    
     // [SUB2]
     "https://www.betonjayareadymix.com/2021/04/box-culvert-adalah.html": "Box Culvert Adalah",
     "https://www.betonjayareadymix.com/2021/04/kegunaan-box-culvert.html": "Kegunaan Box Culvert",
@@ -208,6 +218,10 @@ const urlMappingBoxCulvert = {
     "https://www.betonjayareadymix.com/2021/04/ukuran-box-culvert-precast.html": "Ukuran Box Culvert Precast",
     "https://www.betonjayareadymix.com/2021/04/box-culvert-dusaspun.html": "Box Culvert Dusaspun",
     "https://www.betonjayareadymix.com/2021/04/box-culvert-wika-beton.html": "Box Culvert Wika Beton",
+
+    "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-wika-beton.html": "Harga Box Culvert Wika Beton",
+    "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-calvary.html": "Harga Box Culvert Calvary",
+    
     // [SUB1]
     "https://www.betonjayareadymix.com/2021/04/saluran-box-culvert.html": "Saluran Box Culvert",
     "https://www.betonjayareadymix.com/2021/04/box-culvert-jalan-tol.html": "Box Culvert Jalan Tol"
