@@ -23,8 +23,11 @@ const urlMappingGorongGorongFromMoneyMasterToMoneyPage = {
 };
 
 const urlMappingPipaBetonFromMoneyMasterToMoneyPage = {
+    "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg.html": "Pipa Beton SCG", 
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
   "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast"
 };
 
@@ -83,9 +86,6 @@ const urlMappingBuisBetonFromMoneyMasterToVariant = {
 // ➔ CHILD: Variant
 // ═════════════════════════════════════════════════════════════════════
 const urlMappingPipaBetonFromMoneyMasterToVariant = {
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
-  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg.html": "Pipa Beton SCG", 
-  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-150-mm.html": "Ukuran Pipa Beton 150 mm",
   "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-200-mm.html": "Ukuran Pipa Beton 200 mm",
   "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-300-mm.html": "Ukuran Pipa Beton 300 mm",
