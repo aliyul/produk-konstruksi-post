@@ -681,7 +681,8 @@ function initProdukSaluranPost() {
             'PRODUK_KONSTRUKSI'
         );
     }
-    if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
+}
+if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingUditch,
             cleanUrlProdukSaluranKons,
@@ -693,7 +694,10 @@ function initProdukSaluranPost() {
             'PRODUK_KONSTRUKSI'
         );
     }
+}
 
+//akhir tag initProdukSaluranPost
+}
 // ═══════════════════════════════════════════════════════════
 // [BAGIAN 4] AUTO-INIT
 // ═══════════════════════════════════════════════════════════
