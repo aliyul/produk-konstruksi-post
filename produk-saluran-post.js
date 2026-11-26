@@ -681,8 +681,7 @@ function initProdukSaluranPost() {
             'PRODUK_KONSTRUKSI'
         );
     }
-}
-if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
+    if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingUditch,
             cleanUrlProdukSaluranKons,
@@ -694,8 +693,6 @@ if (urlMappingUditch[cleanUrlProdukSaluranKons]) {
             'PRODUK_KONSTRUKSI'
         );
     }
-}
-
 //akhir tag initProdukSaluranPost
 }
 // ═══════════════════════════════════════════════════════════
