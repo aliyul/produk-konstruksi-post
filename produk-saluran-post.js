@@ -563,10 +563,10 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 1] GORONG-GORONG BETON
     // ───────────────────────────────────────────────────────
-  if (urlMappingGorongGorongFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+  if (urlMappingGorongGorongFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingGorongGorongFromMoneyMasterToMoneyPage,
-            cleanUrlProdukKons,
+            cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
@@ -667,10 +667,10 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 4] BUIS BETON
     // ───────────────────────────────────────────────────────
-    if (urlMappingBuisBetonFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+    if (urlMappingBuisBetonFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingBuisBetonFromMoneyMasterToMoneyPage,
-            cleanUrlProdukKons,
+            cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
@@ -710,10 +710,10 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 5] BOX CULVERT
     // ───────────────────────────────────────────────────────
-    if (urlMappingBoxCulvertFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+    if (urlMappingBoxCulvertFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingBoxCulvertFromMoneyMasterToMoneyPage,
-            cleanUrlProdukKons,
+            cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
@@ -753,10 +753,10 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 6] U DITCH
     // ───────────────────────────────────────────────────────
-  if (urlMappingUDitchFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+  if (urlMappingUDitchFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingUDitchFromMoneyMasterToMoneyPage,
-            cleanUrlProdukKons,
+            cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
