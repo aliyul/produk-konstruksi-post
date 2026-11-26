@@ -16,6 +16,7 @@ console.log('[produk-saluran-post] 📄 File loaded, waiting for DOM...');
 const urlMappingGorongBeton = {
     // [MONEY_MASTER]
     "https://www.betonjayareadymix.com/2022/02/harga-gorong-gorong-beton.html": "Harga Gorong Gorong Beton",
+    "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-sesuai-kapasitas-air.html": "Gorong gorong beton Kapasitas Air",
     // [MONEY_CHILD]
     "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-jakarta.html": "Gorong Gorong Beton Jakarta",
     "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton-bogor.html": "Gorong Gorong Beton Bogor",
@@ -219,7 +220,23 @@ const urlMappingBoxCulvert = {
 const urlMappingUditch = {
     // [MONEY_MASTER]
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch.html": "Harga U Ditch",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-murah.html": "U Ditch Murah",
+    
     // [MONEY_CHILD] - lokasi
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-terdekat.html": "U Ditch Terdekat",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-jakarta.html": "U Ditch Jakarta",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-bogor.html": "U Ditch Bogor",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-depok.html": "U Ditch Depok",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-tangerang.html": "U Ditch Tangerang",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-bekasi.html": "U Ditch Bekasi",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-bandung.html": "U Ditch Bandung",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-karawang.html": "U Ditch Karawang",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-surabaya.html": "U Ditch Surabaya",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-mojokerto.html": "U Ditch Mojokerto",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-cirebon.html": "U Ditch Cirebon",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-sidoarjo.html": "U Ditch Sidoarjo",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-gresik.html": "U Ditch Gresik",
+
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-jakarta.html": "Harga U Ditch Jakarta",
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bogor.html": "Harga U Ditch Bogor",
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-depok.html": "Harga U Ditch Depok",
@@ -228,7 +245,18 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-bandung.html": "Harga U Ditch Bandung",
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-karawang.html": "Harga U Ditch Karawang",
     "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-surabaya.html": "Harga U Ditch Surabaya",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-mojokerto.html": "Harga U Ditch Mojokerto",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-cirebon.html": "Harga U Ditch Cirebon",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-sidoarjo.html": "Harga U Ditch Sidoarjo",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-gresik.html": "Harga U Ditch Gresik",
+    
     // [SUB2]
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-dusaspun.html": "Harga U Ditch Dusaspun",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-duracon.html": "Harga U Ditch Duracon",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-precon.html": "Harga U Ditch Precon",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-asiacon.html": "Harga U Ditch Asiacon",
+    
+    
     "https://www.betonjayareadymix.com/2021/04/fungsi-u-ditch.html": "Fungsi U Ditch",
     "https://www.betonjayareadymix.com/2021/04/u-ditch-precast.html": "U Ditch Precast",
     "https://www.betonjayareadymix.com/2021/04/ukuran-u-ditch-beton.html": "Ukuran U Ditch Beton",
@@ -236,9 +264,17 @@ const urlMappingUditch = {
     "https://www.betonjayareadymix.com/2021/04/u-ditch-scg.html": "U Ditch SCG",
     "https://www.betonjayareadymix.com/2021/04/u-ditch-wika-beton.html": "U Ditch Wika Beton",
     // [VARIANT] - ukuran
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-40-x-60.html": "Harga U Ditch 40 x 60",
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-40-x-40.html": "Harga U Ditch 40 x 40",
+    
     "https://www.betonjayareadymix.com/2021/04/u-ditch-40x40x120.html": "U Ditch 40x40x120",
     "https://www.betonjayareadymix.com/2021/04/u-ditch-60x60.html": "U Ditch 60x60",
     "https://www.betonjayareadymix.com/2021/04/u-ditch-80x80.html": "U Ditch 80x80",
+    "http://www.betonjayareadymix.com/2021/04/u-ditch-90x90.html": "U ditch 90x90",
+    "https://www.betonjayareadymix.com/2021/04/u-ditch-70x70.html": "U Ditch 70x70",
+    
+    "https://www.betonjayareadymix.com/2021/04/harga-u-ditch-k350.html": "Harga U Ditch k350",
+    
     // [MONEY_MASTER] - cover
     "https://www.betonjayareadymix.com/2021/04/harga-cover-tutup-u-ditch.html": "Harga Cover Tutup U Ditch",
     "https://www.betonjayareadymix.com/2021/04/jual-tutup-u-ditch.html": "Jual Tutup U Ditch",
