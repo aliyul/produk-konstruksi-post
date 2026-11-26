@@ -132,7 +132,7 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-karawang.html": "Harga Buis Beton Karawang",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-surabaya.html": "Harga Buis Beton Surabaya",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-semarang.html": "Harga Buis Beton Semarang",
-    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tasikmalaya.html" "Harga Buis Beton Tasikmalaya",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tasikmalaya.html": "Harga Buis Beton Tasikmalaya",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-cirebon.html": "Harga Buis Beton Cirebon",
     
     "https://www.betonjayareadymix.com/2021/03/buis-beton-jakarta.html": "Buis Beton Jakarta",
