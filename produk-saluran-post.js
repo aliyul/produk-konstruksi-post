@@ -99,8 +99,15 @@ const urlMappingPipaBeton = {
 // ============================================================
 const urlMappingBuis = {
     // [MONEY_MASTER]
+    "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-terdekat.html": "Jual Buis Beton Terdekat",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton.html": "Harga Buis Beton",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-saluran-air.html": "Harga Buis Beton Saluran Air",
     // [MONEY_CHILD] - ukuran
+    "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-diameter-100-cm.html": "Ukuran Buis Beton Diameter 100 cm",
+    "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-untuk-sumur.html": "Ukuran Buis Beton Untuk Sumur",
+    "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-saluran-air.html": "Ukuran Buis Beton Saluran Air",
+    "https://www.betonjayareadymix.com/2021/03/ukuran-buis-beton-diameter-80-cm.html": "Ukuran Buis Beton Diameter 80 cm",
+    
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-30-cm.html": "Harga Buis Beton Diameter 30 CM",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-40-cm.html": "Harga Buis Beton Diameter 40 CM",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-diameter-50-cm.html": "Harga Buis Beton Diameter 50 CM",
@@ -112,6 +119,9 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bertulang.html": "Harga Buis Beton Bertulang",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bulat.html": "Harga Buis Beton Bulat",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-kotak.html": "Harga Buis Beton Kotak",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-setengah-lingkaran.html": "Harga Buis Beton Setengah Lingkaran",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tanpa-tulangan.html": "Harga Buis Beton Tanpa Tulangan",
+    
     // [MONEY_CHILD] - lokasi
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-jakarta.html": "Harga Buis Beton Jakarta",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bogor.html": "Harga Buis Beton Bogor",
@@ -121,7 +131,27 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-bandung.html": "Harga Buis Beton Bandung",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-karawang.html": "Harga Buis Beton Karawang",
     "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-surabaya.html": "Harga Buis Beton Surabaya",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-semarang.html": "Harga Buis Beton Semarang",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-tasikmalaya.html" "Harga Buis Beton Tasikmalaya",
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-cirebon.html": "Harga Buis Beton Cirebon",
+    
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-jakarta.html": "Buis Beton Jakarta",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-bogor.html": "Buis Beton Bogor",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-depok.html": "Buis Beton Depok",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-tangerang.html": "Buis Beton Tangerang",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-bekasi.html": "Buis Beton Bekasi",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-bandung.html": "Buis Beton Bandung",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-karawang.html": "Buis Beton Karawang",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-surabaya.html": "Buis Beton Surabaya",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-serang.html": "Buis Beton Serang",
+
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-cirebon.html": "Buis Beton Cirebon",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-purwakarta.html": "Buis Beton Purwakarta",
+    "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-bekasi.html": "Jual Buis Beton Bekasi",
+    "https://www.betonjayareadymix.com/2021/03/jual-buis-beton-depok.html": "Jual Buis Beton Depok",
     // [SUB2] - brand
+    "https://www.betonjayareadymix.com/2021/03/harga-buis-beton-dusaspun.html": "Harga Buis Beton Dusaspun",
+    
     "https://www.betonjayareadymix.com/2021/03/buis-beton-precon.html": "Buis Beton Precon",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-asiacon.html": "Buis Beton Asiacon",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-dusaspun.html": "Buis Beton Dusaspun",
@@ -130,10 +160,14 @@ const urlMappingBuis = {
     "https://www.betonjayareadymix.com/2021/03/buis-beton-bulat.html": "Buis Beton Bulat",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-kotak.html": "Buis Beton Kotak",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-bertulang.html": "Buis Beton Bertulang",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-u.html": "Buis Beton U",
     // [SUB2] - aplikasi
     "https://www.betonjayareadymix.com/2021/03/buis-beton-septic-tank.html": "Buis Beton Septic Tank",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-sumur-resapan.html": "Buis Beton Sumur Resapan",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-gorong-gorong.html": "Buis Beton Gorong Gorong",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-riol.html": "Buis Beton Riol",
+    "https://www.betonjayareadymix.com/2021/03/buis-beton-saluran.html": "Buis Beton Saluran",
+    
     // [SUB1] - bridge
     "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-sumur.html": "Buis Beton Untuk Sumur",
     "https://www.betonjayareadymix.com/2021/03/buis-beton-untuk-septic-tank.html": "Buis Beton Untuk Septic Tank",
