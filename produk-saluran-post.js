@@ -5,7 +5,36 @@
 
 console.log('[produk-saluran-post] 📄 File loaded, waiting for DOM...');
 
-// ═════════════════════════════════════════════════════════════════════
+const urlMappingBuisBetonFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2021/03/harga-buis-beton.html": "Harga Buis Beton" // Pricing Hub
+};
+
+const urlMappingBoxCulvertFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2021/04/harga-box-culvert-beton-precast.html": "Harga Box Culvert Beton Precast"
+};
+
+const urlMappingUDitchFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2021/04/harga-u-ditch.html": "Harga U-Ditch" // Pricing Hub
+};
+
+const urlMappingGorongGorongFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton.html": "Gorong-Gorong Beton",
+  "https://www.betonjayareadymix.com/2022/02/harga-gorong-gorong-beton.html": "Harga Gorong-Gorong Beton"
+};
+
+const urlMappingPipaBetonFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-precast.html": "Pipa Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-cor.html": "Pipa Beton Cor",
+  "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-precast.html": "Harga Pipa Beton Precast"
+};
+
+// Saluran Beton tidak memiliki MP terpisah di bawahnya
+// Semua variant langsung di bawah MM
+
+
+// VARIANT
+// Gorong-Gorong tidak memiliki variant langsung di bawah MM
+// Semua variant berada di bawah MP gorong-gorong-beton
 // 📂 PARENT: buis-beton (Money-Master)
 // ➔ CHILD: Variant (Aplikasi, Merek, & Spesifikasi Harga)
 // ═════════════════════════════════════════════════════════════════════
@@ -53,8 +82,9 @@ const urlMappingBuisBetonFromMoneyMasterToVariant = {
 // 📂 PARENT: pipa-beton (Money-Page)
 // ➔ CHILD: Variant
 // ═════════════════════════════════════════════════════════════════════
-const urlMappingPipaBetonFromMoneyPageToVariant = {
+const urlMappingPipaBetonFromMoneyMasterToVariant = {
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton.html": "Harga Pipa Beton",
+  "https://www.betonjayareadymix.com/2022/02/pipa-beton-scg.html": "Pipa Beton SCG", 
   "https://www.betonjayareadymix.com/2022/02/harga-pipa-beton-scg.html": "Harga Pipa Beton SCG",
   "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-150-mm.html": "Ukuran Pipa Beton 150 mm",
   "https://www.betonjayareadymix.com/2022/02/ukuran-pipa-beton-200-mm.html": "Ukuran Pipa Beton 200 mm",
@@ -66,7 +96,7 @@ const urlMappingPipaBetonFromMoneyPageToVariant = {
 // 📂 PARENT: saluran-beton (Money-Page)
 // ➔ CHILD: Variant
 // ═════════════════════════════════════════════════════════════════════
-const urlMappingSaluranBetonFromMoneyPageToVariant = {
+const urlMappingSaluranBetonFromMoneyMasterToVariant = {
   "https://www.betonjayareadymix.com/2022/02/harga-saluran-beton.html": "Harga Saluran Beton",
   "https://www.betonjayareadymix.com/2022/02/jual-saluran-beton.html": "Jual Saluran Beton",
   "https://www.betonjayareadymix.com/2022/02/ukuran-saluran-beton.html": "Ukuran Saluran Beton",
@@ -175,7 +205,8 @@ const urlMappingSaluranBeton = {
     "https://www.betonjayareadymix.com/2022/02/saluran-beton-depok.html": "Saluran Beton Depok",
     "https://www.betonjayareadymix.com/2022/02/saluran-beton-tangerang.html": "Saluran Beton Tangerang",
     "https://www.betonjayareadymix.com/2022/02/saluran-beton-bekasi.html": "Saluran Beton Bekasi",
-    "https://www.betonjayareadymix.com/2022/02/saluran-beton-karawang.html": "Saluran Beton Karawang",
+    "https://www.betonjayareadymix.com/2022/02/saluran-beton-karawang.html": "Saluran Beton Karawang"
+    /*
     // [SUB2]
     "https://www.betonjayareadymix.com/2022/02/arti-saluran-beton.html": "Arti Saluran Beton",
     "https://www.betonjayareadymix.com/2022/02/kegunaan-saluran-beton.html": "Kegunaan Saluran Beton",
@@ -184,6 +215,7 @@ const urlMappingSaluranBeton = {
     "https://www.betonjayareadymix.com/2022/02/ukuran-saluran-beton.html": "Ukuran Saluran Beton",
     // [MONEY_MASTER] - jual
     "https://www.betonjayareadymix.com/2022/02/jual-saluran-beton.html": "Jual Saluran Beton"
+    */
 };
 
 // ============================================================
@@ -457,15 +489,20 @@ const urlMappingUditch = {
     console.log('[produk-saluran-post] 🔍 Check URL: ' + cleanUrl);
 
     var ALL_MAPPINGS = [
+        urlMappingGorongGorongFromMoneyMasterToMoneyPage,
         urlMappingGorongBeton,
-        urlMappingSaluranBetonFromMoneyPageToVariant,
+        urlMappingSaluranBetonFromMoneyMasterToVariant,
         urlMappingSaluranBeton,
-        urlMappingPipaBetonFromMoneyPageToVariant,
+        urlMappingPipaBetonFromMoneyMasterToMoneyPage,
+        urlMappingPipaBetonFromMoneyMasterToVariant,
         urlMappingPipaBeton,
+        urlMappingBuisBetonFromMoneyMasterToMoneyPage,
         urlMappingBuisBetonFromMoneyMasterToVariant,  
         urlMappingBuis,
+        urlMappingBoxCulvertFromMoneyMasterToMoneyPage,
         urlMappingBoxCulvertFromMoneyMasterToVariant,
         urlMappingBoxCulvert,
+        urlMappingUDitchFromMoneyMasterToMoneyPage,
         urlMappingUDitchFromMoneyMasterToVariant,
         urlMappingUditch
     ];
@@ -526,6 +563,19 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 1] GORONG-GORONG BETON
     // ───────────────────────────────────────────────────────
+  if (urlMappingGorongGorongFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingGorongGorongFromMoneyMasterToMoneyPage,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'Gorong Gorong', url: 'https://www.betonjayareadymix.com/p/gorong-gorong.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingGorongBeton[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingGorongBeton,
@@ -535,7 +585,7 @@ function initProdukSaluranPost() {
                  { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
                 { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
                 { name: 'Gorong Gorong', url: 'https://www.betonjayareadymix.com/p/gorong-gorong.html' },
-                { name: 'Gorong Gorong Beton', url: 'https://www.betonjayareadymix.com/p/gorong-gorong-beton.html' }
+                { name: 'Gorong Gorong Beton', url: 'https://www.betonjayareadymix.com/2022/02/gorong-gorong-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
         );
@@ -544,15 +594,14 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 2] SALURAN BETON
     // ───────────────────────────────────────────────────────
-    if (urlMappingSaluranBetonFromMoneyPageToVariant[cleanUrlProdukSaluranKons]) {
+    if (urlMappingSaluranBetonFromMoneyMasterToVariant[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
-            urlMappingSaluranBetonFromMoneyPageToVariant,
+            urlMappingSaluranBetonFromMoneyMasterToVariant,
             cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
                 { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
-                { name: 'Buis Beton', url: 'https://www.betonjayareadymix.com/p/buis-beton.html' },
                 { name: 'Saluran Beton', url: 'https://www.betonjayareadymix.com/p/saluran-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
@@ -566,7 +615,6 @@ function initProdukSaluranPost() {
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
                 { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
-                { name: 'Buis Beton', url: 'https://www.betonjayareadymix.com/p/buis-beton.html' },
                 { name: 'Saluran Beton', url: 'https://www.betonjayareadymix.com/p/saluran-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
@@ -576,6 +624,19 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 3] PIPA BETON
     // ───────────────────────────────────────────────────────
+    if (urlMappingPipaBetonFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
+        generateBreadcrumbShared(
+            urlMappingPipaBetonFromMoneyMasterToMoneyPage,
+            cleanUrlProdukSaluranKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'Pipa Beton', url: 'https://www.betonjayareadymix.com/p/pipa-beton.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingPipaBetonFromMoneyPageToVariant[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingPipaBetonFromMoneyPageToVariant,
@@ -584,7 +645,6 @@ function initProdukSaluranPost() {
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
                 { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
-                { name: 'Buis Beton', url: 'https://www.betonjayareadymix.com/p/buis-beton.html' },
                 { name: 'Pipa Beton', url: 'https://www.betonjayareadymix.com/p/pipa-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
@@ -598,7 +658,6 @@ function initProdukSaluranPost() {
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
                 { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
-                { name: 'Buis Beton', url: 'https://www.betonjayareadymix.com/p/buis-beton.html' },
                 { name: 'Pipa Beton', url: 'https://www.betonjayareadymix.com/p/pipa-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
@@ -608,6 +667,19 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 4] BUIS BETON
     // ───────────────────────────────────────────────────────
+    if (urlMappingBuisBetonFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingBuisBetonFromMoneyMasterToMoneyPage,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'Buis Beton', url: 'https://www.betonjayareadymix.com/p/buis-beton.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingBuisBetonFromMoneyMasterToVariant[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingBuisBetonFromMoneyMasterToVariant,
@@ -638,6 +710,19 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 5] BOX CULVERT
     // ───────────────────────────────────────────────────────
+    if (urlMappingBoxCulvertFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingBoxCulvertFromMoneyMasterToMoneyPage,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'Box Culvert', url: 'https://www.betonjayareadymix.com/p/box-culvert.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingBoxCulvertFromMoneyMasterToVariant[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingBoxCulvertFromMoneyMasterToVariant,
@@ -668,6 +753,19 @@ function initProdukSaluranPost() {
     // ───────────────────────────────────────────────────────
     // [BLOK 6] U DITCH
     // ───────────────────────────────────────────────────────
+  if (urlMappingUDitchFromMoneyMasterToMoneyPage[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingUDitchFromMoneyMasterToMoneyPage,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'U Ditch', url: 'https://www.betonjayareadymix.com/p/u-ditch.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingUDitchFromMoneyMasterToVariant[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
             urlMappingUDitchFromMoneyMasterToVariant,
