@@ -637,9 +637,9 @@ function initProdukSaluranPost() {
             'PRODUK_KONSTRUKSI'
         );
     }
-    if (urlMappingPipaBetonFromMoneyPageToVariant[cleanUrlProdukSaluranKons]) {
+    if (urlMappingPipaBetonFromMoneyMasterToMoneyPage[cleanUrlProdukSaluranKons]) {
         generateBreadcrumbShared(
-            urlMappingPipaBetonFromMoneyPageToVariant,
+            urlMappingPipaBetonFromMoneyMasterToMoneyPage,
             cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
