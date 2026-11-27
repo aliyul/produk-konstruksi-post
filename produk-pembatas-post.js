@@ -465,7 +465,7 @@ const urlMappingKanstinBetonFromMoneyMasterToMoneyChild = {
     
         urlMappingPagarPanelBetonFromMoneyPageToMoneyChild,
         urlMappingHargaPagarPanelBetonFromMoneyPageToMoneyChild,
-        urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild,
+
         urlMappingPagarBetonFromMoneyPageToMoneyChild,
         urlMappingProdukPagarRumah,
         urlMappingPagarGrcFromMoneyMasterToVariant,
@@ -655,28 +655,13 @@ function initProdukPembatasPost() {
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
                 { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-                { name: 'HPagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
+                { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' },
                 { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel-beton.html' }
             ],
             'PRODUK_KONSTRUKSI'
         );
     }
-
-    if (urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild[cleanUrlProdukPembatasKons]) {
-        generateBreadcrumbShared(
-            urlMappingHargaPagarPanelBetonFromMoneyPageMoneyChild,
-            cleanUrlProdukPembatasKons,
-            [
-                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-                { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
-                { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
-                { name: 'Harga Pagar Panel', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel.html' },
-                { name: 'Harga Pagar Panel Beton', url: 'https://www.betonjayareadymix.com/p/harga-pagar-panel-beton.html' }
-            ],
-            'PRODUK_KONSTRUKSI'
-        );
-    }
-
+  
     // ───────────────────────────────────────────────────────
     // [BLOK 2] PAGAR BETON
     // ───────────────────────────────────────────────────────
