@@ -89,24 +89,35 @@ const urlMappingJualAlatBeratFromMoneyMaster2MoneyPage = {
 const urlMappingProdukBetonPrecastFromSub1MoneyMaster = {
     "https://www.betonjayareadymix.com/p/beton-precast.html": "Beton Precast"
 };
+// ═════════════════════════════════════════════════════════════════════
+// B. SUB-PILLAR 1 ➔ MONEY MASTERS (5 Kategori Utama)
+// ═════════════════════════════════════════════════════════════════════
+const urlMappingPerbandinganProdukPembatasFromSub1ToMoneyMaster = {
+  "https://www.betonjayareadymix.com/p/pagar-panel.html": "Pagar Panel",
+  "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",
+  "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",
+  "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",
+  "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton",
+   "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
+  "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
+  "https://www.betonjayareadymix.com/p/pagar-batu.html": "Pagar Batu"
+};
 
-// ============================================================
-// [VARIANT] - PRODUK PEMBATAS
-// ============================================================
-const urlMappingProdukPembatasFromSub1MoneyMaster = {
-    "https://www.betonjayareadymix.com/p/pagar-rumah.html": "Pagar Rumah",
-    "https://www.betonjayareadymix.com/p/pagar-panel.html": "Pagar Panel",
-    "https://www.betonjayareadymix.com/p/harga-pagar-panel.html": "Harga Pagar Panel",
-    "https://www.betonjayareadymix.com/p/pagar-grc.html": "Pagar GRC",
-    "https://www.betonjayareadymix.com/p/pagar-brc.html": "Pagar BRC",
-    "https://www.betonjayareadymix.com/p/pagar-beton.html": "Pagar Beton",
-    "https://www.betonjayareadymix.com/p/pagar-batu.html": "Pagar Batu",
-    "https://www.betonjayareadymix.com/p/pagar-besi.html": "Pagar Besi",
-    "https://www.betonjayareadymix.com/p/kanstin-beton.html": "Kanstin Beton"
+// ═════════════════════════════════════════════════════════════════════
+// C. MONEY MASTER ➔ MONEY PAGE
+// ═════════════════════════════════════════════════════════════════════
+const urlMappingPagarPanelFromMMtoMP = {
+  "https://www.betonjayareadymix.com/p/harga-pagar-panel.html": "Harga Pagar Panel",
+  "https://www.betonjayareadymix.com/p/pagar-panel-beton.html": "Pagar Panel Beton",
+  "https://www.betonjayareadymix.com/p/harga-pagar-panel-beton.html": "Harga Pagar Panel Beton"
 };
-const urlMappingPagarBatuFromMoneyMasterMoneyPage = {
-    "https://www.betonjayareadymix.com/p/pagar-batu-alam.html": "Pagar Batu Alam"
+const urlMappingPagarBrcFromMMtoMP = {
+  "https://www.betonjayareadymix.com/p/harga-pagar-brc.html": "Harga Pagar BRC"
 };
+const urlMappingPagarBesiFromMMtoMP = {
+  "https://www.betonjayareadymix.com/p/harga-pagar-besi.html": "Harga Pagar Besi"
+};
+
 // ═════════════════════════════════════════════════════════════════════
 // 📂 PARENT: perbandingan-produk-saluran-drainase (Sub-Pillar Tipe 1)
 // ➔ CHILD: Money-Master (4 Produk Utama)
@@ -229,8 +240,11 @@ const urlMappingProdukCustom = {
         urlMappingProdukAlatKonstruksiFromMoneyMaster1MoneyMaster2,
         urlMappingJualAlatBeratFromMoneyMaster2MoneyPage,
         urlMappingProdukPembatasFromSub2Sub1,
-        urlMappingProdukPembatasFromSub1MoneyMaster,
-        urlMappingPagarBatuFromMoneyMasterMoneyPage,
+        urlMappingPerbandinganProdukPembatasFromSub1ToMoneyMaster,
+        urlMappingPagarPanelFromMMtoMP,
+        urlMappingPagarBrcFromMMtoMP,
+        urlMappingPagarBesiFromMMtoMP,
+        urlMappingPagarBatuFromMoneyPageToVariant,
         urlMappingProdukSaluranDrainaseFromSub2Sub1,
         urlMappingPerbandinganProdukSaluranDrainaseFromSub1ToMoneyMaster,
         urlMappingProdukJalanLantaiFromSub2Sub1,
@@ -485,14 +499,53 @@ function initProdukKonsPillar() {
         );
     }
 
-    if (urlMappingProdukPembatasFromSub1MoneyMaster[cleanUrlProdukKons]) {
+    if (urlMappingPerbandinganProdukPembatasFromSub1ToMoneyMaster[cleanUrlProdukKons]) {
         generateBreadcrumbShared(
-            urlMappingProdukPembatasFromSub1MoneyMaster,
+            urlMappingPerbandinganProdukPembatasFromSub1ToMoneyMaster,
             cleanUrlProdukKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
                 { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
+    if (urlMappingPagarPanelFromMMtoMP[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingPagarPanelFromMMtoMP,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+                { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+                { name: 'Pagar Panel', url: 'https://www.betonjayareadymix.com/p/pagar-panel.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
+    if (urlMappingPagarBrcFromMMtoMP[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingPagarBrcFromMMtoMP,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+                { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+                { name: 'Pagar Brc', url: 'https://www.betonjayareadymix.com/p/pagar-brc.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
+    if (urlMappingPagarBesiFromMMtoMP[cleanUrlProdukKons]) {
+        generateBreadcrumbShared(
+            urlMappingPagarBesiFromMMtoMP,
+            cleanUrlProdukKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
+                { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+                { name: 'Pagar Besi', url: 'https://www.betonjayareadymix.com/p/pagar-besi.html' }
             ],
             'PRODUK_KONSTRUKSI'
         );
@@ -684,14 +737,15 @@ function initProdukKonsPillar() {
         );
     }
 
-    if (urlMappingPagarBatuFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
+    if (urlMappingPagarBatuFromMoneyPageToVariant[cleanUrlProdukKons]) {
         generateBreadcrumbShared(
-            urlMappingPagarBatuFromMoneyMasterMoneyPage,
+            urlMappingPagarBatuFromMoneyPageToVariant,
             cleanUrlProdukKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
                 { name: 'Daftar Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/daftar-produk-pembatas.html' },
                 { name: 'Perbandingan Produk Pembatas', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-pembatas.html' },
+                { name: 'Pagar Besi', url: 'https://www.betonjayareadymix.com/p/pagar-besi.html' },
                 { name: 'Pagar Batu', url: 'https://www.betonjayareadymix.com/p/pagar-batu.html' }
             ],
             'PRODUK_KONSTRUKSI'
