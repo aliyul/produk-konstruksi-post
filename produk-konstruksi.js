@@ -173,23 +173,17 @@ const urlMappingJualJembatanGirderFromMoneyMasterMoneyPage = {
     "https://www.betonjayareadymix.com/p/harga-jembatan-box-girder.html": "Harga Jembatan Box Girder"
 };
 
-// ============================================================
-// [VARIANT] - PRODUK DINDING BANGUNAN MODULAR
-// ============================================================
-const urlMappingProdukDindingFromSub1MoneyMaster = {
-    "https://www.betonjayareadymix.com/p/panel-beton.html": "Panel Beton",
-    "https://www.betonjayareadymix.com/p/beton-ringan.html": "Beton Ringan",
-    "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
-    "https://www.betonjayareadymix.com/p/bata-ringan.html": "Bata Ringan",
-    "https://www.betonjayareadymix.com/p/sandwich-panel.html": "Sandwich Panel"
-};
-const urlMappingPanelBetonFromMoneyMasterMoneyPage = {
-    "https://www.betonjayareadymix.com/p/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",
-    "https://www.betonjayareadymix.com/p/bangunan-ruspin-modular.html": "Bangunan Ruspin Modular"
-};
-const urlMappingSandwichPanelFromMoneyMasterMoneyPage = {
-    "https://www.betonjayareadymix.com/p/dinding-panel-sandwich-modular.html": "Dinding Panel Sandwich Modular",
-    "https://www.betonjayareadymix.com/p/bangunan-panel-sandwich-modular.html": "Bangunan Panel Sandwich Modular"
+// ═════════════════════════════════════════════════════════════════════
+// 📂 PARENT: perbandingan-produk-dinding-modular (Sub-Pillar Tipe 1)
+// ➔ CHILD: Money-Master (6 Kategori Utama)
+// ═════════════════════════════════════════════════════════════════════
+const urlMappingPerbandinganProdukDindingModularFromSub1ToMoneyMaster = {
+  "https://www.betonjayareadymix.com/p/roster-beton.html": "Roster Beton",
+  "https://www.betonjayareadymix.com/p/bata-ringan.html": "Bata Ringan",
+  "https://www.betonjayareadymix.com/p/beton-ringan.html": "Beton Ringan",
+  "https://www.betonjayareadymix.com/p/sandwich-panel.html": "Sandwich Panel",
+  "https://www.betonjayareadymix.com/p/panel-beton.html": "Panel Beton",
+  "https://www.betonjayareadymix.com/p/bangunan-prefab-modular.html": "Bangunan Prefab Modular"
 };
 
 // ============================================================
@@ -256,9 +250,7 @@ const urlMappingProdukCustom = {
         urlMappingProdukJembatanFromSub1MoneyMaster,
         urlMappingJualJembatanGirderFromMoneyMasterMoneyPage,
         urlMappingProdukDindingBangunanModularFromSub2Sub1,
-        urlMappingProdukDindingFromSub1MoneyMaster,
-        urlMappingPanelBetonFromMoneyMasterMoneyPage,
-        urlMappingSandwichPanelFromMoneyMasterMoneyPage,
+        urlMappingPerbandinganProdukDindingModularFromSub1ToMoneyMaster,
         urlMappingProdukPelabuhanPesisirFromSub2Sub1,
         urlMappingProdukPelabuhanFromSub1MoneyMaster,
         urlMappingProdukPelabuhanFromMoneyMasterMoneyPage,
@@ -589,9 +581,9 @@ function initProdukKonsPillar() {
         );
     }
 
-    if (urlMappingProdukDindingFromSub1MoneyMaster[cleanUrlProdukKons]) {
+    if (urlMappingPerbandinganProdukDindingModularFromSub1ToMoneyMaster[cleanUrlProdukKons]) {
         generateBreadcrumbShared(
-            urlMappingProdukDindingFromSub1MoneyMaster,
+            urlMappingPerbandinganProdukDindingModularFromSub1ToMoneyMaster,
             cleanUrlProdukKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
@@ -675,34 +667,7 @@ function initProdukKonsPillar() {
         );
     }
 
-    if (urlMappingPanelBetonFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
-        generateBreadcrumbShared(
-            urlMappingPanelBetonFromMoneyMasterMoneyPage,
-            cleanUrlProdukKons,
-            [
-                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-                { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
-                { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
-                { name: 'Panel Beton', url: 'https://www.betonjayareadymix.com/p/panel-beton.html' }
-            ],
-            'PRODUK_KONSTRUKSI'
-        );
-    }
-
-    if (urlMappingSandwichPanelFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
-        generateBreadcrumbShared(
-            urlMappingSandwichPanelFromMoneyMasterMoneyPage,
-            cleanUrlProdukKons,
-            [
-                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-                { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
-                { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
-                { name: 'Sandwich Panel', url: 'https://www.betonjayareadymix.com/p/sandwich-panel.html' }
-            ],
-            'PRODUK_KONSTRUKSI'
-        );
-    }
-
+   
     if (urlMappingProdukPelabuhanFromMoneyMasterMoneyPage[cleanUrlProdukKons]) {
         generateBreadcrumbShared(
             urlMappingProdukPelabuhanFromMoneyMasterMoneyPage,
