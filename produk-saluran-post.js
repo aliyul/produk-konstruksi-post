@@ -785,8 +785,9 @@ function initProdukSaluranPost() {
             cleanUrlProdukSaluranKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
-                { name: 'Produk Saluran & Drainase', url: 'https://www.betonjayareadymix.com/p/produk-saluran-drainase.html' },
-                { name: 'U Ditch Tutup Beton Precast', url: 'https://www.betonjayareadymix.com/p/u-ditch-tutup-beton-precast.html' }
+                { name: 'Daftar Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/daftar-produk-saluran-drainase.html' },
+                { name: 'Perbandingan Produk Saluran Drainase', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-saluran-drainase.html' },
+                { name: 'U Ditch', url: 'https://www.betonjayareadymix.com/p/u-ditch.html' }
             ],
             'PRODUK_KONSTRUKSI'
         );
