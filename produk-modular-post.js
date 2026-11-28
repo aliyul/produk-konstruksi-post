@@ -35,7 +35,30 @@ const urlMappingModularKamarMandiToiletFromMoneyPageToVariant = {
   "https://www.betonjayareadymix.com/2019/04/harga-toilet-modular.html": "Harga Toilet Modular"
 };
 // Panel Beton
+// ═════════════════════════════════════════════════════════════════════
+// 📂 PARENT: panel-beton (Money-Master)
+// ➔ CHILD: Money-Page (Pricing Hub)
+// ═════════════════════════════════════════════════════════════════════
+const urlMappingPanelBetonFromMoneyMasterToMoneyPage = {
+  "https://www.betonjayareadymix.com/2022/02/harga-panel-beton-precast.html": "Harga Panel Beton Precast"
+};
+// ═════════════════════════════════════════════════════════════════════
+// 📂 PARENT: panel-beton (Money-Master)
+// ➔ CHILD: Variant (Aplikasi, Teknologi Modular, & Intent Komersial)
+// ═════════════════════════════════════════════════════════════════════
 const urlMappingPanelBetonFromMoneyMasterToVariant = {
+  
+  // ── GRUP 1: APLIKASI & PENGGUNAAN SPESIFIK ──
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-pabrik.html": "Panel Beton Precast Pabrik",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-untuk-gedung.html": "Panel Beton Pracetak Untuk Gedung",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-untuk-dinding.html": "Panel Beton Precast Untuk Dinding",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-dinding-precast.html": "Panel Beton Dinding Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-dinding-pracetak-beton.html": "Panel Dinding Pracetak Beton",
+  "https://www.betonjayareadymix.com/2022/02/panel-lantai-beton-precast.html": "Panel Lantai Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-pracetak-bangunan.html": "Panel Beton Pracetak Bangunan",
+  "https://www.betonjayareadymix.com/2022/02/panel-dinding-beton-pracetak-ringan.html": "Panel Dinding Beton Pracetak Ringan",
+
+  // ── GRUP 2: SPESIFIKASI, TEKNOLOGI & SISTEM MODULAR (2019/04) ──
   "https://www.betonjayareadymix.com/2019/04/dinding-panel-beton-precast-modular.html": "Dinding Panel Beton Precast Modular",
   "https://www.betonjayareadymix.com/2019/04/sistem-dinding-modular-beton.html": "Sistem Dinding Modular Beton",
   "https://www.betonjayareadymix.com/2019/04/rumah-modular-panel-beton-precast.html": "Rumah Modular Panel Beton Precast",
@@ -43,7 +66,23 @@ const urlMappingPanelBetonFromMoneyMasterToVariant = {
   "https://www.betonjayareadymix.com/2019/04/konstruksi-modular-panel-beton.html": "Konstruksi Modular Panel Beton",
   "https://www.betonjayareadymix.com/2019/04/teknologi-dinding-panel-modular-beton.html": "Teknologi Dinding Panel Modular Beton",
   "https://www.betonjayareadymix.com/2019/04/material-modular-dinding-beton-precast.html": "Material Modular Dinding Beton Precast",
-  "https://www.betonjayareadymix.com/2019/04/inovasi-panel-modular-beton-precast.html": "Inovasi Panel Modular Beton Precast"
+  "https://www.betonjayareadymix.com/2019/04/inovasi-panel-modular-beton-precast.html": "Inovasi Panel Modular Beton Precast",
+
+  // ── GRUP 3: INTENT KOMERSIAL & KETERSEDIAAN ──
+  "https://www.betonjayareadymix.com/2022/02/jual-panel-beton-precast.html": "Jual Panel Beton Precast",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-ready-stock.html": "Panel Beton Precast Ready Stock"
+};
+// ═════════════════════════════════════════════════════════════════════
+// 📂 PARENT: panel-beton (Money-Master)
+// ➔ CHILD: Money-Child (Layanan Lokal per Kota)
+// ═════════════════════════════════════════════════════════════════════
+const urlMappingPanelBetonFromMoneyMasterToMoneyChild = {
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-jakarta.html": "Panel Beton Precast Jakarta",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bogor.html": "Panel Beton Precast Bogor",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-depok.html": "Panel Beton Precast Depok",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-tangerang.html": "Panel Beton Precast Tangerang",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-bekasi.html": "Panel Beton Precast Bekasi",
+  "https://www.betonjayareadymix.com/2022/02/panel-beton-precast-karawang.html": "Panel Beton Precast Karawang"
 };
 
 // Bangunan Prefab Modular
@@ -203,7 +242,9 @@ const urlMappingRosterBetonFromMoneyMasterToMoneyChild = {
         urlMappingBangunanPrefabModularFromMoneyMasterToMoneyPage,
         urlMappingModularKamarMandiToiletFromMoneyPageToVariant,
         urlMappingBangunanPrefabModularFromMoneyMasterToVariant,
+        urlMappingPanelBetonFromMoneyMasterToMoneyPage,
         urlMappingPanelBetonFromMoneyMasterToVariant,
+        urlMappingPanelBetonFromMoneyMasterToMoneyChild,
         urlMappingSandwichPanelFromMoneyMasterToVariant,
         urlMappingBataRinganFromMoneyMasterToVariant,
         urlMappingRosterBetonFromMoneyMasterToMoneyPage,
@@ -314,11 +355,37 @@ function initProdukModularPost() {
     }
 
     // ───────────────────────────────────────────────────────
-    // [BLOK 3] DINDING PANEL BETON PRECAST MODULAR
+    // [BLOK 3] PANEL BETON
     // ───────────────────────────────────────────────────────
+    if (urlMappingPanelBetonFromMoneyMasterToMoneyPage[cleanUrlProdukModularKons]) {
+        generateBreadcrumbShared(
+            urlMappingPanelBetonFromMoneyMasterToMoneyPage,
+            cleanUrlProdukModularKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
+                { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
+                { name: 'Panel Beton', url: 'https://www.betonjayareadymix.com/p/panel-beton.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
     if (urlMappingPanelBetonFromMoneyMasterToVariant[cleanUrlProdukModularKons]) {
         generateBreadcrumbShared(
             urlMappingPanelBetonFromMoneyMasterToVariant,
+            cleanUrlProdukModularKons,
+            [
+                { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
+                { name: 'Daftar Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/daftar-produk-dinding-bangunan-modular.html' },
+                { name: 'Perbandingan Produk Dinding Bangunan Modular', url: 'https://www.betonjayareadymix.com/p/perbandingan-produk-dinding-modular.html' },
+                { name: 'Panel Beton', url: 'https://www.betonjayareadymix.com/p/panel-beton.html' }
+            ],
+            'PRODUK_KONSTRUKSI'
+        );
+    }
+    if (urlMappingPanelBetonFromMoneyMasterToMoneyChild[cleanUrlProdukModularKons]) {
+        generateBreadcrumbShared(
+            urlMappingPanelBetonFromMoneyMasterToMoneyChild,
             cleanUrlProdukModularKons,
             [
                 { name: 'Produk Konstruksi', url: 'https://www.betonjayareadymix.com/p/produk-konstruksi.html' },
