@@ -111,7 +111,7 @@ const urlMappingSandwichPanelFromMoneyMasterToVariant = {
 const urlMappingBataRinganFromMoneyMasterToVariant = {
   "https://www.betonjayareadymix.com/2019/04/ukuran-bata-ringan-hebel-modular.html": "Ukuran Bata Ringan Hebel Modular",
   "https://www.betonjayareadymix.com/2019/04/kelebihan-bata-ringan-modular.html": "Kelebihan Bata Ringan Modular",
-  "https://www.betonjayareadymix.com/p/bata-ringan-hebel-modular.html": "Bata Ringan Hebel Modular",
+  "https://www.betonjayareadymix.com/2019/04/bata-ringan-hebel-modular.html": "Bata Ringan Hebel Modular",
   "https://www.betonjayareadymix.com/2019/04/konstruksi-dinding-bata-ringan-modular.html": "Konstruksi Dinding Bata Ringan Modular",
   "https://www.betonjayareadymix.com/2019/04/teknologi-bata-ringan-modular.html": "Teknologi Bata Ringan Modular",
   "https://www.betonjayareadymix.com/2019/04/pemasangan-bata-ringan-modular.html": "Pemasangan Bata Ringan Modular",
